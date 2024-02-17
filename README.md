@@ -1,9 +1,8 @@
 # "Street Fitness" - Aplicativo de Atividades Físicas 
 
-
 	##Nome 
 
-O nosso aplicativo tem como nome “Street Fitness”.
+O nosso aplicativo tem como nome "Street Fitness".
 
 	**Sobre**
 
