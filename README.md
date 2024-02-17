@@ -21,9 +21,9 @@ Ao fornecer um aplicativo como o "Street Fitness", que oferece rotas de caminhad
 >__Pesquisa de mercado__
 >
 Encontramos vários sites sobre dança, vida fitness exercícios e até sites com os outdoors fitnesses mapeados, mas nenhum dos 2 sites englobava os dois conceitos e maior parte desses sites eram estáticos.
-[Site de Dança](https://jazzy.pt/) 
-[Site de outdoors fitness](https://www.powr.pt/)  
-[Site de caminhadas](https://caminhando.pt/)  
+. [Site de Dança](https://jazzy.pt/) 
+. [Site de outdoors fitness](https://www.powr.pt/)  
+. [Site de caminhadas](https://caminhando.pt/)  
 
 >__Público-alvo__
 >
