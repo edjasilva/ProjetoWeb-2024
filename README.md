@@ -1,6 +1,6 @@
 # "Street Fitness" - Aplicativo de Atividades Físicas 
 
-	##Nome 
+	__Nome__
 
 O nosso aplicativo tem como nome "Street Fitness".
 
