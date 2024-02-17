@@ -28,17 +28,17 @@ Encontramos vários sites sobre dança, vida fitness exercícios e até sites co
 >__Público-alvo__
 >
 A plataforma é elaborada para atender a uma audiência diversificada e dinâmica, cada um com interesses únicos e um entusiasmo compartilhado pelo bem-estar. Exemplo.:
-•	Aficionados da Dança
-•	Entusiastas de Fitness
+*	Aficionados da Dança
+*	Entusiastas de Fitness
 
 >__Disciplinas__
 >
-ALGORITMOS E ESTRUTURAS DE DADOS (Alexandre Barão)
-ESTATÍSTICA (Rodolfo Bendoyro)
-INTERFACES E USABILIDADE (Bruno Nobre)
-PROGRAMAÇÃO WEB (Márcio Saraiva)
-SISTEMAS DE INFORMAÇÃ O GEOGRÁ FICOS (André Sabino)
-PROJECTO WEB (João Dias)
+*ALGORITMOS E ESTRUTURAS DE DADOS (Alexandre Barão)
+*ESTATÍSTICA (Rodolfo Bendoyro)
+*INTERFACES E USABILIDADE (Bruno Nobre)
+*PROGRAMAÇÃO WEB (Márcio Saraiva)
+*SISTEMAS DE INFORMAÇÃ O GEOGRÁ FICOS (André Sabino)
+*PROJECTO WEB (João Dias)
 
 
 
