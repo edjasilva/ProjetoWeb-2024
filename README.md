@@ -42,8 +42,8 @@ A plataforma é elaborada para atender a uma audiência diversificada e dinâmic
 - PROJECTO WEB (João Dias)
 
 
-#__Plano de produção__ 
-
+>__Plano de produção__ 
+>
 1.	Fase de planejamento - 7/02/2024 – 16/02/2024.
 2.	 Pesquisa do mercado - 7/02/2024 – 16/02/2024.
 3.	Desenvolvimento do usuário (UI) e a experiência do usuário (UX) - 22/02/2024 – 10/03/2024.
