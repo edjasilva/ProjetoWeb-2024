@@ -42,6 +42,20 @@ A plataforma é elaborada para atender a uma audiência diversificada e dinâmic
 - PROJECTO WEB (João Dias)
 
 
+#__Plano de produção__ 
+
+1.	Fase de planejamento - 7/02/2024 – 16/02/2024.
+2.	 Pesquisa do mercado - 7/02/2024 – 16/02/2024.
+3.	Desenvolvimento do usuário (UI) e a experiência do usuário (UX) - 22/02/2024 – 10/03/2024.
+4.	Desenvolvimento front-end - 11/03/2024 – 11/04/2024.
+5.	Fase de testes de front-end - 11/04/2024 – 13/04/2024.
+6.	Desenvolvimento de back-end - 15/04/2024 – 30/05/2024.
+7.	Fase de testes de back-end - 31/05/2024 – 01/05/2024.
+8.	 Integração de recursos adicionais (sistema de pagamento) - 31/05/2024 – 02/06/2024.
+9.	 Fase de testes final - 02/06/2024 – 05/06/2024.
+
+
+
 
 
 
