@@ -45,13 +45,13 @@ A plataforma é elaborada para atender a uma audiência diversificada e dinâmic
 >
 - [x]	Fase de planejamento - 7/02/2024 – 16/02/2024.
 - [x]	Pesquisa do mercado - 7/02/2024 – 16/02/2024.
-- [ ]	Desenvolvimento do usuário (UI) e a experiência do usuário (UX) - 22/02/2024 – 10/03/2024.
-- [ ]	Desenvolvimento front-end - 11/03/2024 – 11/04/2024.
-- [ ]	Fase de testes de front-end - 11/04/2024 – 13/04/2024.
-- [ ]	Desenvolvimento de back-end - 15/04/2024 – 30/05/2024.
-- [ ]	Fase de testes de back-end - 31/05/2024 – 01/05/2024.
-- [ ]	 Integração de recursos adicionais (sistema de pagamento) - 31/05/2024 – 02/06/2024.
-- [ ]	 Fase de testes final - 02/06/2024 – 05/06/2024.
+- [ ]	Desenvolvimento do usuário (UI) e a experiência do usuário (UX) - 20/02/2024 – 8/03/2024.
+- [ ]	Desenvolvimento front-end - 10/03/2024 – 30/03/2024.
+- [ ]	Fase de testes de front-end - 30/03/2024 – 02/04/2024.
+- [ ]	Desenvolvimento de back-end - 03/04/2024 – 30/05/2024.
+- [ ]	Fase de testes de back-end - 31/05/2024 – 03/06/2024.
+- [ ]	 Integração de recursos adicionais (sistema de pagamento) - 03/06/2024 – 05/06/2024.
+- [ ]	 Fase de testes final - 05/06/2024 – 13/06/2024.
 
 
 >__Guiões de teste__
