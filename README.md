@@ -46,13 +46,24 @@ A plataforma é elaborada para atender a uma audiência diversificada e dinâmic
 >
 - [x]	Fase de planejamento - 7/02/2024 – 16/02/2024.
 - [x]	Pesquisa do mercado - 7/02/2024 – 16/02/2024.
-- [ ]	Desenvolvimento do usuário (UI) e a experiência do usuário (UX) - 22/02/2024 – 10/03/2024.
+- [ ]#740	Desenvolvimento do usuário (UI) e a experiência do usuário (UX) - 22/02/2024 – 10/03/2024.
 - [ ]	Desenvolvimento front-end - 11/03/2024 – 11/04/2024.
 - [ ]	Fase de testes de front-end - 11/04/2024 – 13/04/2024.
 - [ ]	Desenvolvimento de back-end - 15/04/2024 – 30/05/2024.
 - [ ]	Fase de testes de back-end - 31/05/2024 – 01/05/2024.
 - [ ]	 Integração de recursos adicionais (sistema de pagamento) - 31/05/2024 – 02/06/2024.
 - [ ]	 Fase de testes final - 02/06/2024 – 05/06/2024.
+
+
+Guiões de teste
+•	Verificar usuários podem se inscrever, fazer login e sair com sucesso do aplicativo;
+•	Garantir que os usuários podem navegar entre as diferentes seções do aplicativo (página inicial, perfis de usuário, aulas disponíveis entre outras funcionalidades disponíveis no aplicativo);
+•	Analisar a facilidade de uso do aplicativo (clareza das instruções, intuitividade da navegação, legibilidade do texto);
+•	Capacidade de os usuários encontrarem rapidamente as aulas de dança, exercícios que desejam fazer;
+•	Testar o aplicativo com diferentes navegadores; 
+•	Testar se o aplicativo é responsivo e se adapta em diferentes tamanhos de tela;
+•	 Analisar o tempo de carregamento da página.
+•	 Verificar o desempenho do Aplicativo sobrecarregado.
 
 
 
