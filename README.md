@@ -40,6 +40,14 @@ A plataforma é elaborada para atender a uma audiência diversificada e dinâmic
 - Sistemas de Informação Geográficos (André Sabino)
 - Projeto Web (João Dias)
 
+>__Tecnologias/linguagens a serem aplicadas__
+> 
+
+-	JavaScript
+-	Java
+-	Html
+-	Css3
+
 
 >__Plano de produção__ 
 >
