@@ -33,7 +33,7 @@ A plataforma é elaborada para atender a uma audiência diversificada e dinâmic
 
 >__Disciplinas__
 >
-
+O projeto será implementado com base nas seguintes disciplinas:
 -ALGORITMOS E ESTRUTURAS DE DADOS (Alexandre Barão)
 -ESTATÍSTICA (Rodolfo Bendoyro)
 -INTERFACES E USABILIDADE (Bruno Nobre)
