@@ -4,7 +4,7 @@
 
 - [Introdução](#introdução)
 - [O Nome da Aplicação](#o-nome-da-aplicação)
-- [Estudo do Mercado](estudo-do-mercado)
+- [Estudo do Mercado](#estudo-do-mercado)
 - [Diferencial Competitivo - Objetivos]()
 - [Público-Alvo](#Público-alvo)
 - [Integração das Unidades Curriculares]()
