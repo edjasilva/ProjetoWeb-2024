@@ -9,7 +9,7 @@
 - [Público-Alvo](#Público-alvo)
 - [Integração das Unidades Curriculares](#Integração-das-Unidades-Curriculares)
   - [Projeto de Desenvolvimento Web](#Projeto-de-Desenvolvimento-Web)
-  - [Programação Web](#Programação-Web---Márcio-Saraiva)
+  - [Programação Web - Márcio Saraiva](#Programação-Web---Márcio-Saraiva)
   - [Sistemas de Informação Geográficos](#Sistemas-de-Informação-Geográficos)
   - [Estatística](#Estatística)
   - [Interface e Usabilidade](#Interface-e-Usabilidade)
