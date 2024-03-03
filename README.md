@@ -6,7 +6,7 @@
 - [O Nome da Aplicação]()
 - [Estudo do Mercado]()
 - [Diferencial Competitivo - Objetivos]()
-- [Público-Alvo](#público-alvo)
+- [Público-Alvo](#Público-alvo)
 - [Integração das Unidades Curriculares]()
   - [Projeto de Desenvolvimento Web]()
   - [Programação Web]()
