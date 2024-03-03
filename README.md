@@ -5,7 +5,7 @@
 - [Introdução](#introdução)
 - [O Nome da Aplicação](#o-nome-da-aplicação)
 - [Estudo do Mercado](#estudo-do-mercado)
-- [Diferencial Competitivo - Objetivos](#DIFERENCIAL%20COMPETITIVO%20-OBJETIVOS)
+- [Diferencial Competitivo - Objetivos](#DIFERENCIAL%20COMPETITIVO%20-%20OBJETIVOS)
 - [Público-Alvo](#Público-alvo)
 - [Integração das Unidades Curriculares]()
   - [Projeto de Desenvolvimento Web]()
