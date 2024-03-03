@@ -3,7 +3,7 @@
 ## ÍNDICE
 
 - [Introdução](#introdução)
-- [O Nome da Aplicação](#nome-da-aplicação)
+- [O Nome da Aplicação](#o-nome-da-aplicação)
 - [Estudo do Mercado]()
 - [Diferencial Competitivo - Objetivos]()
 - [Público-Alvo](#Público-alvo)
