@@ -96,7 +96,6 @@ A unidade curricular de **Interfaces e Usabilidade** será responsável por cria
 
 A unidade curricular de “AED” não sabemos como aplicar ainda, falamos com o professor da unidade e ele disse-nos que depois irá informar melhor sobre como proceder. 
 
-___
 
 ## REQUISITOS TÉCNICOS
 
@@ -119,3 +118,20 @@ O site tem como requisitos: ser responsivo, conter linguagens de programação p
 >__Base de Dados__
 
 - **PostgresSQL**
+
+___
+
+## PESQUISA DE MERCADO (REFERÊNCIAS)
+
+https://www.epics.com.br/blog/top-10-lugares-para-fotografar-em-portugal
+
+https://lisboasecreta.co/os-melhores-sitios-em-lisboa-para-tirar-fotos-incriveis/
+
+https://www.parquesdesintra.pt/pt/planear-a-visita/roteiros/os-melhores-locais-para-fotografar-sintra/
+
+https://www.timeout.pt/lisboa/pt/coisas-para-fazer/os-sitios-mais-instagramaveis-em-lisboa
+
+https://www.pixpa.com/pt/blog/places-to-take-pictures-near-me
+
+https://www.flickr.com/
+
