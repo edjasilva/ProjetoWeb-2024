@@ -5,7 +5,7 @@
 - [Introdução](#introdução)
 - [O Nome da Aplicação](#o-nome-da-aplicação)
 - [Estudo do Mercado](#estudo-do-mercado)
-- [Diferencial Competitivo - Objetivos](#DIFERENCIAL_COMPETITIVO_-_OBJETIVOS)
+- [Diferencial Competitivo - Objetivos](#DIFERENCIAL-COMPETITIVO---OBJETIVOS)
 - [Público-Alvo](#Público-alvo)
 - [Integração das Unidades Curriculares](#Integração-das-Unidades-Curriculares)
   - [Projeto de Desenvolvimento Web](#Projeto-de-Desenvolvimento-Web)
@@ -40,12 +40,12 @@ Analisamos o mercado de turismo em Lisboa, examinando sites que direcionem síti
 - Fornecer informações detalhadas e atualizadas sobre os locais, incluindo descrições, horários e as melhoas rotas para lá chegar.
 - Criar uma comunidade para turistas e amantes de fotografia, onde estes podem interagir através de posts no mapa da App. 
 - Implementar filtros baseados nas características dos lugares que os utilizadores queiram visitar.
-- Integrar um mapa pricipal, onde serão destacados os pontos fotográficos mais atraentes.
+- Integrar um mapa principal, onde serão destacados os pontos fotográficos mais atraentes.
 
 
 ## PÚBLICO-ALVO
 
-- **Turistas:** indivíduos que vistam Lisboa e têm interesse em registar os momentos mais memoráveis de sua visita por meio de fotografias.
+- **Turistas:** indivíduos que visitam Lisboa e têm interesse em registar os momentos mais memoráveis de sua visita por meio de fotografias.
 - **Idade e Gênero:** principalmente adultos entre os **25-45** anos de idade, de ambos os gêneros, que gostem de tirar fotografias e explorar destinos turísticos.
 - **Comportamento do consumidor:** pessoas que planejam cuidadosamente suas viagens, que gostem de explorar locais e buscam por informações práticas e atualizadas.
 
