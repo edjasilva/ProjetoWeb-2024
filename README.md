@@ -8,16 +8,8 @@
 - [Diferencial Competitivo - Objetivos](#DIFERENCIAL-COMPETITIVO---OBJETIVOS)
 - [Público-Alvo](#Público-alvo)
 - [Integração das Unidades Curriculares](#Integração-das-Unidades-Curriculares)
-  - [Projeto de Desenvolvimento Web](#Projeto-de-Desenvolvimento-Web)
-  - [Programação Web - Márcio Saraiva](#programação-web---márcio-saraiva)
-  - [Sistemas de Informação Geográficos](#Sistemas-de-Informação-Geográficos)
-  - [Estatística](#Estatística)
-  - [Interface e Usabilidade](#Interface-e-Usabilidade)
-  - [Algoritmos e Estruturas de Dados](#Algoritmos-e-Estruturas-de-Dados)
 - [Requisitos Técnicos](#Requisitos-Técnicos)
-  - [Front-End]()
-  - [Back-End]()
-  - [Base de dados](#Base-de-dados)
+ 
 ___
 
 ## INTRODUÇÃO
