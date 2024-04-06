@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-----<!DOCTYPE html>
 <html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
@@ -8,4 +8,157 @@
 <body>
     
 </body>
+</html>----->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LisbonSpots</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous"
+/>
+
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <!-----<img src="images/100x100.png" alt="Logo"> ----->
+        </div>
+      </div>
+      <section class="welcome-section">
+        <div class="welcome-text">
+          <h3>Discover Lisbon's Hidden Gems</h3>
+          <p class="sub-text">Website for travelers and photography lovers of spots in Lisbon</p>
+          <div class="search-bar">
+            <input type="text" placeholder="Search for a place">
+            <button>Get Started</button>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <div class="off-screen-menu">
+      <div class="close-button">&times;</div>
+      <ul>
+          <li>
+              <h3><a href="index.html">HOME</a></h3>
+          </li>
+          <div class="dropdown">
+              <button class="dropbtn">Commercial</button>
+              <div class="dropdown-content">
+                    <ul> 
+                      <li><a href="#">Museum</a></li>
+                      <li><a href="#">Hotel</a></li>
+                      <li><a href="#">Bar</a></li>
+                      <li><a href="#">Restaurant</a></li>
+                      <li><a href="#">Rooftop</a></li>
+                      <li><a href="#">Stadiums & Arenas</a></li>
+                      <li><a href="#">Shoppping Malls</a></li>
+                      <li><a href="#">Castels</a></li>
+                    </ul>
+              </div>
+              <button class="dropbtn">Non-commercial</button>
+              <div class="dropdown-content">
+                    <ul> 
+                      <li><a href="#">Water-falls</a></li>
+                      <li><a href="#">Parks</a></li>
+                      <li><a href="#">Rivers</a></li>
+                      <li><a href="#">Beaches</a></li>
+                      <li><a href="#">Churches & Cathedral</a></li>
+                    </ul>
+              </div>
+          </div>
+          <div class = "cont">
+            <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          </div>  
+          <div class = "rgst">
+            <li><a href="#">Sign Up </a></li>
+            <li><a href="#">Log In</a></li>
+          </div> 
+      </ul>
+    </div>
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <a href="aboutus.html">Blog</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Support</a> 
+          </div>
+          <div class="footer__link--items"></div>
+        </div>
+        <!-----<div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <a href="contact.html">Our Team</a> 
+          </div>
+        </div> ---->
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <!----<a href="/" id="footer__logo"><i class="fas fa-gem"></i>      </a>----->
+          </div>
+          <p class="website__rights">© LisbonSpots 2024. All rights reserved</p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="TikTok"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://www.instagram.com/lisbon__spots?igsh=MWU4bnQ0OHU4OHgwMw=="
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            
+          </div>
+        </div>
+      </section>
+      
+      <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/abc123.js" crossorigin="anonymous"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const hamMenu = document.querySelector('.ham-menu');
+          const offScreenMenu = document.querySelector('.off-screen-menu');
+      
+          hamMenu.addEventListener('click', function () {
+            offScreenMenu.classList.toggle('active');
+          });
+        });
+      </script>
+  </body>
 </html>

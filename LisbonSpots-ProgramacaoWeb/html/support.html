@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Support - LisbonSpots</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <!-- <img src="images/100x100.png" alt="Logo"> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="off-screen-menu">
+      <div class="close-button">&times;</div>
+      <ul>
+        <li>
+          <h3><a href="index.html">HOME</a></h3>
+        </li>
+        <div class="dropdown">
+          <button class="dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Museum</a></li>
+              <li><a href="#">Hotel</a></li>
+              <li><a href="#">Bar</a></li>
+              <li><a href="#">Restaurant</a></li>
+              <li><a href="#">Rooftop</a></li>
+              <li><a href="#">Beaches</a></li>
+              <li><a href="#">Churches</a></li>
+              <li><a href="#">All</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cont">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </div>
+        <div class="rgst">
+          <li><a href="#">Sign Up </a></li>
+          <li><a href="#">Log In</a></li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="support__container">
+      <h1>Support</h1>
+      <p>
+        If you have any questions, concerns, or feedback, please feel free to
+        contact our support team. We are here to assist you in any way we can.
+      </p>
+      <p>
+        Our customer service representatives are always on hand to answer your
+        questions and offer support when you need it. We're dedicated to
+        resolving issues and improving your entire experience, whether you're
+        having trouble logging in to your account, navigating, or using certain
+        services. The emails provided on the Contact Us page can be used to get
+        in touch with us.
+
+        <a href="contact.html">Contact Us</a> page.
+      </p>
+      <p>
+        Additionally, you can connect with us on our social media channels for
+        updates, news, and announcements. Follow us on TikTok, Instagram, and
+        Twitter for the latest content and information.
+      </p>
+      <p>
+        Our support staff can assist with any technical problems as well as
+        address any inquiries you may have on our features, services, or
+        policies. Since we value openness and honesty in communication, we're
+        here to offer clarification and direction so that you may get the most
+        out of your LisbonSpots experience. We value your comments greatly since
+        it enables us to better understand our platform's shortcomings and make
+        necessary improvements to better serve your requirements.
+      </p>
+    </div>
+
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <a href="aboutus.html">Blog</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Support</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo"></div>
+          <p class="website__rights">© LisbonSpots 2024. All rights reserved</p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="TikTok"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a
+              class="social__icon--link"
+              href="https://www.instagram.com/lisbon__spots?igsh=MWU4bnQ0OHU4OHgwMw=="
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/abc123.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamMenu = document.querySelector(".ham-menu");
+        const offScreenMenu = document.querySelector(".off-screen-menu");
+
+        hamMenu.addEventListener("click", function () {
+          offScreenMenu.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
