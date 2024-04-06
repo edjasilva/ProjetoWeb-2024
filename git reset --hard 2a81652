@@ -1,0 +1,32 @@
+[33mc644b4e[m[33m ([m[1;36mHEAD -> [m[1;32mAbhay[m[33m, [m[1;31morigin/ABHAY[m[33m)[m HEAD@{0}: checkout: moving from Abhay to Abhay
+[33mc644b4e[m[33m ([m[1;36mHEAD -> [m[1;32mAbhay[m[33m, [m[1;31morigin/ABHAY[m[33m)[m HEAD@{1}: reset: moving to HEAD@{1}
+[33mc644b4e[m[33m ([m[1;36mHEAD -> [m[1;32mAbhay[m[33m, [m[1;31morigin/ABHAY[m[33m)[m HEAD@{2}: checkout: moving from Abhay to Abhay
+[33mc644b4e[m[33m ([m[1;36mHEAD -> [m[1;32mAbhay[m[33m, [m[1;31morigin/ABHAY[m[33m)[m HEAD@{3}: checkout: moving from 7e580d716c718ac9cc192feb3afab7179924bca3 to Abhay
+[33m7e580d7[m HEAD@{4}: rebase (pick): ~$oposta-LisbonSpots - Copy removida
+[33m2dd1d38[m HEAD@{5}: rebase (pick): Copy of LisbonSpot
+[33mc2f851c[m HEAD@{6}: rebase (start): checkout main
+[33mc644b4e[m[33m ([m[1;36mHEAD -> [m[1;32mAbhay[m[33m, [m[1;31morigin/ABHAY[m[33m)[m HEAD@{7}: checkout: moving from ABHAY to ABHAY
+[33mc644b4e[m[33m ([m[1;36mHEAD -> [m[1;32mAbhay[m[33m, [m[1;31morigin/ABHAY[m[33m)[m HEAD@{8}: checkout: moving from ABHAY to ABHAY
+[33mc644b4e[m[33m ([m[1;36mHEAD -> [m[1;32mAbhay[m[33m, [m[1;31morigin/ABHAY[m[33m)[m HEAD@{9}: commit (merge): Add files to ABHAY
+[33mc2f851c[m HEAD@{10}: checkout: moving from ABHAY to ABHAY
+[33mc2f851c[m HEAD@{11}: checkout: moving from Abhay to ABHAY
+[33mc2f851c[m HEAD@{12}: checkout: moving from ABHAY to Abhay
+[33mc2f851c[m HEAD@{13}: commit: Delete all files in directory
+[33m2a81652[m[33m ([m[1;32mmain[m[33m)[m HEAD@{14}: checkout: moving from ABHAY to ABHAY
+[33m2a81652[m[33m ([m[1;32mmain[m[33m)[m HEAD@{15}: checkout: moving from main to ABHAY
+[33m2a81652[m[33m ([m[1;32mmain[m[33m)[m HEAD@{16}: checkout: moving from Abhay to main
+[33mfb183ab[m HEAD@{17}: commit: 'HTML'
+[33mf447843[m HEAD@{18}: commit: small changes
+[33mb44872f[m HEAD@{19}: commit: Code
+[33m5a7d309[m[33m ([m[1;31morigin/Rui[m[33m)[m HEAD@{20}: pull: Fast-forward
+[33m8e7ba4c[m HEAD@{21}: checkout: moving from main to Abhay
+[33m2a81652[m[33m ([m[1;32mmain[m[33m)[m HEAD@{22}: checkout: moving from Abhay to main
+[33m8e7ba4c[m HEAD@{23}: commit: Copy of LisbonSpot
+[33m2a81652[m[33m ([m[1;32mmain[m[33m)[m HEAD@{24}: merge main: Fast-forward
+[33m2ae9480[m[33m ([m[1;32minformation[m[33m, [m[1;32m'Abhay'[m[33m)[m HEAD@{25}: checkout: moving from main to Abhay
+[33m2a81652[m[33m ([m[1;32mmain[m[33m)[m HEAD@{26}: pull: Merge made by the 'ort' strategy.
+[33m2ae9480[m[33m ([m[1;32minformation[m[33m, [m[1;32m'Abhay'[m[33m)[m HEAD@{27}: merge Abhay: Fast-forward
+[33m1978dbb[m HEAD@{28}: checkout: moving from Abhay to main
+[33m2ae9480[m[33m ([m[1;32minformation[m[33m, [m[1;32m'Abhay'[m[33m)[m HEAD@{29}: commit: teste
+[33m1978dbb[m HEAD@{30}: checkout: moving from main to Abhay
+[33m1978dbb[m HEAD@{31}: clone: from github.com:edjasilva/ProjetoWeb-2024.git
