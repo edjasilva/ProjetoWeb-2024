@@ -31,8 +31,10 @@ body {
     width: 50%;
 }
 
+
 .login-container input {
-    width: calc(90% - 20px);
+    width: 85%;
+    
     padding: 12px;
     margin-bottom: 12px;
     border: 1px solid #ccc;
@@ -41,6 +43,7 @@ body {
     box-sizing: border-box;
     font-size: 14px;
 }
+
 
 .login-container button {
     width: 60%;
@@ -60,7 +63,7 @@ body {
 }
 
 .login-container h1 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .newsletter-checkbox {
@@ -120,11 +123,20 @@ body {
     border-radius: 50%;
     background-color: transparent;
     padding: 10px;
+    
 }
 
 .social-icons i {
     color: #000000;
     font-size: 24px;
+}
+.social-icons a:hover {
+    background-color: #000000; 
+}
+
+
+.social-icons a:hover i {
+    color: #fff; 
 }
 
 .cross-circle {
