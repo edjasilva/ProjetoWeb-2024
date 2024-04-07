@@ -56,11 +56,66 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     align-self: center;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .login-container h1 {
     margin-bottom: 20px;
+}
+
+.email,
+.password {
+    position: relative; 
+    margin-bottom: 30px; 
+}
+
+.email .placeholder,
+.password .placeholder {
+    font-size: 12px;
+    color: #555;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+}
+
+.email::after,
+.password::after {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 1px;
+    background-color: #555; 
+}
+
+.text-box {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 14px;
+    position: relative;
+}
+
+.placeholder {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px;
+    color: #555;
+}
+
+.text-box:focus {
+    border-color: #007bff;
+}
+
+.text-box:not(.email):not(.password) {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .newsletter-checkbox {
@@ -91,7 +146,7 @@ body {
 }
 
 .login-container a {
-    color: #007bff;
+    color: #ff0000;
     text-decoration: none;
     font-size: 12px;
 }
