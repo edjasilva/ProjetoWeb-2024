@@ -35,7 +35,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left; 
     position: relative;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 900px;
+    margin-right: 900px;
   }
   
 
@@ -115,20 +117,19 @@ body {
     cursor: pointer;
 }
 
-.left-aligned {
-    text-align: left;
+  .left-aligned {
+    display: flex;
+    align-items: center;
     margin-left: 10px;
     margin-bottom: 20px;
 }
 
 .left-aligned h4 {
-    display: flex;
-    align-items: center;
-    margin: 5px 0; 
+    margin: 5px 0;
+    margin-right: 20px;
 }
 
-.left-aligned h4:last-of-type::after {
-    content: url('../img/delete.png');
-    margin-left: 10px;
-    max-height: 15px;
-  }
+.imagedel {
+    margin-left: 40px; 
+    margin-right: 40px;
+}
