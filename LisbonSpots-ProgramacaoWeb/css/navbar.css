@@ -5,7 +5,7 @@
 
 
 .list{
-    margin-top: 15px;
+    
     list-style: none;
     display:inline-flex;
    /* border: 1px solid black;*/
@@ -49,17 +49,17 @@
   
 
   .nav-left{
-      padding-top: 15px;
+      padding-top: 10px;
   }
   
 
   .nav-center{
-      padding-top: 7.5px;
+      padding-top: 15px;
   }
   
   
   .nav-right{
-      padding-top: 15px ;
+      padding-top: 17px ;
   }
   
 
@@ -74,11 +74,11 @@
 
   
   .menu{
-      border: 2px solid white;
+      border: 1px solid black;
       color: black;
       border-radius: 10px;
       display:inline-flex;
-      margin-top: 7.5px;
+     
       margin-left: 350px;
   }
   
