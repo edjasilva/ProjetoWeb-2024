@@ -39,9 +39,6 @@ body {
   
 }
 
-
-
-  
   .login-container h1 {
     margin-bottom:40 px;
   }
@@ -113,13 +110,13 @@ body {
 }
 
 .social-icons {
-    margin-top: 7px;
+    margin-top: 2px;
 }
 
 .social-icons a {
     display: inline-block;
     margin: 10px; 
-    margin-top: 15px;
+    margin-top: 2px;
     border-radius: 50%;
     background-color: transparent;
     padding: 10px;

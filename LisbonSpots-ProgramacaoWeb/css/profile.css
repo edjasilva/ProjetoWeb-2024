@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-bottom: 400px;
 }
 
 .top-image {
@@ -27,36 +28,37 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    margin-top: 500px; 
-    width: 50%;
+    margin-top: 400px; 
+    width: 40%;
 }
 
 .login-container input {
-    width: calc(90% - 20px);
-    padding: 12px;
+    width: 0px;
+    padding: 15px;
     margin-bottom: 12px;
+    margin: 15px;
     border: 1px solid #ccc;
     background-color: #f0f0f0;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .login-container button {
     width: 60%;
     padding: 10px;
     margin-top: 40px;
-    background: url('../img/back.jpg') no-repeat center;
+    background: url('../img/buttonAzulejo\ 1.png') no-repeat center;
     background-size: cover;
     color: black;
-    border: none;
+    border: 1px solid #000000;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
     align-self: center;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 .login-container h1 {
@@ -72,7 +74,6 @@ body {
 .email .placeholder,
 .password .placeholder {
     font-size: 12px;
-    color: #555;
     position: absolute;
     top: -10px;
     left: 5px;
@@ -90,7 +91,7 @@ body {
 }
 
 .text-box {
-    width: 100%;
+    width: 85%;
     padding: 12px;
     border: none;
     background-color: transparent;
@@ -142,13 +143,13 @@ body {
 
 .login-container p {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .login-container a {
     color: #ff0000;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .login-container a:hover {
