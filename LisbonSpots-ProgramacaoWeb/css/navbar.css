@@ -49,9 +49,9 @@ nav{
 
     display: flex;
     align-items: center;
-    background-image: url(../img/navvvv.png);
+    /*background-image: url(../img/navvvv.png);*/
     background-size: cover;
-  background-position: center;
+    background-position: center;
     font-family: 'BioRhyme', sans-serif;
     height: 16vh;
     
