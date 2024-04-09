@@ -98,7 +98,7 @@
 }
 
 body{
-    background-color:rosybrown;
+    
     overflow-x: hidden;
     /*se algo tfaz scroll para a horizontal, fica escondido*/
 }
@@ -136,7 +136,6 @@ nav{
     display: flex;
   
     align-items: center;
-    background-color: cadetblue;
     font-family: 'BioRhyme', sans-serif;
     height: 16vh;
     
@@ -156,11 +155,15 @@ nav{
     margin-left: 20%;
     
     
+    
    
 }
 
 
 .menu{
+    width: 50px;
+    height: 45px;
+    
     display: flex;
     margin-left: 22%;
     align-items: center;
@@ -170,6 +173,10 @@ nav{
     background-color: #fff;
 }
 
+.menu img{
+    margin-top: 9px;
+}
+
 .menu a{
     display:block;
 }
@@ -177,8 +184,8 @@ nav{
 
 
 .nav-list li{
-    
-    text-align: justify;
+ 
+    text-align: justfy;
     letter-spacing: 3px;
     margin-left: 32px;
     background-image: url(../img/Vector\ 2.svg);
