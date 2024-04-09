@@ -38,31 +38,32 @@
           <li class="li"><a href="/">Perfil</a></li>
           <!-- <li class="container-menu"><a class="menu" href="/"><img src="menu.svg" alt=""></a></li>-->
         </ul>
-        <div class="menu">
-          <a href="/"><img src="../img/menu.svg" alt="" width="55px" /></a>
+        <div class="butt">
+          <button class="menu" href="/">
+            <img src="../img/menu.svg" alt="" width="43px" />
+          </button>
         </div>
       </nav>
     </header>
 
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <a href="../html/home.html">Home</a>
-            <a href="../html/faq.html">FAQs</a>
-            <a href="../html/aboutUs.html">Sobre nós</a>
-            <a href="../html/contactUs.html">Contate-nos</a>
-            <a href="../html/support.html">Suporte</a>
-            <a href="../html/terms.html"> Termos de Uso</a>
-            <a href="../html/privacy.html">Política de Privacidade</a>
-          </div>
+    <h1>Locais Comerciais</h1>
+    <h3>Descubra lugares incríveis</h3>
+    <div class="places-container">
+      <div class="place">
+        <div class="place-text">
+          <h2>Name</h2>
+          <p class="address">Address</p>
+          <button class="button">Saber mais</button>
+          <!--<button class="button" onclick="window.location.href = 'page1.html';">Saber mais</button>
+-->
         </div>
+        <img src="../img/navvvv.png" alt="Place 1" class="place-image" />
       </div>
+    </div>
+
+    <div class="footer__container">
       <section class="social__media">
         <div class="social__media--wrap">
-          <p class="website__rights">
-            © LisbonSpots 2024. Todos os direitos reservados
-          </p>
           <div class="social__icons">
             <a
               class="social__icon--link"
@@ -83,9 +84,30 @@
           </div>
         </div>
       </section>
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <a href="../html/home.html">Home</a>
+            <a href="../html/aboutUs.html">Sobre nós</a>
+            <a href="../html/faq.html">FAQs</a>
+            <a href="../html/contactUs.html">Contate-nos</a>
+            <a href="../html/support.html">Suporte</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <a href="../html/terms.html"> Termos de Uso</a>
+            <a href="../html/privacy.html">Política de Privacidade</a>
+          </div>
+        </div>
+      </div>
+      <p class="website__rights">
+        © LisbonSpots 2024. Todos os direitos reservados
+      </p>
     </div>
 
     <main></main>
     <script src="../javascript/mobile-navbar.js"></script>
+    <script src="../javascript/commercial.js"></script>
   </body>
 </html>

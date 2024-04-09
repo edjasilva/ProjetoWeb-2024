@@ -1,50 +1,25 @@
-body{
-    background-color:rgb(122, 151, 245);
-    
-    
-   
+body {
+    background-color: rgb(255, 255, 255);
 }
 
-.container{
-width: 100%;
-
-}
-
-
-.coluna{
+.container {
     width: 100%;
 }
 
-.coluna1{
+.coluna {
+    width: 100%;
+}
+
+.coluna1 {
     width: 50%;
 }
 
-
-.coluna2{
+.coluna2 {
     width: 33%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  /* Footer CSS */
-  .footer__container {
+/* Footer CSS */
+.footer__container {
     background-color: #ffffff;
     padding: 5rem 0;
     display: flex;
@@ -62,34 +37,44 @@ width: 100%;
 
 .footer__link--wrapper {
     display: flex;
-    align-items: center; /* Align items horizontally */
-    margin: 16px;
+    align-items: center;
+    margin: 10px;
+    margin-left: 410px;
+    flex-direction: column; 
 }
 
 .footer__link--items {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap if necessary */
-    align-items: center; /* Align items horizontally */
+    flex-wrap: wrap;
+    align-items: center;
     text-align: left;
-    width: 160px;
+    width: 1060px; 
     box-sizing: border-box;
+    margin-top: 1rem; 
 }
 
 .footer__link--items a {
     color: #000000;
     text-decoration: none;
-    margin: 0 0.5rem; /* Add margin between items for spacing */
+    margin: 0 3rem;
+    font-size: 1.2rem;
+}
+
+.footer__link--wrapper:nth-child(2) {
+    margin-top: 5rem; 
+    margin-left: -880px;
 }
 
 .footer__link--items a:hover {
-    color: #2e2727;
+    color: #000000;
     transition: 0.3s ease-out;
 }
+
 
 /* Social Icons */
 .social__icon--link {
     color: #000000;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .social__media {
@@ -110,7 +95,9 @@ width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: 290px;
+    margin-left: 320px;
+    margin-top: -100px;
 }
 
 .social__logo {
@@ -127,35 +114,119 @@ width: 100%;
 
 .website__rights {
     color: #000000;
+    font-size: 1.2rem;
+    margin-top: 60px;
+    font-weight: bold; 
 }
 
 @media screen and (max-width: 820px) {
-    .footer__links {
-        padding-top: 2rem;
-    }
-
-    #footer__logo {
-        margin-bottom: 2rem;
-    }
-
-    .website__rights {
-        margin-bottom: 2rem;
-    }
-
     .footer__link--wrapper {
-        flex-direction: column;
-        align-items: center; /* Align items vertically */
+        margin-left: -140px; 
     }
 
+    .footer__link--items {
+        width: 30%; 
+        margin: 20px auto; 
+    }
+    
+    .footer__link--wrapper:nth-child(2) {
+        margin-top: 10px;
+    }
     .social__media--wrap {
-        flex-direction: column;
+        flex-direction: column-reverse; 
+    }
+
+    .social__icons {
+        margin-left: -20px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .footer__link--items {
-        margin: 0;
-        padding: 10px;
-        width: 100%;
+    .footer__link--items a {
+        margin: 0 1rem; 
+        font-size: 0.5rem; 
     }
+
+    .social__icons {
+        margin-left: 0;
+    }
+
 }
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 46px; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin-top: 60px;
+    font-smooth: always; 
+}
+
+h3 {
+    font-size: 24px; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin-top: 20px;
+    font-smooth: always; 
+    margin-bottom: 90px;
+}
+
+
+.places-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+.place {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px; 
+}
+
+.place-image {
+    width: 600px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+
+.place-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 380px; 
+    margin-left: 220px; 
+    align-items: center;
+}
+
+.place-text h2 {
+    font-size: 32px; 
+}
+
+.place-text .address {
+    font-size: 14px; 
+    margin-top: 10px; 
+}
+
+.button {
+    padding: 10px 10px; 
+    font-size: 16px;
+    background-image: url(../img/buttonAzulejo\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #000000;
+    color: black;
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-top: 15px;
+}
+
