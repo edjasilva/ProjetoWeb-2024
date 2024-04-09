@@ -1,104 +1,10 @@
-/*.container{
-    width: 100%;
-    }
-    
-
-
-.list{
-    
-    list-style: none;
-    display:inline-flex;
-    border: 1px solid black;
-    border:1px solid rgba(28.458755314350128, 30.81248391419649, 28.458755314350128, 1);
-    border-radius: 20px;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-
-  .inline{
-     display:inline-flex;
-  }
-  
-  ul {
-   
-    padding: 0;
-    margin: 0;
-}
-
-  .list-item{ 
-      
-      background-image: url('../img/Vector\ 2.svg');
-      background-repeat: no-repeat;
-      margin:0px ;
-      background-position: right center;
-      background-size: 10px auto;
-      width: 100px;
-  }
-  
-  
-  .list-item:last-child {
-      background-image: none;
-    }
-  
-
-  .button{
-      display: inline-flex;
-  }
-  
-
-  .nav-left{
-      padding-top: 10px;
-  }
-  
-
-  .nav-center{
-      padding-top: 15px;
-  }
-  
-  
-  .nav-right{
-      padding-top: 17px ;
-  }
-  
-
-  .icon{
-      border: 1px solid black;
-      border-radius: 15px;
-      background-color: white;
-      width: 90px;
-      margin-right: 330px;
-      margin-left: 20px;
-  }
-
-  
-  .menu{
-      border: 1px solid black;
-      color: black;
-      border-radius: 10px;
-      display:inline-flex;
-     
-      margin-left: 350px;
-  }
-  
-  
-  a{
-      text-decoration: none;
-      margin: 20px;
-      align-items: center;
-      color: black;
-  }*/
-  
-  
-  @font-face {
+@font-face {
     font-family: 'BioRhyme';
     src: url(BioRhyme-Light.ttf) format('truetype');
 }
 
 body{
-    
+    background-color:rosybrown;
     overflow-x: hidden;
     /*se algo tfaz scroll para a horizontal, fica escondido*/
 }
@@ -113,9 +19,11 @@ a {
     color: black;
     text-decoration: none;
     transition: 0.3;
-    
+    margin: 20px;
+    align-items: center;
+      
+    }
 
-}
 
 a:hover {
     opacity: 0.7;
@@ -123,25 +31,31 @@ a:hover {
 
 
 .logo{
-    margin-right: 3.5%;
-    margin-left: 2%;
+    
     width: 90px;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 1.2px solid black;
+    border-radius: 15px;
     background-color: white;
+    /*margin-right: 330px; */
+    margin-left: 4%;
+   
     
 }
 
 nav{
+    width: 100%;
+
+
+
     display: flex;
-  
     align-items: center;
+    background-color: cadetblue;
     font-family: 'BioRhyme', sans-serif;
     height: 16vh;
     
 }
 
-.nav-list  {
+/*.nav-list  {
     
     list-style: none;
     display: flex;
@@ -150,31 +64,67 @@ nav{
     border:1px solid rgba(28.458755314350128, 30.81248391419649, 28.458755314350128, 1);
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 45%;
     margin-left: 20%;
+
+}*/
+
+
+
+.nav-list{
     
-    
-    
+    list-style: none;
+    display:flex;
+    border:1.2px solid rgba(28.458755314350128, 30.81248391419649, 28.458755314350128, 1);
+    border-radius: 17px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 45%;
+    margin-left: 25%;
+    text-align: center;
+  
    
-}
+  
+  }
 
 
-.menu{
-    width: 50px;
-    height: 45px;
-    
+/*.menu{
     display: flex;
     margin-left: 22%;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #fff;
+    display:inline-flex;
+   
+   
+}*/
+
+.menu{
+    display: flex;
+    border: 1.2px solid black;
+    color: black;
+    border-radius: 10px;
+    display:flex;
+    margin-left:190%;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu img{
-    margin-top: 9px;
+.button{
+   
+    display: inline-flex;
+}
+
+
+.butt{
+    
+    padding-top: center ;
+    padding-left: 20% ;
 }
 
 .menu a{
@@ -183,18 +133,55 @@ nav{
 
 
 
-.nav-list li{
- 
-    text-align: justfy;
+/*.nav-list li{
+    
+    text-align: justify;
     letter-spacing: 3px;
     margin-left: 32px;
-    background-image: url(../img/Vector\ 2.svg);
+    background-image: url(Vector\ 2.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 10px auto;
     width: 100%;
     height: 100%;
-}
+}*/
+
+
+.nav-list li {
+    text-align: center; 
+    margin-bottom:center;
+    /*margin-left: 32px;*/
+    flex: 1;
+    background-image: url('../img/Vector\ 2.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10px auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+/*.lis{ 
+      
+    background-image: url('Vector\ 2.svg');
+    background-repeat: no-repeat;
+    margin:0px ;
+    background-position: right center;
+    background-size: 10px auto;
+    width: 100%;
+    height: 100%;
+    margin-bottom:center;
+    text-align: center;
+    
+}*/
+
+
+
+
+
+
 
 .nav-list li:last-child{
     background-image: none;
@@ -252,6 +239,7 @@ nav{
 
     .menu{
         display: none;
+        
     }
     .mobile-menu{
         margin-left: 25%;
