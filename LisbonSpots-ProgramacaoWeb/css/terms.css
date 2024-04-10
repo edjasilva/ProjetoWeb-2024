@@ -43,3 +43,14 @@ hr{
     margin-right: 2%
 }
 
+.terms-use{
+    
+    width: 90px;
+    border: 1.2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: white;
+    /*margin-right: 330px; */
+    margin-left: 4%;
+   
+    
+}
