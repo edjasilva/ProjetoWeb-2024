@@ -19,9 +19,12 @@
 }
 
 hr{
-    border-color: rgba(0, 0, 0, 0.171);
-    border-width: 1px;
+    /*border-color: rgba(0, 0, 0, 0.171);
+    border-width: -100px;
     /*width: 50%;*/
+
+    border: none; /* Remove a borda padrão */
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.253); /* Adiciona uma borda inferior fina */
     
 }
 
