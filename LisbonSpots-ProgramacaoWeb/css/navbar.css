@@ -47,6 +47,8 @@ nav{
 
 
 
+    background-color: black;
+    
     display: flex;
     align-items: center;
     /*background-image: url(../img/navvvv.png);*/
