@@ -3,32 +3,17 @@
     src: url(BioRhyme-Light.ttf) format('truetype');
 }
 
-h2{
-   
-    font-family: 'BioRhyme', sans-serif;
+
+
+.use{
+    font-family: 'BioRhyme' , sans-serif;
+    font-size: 20px;
 }
 
-p{
-    margin: 2%;
-    text-align: justify;
-}
-
-.t3{
-    text-align: left;
-    margin-left: 2%;
-}
-
-.t2{
-    text-align: left;
-    margin-left: 2%;
-}
-
-.t4{
-    text-align: left;
-    margin-left: 2%;
-}
 
 .terms{
+    text-align: left;
+    margin-left: 2%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -39,3 +24,19 @@ hr{
     /*width: 50%;*/
     
 }
+
+.t2{
+    
+}
+
+ .main-a{
+    color: rgba(0, 0, 255, 0.747);
+}
+
+.p{
+    margin-top: -1%;
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%
+}
+
