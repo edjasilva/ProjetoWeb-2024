@@ -1,4 +1,135 @@
-body {
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+  }
+  
+  #map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .news-input {
+      width: 50%;
+    }
+  }
+  
+  
+  
+  .social__icon--link {
+    padding: 80px 0; 
+  }
+  
+  
+  .modal-title {
+    align-items: center; /* Align vertically */
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  
+  .social-icon {
+    color: black;
+    margin-top: 60px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 9px;
+    margin: 3px;
+  }
+  
+  .social-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /*
+  .cross-circle {
+    position: absolute;
+    top: 160px; 
+    left: -435px; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }*/
+  
+  .cross-circle {
+    position: absolute;
+    top: 5%; 
+    right: 5%; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  
+  .container-relative {
+    position: relative;
+  }
+  
+  
+  
+  .cross-circle:before,
+  .cross-circle:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+  }
+  
+  .cross-circle:before {
+    transform: rotate(45deg);
+  }
+  
+  .cross-circle:after {
+    transform: rotate(-45deg);
+  }
+  
+  /*
+  .home-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 3; 
+    cursor: pointer;
+  }*/
+  
+  /*
+  .social-icon__link i {
+    color: #000000;
+    font-size: 24px;
+  }
+  
+  .social-icon__link:hover {
+    background-color: #000000;
+  }
+  
+  .social-icon__link:hover i {
+    color: #ffffff;
+  }
+  
+  */
+
+
+
+/*body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -187,3 +318,4 @@ body {
     z-index: 3;
     cursor: pointer;
 }
+*/
