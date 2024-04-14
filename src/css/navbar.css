@@ -114,9 +114,33 @@ li{
     height: auto;
 }
 
+.spot-img-100{
+    width: 80%;
+    height: 100%;
+}
+
 .heading {
     font-weight: 800;
 }
+
+/* museum*/
+.intro-text-museu{
+margin-left: 10%;
+}
+
+
+.text-body-museu{
+    
+margin-left: 10%;
+}
+
+.text-address{
+   margin-left: 54%;
+    margin-right: 10%;
+}
+
+/**/
+
 
 
 .text-g{
