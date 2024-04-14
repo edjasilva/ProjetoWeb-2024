@@ -133,3 +133,9 @@ li{
  color: black;
 } 
 
+.teste{
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    
+}
