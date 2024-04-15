@@ -29,6 +29,8 @@
     />
 
     <link rel="stylesheet" href="../css/navbar.css" />
+
+    <link rel="stylesheet" href="../css/home.css" />
     <style>
       .website__rights {
         display: inline-block;
@@ -52,13 +54,21 @@
         color: black;
         font-size: 1.25rem;
       }
+      .card {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .card-title {
+        color: black;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg p-4">
       <div class="container-fluid ms-4">
         <a href="navbar-brand">
-          <img class="imagem" src="../img/logo.svg" alt="" />
+          <img class="imagemN" src="../img/logo.svg" alt="" />
         </a>
 
         <span class="border border-black bg-light border-1.2 rounded-4">
@@ -88,13 +98,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mapa</a>
+                <a class="nav-link" href="../html/map.html">Mapa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="../html/blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Perfil</a>
+                <a class="nav-link" href="../html/profile.html">Perfil</a>
               </li>
             </ul>
           </span>
@@ -116,117 +126,134 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="container">
             <div
-              class="intro-text py-5 mt-5 text-center bg-body-tertiary border border-1"
+              class="row d-flex justify-content-center"
+              style="padding: 5rem"
             >
-              <div class="heading mb-3 display-5">Lisbon spots</div>
-              <div class="fs-5 fw-light">Museu sei lá das quantas e e</div>
+              <!-- White Rectangle   -->
+              <div
+                class="text-center card shadow-lg pt-5 pb-5 bg-white rounded"
+              >
+                <h2>This is our Story</h2>
+                <p style="padding-bottom: 5rem">
+                  This is some text inside the white rectangle. You can add any
+                  content here.
+                </p>
+                <div
+                  class="card text-center"
+                  style="width: 20rem; background-color: lightgray"
+                >
+                  <div class="card-body">
+                    <a
+                      class="text-decoration-none"
+                      href="../html/commercial.html"
+                      ><h5 class="card-title">Locais comerciais</h5></a
+                    >
+                  </div>
+                  <a href="../html/commercial.html" title=""
+                    ><img src="../img/imgg.svg" class="card-img-top" alt="..."
+                  /></a>
+                </div>
+                <div
+                  class="card"
+                  style="width: 20rem; background-color: lightgray"
+                >
+                  <div class="card-body">
+                    <a
+                      class="text-decoration-none"
+                      href="../html/non-commercial.html"
+                      title=""
+                      ><h5 class="card-title">Locais não comerciais</h5></a
+                    >
+                  </div>
+                  <a href="../html/non-commercial.html" title=""
+                    ><img src="../img/imgg.svg" class="card-img-top" alt="..."
+                  /></a>
+                </div>
+
+                <!-------------------------------------------------------------------------------->
+                <h2 style="padding-top: 7rem; padding-bottom: 4rem">
+                  Explore ........
+                </h2>
+                <div
+                  class="card text-center"
+                  style="width: 15rem; border-color: white"
+                >
+                  <div class="card-body"></div>
+                  <img src="../img/adv.svg" class="card-img-top" alt="..." />
+                  <h5 class="card-title" style="padding-top: 2rem">Aventura</h5>
+                </div>
+                <div class="card" style="width: 15rem; border-color: white" ">
+                <div class="card-body"></div>
+                <img src="../img/mem.svg" class="card-img-top" alt="..." />
+                <h5 class="card-title" style="padding-top: 2rem">Memórias</h5>
+              </div>
+              <div class="card" style="width: 15rem; border-color: white">
+                <div class="card-body"></div>
+                <img src="../img/exp.svg" class="card-img-top" alt="..." />
+                <h5
+                  class="card-title"
+                  style="padding-top: 2rem; padding-bottom: 5rem"
+                >
+                  Experiências
+                </h5>
+              </div>
+              <!------------------------------------------------------------------------->
+              <div
+                class="text-center pt-5 pb-5 bg-black"
+                style="padding-top: 5rem; padding-bottom: 5rem"
+              >
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-md-6" style="padding-top: 5rem">
+                    <img
+                      src="../img/imgblog.svg"
+                      class="rounded float-left"
+                      style="padding-bottom: 5rem"
+                      height="300px"
+                      width="mx-auto"
+                      alt=""
+                    />
+                    <!--<div class="card" style="width: 20rem; border-color: black">
+                      <div
+                        class="card-body"
+                        style="background-color: black"
+                      ></div>
+                      <a
+                        class="text-decoration-none"
+                        href="../html/blog.html"
+                        title=""
+                        ><img
+                          src="../img/imgblog.svg"
+                          class="card-img-top"
+                          alt="..."
+                          style="background-color: black"
+                      /></a>
+                    </div>-->
+                  </div>
+                  <div class="col-md-6">
+                    <div class="col-md-6">
+                      <a
+                        class="text-decoration-none"
+                        href="../html/blog.html"
+                        title=""
+                        ><h1 style="color: white; font: size 12rem">
+                          Visite o nosso Blog
+                        </h1></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- End White Rectangle with Text -->
+            <!--------------------------------------------------------------->
           </div>
         </div>
       </div>
     </header>
 
-    <div class="container">
-      <footer class="py-3 my-4">
-        <!-- Section: Social media -->
-        <section
-          class="text-center justify-content-center border-top social-media"
-          style="padding: 60px"
-        >
-          <!-- Social media icons -->
-          <div>
-            <!--  
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-tiktok"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
-                />
-              </svg>
-              <button type="button" class="btn btn-secondary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                  />
-                </svg>
-              </button>-->
-            <a href="" class="me-4 px-5 text-reset">
-              <i
-                class="fab fa-instagram"
-                style="font-size: 30px; color: black"
-              ></i>
-            </a>
-          </div>
-          <!--
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-instagram"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-              />
-            </svg>-->
-          <div>
-            <a href="" class="me-4 px-5 text-reset">
-              <i
-                class="fab fa-tiktok"
-                style="font-size: 30px; color: black"
-              ></i>
-            </a>
-          </div>
-        </section>
-        <ul class="nav justify-content-center pb-2 mb-2">
-          <li class="nav-item mx-3">
-            <a href="#" class="nav-link px-5 py-3 text-dark">Home</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a href="#" class="nav-link px-5 py-3 text-dark">Sobre nós</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a href="#" class="nav-link px-5 py-3 text-dark">FAQs</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a href="#" class="nav-link px-5 py-3 text-dark">Contate-nos</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a href="#" class="nav-link px-5 py-3 text-dark">Suporte</a>
-          </li>
-        </ul>
-
-        <ul class="nav justify-content-center pb-3 mb-3">
-          <li class="nav-item mx-3">
-            <a href="#" class="nav-link px-5 py-5 text-dark"> Termos de Uso</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a href="#" class="nav-link px-5 py-5 text-dark"
-              >Política de Privacidade</a
-            >
-          </li>
-        </ul>
-
-        <h5 class="text-center text-dark">
-          ©LisbonSpots 2024. Todos os direitos reservados
-        </h5>
-      </footer>
-    </div>
+    <!------------------------------------------------------------------------------------------>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
