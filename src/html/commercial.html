@@ -1,112 +1,901 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Commercial</title>
-    <link rel="icon" href="../img/logo-mark.svg" />
-    <link rel="stylesheet" href="../css/commercial.css" />
-    <link rel="stylesheet" href="../css/navbar.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LisbonSpots</title>
+    <link rel="icon" href="../img/logo-mark.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrapicons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
     />
-  </head>
-  <body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/non-commercial.css">
+</head>
+<body >
+    
+    <nav class="navbar   navbar-expand-lg p-4  ">
+        <div class="container-fluid  ms-4 ">
+            <a href="navbar-brand">
+                <img  class="imagem " src="../img/logo.svg" alt="">
+            </a>
+
+        <!--<button class="navbar-toogler" data-bs-toogle="collapse"  data-bs-target="#menu-links">
+            <span class="navbar-toogler ">
+                <img src="../Html/menu.svg" alt="">
+            </span>
+        </button> -->
+        <span class="border border-black bg-light border-1.2 rounded-4 ">
+            <button class="navbar-toggler botao" data-bs-toggle="collapse" data-bs-target="#menu-links">             
+                <img class="botao-imagem" src="../img/menu.svg" alt="">         
+            </button> 
+        </span>
+        <div class="collapse navbar-collapse    me-5" id="menu-links" >
+            <span class="border border-black bg-light rounded-4  mx-auto align-items-center  " style="width:350px; height: 50px;">
+                <ul class="navbar-nav   mx-0 lista my-0  d-flex text-center align-items-center ">
+
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link  active  justify-content-center " aria-current="page" href="#">Home </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link " href="#">Mapa</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a  class="nav-link" href="#">Perfil</a>
+                    </li>
+    
+                </ul>
+            </span>
+            
+           
+
+            <div class="d-flex ">
+                <span class="ms-2 d-none d-md-inline" >
+                    <button type="button" class=" btn botao border border-1.2 border-black bg-light rounded-4">
+                        <img  class="botao-imagem" src="../img/menu.svg" alt="">
+                    </button>
+                </span>
+            </div>
+       
+
+        </div>
+    </nav>
+
+    
+
+    <!--#########################################################################################################-->
     <header>
-      <nav>
-        <img class="logo" src="../img/iconFundoWhite.png" alt="" />
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro-text py-5 mt-5 text-center bg-body-tertiary border border-1 ">
+                        <div class="heading mb-3 display-5 ">Locais Comerciais</div>
+                        <div class="fs-5 fw-light ">Descubra os melhores lugares para fazer uma foto.</div>
 
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <ul class="nav-list">
-          <li class="li"><a href="/">Home</a></li>
-          <li class="li"><a href="/">Mapa</a></li>
-          <li class="li"><a href="/">Blog</a></li>
-          <li class="li"><a href="/">Perfil</a></li>
-          <!-- <li class="container-menu"><a class="menu" href="/"><img src="menu.svg" alt=""></a></li>-->
-        </ul>
-        <div class="butt">
-          <button class="menu" href="/">
-            <img src="../img/menu.svg" alt="" width="43px" />
-          </button>
-        </div>
-      </nav>
     </header>
 
-    <h1>Locais Comerciais</h1>
-    <h3>Descubra lugares incríveis</h3>
-    <div class="places-container">
-      <div class="place">
-        <div class="place-text">
-          <!--<h2>Name</h2>
-          <p class="address">Address</p>
-          <button class="button">Saber mais</button>-->
-          <!--<button class="button" onclick="window.location.href = 'page1.html';">Saber mais</button>-->
+    
+    
+
+     <div class="btn-toolbar justify-content-around my-3 mb-5"> 
+         
+             <!-- grupo de botões mais largos --> 
+             <div class="btn-group btn-group-lg me-2" role="group"> 
+                 <button type="button" class="btn btn-tertiary text-dark border border-1  text-g border-warning">Restaurante</button> 
+                 <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Estádio</button> 
+                 <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Centro comercial</button> 
+                 <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Parque</button> 
+                 <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Hotel</button> 
+             </div> 
+    
+     </div>
+         
+            
+
+
+ 
+
+    <!--111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+    
+
+
+
+    <div class="container  d-bblock mt-5">
+        <div class="card mb-3 border-0 border  ">
+
+            <div class="row justify-content-around my-5">
+
+                <div class="col-md-6 d-flex align-items-center  ">
+                    <div class="card-body my-5 ms-5">
+                        <h1 class="card-title ">Museu Arqueológico do Carmo</h1>
+                        <p class="card-text ">Hoje, serve simultaneamente como sede da Associação dos Arqueólogos Portugueses e como espaço museológico. O Museu Arqueológico do Carmo instalado nas Ruínas do Carmo integra peças de valor histórico, arqueológico e artístico, numa cronologia ampla que contempla artefactos e obras desde a Pré-História à época contemporânea.</p>
+
+                        <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+            
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/m1.png" alt="">
+                <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+                </div>
+            
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="footer__container">
-      <section class="social__media">
-        <!-- <hr style="height: 2px; color: black; margin-bottom: 20px />-->
-        <div class="social__media--wrap">
-          <div class="social__icons">
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Tik-tok"
-            >
-              <i class="fab fa-tiktok"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
+<!--2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222-->
+
+    <div class="container my-5 ">
+        <div class="card mb-3 border-0 ">
+
+        <div class="row justify-content-around my-5">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/m2.png" alt="">
+                <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+                </div>
+            
+            
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body my-1 " >
+                        <h1 class="card-title ">Museu Nacional de Arte Antiga</h1>
+                        <p class="card-text ">O Museu Nacional de Arte Antiga abriga a coleção mais importante de arte antiga de Portugal, com um rico acervo que vai do século 12 ao século 19, e está instalado em um antigo palácio do século 17!
+
+                           </p>
+
+                        <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+            
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <a href="../html/home.html">Home</a>
-            <a href="../html/aboutUs.html">Sobre nós</a>
-            <a href="../html/faq.html">FAQs</a>
-            <a href="../html/contactUs.html">Contate-nos</a>
-            <a href="../html/support.html">Suporte</a>
-          </div>
-        </div>
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <a href="../html/terms.html"> Termos de Uso</a>
-            <a href="../html/privacy.html">Política de Privacidade</a>
-          </div>
-        </div>
-      </div>
-      <p class="website__rights">
-        © LisbonSpots 2024. Todos os direitos reservados
-      </p>
     </div>
 
-    <main></main>
-    <script src="../javascript/mobile-navbar.js"></script>
-    <script src="../javascript/commercial.js"></script>
-  </body>
+<!--3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+
+    <div class="container  d-bblock ">
+        <div class="card mb-3 border-0  ">
+
+            <div class="row justify-content-around my-5">
+
+                <div class="col-md-6 d-flex align-items-center  ">
+                    <div class="card-body my-5 ms-5">
+                        <h1 class="card-title ">MAAT – MUSEU DE ARTE, ARQUITETURA E TECNOLOGIA</h1>
+                        <p class="card-text  ">É a nova proposta cultural para a cidade de Lisboa. Um museu que cruza estas três áreas num espaço de debate, de descoberta, de pensamento crítico e de diálogo internacional.
+                            O MAAT traduz a ambição de apresentar exposições nacionais e internacionais com o contributo de artistas, arquitetos e pensadores contemporâneos.
+
+                            Refletindo sobre grandes temas e tendências atuais, a programação apresentará ainda diversos olhares curatoriais sobre a Coleção de Arte da Fundação EDP.  </p>
+
+                        <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+            
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block " src="../img/maat2.png" alt="">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto   sim" src="../img/maat3.png" alt="">
+                <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+<!--4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
+
+
+    <div class="container my-5">
+        <div class="card mb-3 border-0">
+
+        <div class="row justify-content-around my-5">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/m31.png" alt="">
+                <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+                </div>
+            
+            
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body my-0">
+                        <h1 class="card-title ">Museu de Marinha</h1>
+                        <p class="card-text ">O Museu de Marinha é um Mundo de Descobertas. Este reflete a importância da experiência e dos conhecimentos que os navegadores portugueses, trouxeram ao mundo.Desde a grande aventura dos Descobrimentos, a evolução da Marinha de Comércio e a de Guerra são os motes da exposição permanente do Museu de Marinha, que conta com uma impressionante coleção de mais de 23.000 peças.</p>
+
+                        <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!--5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555-->
+
+
+    <div class="teste p-4 ">
+        <div class="container   ">
+            <div class="row g-5 my-5">
+                <div class="col-12  ">
+                    <div class="intro-text py-5 mt-5 mb-5  text-center    border-warning border-1  text-g">
+                        <div class="heading mb-3 display-5  ">Lisboa é muito antiga!</div>
+                        <div class="fs-5 fw-light ">Todos sabemos que Lisboa é rica em História, mas muitas pessoas não sabem o quanto.  A realidade é que Lisboa é uma das cidades mais antigas do mundo, sendo inclusive mais antiga que a capital de Itália–Roma. Os registros sugerem que a única cidade mais velha que Lisboa é Atenas, o que está efetivamente certificado</div>
+                        <div class="fs-5 fw-light "></div>
+                        <div class="btn-toolbar justify-content-around mt-3 "> 
+         
+                            <!-- grupo de botões mais largos --> 
+                            <div class="btn-group btn-group-lg me-2" role="group"> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1  text-g border-warning">Restaurante</button> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Estádio</button> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Centro comercial</button> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Parque</button> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Hotel</button> 
+                            </div> 
+                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--<div class="container   ">
+        <div class="row justify-content-center  ">
+            <div class="col-md-7  ">
+                <div class="intro-text py-3 my-5 text-center     ">
+                    <div class="heading display-5   border-warning   ">Resaturante</div>
+                    <div class="fs-5 fw-light border-bottom    border-warning text-g ">Descubra os melhores restaurantes para fazer uma foto.</div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>-->
+
+
+    
+
+
+    <div class="container  d-bblock ">
+         <div class="card mb-3 border-0 border  ">
+             <div class="row justify-content-around my-5">
+                <div class="col-md-6 d-flex align-items-center  ">
+                     <div class="card-body my-5 ms-5">
+                        <h1 class="card-title ">Museu do Mato II</h1>
+                        <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  
+                        <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                     <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+                    <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+    <!--666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666-->
+
+    <div class="container my-5 ">
+        <div class="card mb-3 border-0 ">
+
+        <div class="row justify-content-around my-5">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+                <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+                </div>
+            
+            
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body my-5 " >
+                        <h1 class="card-title ">Museu do Mato II</h1>
+                        <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777-->
+
+
+    <div class="container  d-bblock">
+        <div class="card mb-3 border-0 ">
+
+            <div class="row justify-content-around my-5">
+
+                <div class="col-md-6 d-flex align-items-center  ">
+                    <div class="card-body my-5 ms-5">
+                        <h1 class="card-title ">Museu do Mato II</h1>
+                        <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+            
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block " src="../img/view.svg" alt="">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto   sim" src="../img/view.svg" alt="">
+                <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+<!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
+
+    <div class="container my-5">
+        <div class="card mb-3 border-0">
+
+        <div class="row justify-content-around my-5">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+                <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+                </div>
+            
+            
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body my-5">
+                        <h1 class="card-title ">Museu do Mato II</h1>
+                        <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="teste p-4 ">
+        <div class="container   ">
+            <div class="row g-5 my-5">
+                <div class="col-12  ">
+                    <div class="intro-text py-5 mt-5 mb-5  text-center    border-warning border-1  text-g">
+                        <div class="heading mb-3 display-5  ">POPULAR LOCATIONS</div>
+                        <div class="fs-5 fw-light ">POPULAR LOCATIONS</div>
+                        <div class="fs-5 fw-light "></div>
+                        <div class="btn-toolbar justify-content-around mt-3 "> 
+         
+                            <!-- grupo de botões mais largos --> 
+                            <div class="btn-group btn-group-lg me-2" role="group"> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1  text-g border-warning">Restaurante</button> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Estádio</button> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Centro comercial</button> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Parque</button> 
+                                <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Hotel</button> 
+                            </div> 
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<!--111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+    
+
+
+
+<div class="container  d-bblock mt-5">
+    <div class="card mb-3 border-0 border  ">
+
+        <div class="row justify-content-around my-5">
+
+            <div class="col-md-6 d-flex align-items-center  ">
+                <div class="card-body my-5 ms-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<!--2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222-->
+
+<div class="container my-5 ">
+    <div class="card mb-3 border-0 ">
+
+    <div class="row justify-content-around my-5">
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body my-5 " >
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+
+<div class="container  d-bblock ">
+    <div class="card mb-3 border-0  ">
+
+        <div class="row justify-content-around my-5">
+
+            <div class="col-md-6 d-flex align-items-center  ">
+                <div class="card-body my-5 ms-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text  ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block " src="../img/view.svg" alt="">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto   sim" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+<!--4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
+
+
+<div class="container my-5">
+    <div class="card mb-3 border-0">
+
+    <div class="row justify-content-around my-5">
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body my-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555-->
+
+
+<div class="teste p-4 ">
+    <div class="container   ">
+        <div class="row g-5 my-5">
+            <div class="col-12  ">
+                <div class="intro-text py-5 mt-5 mb-5  text-center    border-warning border-1  text-g">
+                    <div class="heading mb-3 display-5  ">Lisboa é muito antiga!</div>
+                    <div class="fs-5 fw-light ">Todos sabemos que Lisboa é rica em História, mas muitas pessoas não sabem o quanto.  A realidade é que Lisboa é uma das cidades mais antigas do mundo, sendo inclusive mais antiga que a capital de Itália–Roma. Os registros sugerem que a única cidade mais velha que Lisboa é Atenas, o que está efetivamente certificado</div>
+                    <div class="fs-5 fw-light "></div>
+                    <div class="btn-toolbar justify-content-around mt-3 "> 
+     
+                        <!-- grupo de botões mais largos --> 
+                        <div class="btn-group btn-group-lg me-2" role="group"> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1  text-g border-warning">Restaurante</button> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Estádio</button> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Centro comercial</button> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Parque</button> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Hotel</button> 
+                        </div> 
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!--111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+    
+
+
+
+<div class="container  d-bblock mt-5">
+    <div class="card mb-3 border-0 border  ">
+
+        <div class="row justify-content-around my-5">
+
+            <div class="col-md-6 d-flex align-items-center  ">
+                <div class="card-body my-5 ms-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<!--2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222-->
+
+<div class="container my-5 ">
+    <div class="card mb-3 border-0 ">
+
+    <div class="row justify-content-around my-5">
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body my-5 " >
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+
+<div class="container  d-bblock ">
+    <div class="card mb-3 border-0  ">
+
+        <div class="row justify-content-around my-5">
+
+            <div class="col-md-6 d-flex align-items-center  ">
+                <div class="card-body my-5 ms-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text  ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block " src="../img/view.svg" alt="">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto   sim" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+<!--4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
+
+
+<div class="container my-5">
+    <div class="card mb-3 border-0">
+
+    <div class="row justify-content-around my-5">
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body my-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555-->
+
+
+<div class="teste p-4 ">
+    <div class="container   ">
+        <div class="row g-5 my-5">
+            <div class="col-12  ">
+                <div class="intro-text py-5 mt-5 mb-5  text-center    border-warning border-1  text-g">
+                    <div class="heading mb-3 display-5  ">Lisboa é muito antiga!</div>
+                    <div class="fs-5 fw-light ">Todos sabemos que Lisboa é rica em História, mas muitas pessoas não sabem o quanto.  A realidade é que Lisboa é uma das cidades mais antigas do mundo, sendo inclusive mais antiga que a capital de Itália–Roma. Os registros sugerem que a única cidade mais velha que Lisboa é Atenas, o que está efetivamente certificado</div>
+                    <div class="fs-5 fw-light "></div>
+                    <div class="btn-toolbar justify-content-around mt-3 "> 
+     
+                        <!-- grupo de botões mais largos --> 
+                        <div class="btn-group btn-group-lg me-2" role="group"> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1  text-g border-warning">Restaurante</button> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Estádio</button> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Centro comercial</button> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Parque</button> 
+                            <button type="button" class="btn btn-tertiary text-dark border border-1 text-g border-warning">Hotel</button> 
+                        </div> 
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+    
+
+
+
+<div class="container  d-bblock mt-5">
+    <div class="card mb-3 border-0 border  ">
+
+        <div class="row justify-content-around my-5">
+
+            <div class="col-md-6 d-flex align-items-center  ">
+                <div class="card-body my-5 ms-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<!--2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222-->
+
+<div class="container my-5 ">
+    <div class="card mb-3 border-0 ">
+
+    <div class="row justify-content-around my-5">
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body my-5 " >
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+
+<div class="container  d-bblock ">
+    <div class="card mb-3 border-0  ">
+
+        <div class="row justify-content-around my-5">
+
+            <div class="col-md-6 d-flex align-items-center  ">
+                <div class="card-body my-5 ms-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text  ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block " src="../img/view.svg" alt="">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto   sim" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+<!--4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
+
+
+<div class="container my-5">
+    <div class="card mb-3 border-0">
+
+    <div class="row justify-content-around my-5">
+            <div class="col-md-6">
+                <img class="img-fluid rounded-3  border border-1 border-black spot-img mx-auto d-block" src="../img/view.svg" alt="">
+            <!--<img class="img-fluid rounded-2 mx-2 my-2" src="../Imagens/Mbappé.jpg" alt="">-->
+            </div>
+        
+        
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body my-5">
+                    <h1 class="card-title ">Museu do Mato II</h1>
+                    <p class="card-text ">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" id="btnSeeAll" class="btn btn-default py-2 px-5 fs-6 border border-black border-1">Saber mais</a>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="py-1 my-1 text-center">
+    <!-- Section: Social media -->
+    <section class="border-top social-media" style="padding: 60px">
+        <!-- Social media icons -->
+        <div>
+            <a href="" class="me-4 px-5 text-reset">
+                <i class="fab fa-instagram" style="font-size: 30px; color: black"></i>
+            </a>
+        </div>
+        <div>
+            <a href="" class="me-4 px-5 text-reset">
+                <i class="fab fa-tiktok" style="font-size: 30px; color: black"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Navigation links -->
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="row d-flex justify-content-center" style="padding: 2rem">
+                    <ul class="nav justify-content-center pb-1 mb-1">
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link px-3 py-1 text-dark">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link px-3 py-1 text-dark">Sobre nós</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link px-3 py-1 text-dark">FAQs</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link px-3 py-1 text-dark">Contate-nos</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link px-5 py-1 text-dark">Suporte</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav justify-content-center pb-3 mb-1 px-5">
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link px-5 pt-5 text-dark">Termos de Uso</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link px-5 pt-5 text-dark">Política de Privacidade</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <h5 class="text-center text-dark pb-5">
+        ©LisbonSpots 2024. Todos os direitos reservados
+    </h5>
+</footer>
+
+ <!-- Bootstrap JS bundle -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.26.9/sweetalert2.all.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
 </html>

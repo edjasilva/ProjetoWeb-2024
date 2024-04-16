@@ -1,0 +1,21 @@
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .text-reset {
+    padding: 10px;
+  }
+
+  .nav-link {
+    color: black;
+    font-size: 1.25rem;
+  }
+  header .black-container {
+    background-color: black;
+    color: white;
+    padding: 60px;
+  }
