@@ -231,3 +231,15 @@ h3 {
     margin-top: 15px;
 }
 
+.nav-link {
+    color: black;
+    font-size: 1.25rem;
+  }
+
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }

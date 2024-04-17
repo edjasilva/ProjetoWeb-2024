@@ -19,3 +19,25 @@
     color: white;
     padding: 60px;
   }
+
+  .card-title {
+    display: flex;
+    align-items: start;
+  }
+
+  .place-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 380px; 
+    margin-left: 220px; 
+    align-items: center;
+}
+
+.place-text h2 {
+    font-size: 32px; 
+}
+
+.place-text .address {
+    font-size: 14px; 
+    margin-top: 10px; 
+}
