@@ -1,174 +1,264 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>LisbonSpots</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="../img/logo-mark.svg">
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-  crossorigin="anonymous"
-/>
-<link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-  crossorigin="anonymous"
-/>
+<html lang="en">
 
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LisbonSpots</title>
+  <link rel="icon" href="../img/logo-mark.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  <body>
-    <nav class="navbar">
-      <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="navbar__container">
-        <div class="navbar__logo">
-          <!-----<img src="images/100x100.png" alt="Logo"> ----->
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/commercial.css">
+  <link rel="stylesheet" href="../css/faq.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg p-4 ">
+    <div class="container-fluid ms-4 ">
+      <a href="navbar-brand">
+        <img class="imagem" src="../img/logo.svg" alt="">
+      </a>
+      <span class="border border-black bg-light border-1.2 rounded-4 ">
+        <button class="navbar-toggler botao" data-bs-toggle="collapse" data-bs-target="#menu-links">
+          <img class="botao-imagem" src="../img/menu.svg" alt="">
+        </button>
+      </span>
+      <div class="collapse navbar-collapse me-5" id="menu-links">
+        <span class="border border-black bg-light rounded-4 mx-auto align-items-center " style="width:350px; height: 50px;">
+          <ul class="navbar-nav mx-0 lista my-0 d-flex text-center align-items-center ">
+            <li class="nav-item navbar-text">
+              <a class="nav-link active justify-content-center " aria-current="page" href="#">Home </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="../css/map.css">Mapa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/blog.html">Blog</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../html/profile.html">Perfil</a>
+            </li>
+          </ul>
+        </span>
+        <div class="d-flex ">
+          <span class="ms-2 d-none d-md-inline">
+            <button type="button" class=" btn botao border border-1.2 border-black bg-light rounded-4">
+              <img class="botao-imagem" src="../img/menu.svg" alt="">
+            </button>
+          </span>
         </div>
       </div>
-      
-    </nav>
-    <div class="off-screen-menu">
-      <div class="close-button">&times;</div>
-      <ul>
-          <li>
-              <h3><a href="index.html">HOME</a></h3>
-          </li>
-          <div class="dropdown">
-              <button class="dropbtn">Categories</button>
-              <div class="dropdown-content">
-                    <ul> 
-                      <li><a href="#">Museum</a></li>
-                      <li><a href="#">Hotel</a></li>
-                      <li><a href="#">Bar</a></li>
-                      <li><a href="#">Restaurant</a></li>
-                      <li><a href="#">Rooftop</a></li>
-                      <li><a href="#">Beaches</a></li>
-                      <li><a href="#">Churches</a></li>
-                      <li><a href="#">All</a></li>
-                    </ul>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="intro-text py-5 mt-5 text-center bg-body-tertiary ">
+            <div class="heading mb-3 display-5 ">FAQs</div>
+            <div class="fs-5 fw-light ">Suas perguntas, nossa resposta.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Question Accordion -->
+  <section id="questions" class="p-5">
+    <div class="container">
+      <div class="accordion accordion-flush" id="questions">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-one">
+              O que é o LisbonSpots?
+            </button>
+          </h2>
+          <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              "Lisbon Spots" é um site projetado para ajudar os entusiastas da fotografia e os turistas a descobrir
+              facilmente os melhores locais fotográficos em Lisboa, abordando o desafio comum de encontrar locais ideais
+              para fotos memoráveis durante a estadia.
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-two">Como posso registar-me?
+            </button>
+          </h2>
+          <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Pode registar-se clicando na opção 'Registar' no menu ou clicando na opção 'Login' na barra de navegação,
+              onde encontrará a opção para se registar.
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-three">Posso submeter os meus próprios spots? Como?
+            </button>
+          </h2>
+          <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Sim, pode submeter os seus próprios spots. Para submeter os seus spots, precisa de estar registado no website
+              e ter sessão iniciada. Pode submeter spots navegando até ao rodapé de qualquer página, onde encontrará a
+              opção 'Blog', ou simplesmente clicando na opção 'Blog' na barra de navegação de qualquer página.
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-four">Como posso contactar o suporte ao cliente?
+            </button>
+          </h2>
+          <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Pode encontrar a opção 'Suporte' no rodapé de cada página, caso necessite de contactar o suporte ao cliente.
+              Encontrará emails e informações adicionais dos desenvolvedores.
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-five">O LisbonSpots é gratuito?
+            </button>
+          </h2>
+          <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              O LisbonSpots é totalmente gratuito. Não precisa de se registar para navegar no website. Contudo, para
+              participar, necessita de se registar.
+            </div>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-six">Quais são os pontos turísticos imperdíveis em Lisboa?
+            </button>
+          </h2>
+          <div id="question-six" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Descubra os pontos turísticos e atrações icónicas que não pode perder durante a sua visita a Lisboa.
+            </div>
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-seven">Como posso utilizar os transportes públicos em Lisboa?
+            </button>
+          </h2>
+          <div id="question-seven" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Saiba mais sobre as opções de transporte público disponíveis em Lisboa e como navegar eficazmente pela
+              cidade utilizando autocarros, elétricos e metro. Para mais informações, pode visitar os websites oficiais
+              dos fornecedores de transporte.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+
+<footer class="py-1 my-1 text-center">
+  
+  <!-- Section: Social media -->
+  <section
+  class="text-center justify-content-center border-top social-media"
+  style="padding: 60px">
+  <!-- Social media icons -->
+  <div>
+    <a href="https://www.instagram.com/lisbon__spots?igsh=MWU4bnQ0OHU4OHgwMw==" class="me-4 px-5 text-reset">
+      <i
+        class="fab fa-instagram "
+        style="font-size: 30px; color: black"
+      ></i>
+    </a>
+  </div>
+  <div>
+    <a href="" class="me-4 px-5 text-reset">
+      <i class="fab fa-tiktok " style="font-size: 30px; color: black"></i>
+    </a>
+  </div>
+</section>
+<!-- Section: Social media -->
+
+  <!-- Navigation links -->
+  <div class="container">
+      <div class="row">
+          <div class="container">
+              <div class="row d-flex justify-content-center" style="padding: 2rem">
+                  <ul class="nav justify-content-center pb-1 mb-1">
+                      <li class="nav-item mx-3">
+                          <a href="../html/home.html" class="nav-link px-3 py-1 text-dark">Home</a>
+                      </li>
+                      <li class="nav-item mx-3">
+                          <a href="../html/aboutUs.html" class="nav-link px-3 py-1 text-dark">Sobre nós</a>
+                      </li>
+                      <li class="nav-item mx-3">
+                          <a href="../html/faq.html" class="nav-link px-3 py-1 text-dark">FAQs</a>
+                      </li>
+                      <li class="nav-item mx-3">
+                          <a href="../html/contactUs.html" class="nav-link px-3 py-1 text-dark">Contate-nos</a>
+                      </li>
+                      <li class="nav-item mx-3">
+                          <a href="../html/support.html" class="nav-link px-5 py-1 text-dark">Suporte</a>
+                      </li>
+                  </ul>
+
+                  <ul class="nav justify-content-center pb-3 mb-1 px-5">
+                      <li class="nav-item mx-3">
+                          <a href="../html/terms.html" class="nav-link px-5 pt-5 text-dark">Termos de Uso</a>
+                      </li>
+                      <li class="nav-item mx-3">
+                          <a href="../html/privacy.html" class="nav-link px-5 pt-5 text-dark">Política de Privacidade</a>
+                      </li>
+                  </ul>
               </div>
           </div>
-          <div class = "cont">
-            <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          </div>  
-          <div class = "rgst">
-            <li><a href="#">Sign Up </a></li>
-            <li><a href="#">Log In</a></li>
-          </div> 
-      </ul>
-    </div>
-
-    <div class="content">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq">
-          <div class="question">
-            <h3>Question 1: What is LisbonSpots?</h3>
-            <p>"Lisbon Spots" is a website designed to help photography enthusiasts and tourists easily discover the best photographic locations in Lisbon, addressing the common challenge of finding ideal spots for memorable photos during their stay.</p>
-          </div>
-          <div class="question">
-            <h3>Question 2: How can I sign up?</h3>
-            <p>You can sign up by clicking the option of 'Sign up' in the menu or by clicking on the 'Login' option in the naviagtion bar, where you would find the option to sign up.</p>
-          </div>
-          <div class="question">
-            <h3>Question 3: Can I submit my own spots? How?</h3>
-            <p>Yes, you can submit your own spots. To submit your spots, you must be registered into the website and logged in. You can submit spots by navigating to the footer of any window where you'd find the option of 'Blog' or simply by clicking the 'Blog' option in the navigation barof any window.</p>
-          </div>
-          <div class="question">
-            <h3>Question 4: How do I contact customer support?</h3>
-            <p>You can find the 'Support' option in footer of each window , in case you need to contact the costumer support. You would find emails and additional information of developers.</p>
-          </div>
-          <div class="question">
-            <h3>Question 5: Is LisbonSpots free to use?</h3>
-            <p>Lisbon is completely free to use. You don't need to sign up to navigate the website.In case of participation you need to sign up.</p>
-          </div>
-          <div class="question">
-            <h3>Question 8: What are some must-visit landmarks in Lisbon?</h3>
-            <p>Discover the iconic landmarks and attractions that you shouldn't miss during your visit to Lisbon.</p>
-          </div>
-          <div class="question">
-            <h3>Question 9: How can I navigate public transportation in Lisbon?</h3>
-            <p>Learn about the public transportation options available in Lisbon and how to efficiently navigate the city using buses, trams, and metro. For more information, you can visit the official websites of the transportation providers:</p>
-            <ul>
-              <li><a href="https://www.carris.pt/en/" target="_blank">Carris (Buses and Trams)</a></li>
-              <li><a href="https://www.cp.pt/passageiros/en/how-to-travel/lisbon-urban-trains" target="_blank">CP (Urban Trains)</a></li>
-              <li><a href="https://www.metrolisboa.pt/en/buy/" target="_blank">Metro Lisboa</a></li>
-            </ul>
-          </div>
-        </div>
-    </div>
-
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <a href="aboutus.html">Blog</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Support</a> 
-          </div>
-          <div class="footer__link--items"></div>
-        </div>
-        <!-----<div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <a href="contact.html">Our Team</a> 
-          </div>
-        </div> ---->
       </div>
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <!----<a href="/" id="footer__logo"><i class="fas fa-gem"></i>      </a>----->
-          </div>
-          <p class="website__rights">© LisbonSpots 2024. All rights reserved</p>
-          <div class="social__icons">
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="TikTok"
-            >
-              <i class="fab fa-tiktok"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="https://www.instagram.com/lisbon__spots?igsh=MWU4bnQ0OHU4OHgwMw=="
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            
-          </div>
-        </div>
-      </section>
-      
-      <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-      <script src="https://kit.fontawesome.com/abc123.js" crossorigin="anonymous"></script>
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const hamMenu = document.querySelector('.ham-menu');
-          const offScreenMenu = document.querySelector('.off-screen-menu');
-      
-          hamMenu.addEventListener('click', function () {
-            offScreenMenu.classList.toggle('active');
-          });
-        });
-      </script>
-  </body>
+  </div>
+
+  <!-- Copyright -->
+  <h5 class="text-center text-dark pb-5">
+      ©LisbonSpots 2024. Todos os direitos reservados
+  </h5>
+</footer>
+
+  <!-- Bootstrap JS bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.26.9/sweetalert2.all.min.js"></script>
+
+<script src="index.js"></script>
+
+
+</body>
+
 </html>
