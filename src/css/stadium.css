@@ -11,3 +11,8 @@
   .text-center.justify-content-center.border-top.social-media{
     padding-top: 30px
   }
+
+  .col-md-3,
+  .col-md-3.mt-2{
+    height: 200px; width: 400px;
+  }

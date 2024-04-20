@@ -52,3 +52,17 @@ hr{
    
     
 }
+
+.fab.fa-tiktok {
+    font-size: 40px; 
+    color: black;
+  }
+  
+  .fab.fa-instagram {
+    font-size: 48px; 
+    color: black;
+  }
+  
+  .text-center.justify-content-center.border-top.social-media{
+    padding-top: 30px
+  }
