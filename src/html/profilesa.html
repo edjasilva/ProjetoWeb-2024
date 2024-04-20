@@ -23,6 +23,8 @@
     />
     <link rel="stylesheet" href="../css/login.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="../css/profilesa.css" />
   </head>
   <body>
     <div class="text-center mt-3">
@@ -62,13 +64,6 @@
                       class="form-control placeholder"
                       name="email"
                       readonly
-                      style="
-                        background-color: white;
-                        border-top: 1px;
-                        border-left: 1px;
-                        border-right: 1px;width: 90%; margin: auto;
-                        text-align: left;
-                      "
                       placeholder="Email"
                     />
                     <div class="invalid-feedback">
@@ -83,13 +78,6 @@
                       class="form-control placeholder"
                       name="password"
                       readonly
-                      style="
-                        background-color: white;
-                        border-top: 1px;
-                        border-left: 1px;
-                        border-right: 1px;width: 90%; margin: auto;
-                        text-align: left;
-                      "
                       placeholder="Senha"
                     />
                     <div class="invalid-feedback">
@@ -107,10 +95,9 @@
                   <div class="mb-3">
                     <!--<span class="info-text text-start">Nome </span>-->
                     <input
-                      class="form-control placeholder"
+                      class="form-control placeholder B"
                       name="name"
                       readonly
-                      style="border: 0px; background-color: rgb(248, 248, 248); width: 90%; margin: auto; text-align: left;"
                       placeholder="Nome"
                     />
                     <div class="invalid-feedback">
@@ -121,10 +108,9 @@
                   <div class="mb-3">
                     <!--<span class="info-text text-start">Nacionalidade </span>-->
                     <input
-                      class="form-control placeholder"
+                      class="form-control placeholder B"
                       name="nacionalidade"
                       readonly
-                      style="border: 0px; background-color: rgb(248, 248, 248); width: 90%; margin: auto; text-align: left;"
                       placeholder="Nacionalidade"
                     />
                     <div class="invalid-feedback">
@@ -135,10 +121,9 @@
                   <div class="mb-3">
                     <!--<span class="info-text text-start">Data de Nascimento </span>-->
                     <input
-                      class="form-control placeholder"
+                      class="form-control placeholder B"
                       name="data_nascimento"
                       readonly
-                      style="border: 0px; background-color: rgb(248, 248, 248); width: 90%; margin: auto; text-align: left;"
                       placeholder="Data de Nascimento"
                     />
                     <div class="invalid-feedback">
@@ -149,10 +134,9 @@
                   <div class="mb-3">
                     <!--<span class="info-text text-start">Endereço </span>-->
                     <input
-                      class="form-control placeholder"
+                      class="form-control placeholder B"
                       name="endereco"
                       readonly
-                      style="border: 0px; background-color: rgb(248, 248, 248); width: 90%; margin: auto; text-align: left;"
                       placeholder="Endereço"
                     />
                     <div class="invalid-feedback">
@@ -165,25 +149,18 @@
                       id="logout"
                       type="submit"
                       class="btn d-inline-flex align-items-center justify-content-center"
-                      style="
-                        background-image: url('../img/buttonAzulejo\ 1.png');
-                        background-size: cover;
-                        border-color: black;
-                        width: 60%;
-                        margin: 20px auto;
-                      "
                     >
                       Terminar Sessão
                     </button>
                   </div>
 
                   <div
+                    id="textss"
                     class="text-center"
-                    style="font-size: 14px; padding-top: 25px"
                   >
                     <span class="show-text">Deseja excluir a sua conta? </span>
                     <span class="show-link"
-                      ><a href="support.html"style="color: red;">Excluir</a></span
+                      ><a href="support.html">Excluir</a></span
                     ><br />
                   </div>
             </form>

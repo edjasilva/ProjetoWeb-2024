@@ -1,0 +1,22 @@
+.border.border-black.bg-light.rounded-4.mx-auto.align-items-center{
+    width:350px; height: 50px;
+}
+
+.btn.send{
+    background-image: url('../img/buttonAzulejo\ 1.png');
+    background-size: cover;
+    border-color: black;
+    width: 60%;
+    margin: 20px auto;
+          
+}
+
+.fab.fa-tiktok {
+    font-size: 40px; 
+    color: black;
+}
+
+.fab.fa-instagram {
+    font-size: 48px; 
+    color: black;
+}

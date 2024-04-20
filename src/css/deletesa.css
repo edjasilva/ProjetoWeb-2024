@@ -1,0 +1,12 @@
+.btn{
+    background-image: url('../img/buttonAzulejo\ 1.png');
+    background-size: cover;
+    border-color: black;
+    font-size: small;
+}
+
+.small-text{
+    padding-top: 10px; 
+    padding-right: 10px;
+     width: 130%
+}
