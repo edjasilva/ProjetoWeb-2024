@@ -303,4 +303,12 @@ body::before {
   color: #ffffff;
 }
 
-*/
+
+.swal2-close {
+  border-radius: 50%;
+  border-color: black;
+}*/
+
+#login-form {
+  border-radius: 20px; 
+}
