@@ -1,9 +1,17 @@
-body{
-    background-color:rgb(255, 255, 255);
-    
-    
-   
+@font-face {
+  font-family: 'BioRhyme';
+  src: url(BioRhyme-Light.ttf) format('truetype');
 }
+
+body {
+  font-family: 'BioRhyme', Arial, Helvetica, sans-serif;
+  color: #2D2D2D;
+  background-color:rgb(255, 255, 255);
+}
+
+
+
+
 
 .container{
 width: 100%;
