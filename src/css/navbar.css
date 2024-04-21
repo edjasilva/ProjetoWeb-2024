@@ -186,3 +186,12 @@ margin-left: 10%;
     transform: scale(1.02);
 }
 
+/*ConctaUs*/
+.btn.send{
+    background-image: url('../img/buttonAzulejo\ 1.png');
+    background-size: cover;
+    border-color: black;
+    width: 60%;
+    margin: 20px auto;
+          
+}
