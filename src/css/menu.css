@@ -21,19 +21,35 @@
 }
 
 .custom-menu .list-item {
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
 }
 
 .custom-menu .list-item:last-child {
     margin-bottom: 0;
 }
 
+
+
 .custom-menu .list-item a {
     color: #3D3D3D;
-    font-size: 5pt;
+    font-size: 20pt;
     font-weight: 500;
+    
+}
+
+.list-item a {
+    text-decoration: none;
+    justify-content: center;
+    
 }
 
 .custom-menu .list-item a:active, .custom-menu .list-item a:hover {
     color: #c1c1c1 !important;
+}
+
+
+.btn-close{
+   
+    border: 1 solid white;
+    background-color: white;
 }

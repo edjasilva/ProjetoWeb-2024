@@ -34,6 +34,7 @@ li{
 }
 
 
+
 /*.lista{
     background-color: white;
     border: 1.2px solid black;
@@ -176,10 +177,7 @@ margin-left: 10%;
 }
 
 /*nonCom*/
-.spot-img-com-first{
-    width: 70%;
-    height: 300px;
-}
+
 .spot-img-com {
     width: 60%;
     height: 450px;
@@ -188,6 +186,3 @@ margin-left: 10%;
     transform: scale(1.02);
 }
 
-.spot-img-com-first:hover{
-    transform: scale(1.02);
-}
