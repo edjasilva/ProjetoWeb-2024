@@ -120,6 +120,15 @@ li{
     
     
     
+    
+}
+
+.spot-img-100:hover{
+    transform: scale(1.02);
+}
+
+.spot-img:hover{
+    transform: scale(1.02);
 }
 
 .heading {
