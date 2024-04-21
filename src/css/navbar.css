@@ -119,8 +119,6 @@ li{
     height: 250px;
     
     
-    
-    
 }
 
 .spot-img-100:hover{
@@ -175,4 +173,21 @@ margin-left: 10%;
     background-size: cover;
     background-position: center center;
     
+}
+
+/*nonCom*/
+.spot-img-com-first{
+    width: 70%;
+    height: 300px;
+}
+.spot-img-com {
+    width: 60%;
+    height: 450px;
+}
+.spot-img-com:hover{
+    transform: scale(1.02);
+}
+
+.spot-img-com-first:hover{
+    transform: scale(1.02);
 }
