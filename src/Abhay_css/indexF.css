@@ -5,13 +5,9 @@
     line-height: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    min-height: 100vh;
-    width: 100%;
-    background: #EEECEB;
-}
+
 footer{
-    position: fixed;
+    position:relative;
     background: #ffffff;
     width: 100%;
     bottom: 0;
@@ -20,14 +16,13 @@ footer{
 
 footer .content{
     background: white;
-    padding: 30px 40px 40px 40px;
+    padding: 30px 90px 0px 90px;
     margin: auto;
 } 
 footer .content .top{
     display: flex;
     text-align: center;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
 .content .top .logo-details{
     color: rgb(0, 0, 0);
@@ -54,22 +49,20 @@ footer .content .link-boxes{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 footer .content .link-boxes .box{
-    width: calc(70% / 5 - 1px);
+    width: calc(90% / 5 - 1px);
 }
 .content .link-boxes .box .link-name{
     color: #000000;
     font-size: 18px;
      font-weight: 400;
-     margin-bottom: 5px;
      position: relative;
      list-style-type: none;
 }
 
 .btn{
-    height: 47px;
+    height: 35px;
     background-color: blue;
     border-radius: 5px;
     color: #fff;
@@ -81,7 +74,7 @@ footer .content .link-boxes .box{
 }
 .content .link-boxes .box li a{
     color: #000000;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 400;
     text-decoration: none;
     opacity: 0.8;
@@ -121,14 +114,14 @@ footer .bottom-details .bottom_text{
 .bottom-details .bottom_text span,
 
 .bottom-details .bottom_text a{
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 300;
     color: #000000;
     opacity: 0.8;
     text-decoration: none;
-    margin-top: 20px;
     margin-right: 10px;
 }
 .bottom-details .bottom_text a{
-    margin-left: 20px;
+    margin-left: 30px;
+    font-size: 20px;
 }
