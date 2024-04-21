@@ -17,12 +17,12 @@ body {
     border-radius: 15px;
 }
 
-ul{
+.navbar-nav{
     display:flex;
     margin: 100%;
     top:auto;
 }
-li{
+.nav-item{
     flex:1; 
 }
 

@@ -5,7 +5,6 @@
     line-height: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 footer{
     position:relative;
     background: #ffffff;
@@ -16,7 +15,7 @@ footer{
 
 footer .content{
     background: white;
-    padding: 30px 90px 0px 90px;
+    /*padding: 30px 90px 0px 90px;*/
     margin: auto;
 } 
 footer .content .top{
@@ -48,6 +47,7 @@ footer .content .top{
 footer .content .link-boxes{
     width: 100%;
     display: flex;
+    padding: 0px 90px 10px 90px;
     justify-content: space-between;
 }
 footer .content .link-boxes .box{
@@ -61,7 +61,7 @@ footer .content .link-boxes .box{
      list-style-type: none;
 }
 
-.btn{
+.btni{
     height: 35px;
     background-color: blue;
     border-radius: 5px;
@@ -101,7 +101,7 @@ footer .content .link-boxes .box{
 }
 footer .bottom-details{
     width: 100%;
-    background: #ffffff;
+    background: #ebebeb;
 }
 footer .bottom-details .bottom_text{
     max-width: 1250px;
