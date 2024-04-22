@@ -9,15 +9,9 @@ body {
   background-color:rgb(255, 255, 255);
 }
 
-
-
-
-
 .container{
 width: 100%;
-
 }
-
 
 .coluna{
     width: 100%;
@@ -84,10 +78,13 @@ width: 100%;
   padding: 10px;
 }
 
+.nav-link.active.justify-content-center,
 .nav-link {
   color: black;
   font-size: 1.25rem;
+  font-family: 'BioRhyme';
 }
+
 header .black-container {
   background-color: black;
   color: white;
@@ -140,14 +137,8 @@ header .black-container {
   margin-bottom: 5rem; margin-top: 5rem
 }
 
-.fab.fa-tiktok {
-  font-size: 40px; 
-  color: black;
-}
-
-.fab.fa-instagram {
-  font-size: 48px; 
-  color: black;
+.card-title.text-dark.align-items-center{
+  text-align: center;
 }
 
 .text-center.justify-content-center.border-top.social-media{
@@ -162,6 +153,13 @@ header .black-container {
 .textss{
   padding-top: 7rem; padding-bottom: 4rem;
 }
-.card-title.B{
-  padding-top: 2rem; padding-bottom: 5rem;
+
+.card-body {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.card-title {
+  padding-top: 0.5rem;
 }

@@ -9,6 +9,12 @@ body {
     color: #2D2D2D;
   
 }
+.nav-link.active.justify-content-center,
+.nav-link {
+  color: black;
+  font-size: 1.25rem;
+  font-family: 'BioRhyme';
+}
 
 .imagem{
     background-color: white;

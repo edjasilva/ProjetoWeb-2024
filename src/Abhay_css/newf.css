@@ -52,11 +52,11 @@ footer .content .top{
 footer .content .link-boxes{
     width: 100%;
     display: flex;
-    padding: 0px 90px 10px 90px;
+    padding: 0px 90px 0px 0px;
     justify-content: space-between;
 }
 footer .content .link-boxes .box{
-    width: calc(90% / 5 - 1px);
+    width: calc(100% / 5 - 8px);
 }
 .content .link-boxes .box .link-name{
     color: #000000;
@@ -99,7 +99,6 @@ footer .content .link-boxes .box{
     border: 1px solid black;
     background: #ffffff;
     border-radius: 3px;
-    padding: 0 15px;
     font-size: 15px;
     color: #fff;
     margin-top: 5px;
@@ -111,7 +110,7 @@ footer .content .link-boxes .box{
 }
 footer .bottom-details{
     width: 100%;
-    background: #ebebeb;
+    background: #ffffff;
 }
 footer .bottom-details .bottom_text{
     max-width: 1250px;
@@ -134,4 +133,9 @@ footer .bottom-details .bottom_text{
 .bottom-details .bottom_text a{
     margin-left: 30px;
     font-size: 20px;
+}
+
+.line{
+    width: 100%;
+    font-weight: bolder;
 }
