@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'BioRhyme';
+    src: url(BioRhyme-Light.ttf) format('truetype');
+}
+
+body {
+    font-family: 'BioRhyme', Arial, Helvetica, sans-serif;
+    color: #2D2D2D;
+}
+
+
+
 .custom-menu {
     width: 100vw;
     height: 100vh;
@@ -8,6 +20,7 @@
 
     animation-duration: 0.5s;
     animation-name: fadeInd;
+
 }
 
 @keyframes fadeInd {
@@ -19,9 +32,13 @@
     0% {opacity: 1;}
     100% {opacity: 0;}
 }
-
+.list{
+    margin-top: 180px;
+    
+}
 .custom-menu .list-item {
-    margin-bottom: 10rem;
+   
+    margin-bottom: 1rem;
 }
 
 .custom-menu .list-item:last-child {
