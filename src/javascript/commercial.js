@@ -1,4 +1,4 @@
-const places = [
+/*const places = [
     { name: "Place 1", address: "Address 1", link: "page1.html" },
     { name: "Place 2", address: "Address 2", link: "page2.html" },
     { name: "Place 3", address: "Address 3", link: "page1.html" },
@@ -69,6 +69,11 @@ const places = [
     });
   }
   
-  
   initPlaces();
-  
+  */
+
+ /* const divElement = document.querySelector('hotel'); // Replace 'div' with the ID or class of your actual div element
+
+divElement.addEventListener('click', function() {
+  window.location.href = "../html/commercial.html"; // Replace 'https://www.example.com' with the URL of your desired page
+});*/
