@@ -9,15 +9,16 @@ body {
 }
 
 .custom-menu {
-    width: 50vw;
-    height: 100vh;
+    width: 30vw;
+    height: 90vh;
     display: none;
     background-color: white;
     position: absolute;
     z-index: 1100;
-    left: 25%;
+    left: 39%;
     animation-duration: 0.5s;
     animation-name: fadeInd;
+    margin-top: 20px;
 
 }
 
@@ -31,7 +32,7 @@ body {
     100% {opacity: 0;}
 }
 .list{
-    margin-top: 180px;
+    margin-top: 10px;
     
 }
 .custom-menu .list-item {
@@ -45,7 +46,7 @@ body {
 
 .custom-menu .list-item a {
     color: #000000;
-    font-size: 20pt;
+    font-size: 15pt;
     font-weight: 500;
     
 }
@@ -63,6 +64,8 @@ body {
 
 .btn-close{   
     border: 1 solid white;
+    font-size: medium;
+    margin-top: 20px;
     background-color: white;
 }
 
