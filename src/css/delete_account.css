@@ -20,6 +20,7 @@
   margin: 5px 0;
 }
 
+
 .imagedel {
   margin-left: 10px;
 }
@@ -29,8 +30,11 @@
 }
 
 .small-text {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 130%
 }
+
 .logo-container {
   margin-bottom: 20px;
 }
@@ -75,6 +79,11 @@
   transform: rotate(-45deg);
 }
 
+.small-text{
+  padding-top: 10px; 
+  padding-right: 10px;
+   width: 130%
+}
 
 
 /*body {

@@ -42,3 +42,32 @@
 .text-center.C{
     font-size: 14px; padding-top: 25px;
 }
+
+#loginButton{
+    background-image: url('../img/buttonAzulejo\ 1.png');
+    background-size: cover;
+    border-color: black;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.text-center{
+    font-size: 15px;
+}
+
+.btn{
+    background-image: url('../img/buttonAzulejo\ 1.png');
+    background-size: cover;
+    border-color: black;
+    font-size: small;
+}
+
+.small-text{
+    padding-top: 10px; 
+    padding-right: 10px;
+     width: 130%
+}
+
+#del_heading{
+    font-size: 55px;
+}

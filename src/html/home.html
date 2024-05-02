@@ -66,9 +66,11 @@
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/login.css" />
+    <!--<link rel="stylesheet" href="../css/login.css" />-->
     <link rel="stylesheet" href="../Abhay_css/registersa.css" />
-    <link rel="stylesheet" href="../Abhay_css/loginsa.css" />
+    <!--<link rel="stylesheet" href="../css/deletesa.css" />-->
+    <link rel="stylesheet" href="../css/delete_account.css" />
+    <!--<link rel="stylesheet" href="../Abhay_css/loginsa.css" />-->
   </head>
   <body>
     
@@ -119,35 +121,36 @@
 
 <div class="position-absolute top-50 start-50 translate-middle">
     <ul class="list">
-      <li class="list-item"><a href="home.html">Home</a></li>
-      <li class="list-item dropdown">
+      <h4 class="list-item"><a href="home.html">Home</a></h4>
+      <h4 class="list-item dropdown">
         <a href="../html/commercial.html" class="dropdown-toggle" data-toggle="dropdown">Locais comerciais</a>
         <ul class="dropdown-menu">
-          <li><a href="../html/commercial.html#hotel">Hotel</a></li>
-          <li><a href="../html/commercial.html#restaurant">Restaurante</a></li>
-          <li><a href="../html/commercial.html#museum">Museu</a></li>
-          <li><a href="../html/commercial.html#stadium">Estádio</a></li>
-          <li><a href="../html/commercial.html#cc">Centro comercial</a></li>
+          <h4><a href="../html/commercial.html#hotel">Hotel</a></h4>
+          <h4><a href="../html/commercial.html#restaurant">Restaurante</a></h4>
+          <h4><a href="../html/commercial.html#museum">Museu</a></h4>
+          <h4><a href="../html/commercial.html#stadium">Estádio</a></h4>
+          <h4><a href="../html/commercial.html#cc">Centro comercial</a></h4>
         </ul>
-      </li>
-      <li class="list-item dropdown">
+      </h4>
+      <h4 class="list-item dropdown">
         <a href="../html/non-commercial.html" class="dropdown-toggle" data-toggle="dropdown">Locais não comerciais</a>
         <ul class="dropdown-menu">
-          <li><a href="../html/non-commercial.html#beach">Praia</a></li>
-          <li><a href="../html/non-commercial.html#park">Parque</a></li>
-          <li><a href="../html/non-commercial.html#fall">Cascata</a></li>
-          <li><a href="../html/non-commercial.html#mountain">Montanhas</a></li>
-          <li><a href="../html/non-commercial.html#river">Rio</a></li>
-          <li><a href="../html/non-commercial.html#church">Igreja</a></li>
+          <h4><a href="../html/non-commercial.html#beach">Praia</a></h4>
+          <h4><a href="../html/non-commercial.html#park">Parque</a></h4>
+          <h4><a href="../html/non-commercial.html#fall">Cascata</a></h4>
+          <h4><a href="../html/non-commercial.html#mountain">Montanhas</a></h4>
+          <h4><a href="../html/non-commercial.html#river">Rio</a></h4>
+          <h4><a href="../html/non-commercial.html#church">Igreja</a></h4>
         </ul>
       </li>
-      <li id="login_alert" class="list-item"><a href="loginSA.html">Login</a></li>
-      <li id="register_alert" class="list-item"><a href="registerSA.html">Registar</a></li>
-      <li class="list-item"><a href="blog.html">Blog</a></li>
-      <li class="list-item"><a href="contactUs.html">Contacte-nos</a></li>
-      <li class="list-item"><a href="aboutUs.html">Sobre nós</a></li>
-      <li class="list-item"><a href="support.html">Suporte</a></li>
-      <li class="list-item"><a href="faq.html">Perguntas Frequentes </a></li>
+      <h4 id="login_alert" class="list-item"><a href="loginSA.html">Login</a></h4>
+      <h4 id="register_alert" class="list-item"><a href="registerSA.html">Registar</a></h4>
+      <h4 class="list-item"><a href="blog.html">Blog</a></h4>
+      <h4 class="list-item"><a href="contactUs.html">Contacte-nos</a></h4>
+      <h4 class="list-item"><a href="aboutUs.html">Sobre nós</a></h4>
+      <h4 class="list-item"><a href="support.html">Suporte</a></h4>
+      <h4 class="list-item"><a href="faq.html">Perguntas Frequentes </a></h4>
+      <h4 id="delte_alert" class="list-item"><a href="../html/deletesa.html">Eliminar conta </a></h4>
     </ul>
   </div>  
 </div>
@@ -211,7 +214,7 @@
   
   </script>
     <header>
-      <div class="container pt-5">
+      <div class="container pt-5 col-sm-3" style="margin-top: 5rem;">
         <div class="row">
           <div class="container">
             <div
@@ -243,71 +246,85 @@
                   memórias mais queridas, deixe que o Lisbon Spot seja o seu
                   companheiro na sua próxima aventura por Lisboa.
                 </p>
-                <div class="card text-centerA border border-dark" style="width: 22rem; background-color: #fcfcfc">
+                      <div class="card text-center border border-dark col-sm-6 col-sm-3" style="width: 22rem; background-color: #fcfcfc;max-width: 100%;">
+                          <div class="card-body d-flex justify-content-center align-items-center">
+                              <a class="text-decoration-none" href="../html/non-commercial.html">
+                                  <h5 class="card-title text-dark align-items-center">Locais não comerciais</h5>
+                              </a>
+                          </div>
+                          <a href="../html/commercial.html" title="" class="d-flex justify-content-center">
+                              <img src="../img/park2.png" class="card-img-top img-fluid w-100 mx-0" alt="..." style="max-width: 100%;" />
+                          </a>
+                      </div>
+                      
+                      <div class="card border border-dark col-sm-6 col-sm-3" style="width: 22rem; background-color: #fcfcfc;max-width: 100%;">
+                          <div class="card-body d-flex justify-content-center align-items-center mx-0">
+                              <a class="text-decoration-none" href="../html/commercial.html" title="">
+                                  <h5 id="top" class="card-title text-dark align-items-center">Locais comerciais</h5>
+                              </a>
+                          </div>
+                          <a href="../html/non-commercial.html" title="" class="d-flex justify-content-center">
+                              <img src="../img/image copy.png" class="card-img-top img-fluid w-100 mx-0" alt="..." style="max-width: 100%;" />
+                          </a>
+                      </div>
+             
+              
+                <!--<div class="card text-centerA border border-dark col-sm-6 col-md-3" style="width: 22rem; background-color: #fcfcfc">
                   <div class="card-body mx-0 ">
                       <a class="text-decoration-none " href="../html/non-commercial.html">
                           <h5 class="card-title text-dark align-items-center">Locais não comerciais</h5>
                       </a>
                   </div>
                   <a href="../html/commercial.html" title="">
-                      <img src="../img/park2.png" class="card-img-top" alt="..." />
+                      <img src="../img/park2.png" class="card-img-top img-fluid" alt="..." />
                   </a>
               </div>
               
-              <div class="card border border-dark" style="width: 22rem; background-color: #fcfcfc">
+              <div class="card border border-dark col-sm-6 col-md-3" style="width: 22rem; background-color: #fcfcfc">
                   <div class="card-body mx-0">
                       <a class="text-decoration-none" href="../html/commercial.html" title="">
                           <h5 id="top" class="card-title text-dark align-items-center">Locais comerciais</h5>
                       </a>
                   </div>
                   <a href="../html/non-commercial.html" title="">
-                      <img src="../img/image copy.png" class="card-img-top" alt="..." />
+                      <img src="../img/image copy.png" class="card-img-top img-fluid" alt="..." />
                   </a>
-              </div>
+              </div>-->
               
                 <h2 class="textss">Explore os locais e ...</h2>
 
                 <div class="card">
-                  <div class="card-body"></div>
+                  <div class="card-body col-sm-3 col-sm-6"></div>
                   <img src="../img/adv.svg" class="card-img-top" alt="..." />
                   <h5 class="card-title B">Aventura</h5>
                 </div>
                 <div class="card">
-                  <div class="card-body"></div>
+                  <div class="card-body col-sm-3 col-sm-6"></div>
                   <img src="../img/mem.svg" class="card-img-top" alt="..." />
                   <h5 class="card-title">Memórias</h5>
                 </div>
                 <div class="card">
-                  <div class="card-body"></div>
+                  <div class="card-body col-sm-3 col-sm-6"></div>
                   <img src="../img/exp.svg" class="card-img-top" alt="..." />
                   <h5 class="card-title">Experiências</h5>
                 </div>
                 <div class="p-5 bg-dark text-light">
-                  <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6">
-                      <img
-                        src="../img/imgblog.svg"
-                        class="rounded float-left"
-                        height="350px"
-                        width="mx-auto"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="col-md-6">
-                        <a
-                          class="text-decoration-none"
-                          href="../html/blog.html"
-                          title=""
-                        >
-                          <h1 style="color: white; font: size 12rem">
-                            Visite o nosso Blog
-                          </h1>
-                        </a>
+                  <div class="container">
+                      <div class="row justify-content-center align-items-center">
+                          <div class="col-md-6">
+                              <img src="../img/imgblog.svg" class="rounded img-fluid" alt="" />
+                          </div>
+                          <div class="col-md-6">
+                              <div class="col-md-12">
+                                  <a class="text-decoration-none" href="../html/blog.html" title="">
+                                      <h1 class="text-center" style="font-size: 2rem;">Visite o nosso Blog</h1>
+                                  </a>
+                              </div>
+                          </div>
                       </div>
-                    </div>
                   </div>
-                </div>
+              </div>
+              
                 <div class="col-md-0" style="padding-top: 0.5rem">
                   <img
                       src="../img/map.svg"
@@ -351,9 +368,8 @@
           </ul>
           
           <form>
-  
               <h7>Subscribe to our newsletter </h7>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <div class="d-flex flex-column row flex-sm-row w-100 gap-2 ">
                 <label for="newsletter1" class="visually-hidden"
                   >Email address</label
                 >
@@ -370,7 +386,7 @@
             </form>
       </div>
       <div class="bottom-details">
-          <div class="bottom_text">
+          <div class="bottom_text ">
               <span class="copyright_text">©LisbonSpots 2024. Todos os direitos reservados.</span>
               <div class="media-icons">
                   <a href="https://www.instagram.com/lisbon__spots?igsh=MWU4bnQ0OHU4OHgwMw=="><i class="fab fa-instagram"></i></a>
@@ -379,7 +395,8 @@
               </div>
           </div>
       </div>
-     </footer>
+     </footer>  
+
   
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -575,7 +592,120 @@
         });
     });
 </script>
+<!------------delete swal----------------->
 
+<script>
+  document.getElementById("delte_alert").addEventListener("click", function (event) {
+         event.preventDefault();    
+         Swal.fire({
+          title: "Tem Certeza?",
+            html: `
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="small-text">
+                Ao excluir a sua conta, você não poderá fazer mais login
+                no Lisbon Spots e perderá todos os seus privilégios.
+                Precisa de ajuda?
+                <a href="../html/support.html">Visite ao nosso suporte</a>
+              </h4>
+              <button
+                id="confirmDeleteButton"
+                class="btn btn-block"
+                style="
+                  background-image: url('../img/buttonAzulejo\ 1.png');
+                  background-size: cover;
+                  border-color: black;
+                  font-size: small;
+                "
+              >
+                Sim, excluir Conta
+              </button>
+              <button
+                id="cancelDeleteButton"
+                class="btn btn-block mt-3"
+                style="
+                  background-image: url('../img/buttonAzulejo\ 1.png');
+                  background-size: cover;
+                  border-color: black;
+                  font-size: small;
+                "
+              >
+                Não, permanecer com a conta
+              </button>
+            </div>
+            <div class="col-md-6">
+              <img
+                class="imagedel"
+                src="../img/boywithquestionmark.png"
+                width="auto"
+                height="200"
+                style="padding-left: 20px"
+              />
+            </div>
+          </div>
+        </div>
+      `,
+            showConfirmButton: false,
+            showCancelButton: false,
+            //showCloseButton: true,
+            focusConfirm: false,
+            //customClass: {
+            //  closeButton: "cross-circle",
+            //},
+          });
+
+          document
+            .getElementById("confirmDeleteButton")
+            .addEventListener("click", function () {
+              Swal.fire({
+                html: `
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h1 class="text-left mb-4" style= "font-size:30px; padding-top:0px; font-weight:600;">Conta excluída</h1>
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-md-9"> 
+                    <div class="left-aligned">
+                      <div>
+                        <h4 class="small-text" style="padding-top: 10px; padding-right: 10px; width: 130%"> 
+                          A sua conta foi excluída. Se isso foi feito por engano
+                          ou se você tiver alguma dúvida,
+                          <a href="../html/support.html"
+                            >Visite o nosso suporte</a
+                          >
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2"> 
+                    <img
+                      class="imagedel"
+                      src="../img/delete.png"
+                      width="220"
+                      height="auto"
+                      style="padding-left: 20px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `,
+                focusConfirm: false,
+                showCloseButton: false,
+                showCancelButton: false,
+                showConfirmButton: false,
+              });
+            });
+
+          document
+            .getElementById("cancelDeleteButton")
+            .addEventListener("click", function () {
+              Swal.close();
+            });
+        });
+    </script>
 
 
 
