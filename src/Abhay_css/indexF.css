@@ -300,3 +300,20 @@ main#carousel {
         .body {
           background-color: #ffffff; 
         }
+
+/*-------------- SLIDES ------------------*/ 
+
+.splide__pagination,
+            .splide__arrows, 
+            .splide__arrow {
+               display: none
+            }
+            
+            .splide__slide:nth-of-type(odd) {
+              margin-top: auto
+            }
+            
+            .logo {
+               mix-blend-mode: exclusion;
+               -webkit-mix-blend-mode: exclusion;
+            }
