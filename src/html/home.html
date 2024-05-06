@@ -120,7 +120,7 @@
       </ul>
   </div>-->
 
-<div class="position-absolute top-50 start-50 translate-middle">
+<div id="ham-menu" class="position-absolute top-50 start-50 translate-middle">
     <ul class="list">
       <h4 class="list-item"><a href="home.html">Home</a></h4>
       <h4 class="list-item dropdown">
@@ -247,7 +247,7 @@
                   memórias mais queridas, deixe que o Lisbon Spot seja o seu
                   companheiro na sua próxima aventura por Lisboa.
                 </p>
-                      <div class="card text-center border border-dark col-sm-6 col-sm-3" style="width: 22rem; background-color: #fcfcfc;max-width: 100%;">
+                      <div class="card text-center border border-dark col-sm-6 col-md-3" style="width: 22rem; background-color: #fcfcfc;max-width: 100%;">
                           <div class="card-body d-flex justify-content-center align-items-center">
                               <a class="text-decoration-none" href="../html/non-commercial.html">
                                   <h5 class="card-title text-dark align-items-center">Locais não comerciais</h5>
@@ -353,7 +353,6 @@
     <footer>
       <div class="content">
           <hr>
-  
      
       <div class="link-boxes">
           <ul class="box">
@@ -491,14 +490,41 @@
           });
       </script>
 
+
+<!----------CLOSE MENU------------>
+
+<!--<script>
+    // Function to close the menu ?????????
+    function closeMenu() {
+        console.log("Menu closed"); 
+    }
+    closeMenu();
+    });
+  });
+</script>-->
+<!--
+  function closeMenu() {
+    // Assuming your menu has an ID of "menu" and you want to hide it
+    document.getElementById("menu").classList.remove("show");
+    //ham-menu
+    // Alternatively, you might want to set display property to "none"
+    // document.getElementById("menu").style.display = "none";
+    // Replace "menu" with the actual ID or selector of your menu
+}--->
+
+
+
+
 <!----------LoginForm--------------->
 <script>
-   document.getElementById("login_alert").addEventListener("click", function (event) {
-          event.preventDefault();    
-          Swal.fire({
-        html: `
+  document.getElementById("login_alert").addEventListener("click", function (event) {
+          event.preventDefault(); 
+          // Close the menu but DOESN'T WORK                
+         document.getElementById("ham-menu").classList.remove("show");   
+         Swal.fire({
+          html: `
 
-      <img src="../img/100x100.png" alt="logo" width="100" />
+        <img src="../img/100x100.png" alt="logo" width="100" />
         <form
           id="loginForm"
           method="POST"
@@ -549,7 +575,7 @@
             >
               Login
             </button>
-            <div class="text-center">
+            <div class="text-center C">
               <div class="social-text">
                 <span class="show-text" style="padding-bottom: -20px"
                   >Não tem nenhuma conta?</span
@@ -559,9 +585,9 @@
                 >
               </div>
             </div>
-            <div class="text-center">
-              <span class="show-text">Precisa de ajuda?</span>
-              <span class="show-link"
+            <div class="text-center C">
+              <span id: "login-text-alert" class="show-text">Precisa de ajuda?</span>
+              <span id: "login-text-alert" class="show-link"
                 ><a href="support.html">Visite o nosso suporte</a></span
               ><br />
             </div>
@@ -840,11 +866,11 @@
 
 
 
-                <span class="show-link"
+                <!--<span class="show-link"
                   ><a href="support.html">Excluir</a></span
-                >
+                >-->
 
-                <span class="show-link" id="delete_alert">Excluir</span>
+                <span class="show-link text-primary" id="open_delete_alert">Excluir</span>
 
 
                 
@@ -877,7 +903,7 @@
 
 
         document
-            .getElementById("delte_alert")
+            .getElementById("open_delete_alert")
             .addEventListener("click", function () {
               Swal.fire({
                title: "Tem Certeza?",
@@ -992,16 +1018,6 @@
 
     });
 </script>
-
-
-
-
-
-
-
-
-
-
 
   </body>
 </html>
