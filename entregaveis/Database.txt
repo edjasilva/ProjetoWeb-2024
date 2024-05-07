@@ -107,3 +107,9 @@ CREATE TABLE tb_limitedAcessSpot (
 	price DOUBLE PRECISION
 )INHERITS (tb_nonCommercialSpot);
 
+
+
+
+
+
+docker run --rm --name database -e POSTGRES_USER=lspot -e POSTGRES_PASSWORD=server --mount type=bind,source="$(pwd)"/src/postgres/data,target=/var/lib/postgresql/data -p 5432:5432 -d postgis/postgis
