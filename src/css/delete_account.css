@@ -12,6 +12,14 @@
   margin-left: 10px; 
 }
 
+.btn{
+  background-image: url('../img/buttonAzulejo\ 1.png');
+  background-size: cover;
+  border-color: black;
+  font-size: small;
+}
+
+
 .login-container button {
   margin-top: 10px;
 }
@@ -30,7 +38,7 @@
 }
 
 .small-text {
-  font-size: 18px;
+  font-size: 18px;/*-------------------------------------------------------------------------*/
   font-weight: 500;
   width: 130%
 }
@@ -38,7 +46,6 @@
 .logo-container {
   margin-bottom: 20px;
 }
-
 
 .cross-circle {
   position: absolute;
@@ -55,12 +62,9 @@
   cursor: pointer;
 }
 
-
 .container-relative {
   position: relative;
 }
-
-
 
 .cross-circle:before,
 .cross-circle:after {
@@ -84,7 +88,6 @@
   padding-right: 10px;
    width: 130%
 }
-
 
 /*body {
   margin: 0;

@@ -61,6 +61,8 @@ body::before {
     cursor: pointer;
   }*/
   
+
+  /*
   .cross-circle {
     position: absolute;
     top: 5%; 
@@ -99,7 +101,8 @@ body::before {
   .cross-circle:after {
     transform: rotate(-45deg);
   }
-  
+*/
+
   /*
   .home-link {
     position: absolute;

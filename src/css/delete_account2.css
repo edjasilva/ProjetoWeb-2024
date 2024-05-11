@@ -1,11 +1,11 @@
-.login-container {
+/*.login-container {
   border-radius: 20px;
   padding: 20px;
   text-align: left;
   position: relative;
   margin-top: 60px;
   background-color: #fff;
-}
+} 
 
 .login-container h1 {
   margin-bottom: -160px;
@@ -56,8 +56,6 @@
   position: relative;
 }
 
-
-
 .cross-circle:before,
 .cross-circle:after {
   content: "";
@@ -73,7 +71,7 @@
 
 .cross-circle:after {
   transform: rotate(-45deg);
-}
+}*/
 
 /*
 .home-link {
