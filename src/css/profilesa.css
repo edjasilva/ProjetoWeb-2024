@@ -1193,3 +1193,8 @@ input:nth-of-type(8):checked ~ main#carousel {
     display: none;
   }
 }          
+
+/*-------leaflet-----------*/
+#map { 
+  height: 350px; 
+}

@@ -11,11 +11,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="../css/profilesa.css" />
   </head>
@@ -244,6 +249,7 @@
                       alt=""
                   />
               </div>
+              <div id="map"></div>
               </div>
             </div>
           </div>
@@ -306,6 +312,56 @@
           </div>
       </div>
      </footer>  
+
+     <!-----LEAFLET begining ------->
+     <script>
+      const map = L.map('map'); 
+
+map.setView([51.505, -0.09], 13); 
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map); 
+
+let marker, circle, zoomed;
+
+navigator.geolocation.watchPosition(success, error);
+
+function success(pos) {
+
+    const lat = pos.coords.latitude;
+    const lng = pos.coords.longitude;
+    const accuracy = pos.coords.accuracy;
+
+    if (marker) {
+        map.removeLayer(marker);
+        map.removeLayer(circle);
+    }
+
+    marker = L.marker([lat, lng]).addTo(map);
+    circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
+
+    if (!zoomed) {
+        zoomed = map.fitBounds(circle.getBounds()); 
+    }
+
+    map.setView([lat, lng]);
+
+}
+
+function error(err) {
+
+    if (err.code === 1) {
+        alert("Please allow geolocation access");
+    } else {
+        alert("Cannot get current location");
+    }
+
+}
+     </script>
+     
+     <!-----LEAFLET end ------->
 
   
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
