@@ -16,62 +16,47 @@
     <link rel="stylesheet" href="../css/profilesa.css" />
   </head>
   <body>
-    <div class="grid-container">
-      <!-- Sidebar -->
-      <aside id="sidebar">
-        <div class="sidebar-title">
-          <div class="sidebar-brand">
-            <span class="material-icons-outlined"></span> DASHBOARD
-          </div>
-          <span class="material-icons-outlined" onclick="closeSidebar()"
-            >close</span
-          >
-        </div>
-      </aside>
-      <!-- End Sidebar -->
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-title">
+        <h2>LisbonSpots Dashboard</h2>
+      </div>
 
-      <!-- Main -->
-      <main class="main-container">
-        <div class="main-title">
-          <h2>LisbonSpots</h2>
-        </div>
-
-        <div class="main-cards">
-          <div class="card">
-            <div class="card-inner">
-              <h3>CATEGORIES</h3>
-              <span class="material-icons-outlined">category</span>
-            </div>
-            <h4>Melhor Avaliação:</h4>
-            <h4>Média das Avaliações:</h4>
-            <h4>Pior Avaliação:</h4>
+      <div class="main-cards">
+        <div class="card">
+          <div class="card-inner">
+            <h3>TAG</h3>
+            <span class="material-icons-outlined">category</span>
           </div>
+          <h4>Melhor Avaliação:</h4>
+          <h4>Média das Avaliações:</h4>
+          <h4>Pior Avaliação:</h4>
+        </div>
+      </div>
+
+      <div class="charts">
+        <div class="charts-card">
+          <h2 class="chart-title">Número de spots</h2>
+          <div id="bar-chart"></div>
         </div>
 
-        <div class="charts">
-          <div class="charts-card">
-            <h2 class="chart-title">Número de spots</h2>
-            <div id="bar-chart"></div>
-          </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Avaliações dos Museus</h2>
-            <div id="area-chart"></div>
-          </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Avaliações dos Museus</h2>
-            <div id="histogram-chart"></div>
-          </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Quantidade de spots comerciais</h2>
-            <div id="pie-chart"></div>
-          </div>
+        <div class="charts-card">
+          <h2 class="chart-title">Avaliações dos Museus</h2>
+          <div id="area-chart"></div>
         </div>
-      </main>
-      <!-- End Main -->
-    </div>
+
+        <div class="charts-card">
+          <h2 class="chart-title">Avaliações dos Museus</h2>
+          <div id="histogram-chart"></div>
+        </div>
+
+        <div class="charts-card">
+          <h2 class="chart-title">Quantidade de spots comerciais</h2>
+          <div id="pie-chart"></div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main -->
     <!-- Scripts -->
     <!-- ApexCharts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>

@@ -974,7 +974,7 @@ input:nth-of-type(8):checked ~ main#carousel {
 
 
           
-/*  ----------------- DASHBOARD ------------------------*/
+/*  ----------------- DASHBOARD ------------------------  */
 
 .material-icons-outlined {
   vertical-align: middle;
@@ -1002,6 +1002,8 @@ input:nth-of-type(8):checked ~ main#carousel {
   padding: 0 30px 0 30px;
   box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
 }
+
+
 
 .menu-icon {
   display: none;
@@ -1078,6 +1080,8 @@ card-inner
   color: rgba(255, 255, 255, 0.95);
 }
 
+
+
 .main-title {
   display: flex;
   color: #263043;
@@ -1122,7 +1126,6 @@ card-inner
 .card-inner > .material-icons-outlined {
   font-size: 45px;
 }
-
 
 .charts {
   display: grid;
