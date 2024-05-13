@@ -24,7 +24,7 @@ const barChartOptions = {
   series: [
     {
       data: [10, 8, 6, 4, 2],
-      name: 'Products',
+      name: 'Conta',
     },
   ],
   chart: {
@@ -81,7 +81,7 @@ const barChartOptions = {
     theme: 'dark',
   },
   xaxis: {
-    categories: ['Torre de Belém', 'Mosteiro dos Jerónimos', 'Castelo de São Jorge', 'Bairro Alto', 'Elevador de Santa Justa'],
+    categories: ['Hotel', 'Restaurante', 'Museu', 'Estádio', 'Centro comercial'],
     title: {
       style: {
         color: '#f5f7ff',
@@ -251,3 +251,129 @@ const areaChart = new ApexCharts(
   areaChartOptions
 );
 areaChart.render();
+// Calculate the sum of values for each category
+const categoryAData = [55, 42, 67, 81, 95];
+const categoryBData = [35, 67, 41, 78, 62];
+const categoryCData = [70, 55, 45, 60, 80];
+const categoryDData = [30, 48, 75, 52, 88];
+
+const totalData = [
+  categoryAData.reduce((a, b) => a + b, 0),
+  categoryBData.reduce((a, b) => a + b, 0),
+  categoryCData.reduce((a, b) => a + b, 0),
+  categoryDData.reduce((a, b) => a + b, 0),
+];
+
+// HISTOGRAM
+const histogramOptions = {
+  series: [
+    {
+      name: 'Total Spots',
+      data: totalData,
+    },
+  ],
+  chart: {
+    type: 'bar',
+    background: 'transparent',
+    height: 350,
+    stacked: false,
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: ['#2962ff'],
+  xaxis: {
+    categories: ['1-2', '2-3', '3-4', '4-5'],
+    labels: {
+      style: {
+        colors: '#f5f7ff',
+      },
+    },
+  },
+  yaxis: {
+    title: {
+      text: 'Ratings',
+      style: {
+        color: '#f5f7ff',
+      },
+    },
+    labels: {
+      style: {
+        colors: '#f5f7ff',
+      },
+    },
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: '100%',
+      endingShape: 'rounded',
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  legend: {
+    show: false,
+  },
+  grid: {
+    borderColor: '#55596e',
+    yaxis: {
+      lines: {
+        show: true,
+      },
+    },
+    xaxis: {
+      lines: {
+        show: true,
+      },
+    },
+  },
+  tooltip: {
+    theme: 'dark',
+  },
+};
+
+const histogramChart = new ApexCharts(
+  document.querySelector('#histogram-chart'),
+  histogramOptions
+);
+histogramChart.render();
+
+//PIE CHART
+// Calculate the total sum of percentages for each tag
+const totalPercentage = 100;
+const categoryAPercentage = 20;
+const categoryBPercentage = 15;
+const categoryCPercentage = 25;
+const categoryDPercentage = 10;
+const categoryEPercentage = 30;
+
+const pieChartOptions = {
+  series: [categoryAPercentage, categoryBPercentage, categoryCPercentage, categoryDPercentage, categoryEPercentage],
+  chart: {
+    type: 'pie',
+    background: 'transparent',
+    height: 350,
+  },
+  labels: ['Hotel', 'Restaurante', 'Museu', 'Estádio', 'Centro comercial'],
+  colors: ['#00ab57', '#d50000', '#ffa900', '#0091ea', '#f50057'],
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return val + "%";
+    },
+    style: {
+      colors: ['#f5f7ff'],
+    },
+  },
+  tooltip: {
+    theme: 'dark',
+  },
+};
+
+const pieChart = new ApexCharts(
+  document.querySelector('#pie-chart'),
+  pieChartOptions
+);
+pieChart.render();

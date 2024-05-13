@@ -1029,9 +1029,9 @@ input:nth-of-type(8):checked ~ main#carousel {
 .sidebar-title > span {
   display: none;
 }
+card-inner
 
 .sidebar-brand {
-  margin-top: 15px;
   font-size: 20px;
   font-weight: 700;
 }
@@ -1116,11 +1116,13 @@ input:nth-of-type(8):checked ~ main#carousel {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px;
 }
 
 .card-inner > .material-icons-outlined {
   font-size: 45px;
 }
+
 
 .charts {
   display: grid;
@@ -1197,4 +1199,6 @@ input:nth-of-type(8):checked ~ main#carousel {
 /*-------leaflet-----------*/
 #map { 
   height: 350px; 
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
