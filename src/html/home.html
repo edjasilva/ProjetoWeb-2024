@@ -22,7 +22,32 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="../css/profilesa.css" />
+    <!--<script>
+      function lookupOSMIds() {
+          var osmIdsInput = document.getElementById("osm_ids").value;
+          var osmIds = osmIdsInput.split(',').map(id => id.trim());
+
+          var params = {
+              'format': 'json',
+              'extratags': 1,
+              'namedetails': 1
+          };
+
+          var queryString = Object.keys(params).map(key => key + '=' + params[key]).join('&');
+          var url = "https://nominatim.openstreetmap.org/lookup?osm_ids=" + osmIds.join(',') + "&" + queryString;
+
+          fetch(url)
+              .then(response => response.json())
+              .then(data => {
+                  // Handle response data here
+                  console.log(data);
+                  // Example: Display the first result
+                  document.getElementById("result").textContent = JSON.stringify(data[0]);
+              })
+              .catch(error => console.error('Error:', error));
+      }
+  </script>-->
+  <link rel="stylesheet" href="../css/profilesa.css" />
   </head>
   <body>
     
@@ -34,6 +59,9 @@
       </div>
       
   </nav>
+
+
+<div class="show">
 <div id="ham-menu" class="position-absolute top-50 start-50 translate-middle">
     <ul class="list">
       <h4 class="list-item"><a href="home.html">Home</a></h4>
@@ -69,6 +97,7 @@
     </ul>
   </div>  
 </div>
+</div>
 
 <script>
   document.querySelectorAll('.dropdown-toggle').forEach(function (toggle) {
@@ -80,7 +109,7 @@
   });
 </script>
   
-<nav class="navbar fixed-top  navbar-expand-lg p-4  ">
+<nav class="navbar navbar-expand-lg p-4">
   <div class="container-fluid  ms-4 ">
       <a href="navbar-brand">
           <img  class="imagem " src="../img/logo.svg" alt="">
@@ -96,7 +125,7 @@
           <img class="botao-imagem" src="../img/menu.svg" alt="">         
       </button> 
   </span>
-  <div class="collapse navbar-collapse    me-5" id="menu-links" >
+  <div class="collapse navbar-collapse me-5" id="menu-links" >
       <span class="border border-dark bg-light rounded-4  mx-auto align-items-center edit " style="width:350px; height: 50px;">
           <ul class="navbar-nav   mx-0 lista my-0  d-flex text-center align-items-center ">
 
@@ -129,7 +158,7 @@
   
   </script>
     <header>
-      <div class="container pt-5 col-sm-3">
+      <div class="container col-sm-3">
         <div class="row">
           <div class="container">
             <div
@@ -141,7 +170,7 @@
                 style="width: 3500px"
               >
                 <h2>This is our Story - Nossa História</h2>
-                <p id="introtext" class="px-3 pt-3 px-5">
+                <p id="introtext" class="pt-3 px-5">
                   Embarque numa jornada de descoberta com o Lisbon Spot como seu
                   guia de confiança. Quer esteja a planear a sua primeira visita
                   a Lisboa ou à procura de tesouros escondidos fora do caminho
@@ -206,22 +235,22 @@
                   </a>
               </div>-->
               
-                <h2 class="textss">Explore os locais e ...</h2>
+                <h2 class="headinghome">Explore os locais e ...</h2>
 
                 <div class="card">
                   <div class="card-body col-sm-3 col-sm-6"></div>
                   <img src="../img/adv.svg" class="card-img-top" alt="..." />
-                  <h5 class="card-title B">Aventura</h5>
+                  <h5 class="card-title B pb-5">Aventura</h5>
                 </div>
                 <div class="card">
                   <div class="card-body col-sm-3 col-sm-6"></div>
                   <img src="../img/mem.svg" class="card-img-top" alt="..." />
-                  <h5 class="card-title">Memórias</h5>
+                  <h5 class="card-title pb-5">Memórias</h5>
                 </div>
                 <div class="card">
                   <div class="card-body col-sm-3 col-sm-6"></div>
                   <img src="../img/exp.svg" class="card-img-top" alt="..." />
-                  <h5 class="card-title">Experiências</h5>
+                  <h5 class="card-title pb-5">Experiências</h5>
                 </div>
                 <div class="p-5 bg-dark text-light">
                   <div class="container">
@@ -232,17 +261,19 @@
                           <div class="col-md-6">
                               <div class="col-md-12">
                                   <a class="text-decoration-none" href="../html/blog.html" title="">
-                                      <h1 class="text-center" style="font-size: 2rem;">Visite o nosso Blog</h1>
+                                      <h1 class="text-center" style="font-size: 2.3rem;">Visite o nosso Blog</h1>
                                   </a>
                               </div>
                           </div>
                       </div>
                   </div>
-              </div>
-              
+              </div>      
+                
+               <!--<input type="text" id="searchInput" placeholder="Search for a place" />
+                <button id="searchbutton" onclick="searchPlace()">Search</button>-->       
                 <div class="col-md-0" style="padding-top: 0.5rem">
                   <div id="map"></div>
-              </div>
+                </div>
               </div>
             </div>
           </div>
@@ -250,12 +281,11 @@
       </div>
     </header>
 
-    <!--------------------------------------------------------------------------------->
+
 
     <!--------------------------------------------------------------------------------->
-
     <!--------------------------------------------------------------------------------->
-
+    <!--------------------------------------------------------------------------------->
     <!--------------------------------------------------------------------------------->
 
     <footer>
@@ -307,21 +337,21 @@
      </footer>  
 
      <!-----LEAFLET begining ------->
-     <script>
-      const map = L.map('map'); 
+     <!--<script>
+    const map = L.map('map'); 
 
-map.setView([51.505, -0.09], 13); 
+    map.setView([51.505, -0.09], 13); 
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map); 
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+    }).addTo(map); 
 
-let marker, circle, zoomed;
+  let marker, circle, zoomed;
 
-navigator.geolocation.watchPosition(success, error);
+  navigator.geolocation.watchPosition(success, error);
 
-function success(pos) {
+  function success(pos) {
 
     const lat = pos.coords.latitude;
     const lng = pos.coords.longitude;
@@ -341,19 +371,145 @@ function success(pos) {
 
     map.setView([lat, lng]);
 
-}
+  }
 
-function error(err) {
+  function error(err) {
 
     if (err.code === 1) {
-        alert("Please allow geolocation access");
+        alert("Por favor, permita o acesso à geolocalização.");
     } else {
-        alert("Cannot get current location");
+        alert("Não é possível obter a localização atual.");
     }
+  }
+  </script>-->
+      
 
+      <script>
+        const map = L.map('map').setView([51.505, -0.09], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        let marker, circle, zoomed;
+
+        navigator.geolocation.watchPosition(success, error);
+
+        function success(pos) {
+            const lat = pos.coords.latitude;
+            const lng = pos.coords.longitude;
+            const accuracy = pos.coords.accuracy;
+
+            if (marker) {
+                map.removeLayer(marker);
+                map.removeLayer(circle);
+            }
+
+            marker = L.marker([lat, lng]).addTo(map);
+            circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
+
+            if (!zoomed) {
+                zoomed = map.fitBounds(circle.getBounds());
+            }
+
+            map.setView([lat, lng]);
+        }
+
+        function error(err) {
+            if (err.code === 1) {
+                alert("Please allow access to geolocation.");
+            } else {
+                alert("Cannot obtain current location.");
+            }
+        }
+   </script>
+     <!--
+      function searchPlace() {
+            const query = document.getElementById("searchInput").value;
+            if (query.trim() === "") {
+                alert("Please enter a place to search.");
+                return;
+            }
+
+            fetch("https://nominatim.openstreetmap.org/search?format=json&q=" + query)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        const result = data[0];
+                        const lat = result.lat;
+                        const lon = result.lon;
+                        if (marker) {
+                            map.removeLayer(marker);
+                        }
+                        marker = L.marker([lat, lon]).addTo(map);
+                        map.setView([lat, lon], 13);
+                    } else {
+                        alert("No results found for the search query.");
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+       <!-- function searchPlace() {
+          const query = document.getElementById("searchInput").value;
+          if (query.trim() === "") {
+          alert("Please enter a place to search.");
+          return;
+        }
+
+        fetch("https://nominatim.openstreetmap.org/search?format=json&q=" + query)
+        .then(response => response.json())
+        .then(data => {
+            if (data.length > 0) {
+                const result = data[0];
+                const lat = result.lat;
+                const lon = result.lon;
+                const placeName = result.display_name; 
+
+                if (marker) {
+                    map.removeLayer(marker);
+                }
+                marker = L.marker([lat, lon]).addTo(map);
+                marker.bindPopup(`<b>${placeName}</b>`).openPopup(); 
+                map.setView([lat, lon], 13);
+            } else {
+                alert("No results found for the search query.");
+            }
+        })
+        .catch(error => console.error('Error:', error));
+  }
+     -->
+
+   <!--    
+const puppeteer = require('puppeteer');
+
+async function getRatingFromYelp(placeName) {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto(`https://www.yelp.com/search?find_desc=${encodeURIComponent(placeName)}`);
+
+    // Wait for the page to load
+    await page.waitForSelector('.lemon--div__373c0__1mboc.searchResult__373c0__1yggB');
+
+    // Extract rating
+    const rating = await page.evaluate(() => {
+        const ratingElement = document.querySelector('.lemon--div__373c0__1mboc.searchResult__373c0__1yggB .lemon--div__373c0__1mboc i[aria-label^="Rated"]');
+        return ratingElement ? ratingElement.getAttribute('aria-label') : 'N/A';
+    });
+
+    await browser.close();
+    return rating;
 }
-     </script>
-     
+
+// Example usage
+getRatingFromYelp('Central Park').then(rating => {
+    console.log('Rating:', rating);
+});
+   -->   
+    <!--<label for="osm_ids">OSM IDs (comma-separated):</label><br>
+    <input type="text" id="osm_ids" name="osm_ids" style="width: 400px;"><br><br>
+    <button onclick="lookupOSMIds()">Lookup</button><br><br>
+    <pre id="result"></pre>-->
      <!-----LEAFLET end ------->
 
   
@@ -470,9 +626,6 @@ function error(err) {
     // Replace "menu" with the actual ID or selector of your menu
 }--->
 
-
-
-
 <!----------LoginForm--------------->
 <script>
   document.getElementById("login_alert").addEventListener("click", function (event) {
@@ -583,7 +736,7 @@ function error(err) {
 
 
         document.getElementById("open_log_alert").addEventListener("click", function () {
-    Swal.fire({
+        Swal.fire({
         html: `
         <img src="../img/100x100.png" alt="logo" width="100" />
             <form id="loginForm A" method="POST" class="needs-validation" novalidate autocomplete="off" >
@@ -663,21 +816,9 @@ function error(err) {
                     }
                   });
                 }       
-    });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-    });
+              });
+            });
+          });
 </script>
 <!------------delete swal----------------->
 
