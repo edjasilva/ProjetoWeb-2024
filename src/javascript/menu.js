@@ -34,3 +34,13 @@ window.onload = function() {
     
 }
 
+//Drop-down
+
+document.querySelectorAll('.dropdown-toggle').forEach(function (toggle) {
+    toggle.addEventListener('click', function (event) {
+      event.preventDefault();
+      var dropdownMenu = toggle.nextElementSibling; 
+      dropdownMenu.classList.toggle('show'); 
+    });
+  });
+
