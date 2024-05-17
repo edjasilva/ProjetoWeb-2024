@@ -81,6 +81,11 @@
     margin-bottom: 20px;
   }
 
+  /*------------Profile-------------------------------------*/
+  #email{
+    width: 90%;
+  }
+
   /*-------------------------NAVBAR------------------*/
   /* navbar / nonCom /Com*/
 @font-face {
@@ -1164,27 +1169,8 @@ input:nth-of-type(8):checked ~ main#carousel {
   margin-top: 10px;
 }
 
-#searchbutton{
-  margin-top: 1rem;
-  padding: .6rem;
-  border-radius: 5px;
-  background-color: #000000;
-  font-size: 15px;
-  color: #fff;
-  border: #000;
-}
 
-#searchInput{
-  margin-top: 1rem;
-  padding: .6rem;
-  border-radius: 5px;
-  border-color: #ebebeb;
-  background-color: #ffffff;
-  font-size: 15px;
-
-}
-
-
+#confirmDeleteButton,
 #cancelDeleteButton{
   background-image: url('../img/buttonAzulejo\ 1.png');
   background-size: cover;
@@ -1192,6 +1178,13 @@ input:nth-of-type(8):checked ~ main#carousel {
   font-size: small;
 }
 
+
 .imagedel{
   padding-left: 20px;
+}
+
+#profileheading{
+  font-size: 60px;
+  text-align: center; 
+  padding: 10px;
 }

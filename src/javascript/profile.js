@@ -49,8 +49,8 @@ document.getElementById("profile_alert").addEventListener("click", function (eve
          </div>
 
          <h1
+           id="profileheading"
            class="fs-4 card-title fw-bold mb-4"
-           style="font-size: 60px; text-align: center; padding: 10px"
          >
            Personal Information
          </h1>

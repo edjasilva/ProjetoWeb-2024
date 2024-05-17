@@ -544,41 +544,8 @@ font-family: 'BioRhyme';
 }
 
 .nav-item{
-  font-family: 'BioRhyme';
-  
-  
-  
+  font-family: 'BioRhyme'; 
 }
-
-
-
-/*.lista{
-  background-color: white;
-  border: 1.2px solid black;
-  border-radius: 17px;
-  width: 40%;
-  height: 50px;
-  
-  
- 
-}*/
-
-/*li {
-
-  /*margin-left: 32px;
-  flex: 1;
-  background-image: url('Vector\ 3.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 3px auto;
-  width: 100px;
-
-  display: flex;
-
-  justify-content: center; 
-  align-items: center; 
-}
-*/
 
 .nav-item::after{
   background-image: url('Vector3.svg');
@@ -591,14 +558,6 @@ li:last-child{
 .botao-imagem{
   width: 43px;
 }
-
-
-/*.botao{
-  background-color: white;
-  border: 1.2px solid black;
-  border-radius: 10px;
-}
-*/
 .sim {
   z-index: 100;
   margin-top: -300px;
@@ -786,7 +745,6 @@ color: black;
   padding-bottom: 50px;
 }
 
-
 #photoL{
   height: 300px; width: 180px;
 }
@@ -818,6 +776,7 @@ color: black;
 }
 
 
+#confirmDeleteButton,
 #cancelDeleteButton{
   background-image: url('../img/buttonAzulejo\ 1.png');
   background-size: cover;
@@ -827,4 +786,15 @@ color: black;
 
 .imagedel{
   padding-left: 20px;
+}
+
+/*------------Profile-------------------------------------*/
+#email{
+  width: 90%;
+}
+
+#profileheading{
+  font-size: 60px;
+  text-align: center; 
+  padding: 10px;
 }

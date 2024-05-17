@@ -17,12 +17,6 @@ document.getElementById("delte_alert").addEventListener("click", function (event
          <button
            id="confirmDeleteButton"
            class="btn btn-block"
-           style="
-             background-image: url('../img/buttonAzulejo\ 1.png');
-             background-size: cover;
-             border-color: black;
-             font-size: small;
-           "
          >
            Sim, excluir Conta
          </button>
@@ -46,11 +40,7 @@ document.getElementById("delte_alert").addEventListener("click", function (event
  `,
        showConfirmButton: false,
        showCancelButton: false,
-       //showCloseButton: true,
        focusConfirm: false,
-       //customClass: {
-       //  closeButton: "cross-circle",
-       //},
      });
 
      document

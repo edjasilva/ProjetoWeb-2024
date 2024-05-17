@@ -78,12 +78,8 @@ document.getElementById("login_alert").addEventListener("click", function (event
     </div>
   </form>
 `,
-  //showCloseButton: true,
   showConfirmButton: false,
   focusConfirm: false,
-  //customClass: {
-  //closeButton: "square-close",
-  //},
 });
 
 document
