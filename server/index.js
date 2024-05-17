@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import database from './config/db_connector';
+import database from './config/db_connector.js';
 import {engine} from 'express-handlebars';
 dotenv.config();
 
@@ -15,6 +15,10 @@ server.set('views', './views');
 
 server.use(express.static('public'));
 
+server.get('/', function (req, res) {
+    res.render('termos', {layout: 'main', }
+     );
+});
 
 
 async function start(){
@@ -29,5 +33,8 @@ async function start(){
         throw new Error (error);
     }
 }
+
+
+
 
 start();
