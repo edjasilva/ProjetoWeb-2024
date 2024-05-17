@@ -332,10 +332,10 @@ main#carousel {
   background-color: white;
   position: absolute;
   z-index: 1100;
-  left: 39%;
+  left: 37%;
   animation-duration: 0.5s;
   animation-name: fadeInd;
-  margin-top: 0px;
+  margin-top: 35px;
 
 }
 
@@ -467,7 +467,6 @@ main#carousel {
 }
 
 .btn{
-  background-image: url('../img/buttonAzulejo\ 1.png');
   background-size: cover;
   border-color: black;
   font-size: small;
@@ -817,5 +816,4 @@ color: black;
 #navhammenu{
   width:350px; height: 50px;
 }
-
 
