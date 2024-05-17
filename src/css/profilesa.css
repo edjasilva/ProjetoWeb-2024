@@ -1183,3 +1183,15 @@ input:nth-of-type(8):checked ~ main#carousel {
   font-size: 15px;
 
 }
+
+
+#cancelDeleteButton{
+  background-image: url('../img/buttonAzulejo\ 1.png');
+  background-size: cover;
+  border-color: black;
+  font-size: small;
+}
+
+.imagedel{
+  padding-left: 20px;
+}

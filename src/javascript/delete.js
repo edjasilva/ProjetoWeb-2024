@@ -6,7 +6,9 @@ document.getElementById("delte_alert").addEventListener("click", function (event
    <div class="container">
      <div class="row">
        <div class="col-md-6">
-         <h4 class="small-text">
+         <h4 
+         id="textss"
+         class="small-text">
            Ao excluir a sua conta, você não poderá fazer mais login
            no Lisbon Spots e perderá todos os seus privilégios.
            Precisa de ajuda?
@@ -27,12 +29,6 @@ document.getElementById("delte_alert").addEventListener("click", function (event
          <button
            id="cancelDeleteButton"
            class="btn btn-block mt-3"
-           style="
-             background-image: url('../img/buttonAzulejo\ 1.png');
-             background-size: cover;
-             border-color: black;
-             font-size: small;
-           "
          >
            Não, permanecer com a conta
          </button>
@@ -43,7 +39,6 @@ document.getElementById("delte_alert").addEventListener("click", function (event
            src="../img/boywithquestionmark.png"
            width="auto"
            height="200"
-           style="padding-left: 20px"
          />
        </div>
      </div>
@@ -62,16 +57,17 @@ document.getElementById("delte_alert").addEventListener("click", function (event
        .getElementById("confirmDeleteButton")
        .addEventListener("click", function () {
          Swal.fire({
+          title: "Conta excluída",
            html: `
-     <div class="container">
+       <div class="container">
        <div class="row">
          <div class="col-md-6">
-           <h1 class="text-left mb-4" style= "font-size:30px; padding-top:0px; font-weight:600;">Conta excluída</h1>
            <div class="row justify-content-center align-items-center">
              <div class="col-md-9"> 
                <div class="left-aligned">
                  <div>
-                   <h4 class="small-text" style="padding-top: 10px; padding-right: 10px; width: 130%"> 
+                   <h4 
+                   id="textss" class="small-text"> 
                      A sua conta foi excluída. Se isso foi feito por engano
                      ou se você tiver alguma dúvida,
                      <a href="../html/support.html"
@@ -87,7 +83,6 @@ document.getElementById("delte_alert").addEventListener("click", function (event
                  src="../img/delete.png"
                  width="220"
                  height="auto"
-                 style="padding-left: 20px"
                />
              </div>
            </div>

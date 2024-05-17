@@ -817,3 +817,14 @@ color: black;
   width:350px; height: 50px;
 }
 
+
+#cancelDeleteButton{
+  background-image: url('../img/buttonAzulejo\ 1.png');
+  background-size: cover;
+  border-color: black;
+  font-size: small;
+}
+
+.imagedel{
+  padding-left: 20px;
+}
