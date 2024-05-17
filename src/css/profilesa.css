@@ -351,6 +351,36 @@ margin-left: 10%;
     background-color:rgb(255, 255, 255);
   }
   
+  #cardhome{
+    width: 22rem;
+     background-color: #fcfcfc;
+     max-width: 100%;
+  }
+
+  #navhammenu{
+    width:350px; height: 50px;
+  }
+  
+  #vlogText{
+    font-size: 2.3rem;
+  }
+
+  #introtextend{
+    padding-bottom: 5rem;
+  }
+  
+  #cardimages{
+    max-width: 100%;
+  }
+
+  #homeshadow{
+    width: 3500px;
+  }
+  
+  #homebox{
+    padding: 5rem;
+  }
+
   .container{
   width: 100%;
   }
@@ -997,6 +1027,11 @@ input:nth-of-type(8):checked ~ main#carousel {
 .menu-icon {
   display: none;
 }
+
+.board-body{
+  margin: 12px;
+}
+
 /* ---------- MAIN ---------- */
 
 .main-container {
@@ -1005,8 +1040,6 @@ input:nth-of-type(8):checked ~ main#carousel {
   padding: 20px 20px;
   color: rgba(255, 255, 255, 0.95);
 }
-
-
 
 .main-title {
   display: flex;

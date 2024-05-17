@@ -108,3 +108,35 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+
+//SLIDES
+
+new Splide( '#splide', {
+  type   : 'loop',
+  perMove: 1,
+  perPage: 3,
+  autoplay: true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  gap: '20px',
+  interval: '0',
+  speed: '4800',
+  easing: 'linear',
+  } ).mount();
+
+
+  const stagger = anime({
+    targets: '.splide__slide',
+    translateY: [160,0],
+    opacity: [0,1],
+    delay: anime.stagger(120),
+    duration: 800,
+    easing: 'easeInOutQuad',
+    })
+
+    $('a.link').click(function(e) {
+      e.preventDefault();
+      var linkUrl = $(this).attr('href');
+      setTimeout(function(url) { window.location = url; }, 800, linkUrl);
+      });

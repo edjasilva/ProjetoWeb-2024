@@ -52,7 +52,9 @@
   <body>
     
     <!--Hidden Menu set up #################################################################################################-->
-<div class="custom-menu" id="menu">
+
+    <div class="show-menu">
+    <div class="custom-menu" id="menu">
   <nav class="menu">
       <div class="container justify-content-between">
           <button id="close-menu" type="button" class="btn-close fs-2 text-reset"></button>
@@ -60,8 +62,6 @@
       
   </nav>
 
-
-<div class="show">
 <div id="ham-menu" class="position-absolute top-50 start-50 translate-middle">
     <ul class="list">
       <h4 class="list-item"><a href="home.html">Home</a></h4>
@@ -126,7 +126,7 @@
       </button> 
   </span>
   <div class="collapse navbar-collapse me-5" id="menu-links" >
-      <span class="border border-dark bg-light rounded-4  mx-auto align-items-center edit " style="width:350px; height: 50px;">
+      <span id="navhammenu" class="border border-dark bg-light rounded-4  mx-auto align-items-center edit ">
           <ul class="navbar-nav   mx-0 lista my-0  d-flex text-center align-items-center ">
 
               <li class="nav-item navbar-text">
@@ -162,12 +162,12 @@
         <div class="row">
           <div class="container">
             <div
+              id="homebox"
               class="row d-flex justify-content-center"
-              style="padding: 5rem"
             >
               <div
+                id="homeshadow"
                 class="text-center card shadow pt-5 pb-0 px-0 bg-white rounded"
-                style="width: 3500px"
               >
                 <h2>This is our Story - Nossa História</h2>
                 <p id="introtext" class="pt-3 px-5">
@@ -181,7 +181,7 @@
                   vizinhanças de Lisboa, das atrações imperdíveis e dos pontos
                   de interesse locais.
                 </p>
-                <p id="introtext" class="px-5" style="padding-bottom: 5rem">
+                <p id="introtextend" class="px-5">
                   Utilize o nosso sistema de filtragem intuitivo para
                   personalizar a sua exploração com base nos seus interesses e
                   preferências. Interaja com outros viajantes, partilhe dicas e
@@ -190,25 +190,25 @@
                   memórias mais queridas, deixe que o Lisbon Spot seja o seu
                   companheiro na sua próxima aventura por Lisboa.
                 </p>
-                      <div class="card text-center border border-dark col-sm-6 col-md-3" style="width: 22rem; background-color: #fcfcfc;max-width: 100%;">
+                      <div id="cardhome" class="card text-center border border-dark col-sm-6 col-md-3">
                           <div class="card-body d-flex justify-content-center align-items-center">
                               <a class="text-decoration-none" href="../html/non-commercial.html">
                                   <h5 class="card-title text-dark align-items-center">Locais não comerciais</h5>
                               </a>
                           </div>
                           <a href="../html/commercial.html" title="" class="d-flex justify-content-center">
-                              <img src="../img/park2.png" class="card-img-top img-fluid w-100 mx-0" alt="..." style="max-width: 100%;" />
+                              <img id="cardimages" src="../img/park2.png" class="card-img-top img-fluid w-100 mx-0" alt="..." />
                           </a>
                       </div>
                       
-                      <div class="card border border-dark col-sm-6 col-sm-3" style="width: 22rem; background-color: #fcfcfc;max-width: 100%;">
+                      <div id="cardhome" class="card border border-dark col-sm-6 col-sm-3" >
                           <div class="card-body d-flex justify-content-center align-items-center mx-0">
                               <a class="text-decoration-none" href="../html/commercial.html" title="">
                                   <h5 id="top" class="card-title text-dark align-items-center">Locais comerciais</h5>
                               </a>
                           </div>
                           <a href="../html/non-commercial.html" title="" class="d-flex justify-content-center">
-                              <img src="../img/image copy.png" class="card-img-top img-fluid w-100 mx-0" alt="..." style="max-width: 100%;" />
+                              <img id="cardimages" src="../img/image copy.png" class="card-img-top img-fluid w-100 mx-0" alt="..."/>
                           </a>
                       </div>
              
@@ -261,7 +261,7 @@
                           <div class="col-md-6">
                               <div class="col-md-12">
                                   <a class="text-decoration-none" href="../html/blog.html" title="">
-                                      <h1 class="text-center" style="font-size: 2.3rem;">Visite o nosso Blog</h1>
+                                      <h1 id="vlogText" class="text-center" >Visite o nosso Blog</h1>
                                   </a>
                               </div>
                           </div>
@@ -271,7 +271,7 @@
                 
                <!--<input type="text" id="searchInput" placeholder="Search for a place" />
                 <button id="searchbutton" onclick="searchPlace()">Search</button>-->       
-                <div class="col-md-0" style="padding-top: 0.5rem">
+                <div class="col-md-0 pt-5" >
                   <div id="map"></div>
                 </div>
               </div>
@@ -382,47 +382,7 @@
     }
   }
   </script>-->
-      
-
-      <script>
-        const map = L.map('map').setView([51.505, -0.09], 13);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap'
-        }).addTo(map);
-
-        let marker, circle, zoomed;
-
-        navigator.geolocation.watchPosition(success, error);
-
-        function success(pos) {
-            const lat = pos.coords.latitude;
-            const lng = pos.coords.longitude;
-            const accuracy = pos.coords.accuracy;
-
-            if (marker) {
-                map.removeLayer(marker);
-                map.removeLayer(circle);
-            }
-
-            marker = L.marker([lat, lng]).addTo(map);
-            circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
-
-            if (!zoomed) {
-                zoomed = map.fitBounds(circle.getBounds());
-            }
-
-            map.setView([lat, lng]);
-        }
-
-        function error(err) {
-            if (err.code === 1) {
-                alert("Please allow access to geolocation.");
-            } else {
-                alert("Cannot obtain current location.");
-            }
-        }
-   </script>
+        
      <!--
       function searchPlace() {
             const query = document.getElementById("searchInput").value;
@@ -515,94 +475,13 @@ getRatingFromYelp('Central Park').then(rating => {
   
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
       <script src="../javascript/menu.js"></script>
+      <script src="../javascript/map.js"></script>
+      <script src="../javascript/profile.js"></script>
+      <script src="../javascript/register.js"></script>
+      <script src="../javascript/login.js"></script>
+      <script src="../javascript/delete.js"></script>
 
-     <!-------Register form---------->
-      <script>
-        document.getElementById("register_alert").addEventListener("click", function (event) {
-          event.preventDefault();    
-          Swal.fire({
-              html: `
-            <img src="../img/100x100.png" alt="logo" width="100" />
-            <form id="loginForm A" method="POST" class="needs-validation" novalidate autocomplete="off" >
-              <h1 class="fs-4 card-title fw-bold mb-4" >Register</h1>
-              <div class="text-center">
-                <p>Registe-se no nosso site</p>
-              </div>
-              <form id="loginForm" method="POST" class="needs-validation" novalidate autocomplete="off">
-                <div class="mb-3">
-                  <input id="email" type="email" class="form-control" name="email" placeholder="Email" required autofocus  />
-                  <div class="invalid-feedback">Por favor, insira um email válido.</div>
-                </div>
-                <div class="mb-3">
-                  <input id="password" type="password" class="form-control" name="password" placeholder="Senha" required  />
-                  <div class="invalid-feedback">Por favor, insira uma senha.</div>
-                </div>
-                <div class="mb-3">
-                  <input type="password" class="form-control" name="confirm_password" placeholder="Confirme a sua senha" required  />
-                  <div class="invalid-feedback">Por favor, confirme sua senha.</div>
-                </div>
-                <div class="mb-3">
-                  <input type="text" class="form-control" name="nacionalidade" placeholder="Nacionalidade" required  />
-                  <div class="invalid-feedback">Por favor, insira sua nacionalidade.</div>
-                </div>
-                <div class="mb-3">
-                  <input type="date" class="form-control" name="data_nascimento" placeholder="Data de Nascimento" required  />
-                  <div class="invalid-feedback">Por favor, insira sua data de nascimento.</div>
-                </div>
-                <div class="mb-3">
-                  <input type="text" class="form-control" name="endereco" placeholder="Endereço" required  />
-                  <div class="invalid-feedback">Por favor, insira seu endereço.</div>
-                </div>
-                <div 
-                id="textss"
-                 class="form-check" >
-                  <input type="checkbox" name="remember" id="remember" class="form-check-input" />
-                  <label for="label" class="form-check-label">Sim! Gostaria de receber os principais conteúdos, ofertas especiais e outras atualizações do Lisbon Spots.</label>
-                </div>
-                <div 
-                id="textss"
-                class="text-left" >
-                  <div class="social-text">
-                    <span class="show-text">Ao criar uma conta, você concorda com nossos</span>
-                    <span class="show-link"><a href="login.html">Termos de Uso</a></span>
-                    <span class="show-text"> e reconhece que leu nossa</span>
-                    <span class="show-link"><a href="login.html"> Política de Privacidade</a></span>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button id="registerButton" type="submit" class="btn d-inline-flex align-items-center justify-content-center">
-                    Register
-                  </button>
-                </div>
-                <div 
-                id="textss"
-                class="text-center C" >
-                  <span class="show-text">Precisa de ajuda?</span>
-                  <span class="show-link"><a href="support.html">Visite o nosso suporte</a></span><br />
-                </div>
-              </form>
-            `,
-              showConfirmButton: false,
-              focusConfirm: false,
-            });
-            document
-              .getElementById("registerButton")
-              .addEventListener("click", function () {
-                if (document.getElementById("loginForm").checkValidity()) {
-                  Swal.fire({
-                    icon: "success",
-                    title: "Register Successful!",
-                    text: "Welcome to LisbonSpots!",
-                    confirmButtonText: "Continue",
-                  }).then((result) => {
-                    if (result.isConfirmed) {
-                      window.location.href = "../html/home.html";
-                    }
-                  });
-                }
-              });
-          });
-      </script>
+      
 
 
 <!----------CLOSE MENU------------>
@@ -626,593 +505,6 @@ getRatingFromYelp('Central Park').then(rating => {
     // Replace "menu" with the actual ID or selector of your menu
 }--->
 
-<!----------LoginForm--------------->
-<script>
-  document.getElementById("login_alert").addEventListener("click", function (event) {
-          event.preventDefault(); 
-          // Close the menu but DOESN'T WORK                
-         document.getElementById("ham-menu").classList.remove("show");   
-         Swal.fire({
-          html: `
-
-        <img src="../img/100x100.png" alt="logo" width="100" />
-        <form
-          id="loginForm"
-          method="POST"
-          class="needs-validation"
-          novalidate
-          autocomplete="off"
-        >
-
-        <h1
-            class="fs-4 card-title fw-bold mb-4"
-          >
-            Login
-          </h1>
-          <div class="mb-3">
-            <input
-              id="email"
-              type="email"
-              class="form-control"
-              name="email"
-              placeholder="Email"
-              required
-              autofocus
-            />
-            <div class="invalid-feedback">
-              Por favor, insira um email válido.
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <input
-              id="password"
-              type="password"
-              class="form-control"
-              name="password"
-              placeholder="Senha"
-              required
-            />
-            <div class="invalid-feedback">
-              Por favor, insira uma senha.
-            </div>
-          </div>
-
-          <div class="text-center">
-            <button
-              id="loginButton"
-              class="btn d-inline-flex align-items-center justify-content-center"
-
-            >
-              Login
-            </button>
-            <div
-                id="textss"
-                class="text-center C">
-              <div class="social-text">
-                <span class="show-text" style="padding-bottom: -20px"
-                  >Não tem nenhuma conta?</span
-                >
-                <span id="open_log_alert" class="show-link text-primary text-underline"
-                  >Registe-se</span
-                >
-              </div>
-            </div>
-            <div
-              id="textss" 
-              class="text-center C">
-              <span id: "login-text-alert" class="show-text">Precisa de ajuda?</span>
-              <span id: "login-text-alert" class="show-link"
-                ><a href="support.html">Visite o nosso suporte</a></span
-              ><br />
-            </div>
-          </div>
-        </form>
-      `,
-        //showCloseButton: true,
-        showConfirmButton: false,
-        focusConfirm: false,
-        //customClass: {
-        //closeButton: "square-close",
-        //},
-      });
-
-      document
-        .getElementById("loginButton")
-        .addEventListener("click", function () {
-          if (document.getElementById("loginForm").checkValidity()) {
-            Swal.fire({
-              icon: "success",
-              title: "Login Successful!",
-              text: "Welcome back!",
-              confirmButtonText: "Continue",
-            }).then((result) => {
-              if (result.isConfirmed) {
-                window.location.href = "../html/home.html";
-              }
-            });
-          }
-        });             
-
-
-        document.getElementById("open_log_alert").addEventListener("click", function () {
-        Swal.fire({
-        html: `
-        <img src="../img/100x100.png" alt="logo" width="100" />
-            <form id="loginForm A" method="POST" class="needs-validation" novalidate autocomplete="off" >
-              <h1 class="fs-4 card-title fw-bold mb-4" >Register</h1>
-              <div class="text-center">
-                <p>Registe-se no nosso site</p>
-              </div>
-              <form id="loginForm" method="POST" class="needs-validation" novalidate autocomplete="off">
-                <div class="mb-3">
-                  <input id="email" type="email" class="form-control" name="email" placeholder="Email" required autofocus  />
-                  <div class="invalid-feedback">Por favor, insira um email válido.</div>
-                </div>
-                <div class="mb-3">
-                  <input id="password" type="password" class="form-control" name="password" placeholder="Senha" required  />
-                  <div class="invalid-feedback">Por favor, insira uma senha.</div>
-                </div>
-                <div class="mb-3">
-                  <input type="password" class="form-control" name="confirm_password" placeholder="Confirme a sua senha" required  />
-                  <div class="invalid-feedback">Por favor, confirme sua senha.</div>
-                </div>
-                <div class="mb-3">
-                  <input type="text" class="form-control" name="nacionalidade" placeholder="Nacionalidade" required  />
-                  <div class="invalid-feedback">Por favor, insira sua nacionalidade.</div>
-                </div>
-                <div class="mb-3">
-                  <input type="date" class="form-control" name="data_nascimento" placeholder="Data de Nascimento" required  />
-                  <div class="invalid-feedback">Por favor, insira sua data de nascimento.</div>
-                </div>
-                <div class="mb-3">
-                  <input type="text" class="form-control" name="endereco" placeholder="Endereço" required  />
-                  <div class="invalid-feedback">Por favor, insira seu endereço.</div>
-                </div>
-                <div 
-                id="textss"
-                 class="form-check" >
-                  <input type="checkbox" name="remember" id="remember" class="form-check-input" />
-                  <label for="label" class="form-check-label">Sim! Gostaria de receber os principais conteúdos, ofertas especiais e outras atualizações do Lisbon Spots.</label>
-                </div>
-                <div 
-                id="textss"
-                class="text-left" >
-                  <div class="social-text">
-                    <span class="show-text">Ao criar uma conta, você concorda com nossos</span>
-                    <span class="show-link"><a href="login.html">Termos de Uso</a></span>
-                    <span class="show-text"> e reconhece que leu nossa</span>
-                    <span class="show-link"><a href="login.html"> Política de Privacidade</a></span>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button id="registerButton" type="submit" class="btn d-inline-flex align-items-center justify-content-center">
-                    Register
-                  </button>
-                </div>
-                <div 
-                id="textss"
-                class="text-center C" >
-                  <span class="show-text">Precisa de ajuda?</span>
-                  <span class="show-link"><a href="support.html">Visite o nosso suporte</a></span><br />
-                </div>
-              </form>
-            `,
-              showConfirmButton: false,
-              focusConfirm: false,
-            });
-            document
-              .getElementById("registerButton")
-              .addEventListener("click", function () {
-                if (document.getElementById("loginForm").checkValidity()) {
-                  Swal.fire({
-                    icon: "success",
-                    title: "Register Successful!",
-                    text: "Bem vindo(a) to LisbonSpots!",
-                    confirmButtonText: "Continue",
-                  }).then((result) => {
-                    if (result.isConfirmed) {
-                      window.location.href = "../html/home.html";
-                    }
-                  });
-                }       
-              });
-            });
-          });
-</script>
-<!------------delete swal----------------->
-
-<script>
-  document.getElementById("delte_alert").addEventListener("click", function (event) {
-         event.preventDefault();    
-         Swal.fire({
-          title: "Tem Certeza?",
-            html: `
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h4 class="small-text">
-                Ao excluir a sua conta, você não poderá fazer mais login
-                no Lisbon Spots e perderá todos os seus privilégios.
-                Precisa de ajuda?
-                <a href="../html/support.html">Visite ao nosso suporte</a>
-              </h4>
-              <button
-                id="confirmDeleteButton"
-                class="btn btn-block"
-                style="
-                  background-image: url('../img/buttonAzulejo\ 1.png');
-                  background-size: cover;
-                  border-color: black;
-                  font-size: small;
-                "
-              >
-                Sim, excluir Conta
-              </button>
-              <button
-                id="cancelDeleteButton"
-                class="btn btn-block mt-3"
-                style="
-                  background-image: url('../img/buttonAzulejo\ 1.png');
-                  background-size: cover;
-                  border-color: black;
-                  font-size: small;
-                "
-              >
-                Não, permanecer com a conta
-              </button>
-            </div>
-            <div class="col-md-6">
-              <img
-                class="imagedel"
-                src="../img/boywithquestionmark.png"
-                width="auto"
-                height="200"
-                style="padding-left: 20px"
-              />
-            </div>
-          </div>
-        </div>
-      `,
-            showConfirmButton: false,
-            showCancelButton: false,
-            //showCloseButton: true,
-            focusConfirm: false,
-            //customClass: {
-            //  closeButton: "cross-circle",
-            //},
-          });
-
-          document
-            .getElementById("confirmDeleteButton")
-            .addEventListener("click", function () {
-              Swal.fire({
-                html: `
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <h1 class="text-left mb-4" style= "font-size:30px; padding-top:0px; font-weight:600;">Conta excluída</h1>
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-md-9"> 
-                    <div class="left-aligned">
-                      <div>
-                        <h4 class="small-text" style="padding-top: 10px; padding-right: 10px; width: 130%"> 
-                          A sua conta foi excluída. Se isso foi feito por engano
-                          ou se você tiver alguma dúvida,
-                          <a href="../html/support.html"
-                            >Visite o nosso suporte</a
-                          >
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-2"> 
-                    <img
-                      class="imagedel"
-                      src="../img/delete.png"
-                      width="220"
-                      height="auto"
-                      style="padding-left: 20px"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        `,
-                focusConfirm: false,
-                showCloseButton: false,
-                showCancelButton: false,
-                showConfirmButton: false,
-              });
-            });
-
-          document
-            .getElementById("cancelDeleteButton")
-            .addEventListener("click", function () {
-              Swal.close();
-            });
-        });
-    </script>
-
-<!--------------------Profile form --------------------> 
-
-<script>
-    document.getElementById("profile_alert").addEventListener("click", function (event) {
-         event.preventDefault();    
-         Swal.fire({
-            html: `
-        
-      <img src="../img/100x100.png" alt="logo" width="100" />
-        <h1
-              class="fs-4 card-title fw-bold mb-4"
-              style="font-size: 60px; text-align: center"
-            >
-              Gerencie a sua conta do Lisbon Spots
-            </h1>
-            <div class="text-center" style="font-size: 20px">
-              <p>Informação da Conta</p>
-            </div>
-            <form
-              id="loginForm"
-              method="POST"
-              class="needs-validation"
-              novalidate
-              autocomplete="off"
-            >
-              <div class="mb-3">
-                <!--<span class="info-text text-start">Email</span>-->
-                <input
-                  id="email"
-                  class="form-control placeholder"
-                  name="email"
-                  readonly
-                  placeholder="Email"
-                />
-                <div class="invalid-feedback">
-                  Por favor, insira um email válido.
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <!--<span class="info-text text-start">Senha</span>-->
-                <input
-                  id="password"
-                  class="form-control placeholder"
-                  name="password"
-                  readonly
-                  placeholder="Senha"
-                />
-                <div class="invalid-feedback">
-                  Por favor, insira uma senha.
-                </div>
-              </div>
-
-              <h1
-                class="fs-4 card-title fw-bold mb-4"
-                style="font-size: 60px; text-align: center; padding: 10px"
-              >
-                Personal Information
-              </h1>
-
-              <div class="mb-3">
-                <!--<span class="info-text text-start">Nome </span>-->
-                <input
-                  class="form-control placeholder B"
-                  name="name"
-                  readonly
-                  placeholder="Nome"
-                />
-                <div class="invalid-feedback">
-                  Por favor, confirme sua senha.
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <!--<span class="info-text text-start">Nacionalidade </span>-->
-                <input
-                  class="form-control placeholder B"
-                  name="nacionalidade"
-                  readonly
-                  placeholder="Nacionalidade"
-                />
-                <div class="invalid-feedback">
-                  Por favor, insira sua nacionalidade.
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <!--<span class="info-text text-start">Data de Nascimento </span>-->
-                <input
-                  class="form-control placeholder B"
-                  name="data_nascimento"
-                  readonly
-                  placeholder="Data de Nascimento"
-                />
-                <div class="invalid-feedback">
-                  Por favor, insira sua data de nascimento.
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <!--<span class="info-text text-start">Endereço </span>-->
-                <input
-                  class="form-control placeholder B"
-                  name="endereco"
-                  readonly
-                  placeholder="Endereço"
-                />
-                <div class="invalid-feedback">
-                  Por favor, insira seu endereço.
-                </div>
-              </div>
-
-              <div class="text-center">
-                <button
-                  id="logout"
-                  type="submit"
-                  class="btn d-inline-flex align-items-center justify-content-center"
-                >
-                  Terminar Sessão
-                </button>
-              </div>
-
-              <div
-                id="textss"
-                class="text-center"
-              >
-                <span class="show-text">Deseja excluir a sua conta? </span>
-
-
-
-
-                <!--<span class="show-link"
-                  ><a href="support.html">Excluir</a></span
-                >-->
-
-                <span class="show-link text-primary" id="open_delete_alert">Excluir</span>
-              </div>
-        </form>
-      `,
-        showConfirmButton: false,
-        focusConfirm: false,
-      });
-      document
-        .getElementById("logout")
-        .addEventListener("click", function () {
-          if (document.getElementById("loginForm").checkValidity()) {
-            Swal.fire({
-              icon: "success",
-              title: "Logout Successful!",
-              text: "See you soon!",
-              confirmButtonText: "Continue",
-            }).then((result) => {
-              if (result.isConfirmed) {
-                window.location.href = "../html/home.html";
-              }
-            });
-          }
-        });
-
-
-
-
-        document
-            .getElementById("open_delete_alert")
-            .addEventListener("click", function () {
-              Swal.fire({
-               title: "Tem Certeza?",
-                html: `
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h4 class="small-text">
-                Ao excluir a sua conta, você não poderá fazer mais login
-                no Lisbon Spots e perderá todos os seus privilégios.
-                Precisa de ajuda?
-                <a href="../html/support.html">Visite ao nosso suporte</a>
-              </h4>
-              <button
-                id="confirmDeleteButton"
-                class="btn btn-block"
-                style="
-                  background-image: url('../img/buttonAzulejo\ 1.png');
-                  background-size: cover;
-                  border-color: black;
-                  font-size: small;
-                "
-              >
-                Sim, excluir Conta
-              </button>
-              <button
-                id="cancelDeleteButton"
-                class="btn btn-block mt-3"
-                style="
-                  background-image: url('../img/buttonAzulejo\ 1.png');
-                  background-size: cover;
-                  border-color: black;
-                  font-size: small;
-                "
-              >
-                Não, permanecer com a conta
-              </button>
-            </div>
-            <div class="col-md-6">
-              <img
-                class="imagedel"
-                src="../img/boywithquestionmark.png"
-                width="auto"
-                height="200"
-                style="padding-left: 20px"
-              />
-            </div>
-          </div>
-        </div>
-      `,
-            showConfirmButton: false,
-            showCancelButton: false,
-            //showCloseButton: true,
-            focusConfirm: false,
-            //customClass: {
-            //  closeButton: "cross-circle",
-            //},
-          });
-
-          document
-            .getElementById("confirmDeleteButton")
-            .addEventListener("click", function () {
-              Swal.fire({
-                html: `
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <h1 class="text-left mb-4" style= "font-size:30px; padding-top:0px; font-weight:600;">Conta excluída</h1>
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-md-9"> 
-                    <div class="left-aligned">
-                      <div>
-                        <h4 class="small-text" style="padding-top: 10px; padding-right: 10px; width: 130%"> 
-                          A sua conta foi excluída. Se isso foi feito por engano
-                          ou se você tiver alguma dúvida,
-                          <a href="../html/support.html"
-                            >Visite o nosso suporte</a
-                          >
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-2"> 
-                    <img
-                      class="imagedel"
-                      src="../img/delete.png"
-                      width="220"
-                      height="auto"
-                      style="padding-left: 20px"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        `,
-                focusConfirm: false,
-                showCloseButton: false,
-                showCancelButton: false,
-                showConfirmButton: false,
-              });
-            });
-
-          document
-            .getElementById("cancelDeleteButton")
-            .addEventListener("click", function () {
-              Swal.close();
-            });
-        });
-
-
-
-    });
-</script>
 
   </body>
 </html>

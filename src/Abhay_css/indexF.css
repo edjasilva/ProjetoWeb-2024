@@ -783,3 +783,39 @@ color: black;
     color: black; /* Adjust color as needed */
   }
   
+#aboutustext{
+  padding-bottom: 50px;
+}
+
+
+#photoL{
+  height: 300px; width: 180px;
+}
+
+#photoB{
+  height: 300px; width: 200px;
+}
+
+#slideshowCommercial{
+  opacity:1;
+  -webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  -moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  -ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)
+}
+
+#anime{
+  padding-bottom: 11px;
+}
+
+#email,
+#message,
+#name{
+  width: 100%;
+}
+
+#navhammenu{
+  width:350px; height: 50px;
+}
+
+
