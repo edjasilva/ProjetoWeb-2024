@@ -4,7 +4,7 @@ document.getElementById("login_alert").addEventListener("click", function (event
    document.getElementById("ham-menu").classList.remove("show-menu");   
    Swal.fire({
     html: `
-  <img src="../img/100x100.png" alt="logo" width="100" />
+  <img src="/images/logoAlternativo.svg" alt="logo" width="100" />
   <form
     id="loginForm"
     method="POST"

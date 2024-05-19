@@ -30,7 +30,7 @@ document.getElementById("delte_alert").addEventListener("click", function (event
        <div class="col-md-6">
          <img
            class="imagedel"
-           src="../img/boywithquestionmark.png"
+           src="/images/deleteBoy.png"
            width="auto"
            height="200"
          />
@@ -70,7 +70,7 @@ document.getElementById("delte_alert").addEventListener("click", function (event
              <div class="col-md-2"> 
                <img
                  class="imagedel"
-                 src="../img/delete.png"
+                 src="/images/deleteBoy2.png"
                  width="220"
                  height="auto"
                />
