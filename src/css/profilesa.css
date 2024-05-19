@@ -39,48 +39,6 @@
 #introtext{
     font-size: medium;
 }
-
-/*------------------REGISTER-----------------*/
-
-  
-  #map {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-  @media (min-width: 768px) {
-    .news-input {
-      width: 50%;
-    }
-  }
-  
-  .social__icon--link {
-    padding: 80px 0; 
-  }
-  
-  
-  .modal-title {
-    align-items: center; 
-    text-align: center;
-    font-size: 40px;
-  }
-  
-  
-  .social-icon {
-    color: black;
-    margin-top: 60px;
-    font-size: 25px;
-    margin-bottom: 10px;
-    padding: 9px;
-    margin: 3px;
-  }
-  
-  .social-text {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
   /*------------Profile-------------------------------------*/
   #email{
     width: 90%;
@@ -233,25 +191,7 @@ margin-left: 10%;
     
 }
 
-/*nonCom*/
 
-.spot-img-com {
-    width: 60%;
-    height: 450px;
-}
-.spot-img-com:hover{
-    transform: scale(1.02);
-}
-
-/*ConctaUs*/
-.btn.send{
-    background-image: url('../img/buttonAzulejo\ 1.png');
-    background-size: cover;
-    border-color: black;
-    width: 60%;
-    margin: 20px auto;
-          
-}
 
 
 
@@ -498,9 +438,6 @@ margin-left: 10%;
     padding-top: 2rem; padding-bottom: 5rem
   }
   
-  .col-md-6{
-    padding-top: 3rem
-  }
   
   .text-decoration-none{
     color: white; font: size 12rem
@@ -645,13 +582,6 @@ margin-left: 10%;
   margin: auto;
 }
 
-#loginButton{
-  background-image: url('../img/buttonAzulejo\ 1.png');
-  background-size: cover;
-  border-color: black;
-  width: 60%;
-  margin: 20px auto;
-}
 
 .text-center{
   font-size: 15px;
@@ -1178,6 +1108,10 @@ input:nth-of-type(8):checked ~ main#carousel {
   font-size: small;
 }
 
+#text_delete{
+  font-size: 14px;
+  text-align: left;
+}
 
 .imagedel{
   padding-left: 20px;
