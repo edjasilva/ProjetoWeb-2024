@@ -735,17 +735,6 @@ color: black;
   padding-left: 20px;
 }
 
-/*------------Profile-------------------------------------*/
-#email{
-  width: 90%;
-}
-
-#profileheading{
-  font-size: 60px;
-  text-align: center; 
-  padding: 10px;
-}
-
 #text_delete{
   font-size: 14px;
   text-align: left;
@@ -756,4 +745,15 @@ h4#text_delete {
   font-size: 14px;
   font-weight: 100;
   line-height: normal;
+}
+
+/*------------Profile-------------------------------------*/
+#email{
+  width: 90%;
+}
+
+#profileheading{
+  font-size: 60px;
+  text-align: center; 
+  padding: 10px;
 }
