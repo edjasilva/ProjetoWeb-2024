@@ -553,34 +553,6 @@ font-family: 'BioRhyme';
 
 
 
-/*.lista{
-  background-color: white;
-  border: 1.2px solid black;
-  border-radius: 17px;
-  width: 40%;
-  height: 50px;
-  
-  
- 
-}*/
-
-/*li {
-
-  /*margin-left: 32px;
-  flex: 1;
-  background-image: url('Vector\ 3.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 3px auto;
-  width: 100px;
-
-  display: flex;
-
-  justify-content: center; 
-  align-items: center; 
-}
-*/
-
 .nav-item::after{
   background-image: url('Vector3.svg');
   margin: 0 10px;
@@ -594,12 +566,6 @@ li:last-child{
 }
 
 
-/*.botao{
-  background-color: white;
-  border: 1.2px solid black;
-  border-radius: 10px;
-}
-*/
 .sim {
   z-index: 100;
   margin-top: -300px;
@@ -613,7 +579,7 @@ li:last-child{
 }
 
 .navbar{
-  background-image: url(../img/mosaico.svg);
+  background-image: url(../images/mosaicoNavbar.svg);
   background-size: cover;
   background-position: center center;
 }

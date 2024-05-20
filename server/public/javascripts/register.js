@@ -2,7 +2,7 @@ document.getElementById("register_alert").addEventListener("click", function (ev
     event.preventDefault();    
     Swal.fire({
         html: `
-      <img src="../img/100x100.png" alt="logo" width="100" />
+      <img src="/images/logoAlternativo.svg" alt="logo" width="100" />
       <form id="loginForm A" method="POST" class="needs-validation" novalidate autocomplete="off" >
         <h1 class="fs-4 card-title fw-bold mb-4" >Register</h1>
         <div class="text-center">
