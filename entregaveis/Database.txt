@@ -4,9 +4,9 @@ CREATE TYPE gender AS ENUM ('female', 'male', 'other');
 
 CREATE TYPE rating AS ENUM ('1', '2', '3', '4', '5');
 
-CREATE TYPE comSpotCategory AS ENUM ('restaurant', 'hotel', 'satdium', 'shopping', 'museum', 'church');
+CREATE TYPE comSpotCategory AS ENUM ('restaurant', 'hotel', 'stadium', 'shopping', 'museum');
 
-CREATE TYPE nonComSpotCategory AS ENUM('beach', 'park', 'river', 'waterfal', 'museum' );
+CREATE TYPE nonComSpotCategory AS ENUM('beach', 'park', 'river', 'waterfal', 'mountain', 'church' );
 
 CREATE TABLE tb_user (
 	id SERIAL primary key not null,
