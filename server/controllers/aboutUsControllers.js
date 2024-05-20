@@ -1,5 +1,5 @@
 const getAll = async function(req, res){
-    res.render('aboutUs', {layout: 'aboutUsLay', title: 'LisbonSpots', }
+    res.render('aboutUs', {layout: 'mainLay', title: 'LisbonSpots', }
 )};
 
 export {getAll}

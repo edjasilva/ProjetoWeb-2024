@@ -9,6 +9,7 @@ import supportRoutes from './routes/supportRoutes.js';
 import termosRoutes from './routes/termosRoutes.js';
 import mapaRoutes from './routes/mapaRoutes.js';
 import homeRoutes from './routes/homeRoutes.js';
+import spotsRoutes from './routes/spotsRoutes.js';
 dotenv.config();
 
 const server= express();
@@ -37,6 +38,7 @@ server.use("/support", supportRoutes);
 server.use("/termos", termosRoutes);
 server.use("/mapa", mapaRoutes);
 server.use("/home", homeRoutes);
+server.use("/spots", spotsRoutes);
 
 
 

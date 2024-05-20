@@ -39,46 +39,9 @@
 #introtext{
     font-size: medium;
 }
-
-/*------------------REGISTER-----------------*/
-
-  
-  #map {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-  @media (min-width: 768px) {
-    .news-input {
-      width: 50%;
-    }
-  }
-  
-  .social__icon--link {
-    padding: 80px 0; 
-  }
-  
-  
-  .modal-title {
-    align-items: center; 
-    text-align: center;
-    font-size: 40px;
-  }
-  
-  
-  .social-icon {
-    color: black;
-    margin-top: 60px;
-    font-size: 25px;
-    margin-bottom: 10px;
-    padding: 9px;
-    margin: 3px;
-  }
-  
-  .social-text {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  /*------------Profile-------------------------------------*/
+  #email{
+    width: 90%;
   }
 
   /*-------------------------NAVBAR------------------*/
@@ -228,25 +191,7 @@ margin-left: 10%;
     
 }
 
-/*nonCom*/
 
-.spot-img-com {
-    width: 60%;
-    height: 450px;
-}
-.spot-img-com:hover{
-    transform: scale(1.02);
-}
-
-/*ConctaUs*/
-.btn.send{
-    background-image: url('../img/buttonAzulejo\ 1.png');
-    background-size: cover;
-    border-color: black;
-    width: 60%;
-    margin: 20px auto;
-          
-}
 
 
 
@@ -263,10 +208,10 @@ margin-left: 10%;
     background-color: white;
     position: absolute;
     z-index: 1100;
-    left: 39%;
+    left: 37%;
     animation-duration: 0.5s;
     animation-name: fadeInd;
-    margin-top: 0px;
+    margin-top: 35px;
 
 }
 
@@ -351,8 +296,38 @@ margin-left: 10%;
     background-color:rgb(255, 255, 255);
   }
   
+  #cardhome{
+    width: 22rem;
+     background-color: #fcfcfc;
+     max-width: 100%;
+  }
+
+  #navhammenu{
+    width:350px; height: 50px;
+  }
+  
+  #vlogText{
+    font-size: 2.3rem;
+  }
+
+  #introtextend{
+    padding-bottom: 5rem;
+  }
+  
+  #cardimages{
+    max-width: 100%;
+  }
+
+  #homeshadow{
+    width: 3500px;
+  }
+  
+  #homebox{
+    padding: 5rem;
+  }
+
   .container{
-  width: 100%;
+  width: 100% !important;
   }
   
   .coluna{
@@ -391,7 +366,7 @@ margin-left: 10%;
       font-size: 1.25rem;
     }
     .card {
-      display: inline-block;
+      display: inline-block !important;
       margin-right: 10px;
     }
   
@@ -463,9 +438,6 @@ margin-left: 10%;
     padding-top: 2rem; padding-bottom: 5rem
   }
   
-  .col-md-6{
-    padding-top: 3rem
-  }
   
   .text-decoration-none{
     color: white; font: size 12rem
@@ -578,7 +550,6 @@ margin-left: 10%;
 }
 
 .btn{
-    background-image: url('../img/buttonAzulejo\ 1.png');
     background-size: cover;
     border-color: black;
     font-size: small;
@@ -611,13 +582,6 @@ margin-left: 10%;
   margin: auto;
 }
 
-#loginButton{
-  background-image: url('../img/buttonAzulejo\ 1.png');
-  background-size: cover;
-  border-color: black;
-  width: 60%;
-  margin: 20px auto;
-}
 
 .text-center{
   font-size: 15px;
@@ -997,6 +961,11 @@ input:nth-of-type(8):checked ~ main#carousel {
 .menu-icon {
   display: none;
 }
+
+.board-body{
+  margin: 12px;
+}
+
 /* ---------- MAIN ---------- */
 
 .main-container {
@@ -1005,8 +974,6 @@ input:nth-of-type(8):checked ~ main#carousel {
   padding: 20px 20px;
   color: rgba(255, 255, 255, 0.95);
 }
-
-
 
 .main-title {
   display: flex;
@@ -1132,22 +1099,26 @@ input:nth-of-type(8):checked ~ main#carousel {
   margin-top: 10px;
 }
 
-#searchbutton{
-  margin-top: 1rem;
-  padding: .6rem;
-  border-radius: 5px;
-  background-color: #000000;
-  font-size: 15px;
-  color: #fff;
-  border: #000;
+
+#confirmDeleteButton,
+#cancelDeleteButton{
+  background-image: url('../img/buttonAzulejo\ 1.png');
+  background-size: cover;
+  border-color: black;
+  font-size: small;
 }
 
-#searchInput{
-  margin-top: 1rem;
-  padding: .6rem;
-  border-radius: 5px;
-  border-color: #ebebeb;
-  background-color: #ffffff;
-  font-size: 15px;
+#text_delete{
+  font-size: 14px;
+  text-align: left;
+}
 
+.imagedel{
+  padding-left: 20px;
+}
+
+#profileheading{
+  font-size: 60px;
+  text-align: center; 
+  padding: 10px;
 }
