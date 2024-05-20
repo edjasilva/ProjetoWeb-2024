@@ -60,7 +60,7 @@ CREATE TABLE tb_location(
 
 CREATE TABLE tb_spot (
 	id SERIAL primary key not null,
-	name TEXT,
+	name TEXT not null,
 	description TEXT,
 	rating rating, 
 	loc_id int REFERENCES tb_location(id) on delete set null
