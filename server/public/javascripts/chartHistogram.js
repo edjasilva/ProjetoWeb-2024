@@ -1,5 +1,5 @@
-const data = [12, 19, 3, 5, 2, 3, 8, 15, 20, 10, 7, 6, 8, 5, 18, 13, 4, 1, 9, 11];
-    const bins = [0, 5, 10, 15, 20, 25]; // Intervalos dos bins
+const data = [4];
+    const bins = [0, 1, 2, 3, 4, 5]; // Intervalos dos bins
 
     // Função para calcular a frequência de cada bin
     function calculateBinFrequencies(data, bins) {

@@ -1,0 +1,26 @@
+label,value
+"Centro Comercial", 4
+ "Hotel", 4
+ "Restaurante", 4
+ "Estádio", 4
+
+
+
+ label,value, label1,value1
+"Praia", 1, "Centro Comercial", 4
+"Igreja",2,  "Hotel", 4
+"Montanha",3,  "Restaurante", 4
+"Parque", 5, "Estádio", 4
+"Rio",4, "", 2
+"Cascata",5,
+
+
+
+
+label,value, label1,value1
+"Praia", 1, "Centro Comercial", 4
+"Igreja",2,  "Hotel", 4
+"Montanha",3,  "Restaurante", 4
+"Parque", 5, "Estádio", 4
+"Rio",4, "", 2
+"Cascata",5, "", 3

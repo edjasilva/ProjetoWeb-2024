@@ -3,3 +3,5 @@ const getAll = async function(req, res){
 )};
 
 export {getAll}
+
+
