@@ -1,0 +1,573 @@
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES 
+('R. Câmara Pestana 45', '1150-082', 'Torel Palace', 'Portugal', 1),
+('R. Anchieta 15', '1200-224', 'Portugal', 1),
+INSERT INTO tb_address (street, zipcode, building, country, floor)
+VALUES 
+('R. Serpa Pinto', '1200-026', '10A', 'Portugal', 1);
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES
+('Altis Belem Hotel & Spa, Doca do Bom Sucesso', '1400-038', 'Portugal', 1);
+
+
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('7:30:00', '11:30:00'); 
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('1:30:00', '9:30:00');
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('7:00:00', '11:30:00');
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('7:00:00', '10:30:00');
+
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-9.14014884481221 38.71864797951418)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-9.141275974274734 38.71050302125648)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-9.1413671911716 38.71052620140222)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-9.210403984811208 38.69389761232532)', 4326), NOW(), NOW());
+
+
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES 
+('O restaurante 2Monkeys é o primeiro projeto em Lisboa do Chef Vitor Matos. Aqui, a amizade e a criatividade fundem-se para oferecer uma experiência de jantar excecional num ambiente intimiste .
+O nosso conceito único de “fun fine-dining” convida-o a jantar na cozinha com os nossos dois chefes, Vítor Matos  e Francisco Quintas. Estes irão guiá-lo através de um menu surpresa assim como irão partilhar a inspiração por detrás de cada prato.', '5', 1, 'hotel', 1, NULL, '2Monkeys');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES 
+('A cozinha de Henrique Sá pessoa é definida como uma cozinha de sabor.
+A base da sua filosofia gastronómica está nas suas influências e referências: a cozinha tradicional portuguesa, as viagens pelo mundo, a paixão pela Ásia e a vida em Lisboa.
+Entre connosco nesta viagem.No ALMA procuramos servir mais do que uma refeição: servimos emoções, identidade, conhecimento. No fundo, procuramos desenvolver uma cozinha com profundidade, que é também uma consequência das nossas experiências.', '5', 2, 'hotel', 2, NULL, 'Alma');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('Desfruta de uma magnífica localização no turístico Bairro Alto (Chiado), na esquina de um antigo convento danificado pelo grande terramoto que devastou a cidade em 1755.O chef José Avillez, que defende uma carta moderna e dois menus de degustação completos (Evolução e Belcanto), apresenta a casa-mãe do seu império culinário como um espaço de descoberta gastronómica, com a sala dividida em vários recantos e uma "mesa do chefe" na cozinha. José Avillez explica sempre que os seus pratos são influenciados pela luz, o mar e os bairros de Lisboa, ao ponto de afirmar que "A cozinha é o nosso fado, a nossa forma de expressão". Curiosidade? O guardanapo utilizado para a sobremesa imita a manga de uma camisa... era o que o chef usava para limpar a si próprio quando era criança!', '5', 3, 'hotel', 4, NULL, 'Belcanto');
+
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('Localizado no Altis Belém Hotel & Spa, o restaurante Feitoria premiado com uma estrela Michelin, pretende proporcionar experiências que vão muito além de um jantar. Com uma cozinha de autor e uma visão centrada na origem do produto, toda a experiência no Feitoria gira em torno de um enorme respeito pelos produtores e pelo produto.Apaixonado pela natureza, criativo e aventureiro o chefe André Cruz pretende trazer as suas paixões para o menu do Feitoria. Fique a saber mais sobre o chefe que tem como hobby a apicultura, apesar de ser alérgico a abelhas.', '5', 4, 'hotel', 5, NULL, 'Restaurante Feitoria');
+
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES 
+('R. de Santiago 12', '1100-494', 'Portugal', 0);
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES
+('R. Rosa Araújo 8', '1250-195', 'Portugal', 0);
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES
+('R. das Portas de Santo Antão 112 134', '1150-268', 'Portugal', 0);
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES
+('R. Capelo 5', '1200-224', 'Portugal', 0);
+
+
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('19:00:00', '00:00:00'),
+('19:30:00', '23:30:00'),
+('11:00:00', '23:30:00'),
+('17:00:00', '00:00:00');
+
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.13085913207275 38.713029547097165)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.148808385272572 38.72278376280278)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.141063662141812 38.71850880514242)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.140347611736015 38.70983352412761)', 4326), NOW(), NOW());
+
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('O Santiago é um boutique hotel familiar situado num palácio do século XV totalmente restaurado. O hotel está aninhado a igual distância entre o Castelo de São Jorge e o belo Miradouro de Santa Luzia, com vistas que descem pela colina salpicada de igrejas caiadas de branco, telhados de terracota e até ao rio Tejo, onde o azul da água se encontra com o azul do céu, tudo enquadrado por uma explosão de buganvílias cor-de-rosa e roxas.
+No Santiago, recorremos a fornecedores locais e incorporamos os maravilhosos produtos locais no nosso restaurante Audreys, nomeado em homenagem à nossa filha. Uma defensora fervorosa do bem-estar animal, da sustentabilidade e de todas as coisas deliciosas – um ser humano maravilhoso que deseja mimar e satisfazer.', '5',  5, 'restaurant', 1, NULL, 'Santiago de Alfama');
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('Portobay Liberdade é um hotel de cinco estrelas em Lisboa pertencente ao Grupo PortoBay. Situado na Rua Rosa Araújo, junto à Avenida da Liberdade, a avenida mais elegante bem no centro da cidade. Este boutique hotel possui todas as características de um resort urbano: uma piscina interior e um ginásio com iluminação natural, SPA com salas de tratamento para dois, sauna, banho turco, esplanada, pátio, terraço e varandas na maioria dos quartos. 
+O restaurante Bistrô4 apresenta um menu inspirado nos produtos de cada estação. Suba ao terraço para desfrutar de uma atmosfera especial! Reconhecido nos World Luxury Spa Awards. Com horário alargado, oferece experiências de spa personalizadas.', '5', 6, 'restaurant', 2, NULL, 'Portobay Liberdade');
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('The One Palácio da Anunciada, o novo hotel 5* da cidade, está situado no coração da Lisboa histórica, a escassos metros da prestigiada Avenida da Liberdade e da Praça dos Restauradores. O edifício representa a herança histórica desde o ano de 1533, conservando toda a imponência do século XVI. Na zona mais exclusiva da Cidade da Luz poderá viver uma experiência única: a melhor oferta gastronómica tradicional, uma ampla oferta das melhores boutiques de luxo e todo um centro histórico por descobrir.Restaurante Condes de Ericeira
+Situado num dos salões nobres do palácio e com acesso direto aos jardins, o Restaurante Condes de Ericeira é um novo espaço gastronómico de referência em Lisboa.', '5', 7,'restaurant', 4, NULL, 'One Palácio da Anunciada');
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('NASCIDOS COM O DOM DA CURIOSIDADE, OS EXPLORADORES SÃO FEITOS DE MAIS. ELES VIAJAM PELO MUNDO DESLUMBRADOS E À PROCURA DE EXPERIÊNCIAS ÚNICAS. (…)O descanso do explorador. Mesmo para um explorador incansável, o descanso é  sagrado. É a pensar neles que o The Ivens tem 87 quartos,  incluindo 10 suites e 7 quartos premium,  magnificamente decorados.Uma experiência única
+e autêntica. Um novo restaurante, o bar mais interessante, um jardim escondido, uma exposição imperdível, onde ir às compras. Tudo isso à distância de uma pergunta: O que vamos fazer hoje?', '5',8, 'restaurant', 5, NULL, 'The Ivens');
+
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES 
+('Estádio de Honra', '1600-190', 'Portugal', 1);
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES 
+('Rua Professor Fernando da Fonseca', '1501-806', 'Portugal', 1);
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES 
+('Av. Eusébio da Silva Ferreira', '1500-313', 'Portugal', 1);
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES 
+('Largo Júlio Castilho', '1600-483', 'Portugal', 1);
+
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('11:00:00', '22:00:00'),
+('10:00:00', '23:00:00'),
+('9:00:00', '23:00:00'),
+('10:00:00', '22:00:00');
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.26077064689978 38.70916066219161)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.162002017668437 38.761711290710664)', 4326), NOW(), NOW());
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.183958373490508 38.754110442035426)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.207199216289034 38.70395822542584)', 4326), NOW(), NOW());
+
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('O Estádio Eng.º Vasco Pinto de Magalhães, mais conhecido como Estádio de Honra, é composto pelos seguintes espaços de prática desportiva:
+Campo de relva sintética com 111m x 64m, com iluminação artificial (400 lux) homologado oficialmente para a prática de Futebol 11, Futebol 7 e Rugby;
+Pista de atletismo em Tartan com 8 corredores e medidas oficiais para provas de atletismo (homologada pela FPA);
+Sem área de lançamentos (apenas possível lançamentos na Pista nº 2 em eventos exclusivos, marcados e autorizados pelas reservas);
+Área de saltos;
+A Lotação máxima de utilização dos Campos de Relva Sintética é de 40 adultos ou 80 crianças.', '4', 9, 'stadium', 1, NULL, 'Estádio de Honra');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('Na década de noventa do século XX, com os grandes esforços de transformação realizados no Clube e a desejada activação de um património imobiliário estagnado, a construção de um moderníssimo Estádio tornou-se uma realidade. E a obra, orgulho de todos os Sportinguistas pela sua funcionalidade e beleza, nasceu a 6 de Agosto de 2003.No entanto, esta "aventura" começou muito mais cedo com a colocação da primeira pedra a 15 de Janeiro de 2001: o Sporting Clube de Portugal e a Alves Ribeiro (principal empreiteiro da obra mediante concurso público) iniciavam assim a construcção do novo espaço desportivo dos leões.', '5', 10,'stadium', 2, NULL, 'Estádio José Alvalade');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('O Estádio da Luz ou Estádio do Sport Lisboa e Benfica (nome oficial) é um estádio de futebol de Categoria 4 localizado na freguesia de São Domingos de Benfica, cidade de Lisboa, em Portugal. O estádio é também conhecido pelos benfiquistas como "A Catedral".A autoria do projeto do novo estádio é da empresa norte-americana Populous.A 9 de novembro de 2009, o estádio ultrapassou a marca dos 6 milhões de espectadores.No décimo aniversário do novo Estádio da Luz, a 25 de outubro de 2013, foi ultrapassada a marca dos 11 milhões de espectadores.A 14 de Janeiro de 2017 passou a marca dos 15 000 000 de espectadores, a maior de todos os estádios em utilização em Portugal, no jogo do campeonato nacional contra o Boavista.', '5', 11,'stadium', 3, NULL, 'Estádio do Sport Lisboa e Benfica');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
+VALUES
+('O Estádio do Restelo está localizado em uma zona nobre da cidade de Lisboa — a freguesia de Belém. Construído num local onde antes era uma pedreira, numa encosta de onde é possível ver o rio Tejo, o recinto foi inaugurado a 23 de setembro de 1956, sendo propriedade do Clube de Futebol Os Belenenses.O Estádio do Restelo foi o primeiro estádio em Portugal a receber um espectáculo musical (concerto da banda inglesa The Police em 1980) e, ao longo dos anos, palco de numerosos concertos, destacando-se bandas como os Xutos & Pontapés (entre eles, o concerto dos 30 anos de carreira), Queen + Paul Rodgers, AC/DC, Pearl Jam (que incluiu a gravação de um álbum ao vivo), James (banda), The Smashing Pumpkins, Radiohead.', '4', 12,'stadium', 4, NULL, 'Estádio do Restelo');
+
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES 
+('Av. António Augusto de Aguiar 31', '1069-413', 'Portugal', 1);
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES
+('Av. Dom João II 40', '1990-094', 'Portugal', 1);
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES
+('Av. Lusíada', '1500-392', 'Portugal', 1);
+
+
+INSERT INTO tb_address (street, zipcode, country, floor)
+VALUES
+('Av. Cruzeiro Seixas 5 e 7', '2650-505','Portugal', 1);
+
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('8:00:00', '00:00:00');
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('8:00:00', '00:00:00');
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('10:00:00', '00:00:00');
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('10:00:00', '23:00:00');
+
+
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.153703898998906 38.73350642888717)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.15339542405113 38.73359217981725)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.188322281044472 38.75393766383156)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.219397099241112 38.77721978649703)', 4326), NOW(), NOW());
+
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
+VALUES
+('O El Corte Inglés Grandes Armazéns SA é a empresa portuguesa de retalho que integra o Grupo El Corte Inglés desde 2001. Baseia o seu modelo de negócio numa proposta comercial atractiva, ampla e diversificada, através da permanente incorporação de produtos e serviços pioneiros. 
+Desde a abertura dos primeiros Grandes Armazéns em Lisboa, em 2001, que o El Corte Inglés Grandes Armazéns SA manteve sempre uma política de serviço ao cliente e um constante interesse em adaptar-se aos gostos e necessidades da sociedade. A garantia, qualidade e especialização que oferece o El Corte Inglês, assim como a sua aposta na inovação têm contribuído para que o Grupo se tenha convertido numa referência a nível mundial.  
+Com quase 80 anos de experiência, a história do Grupo El Corte Inglés está marcada por estar sempre na vanguarda, marcar tendências, promover mudanças e criar novos conceitos.', '5', 13,'shopping', 1, NULL, 'El corte inglês');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
+VALUES
+('O Centro com características arquitetónicas únicas que tem ao seu dispor 196 lojas, onde se incluem 50 restaurantes, 6 salas de cinema, um Health Club e diversos Serviços de Atendimento ao Cliente.Dispondo de excelentes acessibilidades, o Centro Vasco da Gama é servido por uma eficaz rede de transportes com acesso direto através da Estação do Oriente, sendo também facilmente acedido tanto de Norte como de Sul por vias rodoviárias. A 10 minutos do centro da cidade de Lisboa e a 5 minutos do Aeroporto Internacional de Lisboa, o Centro Vasco da Gama dispõe de estacionamento coberto com capacidade para cerca de 2.500 lugares. Para além de uma vasta oferta comercial, que inclui insígnias reconhecidas internacionalmente, este Centro dispõe de fantásticas esplanadas com uma vista panorâmica sobre o Tejo.', '5', 14,'shopping', 2, NULL, 'Centro comercial Vasco Da Gama');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
+VALUES
+('26 anos depois mas cada vez mais atual, o Centro Colombo continua a ser o maior centro comercial do país, tendo mais de 300 lojas, 60 restaurantes, 8 salas de cinema e um IMAX e a mais completa oferta de retalho ao nível de qualidade e diversidade.Além disso, os visitantes podem encontrar uma oferta variada de serviços que começa ainda no parque, uma app para guardar a localização do carro, local para deixar a bicicleta e trotinete, espaços de trabalho individuais e insunorizados ou um playground dedicado às crianças e Bowling City. A par desta experiência única de compras e de lazer que oferece aos seus clientes, o Centro Colombo assume a responsabilidade de dar um contributo positivo para um mundo mais sustentável, trabalhando ativamente para um desempenho excecional nas áreas ambiental e social.', '5', 15,'shopping', 3, NULL, 'Centro Colombo');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
+VALUES
+('O UBBO Shopping Resort é um dos centros comerciais actualmente geridos pela CBRE, tendo sido inaugurado em Maio de 2009. Localizado na Amadora, foi designado por Dolce Vita Tejo até Janeiro de 2019.UBBO é diferente, um local único. Um destino de lazer, entretenimento e compras nunca visto em Portugal. São 104,000m2 de área comercial com 300 lojas e restaurantes, que pode disfrutar nos 4 ambientes de restauração ou no terraço.', '4', 16,'shopping', 4, NULL, 'Ubbo');
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Largo do Carmo 27', '1200-092', 'Portugal');
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES
+('R. das Janelas Verdes', '1249-017', 'Portugal');
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES
+('Av. Brasília', '1300-598','Portugal');
+
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('8:00:00', '18:00:00');
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('10:00:00', '18:00:00');
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('10:00:00', '19:00:00');
+
+
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.140618550341369 38.71265784677829)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.161495731225125 38.70500506187543)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.193387106366172 38.696124026308965)', 4326), NOW(), NOW());
+
+
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
+VALUES
+('O museu encontra-se instalado nas denominadas Ruínas do Carmo, correspondendo à antiga Igreja do Convento de Nossa Senhora do Vencimento do Monte do Carmo, fundado por D. Nuno Álvares Pereira em 1389. O antigo templo gótico ficou bastante danificado com o terramoto de 1755 mas conserva ainda estruturas e elementos primitivos (séc. XIV-XV), onde se destacam os portais virados a Ocidente e Sul, ornados com belos capitéis vegetalistas e antropomórficos.O acervo deste museu integra peças de valor histórico, arqueológico e artístico, contemplando artefactos e obras desde a Pré-História à contemporaneidade.As civilizações Pré e Proto-Históricas estão representadas por uma coleção de artefactos arqueológicos do Paleolítico, Neolítico, Calcolítico, Bronze Antigo e Idade do Ferro. As civilizações Egípcia e Pré-Colombiana estão presentes através de uma coleção de cerâmicas e peças metálicas, múmias peruanas e uma múmia egípcia. A Antiguidade Clássica faz-se representar através de obras e fragmentos do período romano com especial destaque para uma arca tumular decorada com elegantes relevos. Da Alta Idade Média detaque para o período de domínio islâmico peninsular. Dos séculos do Gótico têm especial relevo os exemplares de tumulária dos séculos XIV e XV onde foram sepultados membros da Casa Real.O museu possui ainda uma excelente coleção de Pedras de Armas de grande interesse heráldico.O museu encontra-se instalado nas denominadas Ruínas do Carmo, correspondendo à antiga Igreja do Convento de Nossa Senhora do Vencimento do Monte do Carmo, fundado por D. Nuno Álvares Pereira em 1389. O antigo templo gótico ficou bastante danificado com o terramoto de 1755 mas conserva ainda estruturas e elementos primitivos (séc. XIV-XV), onde se destacam os portais virados a Ocidente e Sul, ornados com belos capitéis vegetalistas e antropomórficos.O acervo deste museu integra peças de valor histórico, arqueológico e artístico, contemplando artefactos e obras desde a Pré-História à contemporaneidade. As civilizações Pré e Proto-Históricas estão representadas por uma coleção de artefactos arqueológicos do Paleolítico, Neolítico, Calcolítico, Bronze Antigo e Idade do Ferro. As civilizações Egípcia e Pré-Colombiana estão presentes através de uma coleção de cerâmicas e peças metálicas, múmias peruanas e uma múmia egípcia. A Antiguidade Clássica faz-se representar através de obras e fragmentos do período romano com especial destaque para uma arca tumular decorada com elegantes relevos. Da Alta Idade Média detaque para o período de domínio islâmico peninsular. Dos séculos do Gótico têm especial relevo os exemplares de tumulária dos séculos XIV e XV onde foram sepultados membros da Casa Real.O museu possui ainda uma excelente coleção de Pedras de Armas de grande interesse heráldico.', '4', 35, 'museum', 1, NULL, 'Museu Arqueológico do Carmo');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
+VALUES
+('O MNAA-Museu Nacional de Arte Antiga alberga a mais relevante coleção pública do País: pintura, escultura, ourivesaria, artes decorativas, da Idade Média até ao século XIX, incluindo o maior número de obras classificadas como “tesouros nacionais”.Destacam-se no acervo do museu os Painéis de São Vicente, de Nuno Gonçalves, obra-prima da pintura do século XV, a Custódia de Belém, de Gil Vicente, mandada lavrar por D. Manuel I, os Biombos Namban, registo da presença dos portugueses no Japão, as Tentações de Santo Antão, de Bosch, exemplo máximo da pintura flamenga do século XVI.O jardim do MNAA, com restaurante e esplanada, goza de uma excecional vista sobre o Rio Tejo.', '5', 36,'museum', 2, NULL, 'Museu Nacional de Arte Antiga');
+
+INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
+VALUES
+('O MAAT – Museu de Arte, Arquitetura e Tecnologia é a nova proposta cultural para a cidade de Lisboa.Um museu que cruza estas três áreas num espaço de debate, de descoberta, de pensamento crítico e de diálogo internacional.Um projeto inovador que coloca em comunicação um novo edifício, desenhado pelo atelier de arquitetura Amanda Levete Architects, e a Central Tejo, um dos exemplos nacionais de arquitetura industrial da primeira metade do século XX, e um dos polos museológicos mais visitados do país.O MAAT traduz a ambição de apresentar exposições nacionais e internacionais com o contributo de artistas, arquitetos e pensadores contemporâneos. Refletindo sobre grandes temas e tendências atuais, a programação apresentará ainda diversos olhares curatoriais sobre a Coleção de Arte da Fundação EDP.', '4', 37,'museum', 3, NULL, 'MAAT – Museu De Arte, Arquitetura E Tecnologia');
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Praia do Guincho', '2750-642', 'Portugal');
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Passeio do Tejo', '1200-224', 'Portugal');
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Praia da Ursa', '1200-026', 'Portugal');
+
+
+
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.472634480326722 38.734131386660195)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.231877026486755 38.6347248396732)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.492287530567637 38.790847246806614)', 4326), NOW(), NOW());
+
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('A praia Grande do Guincho localiza-se entre duas pontas rochosas, a ponta alta e a ponta do abano, tem uma grande extensão de areal, tanto em comprimento como em largura. De água límpida e cristalina, a praia Grande do Guincho é considerada uma das maiores praias do país, com elevada afluência de veraneantes, fazendo parte do Parque Natural Sintra-Cascais. É procurada também por praticantes de Surf, Windsurf e Kitesurf, onde são realizados campeonatos mundiais destas mesmas modalidades.A serra de Sintra e as dunas conferem um enquadramento paisagístico reconhecido internacionalmente. Devido à acção do vento, a praia depara-se a sul com o sistema dunar “Guincho-Cresmina”, de grande dinamismo geológico. Avistam-se dunas de vários tipos nesta praia: as dunas móveis embrionárias, que representam os primeiros estados de vegetação dunar; as dunas brancas, que constituem os cordões arenosos mais próximos do mar; e ainda as dunas cinzentas, as quais são fixas, estabilizadas e colonizadas por arrelvados vivazes mais ou menos densos e por abundantes tapetes de líquenes e musgos. ', '5', 17,'beach', 1,  'A praia do Guincho');
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('Tradicional vila piscatória, a Costa da Caparica transformou-se durante o séc. XX na mais concorrida praia da região de Lisboa, cuja localização e facilidade de acessos atrai multidões nos fins de semana de verão.O areal que se estende por cerca de 25 kms possibilita a escolha entre as praias mais frequentadas junto à vila e zonas praticamente desertas. Um pitoresco comboio, o "Transpraia", faz a ligação entre as praias da vila e a Fonte da Telha no terminus da linha, com diversas paragens no seu percurso.Nas diversas praias encontram-se excelentes condições para a prática de diversos desportos, como o surf, o voleibol de praia (em locais adaptados para o efeito) e também muitos bares que além de infraestruturas de apoio são animados pólos de divertimento nocturno.Como localidade piscatória, a grande especialidade da gastronomia da região são os pratos de peixe, nomeadamente as Caldeiradas, a que é dedicado um festival gastronómico que aqui se realiza anualmente.', '5', 18,'beach',2,'Praia da Costa da Caparica');
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('Situada perto do Cabo da Roca, a Praia da Ursa tem como acesso uma estrada de terra batida, seguida de um caminho sinuoso e íngreme que, por fim, termina neste areal tranquilo e pouco frequentado.Apesar do percurso perigoso, o esforço é recompensado pela soberba paisagem que se pode apreciar, dominada pelas enormes formações rochosas existentes na praia. Deve o seu nome precisamente a um destes rochedos, cujo formato faz lembrar um urso.A Praia da Ursa é um paraíso bruto, emoldurado por magníficas formações rochosas. Foi considerada pelo Guia Michelin como uma das praias mais bonitas do mundo e, frequentemente, entre na lista das melhores praias desertas da Europa.', '4', 19, 'beach', 3,  'Praia da Ursa');
+
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('R. Jamor', '1495-700', 'Portugal');
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('R. Belver', '6040-032', 'Portugal');
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES
+('R. Tejo ', '2600-401', 'Portugal');
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.250178065154357 38.70238955584393)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-7.951433260078207 39.491814884958565)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-7.959673006195496 39.49684870457209)', 4326), NOW(), NOW());
+
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES  
+('O rio Jamor é um rio que nasce na serra da Carregueira, no concelho de Sintra, e vai desaguar no rio Tejo, na Cruz Quebrada. Toma o nome de Ribeira de Belas no troço inicial a montante da interseção com a ribeira de Venda Seca.O rio atravessa os jardins do Palácio de Queluz. O seu curso é aí canalizado, havendo um troço com cerca de 130 metros de comprimento delimitado por comportas e com paredes azulejadas – o Canal dos Azulejos. Quando as comportas do canal eram fechadas, criava-se um plano de água onde era possível passear de barco entre representações de portos, palácios e outros temas.', '3', 20, 'river', 1, 'Rio Jamor');
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('Situada perto do Cabo da Roca, a Praia da Ursa tem como acesso uma estrada de terra batida, seguida de um caminho sinuoso e íngreme que, por fim, termina neste areal tranquilo e pouco frequentado.Apesar do percurso perigoso, o esforço é recompensado pela soberba paisagem que se pode apreciar, dominada pelas enormes formações rochosas existentes na praia. Deve o seu nome precisamente a um destes rochedos, cujo formato faz lembrar um urso.A Praia da Ursa é um paraíso bruto, emoldurado por magníficas formações rochosas. Foi considerada pelo Guia Michelin como uma das praias mais bonitas do mundo e, frequentemente, entre na lista das melhores praias desertas da Europa.', '4', 21,'river', 2, 'Rio Belver');
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('O rio Tejo nasce em Espanha, na Serra de Albarracin, e termina o seu percurso, de 1100 Km, em Lisboa. Na sua passagem por Vila Velha de Ródão, veneram a sua magnitude as Portas de Ródão, imponente formação rochosa do período ordovícico. A ele deve o concelho de Vila Velha de Ródão grande parte da sua riqueza patrimonial e natural. No seu leito repousa o Complexo de Arte Rupestre do Vale do Tejo; nas suas margens foram descobertos vestígios pré-históricos de interesse nacional.A paisagem das margens destes rios é constituída por relevos rochosos, com terraços de olival, cobertos com flora da região. Nestes rios navegam ainda botes, barcos típicos de madeira utilizados pelos pescadores para a faina piscatória e para deslocações e passeios.', '5', 22,'river', 4, 'Rio Tejo');
+
+
+
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Jardim Mário Soares', '2650-515', 'Portugal');
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Passeio do Tejo', '1990-281', 'Portugal');
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Parque Eduardo VII', '1070-099', 'Portugal');
+
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.153330629552794 38.75707528729563)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-9.092750997635521 38.7862902888468)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-9.152744311574622 38.72852665216374)', 4326), NOW(), NOW());
+
+
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES   
+('Este espaço já existia no séc. XVI, altura em que era conhecido como Campo de Alvalade. O início da plantação do Campo de Alvalade, inspirado no estilo de Passeio Romântico, remonta ao séc. XIX, tendo-se realizado aqui as primeiras corridas de cavalos em 1816 e, existindo ainda hoje nas proximidades, um hipódromo para concursos hípicos. Em 1945, o Arq.º Keil do Amaral elaborou um projeto de remodelação com ampliação do jardim e introdução de novos equipamentos, tornando-se um espaço de características lúdicas e recreativas.Atualmente a CML e a Universidade de Lisboa (UL) são parceiras na reabilitação urbana do jardim do Campo Grande. Esta ação envolve duas fases: a Norte, terminada em 2013, e a Sul em execução. Na primeira fase, o jardim foi alvo de uma forte transformação concetual, dado que foi abandonada a estrutura de caminhos e canteiros para ser convertido num único plano verde, amplo, de grande visibilidade e profundidade, onde predominam os relvados e os prados.', '5', 23, 'park', 1, 'Jardim do Campo Grande');
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('Instalado em 1998, no âmbito da exposição mundial "Expo’98" na área de um antigo aterro sanitário (selado) e junto à estação de tratamento de águas de Beirolas – Fábrica da Água de Beirolas.Com 90ha, o parque localiza-se junto ao rio Tejo e integra o Corredor Verde Ribeirinho.É constituído por um sistema de elevações artificiais e colinas, onde dominam os pinheiros mansos, que sombreiam os prados verdes muito utilizados pelos utentes do parque. A estas formas ondulantes junta-se um sistema de circulações e vistas, com especial interesse a sul, para o Estuário e para a Ponte Vasco da Gama e ainda vários elementos de utilização lúdico-desportiva: skate parque, ténis, golfe, centro hípico, parque de diversões, zona comercial.O parque possui uma elevada riqueza arbórea e arbustiva, decorrente da exposição mundial, tendo sido plantadas inúmeras espécies exóticas, representativas dos 4 continentes.', '5', 24, 'park', 2, 'Parque Urbano do Tejo e do Trancão');
+
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('Situado no topo da Avenida da Liberdade, constitui um local de excelente vista panorâmica sobre a cidade. Inicialmente denominado Parque da Liberdade, foi rebatizado com o nome do rei de Inglaterra aquando da sua visita a Lisboa em 1903. Desde a sua origem este parque foi palco de feiras, exposições e divertimentos.A sua estrutura, com uma faixa central coberta de relva, ladeada por um passeio de calçada portuguesa, é da autoria do arquiteto Keil do Amaral constituindo um marco importante na evolução urbana da cidade.Aqui encontramos o Pavilhão dos Desportos, construído em 1932 em estilo D. João V, hoje designado Pavilhão Carlos Lopes em homenagem ao grande atleta português, a Estufa Fria, com uma variedade enorme de plantas de todo o mundo, lagos, um conjunto de estatuária entre a qual se destaca o busto de Eduardo VII de Inglaterra e a escultura de evocação ao 25 de Abril da autoria de João Cutileiro.', '5', 25, 'park', 4, 'Parque Eduardo VII');
+
+
+
+
+
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('R. do Alviela n51', '2025-398', 'Portugal');
+
+INSERT INTO tb_address (street, country)
+VALUES 
+('Cascata da Cabreia Silva Escura', 'Portugal');
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('PV3R+F5X', '1600-483', 'Portugal');
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.300507548846133 39.146053556595135)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-8.39106613199386 40.75472726668444)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-8.109361236275692 41.70424617506286)', 4326), NOW(), NOW());
+
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES  
+('A Cascata da Laja toma o nome do pequeno ribeiro que a alimenta, precipitando-se atrás de uma pitoresca ponte de madeira e rodeada por um luxuriante bosque de folhosas, maioritariamente carvalhos que se transformam numa floresta encantada.
+O percurso mais curto até à cascata, é fazer o trajeto inverso do PR10 – Trilho da Preguiça, numa distância de aproximadamente 1 Km.O Parque de Lazer da Cabreia, no concelho de Sever do Vouga, é um autêntico Jardim do Éden no Centro de Portugal. E é nele que se esconde a magnifica Cascata da Cabreia, uma das mais belas cascatas de Portugal. E olhe que nós, no que a cascatas diz respeito, somos exigentes! A Cascata da Cabreia, formada pelas águas do Rio Mau, tem uns admiráveis 25 metros de altura e a sua piscina natural é um verdadeiro deleite. Em dias de calor não há quem resista a um mergulho na deliciosa lagoa que se forma na sua base.', '4', 26, 'waterfall', 1, 'Cascata da Ribeira dos Amiais');
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('Esta Cascata oferece a frescura provocada pela queda de água (proveniente do rio Mau), de 25m de altura, envolta numa vegetação densa. A envolvente da cascata proporciona uma atmosfera romântica e convidativa, complementada com estruturas de apoio, como o parque de merendas.', '5', 27,'waterfall', 2, 'Cascata da Cabreia');
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('A Cascata Fecha de Barjas, conhecida por muitos turistas como Cascata do Tahiti, localiza-se perto da aldeia da Ermida, na estrada que liga esta aldeia à localidade de Fafião (Montalegre).Com as suas águas provenientes do rio Arado é uma das quedas d’água mais deslumbrante do Gerês e cada vez mais procurada por turistas e visitantes da região, o que também obriga a grandes cuidados no acesso e usufruição das suas águas pelos perigos de queda.O seu acesso é feito a pé pela margem esquerda do rio Arado, mesmo junto à ponte sobre o rio. Depois de alguns minutos a descer por um caminho em terra batida é necessário transpor um segundo rio, o Fafião, para chegar à parte inferior onde é possível visualizar toda a queda de água (local mais seguro para banhos). A transposição do rio Fafião está dependente do nível do seu caudal.', '4', 28,'waterfall', 4,'Cascata do Arado');
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Serra de Sintra', '2710-405','Portugal'),
+('Cabanas de Torres', '2785-815', 'Portugal'),
+('Serra de Monsanto', '6060-088', 'Portugal');
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.416139155493294 38.79443860822116)', 4326), NOW(), NOW()),
+(ST_GeomFromText('POINT(-9.052954866487477 39.16957441228434)', 4326), NOW(), NOW()),
+(ST_GeomFromText('POINT(-9.05052630871232 39.174438175703656)', 4326), NOW(), NOW());
+
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES   
+('Cadeia montanhosa granítica de 11 quilómetros de extensão, atingindo os 519 metros na Cruz Alta, e uma orientação este-oeste. Está integrada no Parque Natural de Sintra-Cascais, apresentando, no seu sopé, a vila de Sintra.
+Da sua riqueza arquitetónica, salientam-se, por exemplo, o Palácio Nacional da Pena, mandado edificar por D. Fernando II, o Castelo dos Mouros, o Palácio Monserrate, o Convento dos Capuchos, o Palácio de Seteais, e muitas casas senhoriais.A Peninha é um pico de 490 metros de altitude que oferece um panorama espantoso. Tem uma capela do século XVII, construída sobre a rocha e decorada com ricos painéis de azulejos.', '5', 29,'mountain', 1, 'Serra de Sintra'),
+('Erguendo-se abruptamente entre o litoral e o vale do Tejo, a Serra de Montejunto demarca-se da paisagem envolvente pela altitude e suas características naturais, sendo Refúgio natural para muitas plantas e animais.Localizada a Norte do concelho de Alenquer e no extremo Sul do concelho do Cadaval, constituída por um maciço calcário de formação jurássica, onde predominam altas escarpas e gargantas apertadas, é o mirante natural mais alto da Estremadura, elevando-se a cerca de 666 metros acima do nível médio do mar.Apresenta-se rica em lagoas residuais, algares, grutas de grande valor biológico, geológico e mesmo arqueológico, é santuário natural de nidificação de uma avifauna invulgar e preciosa, refúgio de pequenos mamíferos e, do ponto de vista paleontológico, com importantes jazidas de amonites, turritelas e outros fósseis de interesse científico. Ilha biológica que emerge em meio de terras lavradias e flora rica, essencialmente constituída por manchas de castanheiros, sobreiros, carvalhos, pinheiros e mais recentemente de eucaliptos, intercaladas com áreas de cultivo e pastoreio; rica também pela variedade das espécies que apresenta, algumas delas bastante raras como é o caso da orquídea silvestre.', '5', 30,'mountain', 2, 'Serra de Montejunto'),
+('Espaço de vastas áreas de mata diversificada, o Parque Florestal de Monsanto oferece grandes potencialidades para o recreio passivo. A mata fechada nem sempre é um local acolhedor para o homem, no entanto, o seu contraste com a clareira e a abertura pontual de amplas vistas sobre a cidade e o rio, fazem do Parque Florestal de Monsanto um local muito atrativo do ponto de vista paisagístico.
+O Parque Florestal de Monsanto recebeu, em 30 de junho de 2021, a Recertificação da Gestão Florestal no âmbito do (Forest Stewardship Council®) (FSC-C114377), a mais importante certificação mundial em matéria de conformidade ambiental das explorações florestais, assumindo o Município, o seu empenho na manutenção dos níveis de qualidade e exigência na Gestão Florestal.A certificação de gestão florestal tem por base os princípios e critérios do FSC® e resultou da vontade da câmara de seguir padrões de gestão responsável, internacionalmente reconhecidos e aceites, permitindo evidenciar que o Parque Florestal de Monsanto é gerido de forma ecologicamente adequada. Conheça a Politica de Gestão Florestal do Parque Florestal de Monsanto.', '4', 31,'mountain', 4, 'Serra de Monsanto');
+
+
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('Largo Santo António da Sé', '1100-401', 'Portugal'),
+('Praça da Estrela', '1200-667', 'Portugal'),
+('Praça do Império', '1400-206', 'Portugal'),
+('Largo do Chiado 16', '1200-108','Portugal');
+
+INSERT INTO tb_timeTable (startTime, endtime)
+VALUES
+('10:00:00', '22:00:00'),
+('11:00:00', '20:00:00'),
+('8:00:00', '22:00:00'),
+('10:00:00', '22:00:00');
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.13760544598696 38.720151756710976)', 4326), NOW(), NOW()),
+(ST_GeomFromText('POINT(-9.160805726660763 38.71410837894034)', 4326), NOW(), NOW()),
+(ST_GeomFromText('POINT(-9.205263135083587 38.69833797810916)', 4326), NOW(), NOW());
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('A famosa Igreja de Santo António, ao lado da Sé de Lisboa, está localizada no local da casa onde Santo António nasceu e passou a sua infância. A fachada mistura o estilo manuelino com colunas jónicas neoclássicas em ambos os lados da entrada principal. Doutor da Igreja, Santo António é o santo mais popular do mundo, sendo o padroeiro secundário de Portugal e do patriarcado de Lisboa, assim como o principal padroeiro da cidade de Lisboa, onde nasceu. Esta continua a ser a casa do santo e dos seus muitos devotos, por excelência, porque foi construída no local do seu nascimento.Acredita-se que foi por volta de 1337 que o Senado da cidade começou a reunir-se aqui, no que era então chamada a Casa Consistorial da Cidade de Lisboa.Provavelmente, uma capela ou um simples nicho foi construído primeiro, logo após a rápida canonização do Frei António. Embora as primeiras notícias sobre a capela datem apenas do início do século XV, a Câmara Municipal de Lisboa já funcionava na Casa de Santo António desde 1326, situação que se manteve até 1753.', '5', 32,'church', 1, 'Igreja de Santo António'),
+('Mandada erguer por D. Maria I, como cumprimento de um voto que fizera pelo nascimento de D. José, a obra foi iniciada em 1779 e concluída em 1789.Com projeto da autoria dos arquitetos Mateus Vicente e Reinaldo dos Santos, foi concebida numa linguagem tardo-barroca, numa época em que vigorava o estilo neoclássico. A estatuária é atribuída à oficina de Machado de Castro.O interior, em mármore, apresenta nave única dividida em 3 tramos rematados por capelas laterais e capela-mor, onde se encontra o túmulo da fundadora.No exterior destaca-se a fachada imponente composta por um corpo central, de 2 pisos, ladeado por 2 torres sineiras, e o zimbório que permite desfrutar uma magnífica vista sobre Lisboa.Um dos mais relevantes monumentos do séc. XVIII, em Lisboa, está ligado à devoção de D. Maria I. Partimos à descoberta da história de um templo religioso, que é também um espetacular miradouro.', '5', 33,'church', 2, 'Basílica da estrela'),
+('A Igreja de Santa Maria de Belém, localizada no Mosteiro dos Jerónimos, é uma bonita igreja de cruz latina, composta por três naves. Aqui é possível encontrar os túmulos de grandes personalidades portuguesas, tais como Vasco da Gama, Luís de Camões, de Carlos Mota (escultor), o Cardeal-Rei D. Henrique, o Rei D. Sebastião, entre outros.A capela-mor inicial terá sido destruída e substituída, em pleno séc. XVI, a mando de D. Catarina, esposa do Rei D. João III. Feita por Jerónimo de Ruão, o estilo maneirista desta capela acaba contrastando com belo corpo manuelino da restante igreja. No Altar-mor é possível encontrar o retábulo do pintor Lourenço de Salzedo, contendo várias cenas da Paixão de Cristo e a Adoração dos Magos.', '4', 34,'church', 4, 'Igreja de Santa Maria de Belém');
+
+
+
+
+
+
