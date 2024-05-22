@@ -10,6 +10,10 @@ import termosRoutes from './routes/termosRoutes.js';
 import mapaRoutes from './routes/mapaRoutes.js';
 import homeRoutes from './routes/homeRoutes.js';
 import spotsRoutes from './routes/spotsRoutes.js';
+import dashboardRoutes from './routes/dashboardRoutes.js'
+import Chart from 'chart.js/auto';
+
+
 dotenv.config();
 
 const server= express();
@@ -24,10 +28,10 @@ server.set('views', './views');
 server.use(express.static('public'));
 
 //Para remover- Pensar na página principal
-server.get('/', function (req, res) {
+/*server.get('/', function (req, res) {
     res.render('termos', {layout: 'termosLay', title: 'LisbonSpots', }
      );
-});
+});*/
 
 
 
@@ -39,6 +43,7 @@ server.use("/termos", termosRoutes);
 server.use("/mapa", mapaRoutes);
 server.use("/home", homeRoutes);
 server.use("/spots", spotsRoutes);
+server.use("/dashboard", dashboardRoutes);
 
 
 
