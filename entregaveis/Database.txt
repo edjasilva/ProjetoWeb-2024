@@ -4,9 +4,9 @@ CREATE TYPE gender AS ENUM ('female', 'male', 'other');
 
 CREATE TYPE rating AS ENUM ('1', '2', '3', '4', '5');
 
-CREATE TYPE comSpotCategory AS ENUM ('restaurant', 'hotel', 'satdium', 'shopping', 'museum');
+CREATE TYPE comSpotCategory AS ENUM ('restaurant', 'hotel', 'stadium', 'shopping', 'museum');
 
-CREATE TYPE nonComSpotCategory AS ENUM('beach', 'park', 'river', 'waterfal', 'mountain', 'church' );
+CREATE TYPE nonComSpotCategory AS ENUM('beach', 'park', 'river', 'waterfall', 'mountain', 'church' );
 
 CREATE TABLE tb_user (
 	id SERIAL primary key not null,
@@ -60,8 +60,8 @@ CREATE TABLE tb_location(
 
 CREATE TABLE tb_spot (
 	id SERIAL primary key not null,
-	name TEXT not null,
 	description TEXT,
+        name TEXT
 	rating rating, 
 	loc_id int REFERENCES tb_location(id) on delete set null
 );
@@ -82,15 +82,12 @@ CREATE TABLE tb_comment (
 	
 );
 
-
-
 CREATE TABLE tb_picture (
 	id SERIAL primary key NOT NULL,
 	url TEXT,
 	spo_id int REFERENCES tb_spot(id) on delete set null,
 	pos_id int REFERENCES tb_post(id)on delete set null
 );
-
 
 CREATE TABLE tb_commercialSpot (
 	category comSpotCategory, 
@@ -100,9 +97,8 @@ CREATE TABLE tb_commercialSpot (
 
 CREATE TABLE  tb_nonCommercialSpot(
 	category nonComSpotCategory
+        add_id int REFERENCES tb_address(id) on delete set null
 )  INHERITS (tb_spot);
-
-
 
 CREATE TABLE tb_limitedAcessSpot (
 	price DOUBLE PRECISION
@@ -114,4 +110,3 @@ CREATE TABLE tb_limitedAcessSpot (
 
 
 docker run --rm --name database -e POSTGRES_USER=lspot -e POSTGRES_PASSWORD=server --mount type=bind,source="$(pwd)"/src/postgres/data,target=/var/lib/postgresql/data -p 5432:5432 -d postgis/postgis
-
