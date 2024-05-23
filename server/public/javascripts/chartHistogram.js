@@ -1,4 +1,4 @@
-const data = [4];
+const data = [3, 4, 2, 3, 2, 4, 5, 1, 2, 1, 2, 1, 3, 4, 5, 4, 5];
     const bins = [0, 1, 2, 3, 4, 5]; // Intervalos dos bins
 
     // Função para calcular a frequência de cada bin
