@@ -1,121 +1,116 @@
-<!--<div class="row">
-        <div class="col-lg-6">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <i class="fas fa-chart-bar me-1"></i>
-                    Gráfico de barras
-                </div>
-                <div class="card-body">
-                    <canvas id="myBarChart" width="100%" height="50"></canvas>
-                </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+<body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Lisbon Spots</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            
+            <!-- Navbar-->
+          
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Layouts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pages
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Autenticação
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Conta</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                       Luagres
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">Lugares Comerciais</a>
+                                            <a class="nav-link" href="404.html">Luagres Não Comerciais</a>
+                                            
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Addons</div>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
             </div>
-        </div>
-    </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Gráficos</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item">Dashboard</li>
+                            <li class="breadcrumb-item active">Gráficos</li>
+                        </ol>
+                        
+                       
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Gráfico de barras
+                                    </div>
+                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div>
+                                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-pie me-1"></i>
+                                        Gráfico circular
+                                    </div>
+                                    <div class="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
+                                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                                </div>
+                            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const ctx = document.getElementById('myBarChart').getContext('2d');
-            const data = {{{json data}}}; 
-
-            const labels = data.map(item => item.label);
-            const values = data.map(item => parseInt(item.value, 10));
-
-            const myBarChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Quantidade',
-                        backgroundColor: "rgba(2,117,216,1)",
-                        borderColor: "rgba(2,117,216,1)",
-                        data: values,
-                    }],
-                },
-                options: {
-                    scales: {
-                        xAxes: [{
-                            gridLines: {
-                                display: false
-                            },
-                            ticks: {
-                                maxTicksLimit: 6
-                            }
-                        }],
-                        yAxes: [{
-                            ticks: {
-                                min: 0,
-                                max: Math.max(...values) + 1,
-                                maxTicksLimit: 6
-                            },
-                            gridLines: {
-                                display: true
-                            }
-                        }],
-                    },
-                    legend: {
-                        display: false
-                    }
-                }
-            });
-        });
-    </script>
-
-
-    <div class="col-lg-6">
-        <div class="card mb-4">
-            <div class="card-header">
-                <i class="fas fa-chart-pie me-1"></i>
-                Gráfico circular
-            </div>
-            <div class="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-        </div>
-    </div>
-
-    <script>
-        // Set new default font family and font color to mimic Bootstrap's default styling
-        Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-        Chart.defaults.global.defaultFontColor = '#292b2c';
-
-        // Pie Chart Example
-        document.addEventListener('DOMContentLoaded', function () {
-            const ctx = document.getElementById("myPieChart").getContext('2d');;
-            const data = {{{ json data }}};
-
-        const labels1 = data.map(item => item.label1);
-        const values1 = data.map(item => parseInt(item.value1, 10));
-
-        const myPieChart = new Chart(ctx, {
-            type: 'pie',
-            data: {
-                labels: labels1,
-                datasets: [{
-                    data: values1,
-                    backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],
-                }],
-            },
-        })});
-    </script> -->
-
-
-    <div class="row">
-        <!-- Gráfico de Barras -->
-        <div class="col-lg-6">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <i class="fas fa-chart-bar me-1"></i>
-                    Gráfico de barras
-                </div>
-                <div class="card-body">
-                    <canvas id="myBarChart" width="100%" height="50"></canvas>
-                </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-            </div>
-        </div>
-
-         <div class="col-lg-6 mx-auto">
+                             <div class="col-lg-6 mx-auto">
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-pie me-1"></i>
@@ -125,30 +120,30 @@
                                     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                                 </div>
                             </div>
-
-        <!-- Gráfico de Pizza -->
-        <div class="col-lg-6">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <i class="fas fa-chart-pie me-1"></i>
-                    Gráfico circular
-                </div>
-                <div class="card-body">
-                    <canvas id="myPieChart" width="100%" height="50"></canvas>
-                </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                        </div>
+                    </div>
+                </main>
+                
+    
             </div>
         </div>
-    </div>
 
-    <script>
+        <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const data = {{{json data}}}; 
+           
+            const barChartData = {{{json barChartData}}};
+            const pieChartData = {{{json pieChartData}}};
+            const histogramData = {{{json histogramData}}};
+
+
+            console.log('barChartData:', barChartData);
+            console.log('pieChartData:', pieChartData);
+            console.log('histogramData:', histogramData);
 
             // Gráfico de Barras
             const barCtx = document.getElementById('myBarChart').getContext('2d');
-            const barLabels = data.map(item => item.label);
-            const barValues = data.map(item => parseInt(item.value, 10));
+            const barLabels = barChartData.map(item => item.label);
+            const barValues = barChartData.map(item => parseInt(item.value, 10));
 
             const myBarChart = new Chart(barCtx, {
                 type: 'bar',
@@ -189,8 +184,8 @@
                     }
                 }
             });    const pieCtx = document.getElementById('myPieChart').getContext('2d');
-            const pieLabels = data.map(item => item.label);
-            const pieValues = data.map(item => parseInt(item.value, 10));
+            const pieLabels = pieChartData.map(item => item.label);
+            const pieValues = pieChartData.map(item => parseInt(item.value, 10));
 
             const myPieChart = new Chart(pieCtx, {
                 type: 'pie',
@@ -203,5 +198,72 @@
                 },
             });
         });
-    </script>
 
+
+
+ const histogramValues = {{{histogramData}}};
+
+        const bins = [0, 1, 2, 3, 4, 5]; // Intervalos dos bins
+
+        // Função para calcular a frequência de cada bin
+        function calculateBinFrequencies(histogramData, bins) {
+            const frequencies = new Array(bins.length - 1).fill(0);
+            histogramData.forEach(value => {
+                for (let i = 0; i < bins.length - 1; i++) {
+                    if (value >= bins[i] && value < bins[i + 1]) {
+                        frequencies[i]++;
+                        break;
+                    }
+                }
+            });
+            return frequencies;
+        }
+
+        const frequencies = calculateBinFrequencies(histogramValues, bins);
+
+        const histogramCtx = document.getElementById('myHistogram').getContext('2d');
+        new Chart(histogramCtx, {
+            type: 'bar',
+            data: {
+                labels: bins.slice(0, -1).map((bin, index) => `${bin}-${bins[index + 1]}`),
+                datasets: [{
+                    label: 'Frequency',
+                    data: frequencies,
+                    backgroundColor: 'rgba(2, 117, 216, 0.7)',
+                    borderColor: 'rgba(2, 117, 216, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            maxTicksLimit: bins.length
+                        },
+                        barPercentage: 1.0,
+                        categoryPercentage: 1.0
+                    },
+                    y: {
+                        ticks: {
+                            beginAtZero: true
+                        },
+                        grid: {
+                            display: true
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+        <Script> src="/javascripts/chartHistogram.js" </Script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>

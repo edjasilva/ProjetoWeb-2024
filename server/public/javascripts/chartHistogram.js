@@ -1,4 +1,4 @@
-const data = [3, 4, 2, 3, 2, 4, 5, 1, 2, 1, 2, 1, 3, 4, 5, 4, 5];
+/*const data = [3, 4, 2, 3, 2, 4, 5, 1, 2, 1, 2, 1, 3, 4, 5, 4, 5];
     const bins = [0, 1, 2, 3, 4, 5]; // Intervalos dos bins
 
     // Função para calcular a frequência de cada bin
@@ -55,4 +55,38 @@ const data = [3, 4, 2, 3, 2, 4, 5, 1, 2, 1, 2, 1, 3, 4, 5, 4, 5];
           display: false
         }
       }
-    });
+    });*/
+ const histogramCtx = document.getElementById('histogramChart').getContext('2d');
+      const histogramLabels = Array.from(new Set(histogramData.map(item => item.bin))).sort();
+      const histogramValues = histogramLabels.map(bin => {
+        return histogramData.filter(item => item.bin === bin).length;
+      });
+
+      new Chart(histogramCtx, {
+        type: 'bar',
+        data: {
+          labels: histogramLabels,
+          datasets: [{
+            label: 'Frequency',
+            data: histogramValues,
+            backgroundColor: 'rgba(2, 117, 216, 0.7)',
+            borderColor: 'rgba(2, 117, 216, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { maxTicksLimit: histogramLabels.length },
+              barPercentage: 1.0,
+              categoryPercentage: 1.0
+            },
+            y: {
+              ticks: { beginAtZero: true },
+              grid: { display: true }
+            }
+          },
+          plugins: { legend: { display: false } }
+        }
+      });
