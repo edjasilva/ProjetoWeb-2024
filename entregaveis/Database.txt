@@ -61,7 +61,7 @@ CREATE TABLE tb_location(
 CREATE TABLE tb_spot (
 	id SERIAL primary key not null,
 	description TEXT,
-        name TEXT
+        name TEXT,
 	rating rating, 
 	loc_id int REFERENCES tb_location(id) on delete set null
 );
@@ -96,7 +96,7 @@ CREATE TABLE tb_commercialSpot (
 )INHERITS (tb_spot);
 
 CREATE TABLE  tb_nonCommercialSpot(
-	category nonComSpotCategory
+	category nonComSpotCategory,
         add_id int REFERENCES tb_address(id) on delete set null
 )  INHERITS (tb_spot);
 
