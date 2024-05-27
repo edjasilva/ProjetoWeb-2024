@@ -85,9 +85,10 @@ CREATE TABLE tb_comment (
 CREATE TABLE tb_picture (
 	id SERIAL primary key NOT NULL,
 	url TEXT,
-	spo_id int REFERENCES tb_spot(id) on delete set null,
-	pos_id int REFERENCES tb_post(id)on delete set null
+	spo_id int ,
+	pos_id int
 );
+
 
 CREATE TABLE tb_commercialSpot (
 	category comSpotCategory, 
