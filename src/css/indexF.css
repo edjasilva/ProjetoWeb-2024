@@ -763,9 +763,9 @@ h4#text_delete {
 }
 
 .col-sm-6 .img-responsive {
-  width: 100%;           /* Ensures the image takes the full width of the container */
-  height: auto;          /* Keeps the aspect ratio intact */
-  object-fit: cover;     /* Ensures the image covers the entire container */
-  max-width: 100%;       /* Prevents the image from expanding beyond its container */
-  display: block;        /* Removes any inline-block spaces */
+  width: 100%;           
+  height: auto;          
+  object-fit: cover;     
+  max-width: 100%;       
+  display: block;        
 }

@@ -965,132 +965,7 @@ input:nth-of-type(8):checked ~ main#carousel {
 .board-body{
   margin: 12px;
 }
-
-/* ---------- MAIN ---------- */
-
-.main-container {
-  grid-area: main;
-  overflow-y: auto;
-  padding: 20px 20px;
-  color: rgba(255, 255, 255, 0.95);
-}
-
-.main-title {
-  display: flex;
-  color: #263043;
-  justify-content: space-between;
-}
-
-.main-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  margin: 20px 0;
-}
-
-.card {
-  justify-content: space-around;
-  border-radius: 5px;
-}
-
-.card:first-child {
-  background-color: #2962ff;
-}
-
-.card:nth-child(2) {
-  background-color: #ff6d00;
-}
-
-.card:nth-child(3) {
-  background-color: #2e7d32;
-}
-
-.card:nth-child(4) {
-  background-color: #d50000;
-}
-
-.card-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px;
-}
-
-.card-inner > .material-icons-outlined {
-  font-size: 45px;
-}
-
-.charts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 60px;
-}
-
-.charts-card {
-  background-color: #263043;
-  margin-bottom: 20px;
-  padding: 25px;
-  box-sizing: border-box;
-  -webkit-column-break-inside: avoid;
-  border-radius: 5px;
-  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
-}
-
-.chart-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ---------- MEDIA QUERIES ---------- */
-
-/* Medium <= 992px */
-
-@media screen and (max-width: 992px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 3fr;
-    grid-template-areas:
-      'header'
-      'main';
-  }
-
-  #sidebar {
-    display: none;
-  }
-
-  .menu-icon {
-    display: inline;
-  }
-
-  .sidebar-title > span {
-    display: inline;
-  }
-}
-
-/* Small <= 768px */
-
-@media screen and (max-width: 768px) {
-  .main-cards {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 0;
-  }
-
-  .charts {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
-}
-
-/* Extra Small <= 576px */
-
-@media screen and (max-width: 576px) {
-  .hedaer-left {
-    display: none;
-  }
-}          
+          
 
 /*-------leaflet-----------*/
 #map { 
@@ -1122,3 +997,42 @@ input:nth-of-type(8):checked ~ main#carousel {
   text-align: center; 
   padding: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footerContainer{
+  max-width: 100%;
+}
+
+.link-boxes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.box ul {
+  list-style: none;
+}
+
+.box ul li {
+  margin-bottom: 10px;
+}
+
+.box ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
