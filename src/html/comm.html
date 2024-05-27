@@ -29,49 +29,49 @@
 <body >
     
     <!--Hidden Menu set  up #################################################################################################-->
-    <div class="custom-menu" id="menu">
-        <nav class="menu">
-            <div class="container justify-content-between">
-                <button id="close-menu" type="button" class="btn-close fs-2 text-reset"></button>
-            </div>
-            
-        </nav>
-        <div id="ham-menu" class="position-absolute top-50 start-50 translate-middle">
-          <ul class="list">
-            <h4 class="list-item"><a href="home.html">Home</a></h4>
-            <h4 class="list-item dropdown">
-              <a href="../html/commercial.html" class="dropdown-toggle" data-toggle="dropdown">Locais comerciais</a>
-              <ul class="dropdown-menu">
-                <h4><a href="../html/commercial.html#hotel">Hotel</a></h4>
-                <h4><a href="../html/commercial.html#restaurant">Restaurante</a></h4>
-                <h4><a href="../html/commercial.html#museum">Museu</a></h4> 
-                <h4><a href="../html/commercial.html#stadium">Estádio</a></h4>
-                <h4><a href="../html/commercial.html#cc">Centro comercial</a></h4>
-              </ul>
-            </h4>
-            <h4 class="list-item dropdown">
-              <a href="../html/non-commercial.html" class="dropdown-toggle" data-toggle="dropdown">Locais não comerciais</a>
-              <ul class="dropdown-menu">
-                <h4><a href="../html/non-commercial.html#beach">Praia</a></h4>
-                <h4><a href="../html/non-commercial.html#park">Parque</a></h4>
-                <h4><a href="../html/non-commercial.html#fall">Cascata</a></h4>
-                <h4><a href="../html/non-commercial.html#mountain">Montanhas</a></h4>
-                <h4><a href="../html/non-commercial.html#river">Rio</a></h4>
-                <h4><a href="../html/non-commercial.html#church">Igreja</a></h4>
-              </ul>
-            </li>
-            <h4 id="login_alert" class="list-item"><a href="loginSA.html">Login</a></h4>
-            <h4 id="register_alert" class="list-item"><a href="registerSA.html">Registar</a></h4>
-            <h4 class="list-item"><a href="blog.html">Blog</a></h4>
-            <h4 class="list-item"><a href="contactUs.html">Contacte-nos</a></h4>
-            <h4 class="list-item"><a href="aboutUs.html">Sobre nós</a></h4>
-            <h4 class="list-item"><a href="support.html">Suporte</a></h4>
-            <h4 class="list-item"><a href="faq.html">Perguntas Frequentes </a></h4>
-            <h4 id="delete_alert" class="list-item"><a href="../html/deletesa.html">Eliminar conta</a></h4>
-          </ul>
-        </div>  
-      </div>
-       
+    <div class="show-menu">
+        <div class="custom-menu" id="menu">
+            <nav class="menu">
+                <div class="container justify-content-between">
+                    <button id="close-menu" type="button" class="btn-close fs-2 text-reset"></button>
+                    <div id="ham-menu" class="position-absolute top-50 start-50 translate-middle">
+                      <ul class="list">
+                          <h4 class="list-item"><a href="home.html">Home</a></h4>
+                          <h4 class="list-item dropdown">
+                              <a href="../html/commercial.html" class="dropdown-toggle" data-toggle="dropdown">Locais comerciais</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="../html/commercial.html#hotel">Hotel</a></li>
+                                  <li><a href="../html/commercial.html#restaurant">Restaurante</a></li>
+                                  <li><a href="../html/commercial.html#museum">Museu</a></li>
+                                  <li><a href="../html/commercial.html#stadium">Estádio</a></li>
+                                  <li><a href="../html/commercial.html#cc">Centro comercial</a></li>
+                              </ul>
+                          </h4>
+                          <h4 class="list-item dropdown">
+                              <a href="../html/non-commercial.html" class="dropdown-toggle" data-toggle="dropdown">Locais não comerciais</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="../html/non-commercial.html#beach">Praia</a></li>
+                                  <li><a href="../html/non-commercial.html#park">Parque</a></li>
+                                  <li><a href="../html/non-commercial.html#fall">Cascata</a></li>
+                                  <li><a href="../html/non-commercial.html#mountain">Montanhas</a></li>
+                                  <li><a href="../html/non-commercial.html#river">Rio</a></li>
+                                  <li><a href="../html/non-commercial.html#church">Igreja</a></li>
+                              </ul>
+                          </h4>
+                          <h4 id="login_alert" class="list-item"><a href="loginSA.html">Login</a></h4>
+                          <h4 id="register_alert" class="list-item"><a href="registerSA.html">Registar</a></h4>
+                          <h4 class="list-item"><a href="blog.html">Blog</a></h4>
+                          <h4 class="list-item"><a href="contactUs.html">Contacte-nos</a></h4>
+                          <h4 class="list-item"><a href="aboutUs.html">Sobre nós</a></h4>
+                          <h4 class="list-item"><a href="support.html">Suporte</a></h4>
+                          <h4 class="list-item"><a href="faq.html">Perguntas Frequentes</a></h4>
+                          <h4 id="delete_alert" class="list-item"><a href="../html/deletesa.html">Eliminar conta</a></h4>
+                      </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </div>
 
 
     
@@ -338,7 +338,7 @@
                 <div class="lightbox img-responsive" data-mdb-lightbox-init>
                     <div class="row"> 
                         <div class="col-lg-6 col-sm-6 col-md-6 img-fluid">
-                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/190486391.jpg?k=1c297aca97aa16c54362771d26665bc6474b5d54ef665de4351f3796b3257040&o=&hp=1" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp" alt="Table Full of Spices" class="w-100 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/190486391.jpg?k=1c297aca97aa16c54362771d26665bc6474b5d54ef665de4351f3796b3257040&o=&hp=1" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp" alt="Table Full of Spices" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded  img-fluid" />
                             <img src="../images/comm/Hotel/The One Palácio da Anunciada/image copy 2.png" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp" alt="Coconut with Strawberries" class="w-100 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
                         </div>
                         <div class="col-lg-6 img-fluid d-flex justify-content-center align-items-center col-sm-6 col-md-6">
@@ -897,56 +897,47 @@
 
 <!------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------->
-<footer>
-    <div class="content">
-        <hr>
-  
-    <div class="link-boxes">
-        <ul class="box">
-                <li id="hh"><a href="../html/home.html">Home</a></li>
-                <li id="hh"><a href="../html/aboutUs.html">Sobre nós</a></li>
-                <li id="hh"><a href="../html/faq.html">FAQs</a></li>
-                <li id="hh"><a href="../html/contactUs.html">Contate-nos</a></li>
-                <li id="hh"><a href="../html/support.html">Suporte</a></li>
-        </ul>
-        <ul class="box">
-                <li id="hh"><a href="../html/terms.html">Termos de Uso</a></li>
-                <li id="hh"><a href="../html/privacy.html">Política de Privacidade</a></li>
-        </ul>
-        
-        <form>
-
-            <h7>Subscribe to our newsletter </h7>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden"
-                >Email address</label
-              >
-              <input
-                id="newsletter1"
-                type="text"
-                class="form-control"
-                placeholder="Email"
-              />
-              <button class="btni" type="button">
-                Subscribe
-              </button>
-            </div>
-          </form>
-    </div>
-    <div class="bottom-details">
-        <div class="bottom_text">
-            <span class="copyright_text">©LisbonSpots 2024. Todos os direitos reservados.</span>
-            <div class="media-icons">
-                <a href="https://www.instagram.com/lisbon__spots?igsh=MWU4bnQ0OHU4OHgwMw=="><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="https://github.com/edjasilva/ProjetoWeb-2024/tree/main"><i class="fab fa-github"></i></a>
-            </div>
+<footer class="bg-white pt-4">
+    <div class="container" id="footercontainer">
+      <hr>
+      <div class="d-flex justify-content-center mt-3">
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/aboutUs.html">Sobre nós</a></li>
+            <li><a href="../html/faq.html">FAQs</a></li>
+            <li><a href="../html/contactUs.html">Contate-nos</a></li>
+            <li><a href="../html/privacy.html">Política de Privacidade</a></li>
+          </ul>
         </div>
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li><a href="../html/terms.html">Termos de Uso</a></li>
+            <li><a href="../html/support.html">Suporte</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li>lisbonspots2024@gmail.com</li>
+            <li>(+351) 932441354</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3 bg-light">
+        <div class="col text-center">
+          <span class="d-block mb-2 mt-2">©LisbonSpots 2024. Todos os direitos reservados.</span>
+          <div class="media-icons">
+            <a href="https://www.instagram.com/lisbon__spots?igsh=MWU4bnQ0OHU4OHgwMw==" class="text-dark mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark mr-3"><i class="fab fa-tiktok"></i></a>
+            <a href="https://github.com/edjasilva/ProjetoWeb-2024/tree/main" class="text-dark"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-   </footer>
+  </footer>
+
 
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-     
     <script src="../javascript/menu.js"></script>
     <script src="../javascript/commercial.js"></script>
     <script src="../javascript/profile.js"></script>

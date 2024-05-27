@@ -42,7 +42,7 @@ document.getElementById("profile_alert").addEventListener("click", function (eve
              name="password"
              readonly
              placeholder="Senha"
-           />
+           /> 
            <div class="invalid-feedback">
              Por favor, insira uma senha.
            </div>
@@ -124,12 +124,6 @@ document.getElementById("profile_alert").addEventListener("click", function (eve
            <span class="show-text">Deseja excluir a sua conta? </span>
 
 
-
-
-           <!--<span class="show-link"
-             ><a href="support.html">Excluir</a></span
-           >-->
-
            <span class="show-link text-primary" id="open_delete_alert">Excluir</span>
          </div>
    </form>
@@ -154,19 +148,16 @@ document.getElementById("profile_alert").addEventListener("click", function (eve
      }
    });
 
-
-
-
    document
        .getElementById("open_delete_alert")
        .addEventListener("click", function () {
-         Swal.fire({
+        Swal.fire({
           title: "Tem Certeza?",
-           html: `
+          html: `
    <div class="container">
      <div class="row">
        <div class="col-md-6">
-         <h4 class="small-text">
+         <h4 id="text_delete" class="small-text">
            Ao excluir a sua conta, você não poderá fazer mais login
            no Lisbon Spots e perderá todos os seus privilégios.
            Precisa de ajuda?
@@ -219,7 +210,7 @@ document.getElementById("profile_alert").addEventListener("click", function (eve
              <div class="col-md-9"> 
                <div class="left-aligned">
                  <div>
-                   <h4 class="small-text" style="padding-top: 10px; padding-right: 10px; width: 130%"> 
+                   <h4 id="text_delete" class="small-text"> 
                      A sua conta foi excluída. Se isso foi feito por engano
                      ou se você tiver alguma dúvida,
                      <a href="../html/support.html"
@@ -256,7 +247,4 @@ document.getElementById("profile_alert").addEventListener("click", function (eve
          Swal.close();
        });
    });
-
-
-
 });
