@@ -308,7 +308,7 @@ INSERT INTO tb_picture (url, spo_id) VALUES
 ('/images/noncomm/Church/Basílica da estrela/Basílicadaestrela_5.png', 32),
 ('/images/noncomm/Church/Basílica da estrela/Basílicadaestrela_6.png', 32),
 ('/images/noncomm/Church/Basílica da estrela/Basílicadaestrela_7.png', 32),
-('/images/noncomm/Church/Basílica da estrela/Basílicadaestrela_8.png, 32),
+('/images/noncomm/Church/Basílica da estrela/Basílicadaestrela_8.png', 32),
 ('/images/noncomm/Church/Igreja de Santa Maria de Belém/IgrejadeSantaMariadeBelém_1.png', 33),
 ('/images/noncomm/Church/Igreja de Santa Maria de Belém/IgrejadeSantaMariadeBelém_2.png', 33),
 ('/images/noncomm/Church/Igreja de Santa Maria de Belém/IgrejadeSantaMariadeBelém_3.png', 33),
