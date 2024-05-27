@@ -503,49 +503,32 @@ VALUES
 
 INSERT INTO tb_address (street, zipcode, country)
 VALUES 
-('Largo do Carmo 27', '1200-092', 'Portugal');
-
-INSERT INTO tb_address (street, zipcode, country)
-VALUES
-('R. das Janelas Verdes', '1249-017', 'Portugal');
-
-INSERT INTO tb_address (street, zipcode, country)
-VALUES
+('Largo do Carmo 27', '1200-092', 'Portugal'),
+('R. das Janelas Verdes', '1249-017', 'Portugal'),
 ('Av. Brasília', '1300-598','Portugal');
 
 INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
-('8:00:00', '18:00:00');
-INSERT INTO tb_timeTable (startTime, endtime)
-VALUES
-('10:00:00', '18:00:00');
-INSERT INTO tb_timeTable (startTime, endtime)
-VALUES
+('08:00:00', '18:00:00'),
+('10:00:00', '18:00:00'),
 ('10:00:00', '19:00:00');
 
-INSERT INTO tb_location (geom, created_at, updated_at)
-VALUES 
-(ST_GeomFromText('POINT(-9.140618550341369 38.71265784677829)', 4326), NOW(), NOW());
 
 INSERT INTO tb_location (geom, created_at, updated_at)
 VALUES 
-(ST_GeomFromText('POINT(-9.161495731225125 38.70500506187543)', 4326), NOW(), NOW());
-
-INSERT INTO tb_location (geom, created_at, updated_at)
-VALUES 
+(ST_GeomFromText('POINT(-9.140618550341369 38.71265784677829)', 4326), NOW(), NOW()),
+(ST_GeomFromText('POINT(-9.161495731225125 38.70500506187543)', 4326), NOW(), NOW()),
 (ST_GeomFromText('POINT(-9.193387106366172 38.696124026308965)', 4326), NOW(), NOW());
 
-INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
-VALUES
-('O museu encontra-se instalado nas denominadas Ruínas do Carmo, correspondendo à antiga Igreja do Convento de Nossa Senhora do Vencimento do Monte do Carmo, fundado por D. Nuno Álvares Pereira em 1389. O antigo templo gótico ficou bastante danificado com o terramoto de 1755 mas conserva ainda estruturas e elementos primitivos (séc. XIV-XV), onde se destacam os portais virados a Ocidente e Sul, ornados com belos capitéis vegetalistas e antropomórficos.O acervo deste museu integra peças de valor histórico, arqueológico e artístico, contemplando artefactos e obras desde a Pré-História à contemporaneidade.As civilizações Pré e Proto-Históricas estão representadas por uma coleção de artefactos arqueológicos do Paleolítico, Neolítico, Calcolítico, Bronze Antigo e Idade do Ferro. As civilizações Egípcia e Pré-Colombiana estão presentes através de uma coleção de cerâmicas e peças metálicas, múmias peruanas e uma múmia egípcia. A Antiguidade Clássica faz-se representar através de obras e fragmentos do período romano com especial destaque para uma arca tumular decorada com elegantes relevos. Da Alta Idade Média detaque para o período de domínio islâmico peninsular. Dos séculos do Gótico têm especial relevo os exemplares de tumulária dos séculos XIV e XV onde foram sepultados membros da Casa Real.O museu possui ainda uma excelente coleção de Pedras de Armas de grande interesse heráldico.O museu encontra-se instalado nas denominadas Ruínas do Carmo, correspondendo à antiga Igreja do Convento de Nossa Senhora do Vencimento do Monte do Carmo, fundado por D. Nuno Álvares Pereira em 1389. O antigo templo gótico ficou bastante danificado com o terramoto de 1755 mas conserva ainda estruturas e elementos primitivos (séc. XIV-XV), onde se destacam os portais virados a Ocidente e Sul, ornados com belos capitéis vegetalistas e antropomórficos.O acervo deste museu integra peças de valor histórico, arqueológico e artístico, contemplando artefactos e obras desde a Pré-História à contemporaneidade. As civilizações Pré e Proto-Históricas estão representadas por uma coleção de artefactos arqueológicos do Paleolítico, Neolítico, Calcolítico, Bronze Antigo e Idade do Ferro. As civilizações Egípcia e Pré-Colombiana estão presentes através de uma coleção de cerâmicas e peças metálicas, múmias peruanas e uma múmia egípcia. A Antiguidade Clássica faz-se representar através de obras e fragmentos do período romano com especial destaque para uma arca tumular decorada com elegantes relevos. Da Alta Idade Média detaque para o período de domínio islâmico peninsular. Dos séculos do Gótico têm especial relevo os exemplares de tumulária dos séculos XIV e XV onde foram sepultados membros da Casa Real.O museu possui ainda uma excelente coleção de Pedras de Armas de grande interesse heráldico.', '4', 35, 'museum', 35, 35, 'Museu Arqueológico do Carmo');
 
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
 VALUES
-('O MNAA-Museu Nacional de Arte Antiga alberga a mais relevante coleção pública do País: pintura, escultura, ourivesaria, artes decorativas, da Idade Média até ao século XIX, incluindo o maior número de obras classificadas como “tesouros nacionais”.Destacam-se no acervo do museu os Painéis de São Vicente, de Nuno Gonçalves, obra-prima da pintura do século XV, a Custódia de Belém, de Gil Vicente, mandada lavrar por D. Manuel I, os Biombos Namban, registo da presença dos portugueses no Japão, as Tentações de Santo Antão, de Bosch, exemplo máximo da pintura flamenga do século XVI.O jardim do MNAA, com restaurante e esplanada, goza de uma excecional vista sobre o Rio Tejo.', '5', 36,'museum', 36, 36, 'Museu Nacional de Arte Antiga');
+('O museu encontra-se instalado nas denominadas Ruínas do Carmo, correspondendo à antiga Igreja do Convento de Nossa Senhora do Vencimento do Monte do Carmo, fundado por D. Nuno Álvares Pereira em 1389. O antigo templo gótico ficou bastante danificado com o terramoto de 1755 mas conserva ainda estruturas e elementos primitivos (séc. XIV-XV), onde se destacam os portais virados a Ocidente e Sul, ornados com belos capitéis vegetalistas e antropomórficos.O acervo deste museu integra peças de valor histórico, arqueológico e artístico, contemplando artefactos e obras desde a Pré-História à contemporaneidade.As civilizações Pré e Proto-Históricas estão representadas por uma coleção de artefactos arqueológicos do Paleolítico, Neolítico, Calcolítico, Bronze Antigo e Idade do Ferro. As civilizações Egípcia e Pré-Colombiana estão presentes através de uma coleção de cerâmicas e peças metálicas, múmias peruanas e uma múmia egípcia. A Antiguidade Clássica faz-se representar através de obras e fragmentos do período romano com especial destaque para uma arca tumular decorada com elegantes relevos. Da Alta Idade Média detaque para o período de domínio islâmico peninsular. Dos séculos do Gótico têm especial relevo os exemplares de tumulária dos séculos XIV e XV onde foram sepultados membros da Casa Real.O museu possui ainda uma excelente coleção de Pedras de Armas de grande interesse heráldico.', '4', 1, 'museum', 1, 1, 'Museu Arqueológico do Carmo'),
 
-INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id, name)
-VALUES
-('O MAAT – Museu de Arte, Arquitetura e Tecnologia é a nova proposta cultural para a cidade de Lisboa.Um museu que cruza estas três áreas num espaço de debate, de descoberta, de pensamento crítico e de diálogo internacional.Um projeto inovador que coloca em comunicação um novo edifício, desenhado pelo atelier de arquitetura Amanda Levete Architects, e a Central Tejo, um dos exemplos nacionais de arquitetura industrial da primeira metade do século XX, e um dos polos museológicos mais visitados do país.O MAAT traduz a ambição de apresentar exposições nacionais e internacionais com o contributo de artistas, arquitetos e pensadores contemporâneos. Refletindo sobre grandes temas e tendências atuais, a programação apresentará ainda diversos olhares curatoriais sobre a Coleção de Arte da Fundação EDP.', '4', 37,'museum', 37, 37, 'MAAT – Museu De Arte, Arquitetura E Tecnologia');
+('O MNAA-Museu Nacional de Arte Antiga alberga a mais relevante coleção pública do País: pintura, escultura, ourivesaria, artes decorativas, da Idade Média até ao século XIX, incluindo o maior número de obras classificadas como “tesouros nacionais”.Destacam-se no acervo do museu os Painéis de São Vicente, de Nuno Gonçalves, obra-prima da pintura do século XV, a Custódia de Belém, de Gil Vicente, mandada lavrar por D. Manuel I, os Biombos Namban, registo da presença dos portugueses no Japão, as Tentações de Santo Antão, de Bosch, exemplo máximo da pintura flamenga do século XVI.O jardim do MNAA, com restaurante e esplanada, goza de uma excecional vista sobre o Rio Tejo.', '5', 2,'museum', 2, 2, 'Museu Nacional de Arte Antiga'),
+
+('O MAAT – Museu de Arte, Arquitetura e Tecnologia é a nova proposta cultural para a cidade de Lisboa.Um museu que cruza estas três áreas num espaço de debate, de descoberta, de pensamento crítico e de diálogo internacional.Um projeto inovador que coloca em comunicação um novo edifício, desenhado pelo atelier de arquitetura Amanda Levete Architects, e a Central Tejo, um dos exemplos nacionais de arquitetura industrial da primeira metade do século XX, e um dos polos museológicos mais visitados do país.O MAAT traduz a ambição de apresentar exposições nacionais e internacionais com o contributo de artistas, arquitetos e pensadores contemporâneos. Refletindo sobre grandes temas e tendências atuais, a programação apresentará ainda diversos olhares curatoriais sobre a Coleção de Arte da Fundação EDP.', '4', 3,'museum', 3, 3, 'MAAT – Museu De Arte, Arquitetura E Tecnologia');
+
 
 
 
