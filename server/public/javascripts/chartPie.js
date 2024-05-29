@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', async function() {
   const myPieChart = new Chart(pieCtx, {
       type: 'pie',
       data: {
-          labels:  data.map(row => row.count),
+          labels:  data.map(row => row.category),
           datasets: [{
-              data: data.map(row => row.category),
+              data: data.map(row => row.count),
               backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745', '#17a2b8', '#6c757d'],
           }],
       },

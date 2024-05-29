@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async function() {
  const frequencies = calculateBinFrequencies(data, bins);
 
  const histogramCtx = document.getElementById('myHistogram').getContext('2d');
- new Chart(histogramCtx, {
+ const hist = new Chart(histogramCtx, {
      type: 'bar',
      data: {
          labels: bins.slice(0, -1).map((bin, index) => `${bin}-${bins[index + 1]}`),
@@ -51,41 +51,39 @@ document.addEventListener('DOMContentLoaded', async function() {
              barPercentage: 1,
              categoryPercentage: 1
          }]
-     },
-     options: {
-         scales: {
-             xAxes: {
-                 grid: [{
-                  scaleLabel:{
-                    display: true,
-                    labelString : 'Museus'
-                  },
-                 ticks: {
-                     maxTicksLimit: bins.length
-                 },
-                }],
-              
-             yAxes: [{
-              scaleLabel:{
+    },
+    options: {
+        scales: {
+            x: {
+                grid: {
+                scaleLabel:{
                 display: true,
-                    labelString : 'Museus'
-              },
-                 ticks: {
-                     beginAtZero: true
-                 },
-                 gridLines: {
-                     display: true
-                 }
-             }]
-         },
-     
-             legend: {
-                 display: true
-             }
-         }
-     }
+                labelString : 'Museus'
+                },
+                ticks: {
+                    maxTicksLimit: bins.length
+                },
+            }
+        },
+            
+            y: {
+            scaleLabel:{
+            display: true,
+                labelString : 'Museus'
+            },
+                ticks: {
+                    beginAtZero: true
+                },
+                gridLines: {
+                    display: true
+                }
+            }
+        },
+    
+        legend: {
+            display: true
+        }
+    }
  });
-      
-      
-      })
 
+});

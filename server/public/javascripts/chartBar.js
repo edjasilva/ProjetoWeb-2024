@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                       maxTicksLimit: 6
                   }
               },
-              yAxes: [{
+              y: {
                   ticks: {
                       minTicksLimit: 6,
                       beginAtZero: true,
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                   grid: {
                       display: true
                   }
-              }],
+              }
           },
           plugins: {
               legend: {
