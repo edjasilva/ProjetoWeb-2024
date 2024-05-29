@@ -177,57 +177,6 @@ INSERT INTO tb_picture (url, spo_id) VALUES
 
 
 INSERT INTO tb_picture (url, spo_id) VALUES
-('/images/comm/Museu/Museu nacional do azulejo/MuseuAzulejo_1.png', 18),
-('/images/comm/Museu/Museu nacional do azulejo/MuseuAzulejo_2.png', 18),
-('/images/comm/Museu/Museu nacional do azulejo/MuseuAzulejo_3.png', 18),
-('/images/comm/Museu/Museu nacional do azulejo/MuseuAzulejo_4.png', 18),
-('/images/comm/Museu/Museu nacional do azulejo/MuseuAzulejo_5.png', 18),
-('/images/comm/Museu/Museu nacional do azulejo/MuseuAzulejo_6.png', 18),
-('/images/comm/Museu/Museu nacional do azulejo/MuseuAzulejo_7.png', 18),
-('/images/comm/Museu/Museu nacional do azulejo/MuseuAzulejo_7.png', 18);
-
-INSERT INTO tb_picture (url, spo_id) VALUES
-('/images/comm/Museu/Museu Calouste Gulbenkian/MuseuCalouste_1.png', 19),
-('/images/comm/Museu/Museu Calouste Gulbenkian/MuseuCalouste_2.png', 19),
-('/images/comm/Museu/Museu Calouste Gulbenkian/MuseuCalouste_3.png', 19),
-('/images/comm/Museu/Museu Calouste Gulbenkian/MuseuCalouste_4.png', 19),
-('/images/comm/Museu/Museu Calouste Gulbenkian/MuseuCalouste_5.png', 19),
-('/images/comm/Museu/Museu Calouste Gulbenkian/MuseuCalouste_6.png', 19),
-('/images/comm/Museu/Museu Calouste Gulbenkian/MuseuCalouste_7.png', 19),
-('/images/comm/Museu/Museu Calouste Gulbenkian/MuseuCalouste_8.png', 19);
-
-INSERT INTO tb_picture (url, spo_id) VALUES
-('/images/comm/Museu/MUDE/MUDE_1.png', 20),
-('/images/comm/Museu/MUDE/MUDE_2.png', 20),
-('/images/comm/Museu/MUDE/MUDE_3.png', 20),
-('/images/comm/Museu/MUDE/MUDE_4.png', 20),
-('/images/comm/Museu/MUDE/MUDE_5.png', 20),
-('/images/comm/Museu/MUDE/MUDE_6.png', 20),
-('/images/comm/Museu/MUDE/MUDE_7.png', 20),
-('/images/comm/Museu/MUDE/MUDE_8.png', 20);
-
-INSERT INTO tb_picture (url, spo_id) VALUES
-('/images/comm/Museu/Museu de fado/MuseFado_1.png', 21),
-('/images/comm/Museu/Museu de fado/MuseFado_2.png', 21),
-('/images/comm/Museu/Museu de fado/MuseFado_3.png', 21),
-('/images/comm/Museu/Museu de fado/MuseFado_4.png', 21),
-('/images/comm/Museu/Museu de fado/MuseFado_5.png', 21),
-('/images/comm/Museu/Museu de fado/MuseFado_6.png', 21),
-('/images/comm/Museu/Museu de fado/MuseFado_7.png', 21),
-('/images/comm/Museu/Museu de fado/MuseFado_7.png', 21);
-
-INSERT INTO tb_picture (url, spo_id) VALUES
-('/images/comm/Museu/Medeiros and Almeida Museum/Medeiros_1.png', 22),
-('/images/comm/Museu/Medeiros and Almeida Museum/Medeiros_2.png', 22),
-('/images/comm/Museu/Medeiros and Almeida Museum/Medeiros_3.png', 22),
-('/images/comm/Museu/Medeiros and Almeida Museum/Medeiros_4.png', 22),
-('/images/comm/Museu/Medeiros and Almeida Museum/Medeiros_5.png', 22),
-('/images/comm/Museu/Medeiros and Almeida Museum/Medeiros_6.png', 22),
-('/images/comm/Museu/Medeiros and Almeida Museum/Medeiros_7.png', 22),
-('/images/comm/Museu/Medeiros and Almeida Museum/Medeiros_8.png', 22);
-
-
-INSERT INTO tb_picture (url, spo_id) VALUES
 ('/images/noncomm/Beach/Praia do Guincho/PraiadoGuincho_1.png', 23),
 ('/images/noncomm/Beach/Praia do Guincho/PraiadoGuincho_2.png', 23),
 ('/images/noncomm/Beach/Praia do Guincho/PraiadoGuincho_3.png', 23),
