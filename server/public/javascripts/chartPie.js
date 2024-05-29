@@ -33,17 +33,17 @@ document.addEventListener('DOMContentLoaded', async function() {
   console.log(data);
 
 
-const pieCtx = document.getElementById('myPieChart').getContext('2d');
-            
+  const pieCtx = document.getElementById('myPieChart').getContext('2d');
+              
 
-            const myPieChart = new Chart(pieCtx, {
-                type: 'pie',
-                data: {
-                    labels:  data.map(row => row.count),
-                    datasets: [{
-                        data: data.map(row => row.category),
-                        backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745', '#17a2b8', '#6c757d'],
-                    }],
-                },
-            });
-           } );
+  const myPieChart = new Chart(pieCtx, {
+      type: 'pie',
+      data: {
+          labels:  data.map(row => row.count),
+          datasets: [{
+              data: data.map(row => row.category),
+              backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745', '#17a2b8', '#6c757d'],
+          }],
+      },
+  });
+});

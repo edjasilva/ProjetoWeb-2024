@@ -28,7 +28,7 @@ const Statistics = {
         from tb_commercialspot
         group by category;
         `;
-        return (await db.query(text).rows);
+        return (await db.query(text)).rows;
     }
 }
 
