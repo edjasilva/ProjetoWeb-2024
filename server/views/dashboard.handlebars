@@ -21,41 +21,52 @@
                             <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
+                                Gráficos 
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                    <a class="nav-link" href="layout-static.html">Gráfico de barras</a>
+                                     <a class="nav-link" href="layout-static.html">Histograma</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Gráfico circular</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Pages
+                                Menu
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Autenticação
+                                        Páginas
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Conta</a>
+                                            <a class="nav-link" href="login.html">Home</a>
+                                            <a class="nav-link" href="register.html">Locais Comerciais</a>
+                                            <a class="nav-link" href="password.html">Locais Não Comerciais</a>
+                                            <a class="nav-link" href="login.html">Blog</a>
+                                            <a class="nav-link" href="register.html">Contacte-nos</a>
+                                            <a class="nav-link" href="password.html">Sobre nós</a>
+                                            <a class="nav-link" href="register.html">Suporte</a>
+                                            <a class="nav-link" href="password.html">FAQ</a>
+                                          
+
                                         </nav>
                                     </div>
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                       Luagres
+                                       Conta
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">Lugares Comerciais</a>
-                                            <a class="nav-link" href="404.html">Luagres Não Comerciais</a>
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Conta</a>
+                                             <a class="nav-link" href="password.html">Eliminar Conta</a>
+                                           
                                             
                                         </nav>
                                     </div>
@@ -93,7 +104,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar me-1"></i>
-                                        Locais Comerciais
+                                        Quuantidade para cada Spot não comercial
                                     </div>
                                     <div class="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div>
                                     <div class="card-footer small text-muted">Gráfico de barras</div>
@@ -103,7 +114,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-pie me-1"></i>
-                                        Locais não comerciais
+                                        Quuantidade para cada Spot não comercial
                                     </div>
                                     <div class="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
                                     <div class="card-footer small text-muted">Gráfico Circular</div>
@@ -114,7 +125,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar me-1"></i>
-                                       Museus
+                                       Rating para cada museu
                                     </div>
                                     <div class="card-body"><canvas id="myHistogram" width="100%" height="50"></canvas></div>
                                     <div class="card-footer small text-muted">Histograma</div>
@@ -127,7 +138,7 @@
     
             </div>
         </div>
-
+<!--
         <script>
         document.addEventListener('DOMContentLoaded', function() {
            
@@ -265,7 +276,9 @@
             }
         });
     </script>
-        <Script> src="/javascripts/chartHistogram.js" </Script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/javascripts/chartBar.js"></script>
+        <script src="/javascripts/chartHistogram.js"></script>
+        <script src="/javascripts/chartPie.js"></script>

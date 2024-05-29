@@ -1,4 +1,4 @@
-/*import express from 'express';
+import express from 'express';
 import dotenv from 'dotenv';
 import database from './config/db_connector.js';
 import { engine } from 'express-handlebars';
@@ -10,8 +10,12 @@ import termosRoutes from './routes/termosRoutes.js';
 import mapaRoutes from './routes/mapaRoutes.js';
 import homeRoutes from './routes/homeRoutes.js';
 import spotsRoutes from './routes/spotsRoutes.js';
-import csv from 'csv-parser';
+import dashboardRoutes from './routes/dashboardRoutes.js';
 import fs from 'fs';
+
+
+import logger from 'morgan';
+import morgan from 'morgan';
 
 
 dotenv.config();
@@ -34,18 +38,9 @@ server.engine('handlebars', engine({
 server.set('view engine', 'handlebars');
 server.set('views', './views');
 
+server.use(logger('dev'));
 server.use(express.static('public'));
 
-// Função para ler dados do CSV
-function readCSVData(callback) {
-  const results = [];
-  fs.createReadStream('data.csv')
-    .pipe(csv())
-    .on('data', (data) => results.push(data))
-    .on('end', () => {
-      callback(results);
-    });
-}
 
 // Rotas
 server.use("/about", aboutUsRoutes);
@@ -56,12 +51,13 @@ server.use("/termos", termosRoutes);
 server.use("/mapa", mapaRoutes);
 server.use("/home", homeRoutes);
 server.use("/spots", spotsRoutes);
+server.use("/dashboard", dashboardRoutes)
 
-server.get('/dashboard', (req, res) => {
+/*server.get('/dashboard', (req, res) => {
   readCSVData((data) => {
     res.render('dashboard', { title: 'Lisbon Spots', data: data });
   });
-});
+});*/
 
 // Iniciar o servidor
 async function start() {
@@ -77,8 +73,10 @@ async function start() {
   }
 }
 
-start();*/
+start();
 
+
+/*
 
 import express from 'express';
 import dotenv from 'dotenv';
@@ -91,6 +89,7 @@ import supportRoutes from './routes/supportRoutes.js';
 import termosRoutes from './routes/termosRoutes.js';
 import mapaRoutes from './routes/mapaRoutes.js';
 import homeRoutes from './routes/homeRoutes.js';
+import testeRoutes from './routes/teste.js'
 import spotsRoutes from './routes/spotsRoutes.js';
 import csv from 'csv-parser';
 import fs from 'fs';
@@ -135,6 +134,34 @@ function readCSVData(files, callback) {
   });
 }
 
+
+
+
+//////////////////////////////////////////////////////
+
+
+server.get('/', async (req, res) => {
+  try {
+      const result = await database.query(`
+          SELECT f.name, f.rating
+          FROM tb_spot f
+
+          
+      `);
+
+      res.render('teste', {layout: 'mainLay', title: 'LisbonSpots', teste: result.rows});
+  
+      
+  } catch (error) {
+      console.error('Erro ao consultar o banco de dados:', error);
+   
+  }
+});
+
+
+/////////////////////////////////////////////////////////////////7
+
+
 // Rotas
 server.use("/about", aboutUsRoutes);
 server.use("/contact", contactUsRoutes);
@@ -144,6 +171,7 @@ server.use("/termos", termosRoutes);
 server.use("/mapa", mapaRoutes);
 server.use("/home", homeRoutes);
 server.use("/spots", spotsRoutes);
+server.use("/teste", testeRoutes)
 
 server.get('/dashboard', (req, res) => {
    
@@ -180,4 +208,4 @@ async function start() {
   }
 }
 
-start();
+start(); */

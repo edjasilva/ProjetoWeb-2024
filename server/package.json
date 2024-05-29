@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "devstart": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,11 @@
     "chart.js": "^4.4.3",
     "csv": "^6.3.9",
     "csv-parser": "^3.0.0",
+    "debug": "^4.3.4",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
+    "morgan": "^1.10.0",
     "pg": "^8.11.5",
     "startbootstrap-sb-admin": "^7.0.7"
   }
