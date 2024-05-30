@@ -20,8 +20,13 @@ const getCountComCategory = async (req, res) =>{
     const result = await Statistics.getCountComCategory();
     res.send(result);
 }
+
+const getAvgValue= async(req, res)=>{
+    const result = await Statistics.getAvgValue();
+    res.send(result);
+}
        
 
-export {getAll, getCountByCategory, getRatingByCategory, getCountComCategory}
+export {getAll, getCountByCategory, getRatingByCategory, getCountComCategory, getAvgValue}
 
 

@@ -29,6 +29,15 @@ const Statistics = {
         group by category;
         `;
         return (await db.query(text)).rows;
+    },
+
+    getAvgValue: async()=>{
+        const text= `
+        select avg(  cast( cast(rating as text) as integer)
+
+       )  from tb_commercialspot  where category='museum';
+        `;
+        return (await db.query(text)).rows;
     }
 }
 

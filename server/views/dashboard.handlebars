@@ -21,14 +21,14 @@
                             <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Gráficos 
+                                Graphs
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Gráfico de barras</a>
-                                     <a class="nav-link" href="layout-static.html">Histograma</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Gráfico circular</a>
+                                    <a class="nav-link" href="layout-static.html">Chart Bar</a>
+                                     <a class="nav-link" href="layout-static.html">Histogram</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Chart Pie</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -92,84 +92,82 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Gráficos</h1>
+                        <h1 class="mt-4">Graphs</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item">Dashboard</li>
-                            <li class="breadcrumb-item active">Gráficos</li>
+                            <li class="breadcrumb-item active">Graphs/ Statistics</li>
                         </ol>
                         
+ 
+                        
+                       <div class="container col-8 my-5">
+                            <div class="row">
+                                {{#if max}}
+                                <div class="col order-last  border border-3  border-success bg-light mx-1">
+                                    <div class="col-12 mt-2 ">
+                            
+                                        <p class="text-secondary   fw-light fs-5  "> Best Rating</p>
+                                        <p class="fs-4 mx-1 "> <i class="fa fa-database my-0 text-secondary"></i>   {{max}}</p>
+                                    </div>
+                                </div> 
+                                {{/if}}
+                                {{#if avg}}
+                                <div class="col  border border-3 border-warning bg-light">
+                                    <div class="col-12 mt-2 ">
+                            
+                                        <p class="text-secondary   fw-light fs-5  "> Average Rating Value</p>
+                                        <p class="fs-4 mx-1 "> <i class="fa fa-database my-0 text-secondary"></i>   {{avg}}</p>
+                                    </div>
+                                </div>
+                                {{/if}}
+                                {{#if max}}
+                                <div class="col order-first  border border-3 border-danger  bg-light mx-1">
+                                     <div class="col-12 mt-2 ">
+                            
+                                        <p class="text-secondary   fw-light fs-5  "> Worst Rating</p>
+                                        <p class="fs-4 mx-1 "> <i class="fa fa-database my-0 text-secondary"></i>   {{min}}</p>
+                                    </div>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+
+
+
                        
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar me-1"></i>
-                                        Quuantidade para cada Spot não comercial
+                                        Quantity for each non-commercial spot
                                     </div>
                                     <div class="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div>
-                                    <div class="card-footer small text-muted">Gráfico de barras</div>
+                                    <div class="card-footer small text-muted">Bar Chart</div>
                                 </div>
                             </div>
                              <div class="col-lg-6 mx-auto">
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar me-1"></i>
-                                       Rating para cada museu
+                                      Rating for each museum
                                     </div>
                                     <div class="card-body"><canvas id="myHistogram" width="100%" height="50"></canvas></div>
-                                    <div class="card-footer small text-muted">Histograma</div>
+                                    <div class="card-footer small text-muted">Histogram</div>
                                 </div>
                             </div>
                             <div class="col-lg-6" >
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-pie me-1"></i>
-                                        Quuantidade para cada Spot não comercial
+                                       Quantity for each commercial spot
                                     </div>
                                     <div class="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
-                                    <div class="card-footer small text-muted">Gráfico Circular</div>
+                                    <div class="card-footer small text-muted">Chart Pie</div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-6" >
-                                 <div class="card mb-4">
-                        
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-pie me-1"></i>
-                                         Valor médio dos ratings
-                                    </div>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Spots</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">3</th>
-                                            <td colspan="2">Larry the Bird</td>
-                                            <td>@twitter</td>
-                                            </tr>
-                                        </tbody>
-                                        </table>
-                                    <div class="card-footer small text-muted">Tabela de Rating</div>
-                                                                            
-                                </div>
+                            
 
 
                             </div>
@@ -189,4 +187,3 @@
         <script src="/javascripts/chartBar.js"></script>
         <script src="/javascripts/chartHistogram.js"></script>
         <script src="/javascripts/chartPie.js"></script>
-        

@@ -59,6 +59,65 @@ server.use("/dashboard", dashboardRoutes)
   });
 });*/
 
+
+
+/*server.get('/', async (req, res) => {
+  try {
+      const result = await database.query(`
+      select avg(  cast( cast(rating as text) as integer) 
+
+    )  from tb_commercialspot  where category='museum';
+      `);
+
+      res.render('dashboard', {layout: 'adminLay', avg: result.rows});
+      
+  } catch (error) {
+      console.error('Erro ao consultar o banco de dados:', error);
+   
+  }
+});*/
+
+server.get('/', async (req, res) => {
+  try {
+    // Consulta para obter a média
+    const avgResult = await database.query(`
+      SELECT round(AVG(CAST(CAST(rating AS text) AS integer)), 3) AS avg_rating
+      FROM tb_commercialspot
+      WHERE category = 'museum';
+    `);
+    const avgRating = avgResult.rows[0].avg_rating;
+
+    // Consulta para obter o valor máximo
+    const maxResult = await database.query(`
+      SELECT MAX(CAST(CAST(rating AS text) AS integer)) AS max_rating
+      FROM tb_commercialspot
+      WHERE category = 'museum';
+    `);
+    const maxRating = maxResult.rows[0].max_rating;
+
+    // Consulta para obter o valor mínimo
+    const minResult = await database.query(`
+      SELECT MIN(CAST(CAST(rating AS text) AS integer)) AS min_rating
+      FROM tb_commercialspot
+      WHERE category = 'museum';
+    `);
+    const minRating = minResult.rows[0].min_rating;
+
+    // Passa os valores para o template Handlebars
+    res.render('dashboard', { layout: 'adminLay', avg: avgRating, max: maxRating, min: minRating });
+  } catch (error) {
+    console.error('Erro ao consultar o banco de dados:', error);
+    res.status(500).send('Erro no servidor');
+  }
+});
+
+
+
+
+
+
+
+
 // Iniciar o servidor
 async function start() {
   try {
