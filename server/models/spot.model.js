@@ -1,3 +1,4 @@
+import { text } from "express";
 import db from "../config/db_connector.js";
 
 const Spot = {
@@ -13,7 +14,10 @@ const Spot = {
         const values = [id]
 
         return (await db.query(text, values)).rows;
-    }
+    },
+    
+ 
+
 }
 
 export default Spot;

@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async function() {
      data: {
          labels: bins.slice(0, -1).map((bin, index) => `${bin}-${bins[index + 1]}`),
          datasets: [{
-             label: 'Museus',
+             label: 'Museum',
              data: frequencies,
              backgroundColor: 'rgba(2, 117, 216, 0.7)',
              borderColor: 'rgba(2, 117, 216, 1)',
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 grid: {
                 scaleLabel:{
                 display: true,
-                labelString : 'Museus'
+                labelString : 'Museum'
                 },
                 ticks: {
                     maxTicksLimit: bins.length

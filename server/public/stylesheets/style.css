@@ -749,3 +749,10 @@ color: black;
     color: black; /* Adjust color as needed */
   }
   
+
+.custom-map {
+  height: 92vh !important;
+  margin: 10px 30px !important;
+  border-radius: 8px;
+  border: 1px solid #9a9a9a;
+}

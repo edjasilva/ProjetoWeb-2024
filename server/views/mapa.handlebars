@@ -1,8 +1,22 @@
-  <header>
-      <div class="col-md-0">
-        <div id="map"></div>
-        <a href="../html/home.html">
-          <button id="crossButton">&#10006;</button>
-        </a>
+<header>
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-4" style="display: none;">
+          <ul>
+              {{#each data}}
+                  <li><a href="#">{{name}}</a>
+                      <span class="badge rounded-pill text-bg-dark">{{rating}} ({{num_reviews}})</span>
+                      <i class="bi-pin-map-fill map-pin" lon="{{location.coordinates.[0]}}"
+                          lat="{{location.coordinates.[1]}}"></i>
+                  </li>
+              {{/each}}
+          </ul>
       </div>
-    </header>
+      
+      <div class="col">
+        <div id="map" class="custom-map"></div>
+      </div>
+    </div>
+    
+  </div>
+</header>

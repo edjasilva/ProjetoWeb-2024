@@ -1,7 +1,3 @@
-Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#292b2c';
-
-
 
 const base_url = 'http://localhost:5555';
 
@@ -24,8 +20,7 @@ document.addEventListener('DOMContentLoaded', async function() {
    
   // Gráfico de Barras
   const barCtx = document.getElementById('myBarChart').getContext('2d');
-//  const barLabels = data.category;
-//  const barValues = data.count;
+
 
   const myBarChart = new Chart(barCtx, {
       type: 'bar',
