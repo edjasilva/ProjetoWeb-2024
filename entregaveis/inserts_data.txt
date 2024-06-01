@@ -27,7 +27,6 @@ INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
 ('17:00:00', '23:30:00');
 
-
 INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
 ('19:00:00', '22:30:00');
@@ -75,7 +74,7 @@ VALUES
 
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES
-('R. Rosa Araújo 8', '1250-195', 'Portugal', 0);
+('R. Capelo 5', '1250-195', 'Portugal', 0);
 
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES
@@ -206,7 +205,7 @@ VALUES
 
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES 
-('Av. António Augusto de Aguiar 31', '1069-413', 'Portugal', 1);
+('Av. Lusíada', '1069-413', 'Portugal', 1);
 
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES
@@ -214,7 +213,7 @@ VALUES
 
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES
-('Av. Lusíada', '1500-392', 'Portugal', 1);
+('Av. António Augusto de Aguiar 31', '1500-392', 'Portugal', 1);
 
 
 INSERT INTO tb_timeTable (startTime, endtime)
@@ -439,7 +438,7 @@ VALUES
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
-('É tão bonita e fácil de alcançar que muitas vezes nos fins de semana fica muito lotada porque é apreciada, tanto pelos habitantes de Lisboa, como pelos turistas que vêm de fora. E pensar que estamos falando da maior praia da costa de Lisboa-Estoril-Cascais com um quilômetro e meio de areia. Mas chegar lá é fácil. Há também um trem muito cómodo que chega de Lisboa, na linha de Cascais.', '4', 26, 'beach', 26,  'Praia de Carcavelos');
+('É tão bonita e fácil de alcançar que muitas vezes nos fins de semana fica muito lotada porque é apreciada, tanto pelos habitantes de Lisboa, como pelos turistas que vêm de fora. E pensar que estamos falando da maior praia da costa de Lisboa-Estoril-Cascais com um quilômetro e meio de areia. Mas chegar lá é fácil. Há também um trem muito cómodo que chega de Lisboa, na linha de Cascais.É a primeira praia do concelho que encontramos quando nos deslocamos na direção de Lisboa-Cascais, estando encaixada entre o Forte de São Julião da Barra e a ponta de Rana. Possui uma grande extensão de areal, sendo muito procurada pelos praticantes de Surf, Windsurf e Bodyboard, devido à forte ondulação das suas águas, razão pela qual disputam-se aqui várias competições. Existe uma zona pedonal que circunda o areal, onde se podem encontrar diversos restaurantes, bares e esplanadas.', '4', 26, 'beach', 26,  'Praia de Carcavelos');
 
 
 
@@ -635,9 +634,6 @@ INSERT INTO tb_address (street, zipcode, country)
 VALUES 
 ('Praça do Império', '1400-206', 'Portugal'); 
 
-INSERT INTO tb_address (street, zipcode, country)
-VALUES 
-('Largo do Chiado 16', '1200-108','Portugal');
 
 INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
@@ -645,15 +641,11 @@ VALUES
 
 INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
-('11:00:00', '20:00:00'); 
+('09:00:00', '20:00:00'); 
 
 INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
-('8:00:00', '22:00:00'); 
-
-INSERT INTO tb_timeTable (startTime, endtime)
-VALUES
-('10:00:00', '22:00:00');
+('10:00:00', '22:30:00'); 
 
 
 INSERT INTO tb_location (geom, created_at, updated_at)
@@ -679,4 +671,4 @@ VALUES
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
-('A Igreja de Santa Maria de Belém, localizada no Mosteiro dos Jerónimos, é uma bonita igreja de cruz latina, composta por três naves. Aqui é possível encontrar os túmulos de grandes personalidades portuguesas, tais como Vasco da Gama, Luís de Camões, de Carlos Mota (escultor), o Cardeal-Rei D. Henrique, o Rei D. Sebastião, entre outros.A capela-mor inicial terá sido destruída e substituída, em pleno séc. XVI, a mando de D. Catarina, esposa do Rei D. João III. Feita por Jerónimo de Ruão, o estilo maneirista desta capela acaba contrastando com belo corpo manuelino da restante igreja. No Altar-mor é possível encontrar o retábulo do pintor Lourenço de Salzedo, contendo várias cenas da Paixão de Cristo e a Adoração dos Magos.', '4', 42,'church', 42, 'Igreja de Santa Maria de Belém');
+('A Igreja de Santa Maria de Belém, localizada no Mosteiro dos Jerónimos, é uma bonita igreja de cruz latina, composta por três naves. Aqui é possível encontrar os túmulos de grandes personalidades portuguesas, tais como Vasco da Gama, Luís de Camões, de Carlos Mota (escultor), o Cardeal-Rei D. Henrique, o Rei D. Sebastião, entre outros.A capela-mor inicial terá sido destruída e substituída, em pleno séc. XVI, a mando de D. Catarina, esposa do Rei D. João III. Feita por Jerónimo de Ruão, o estilo maneirista desta capela acaba contrastando com belo corpo manuelino da restante igreja. No Altar-mor é possível encontrar o retábulo do pintor Lourenço de Salzedo, contendo várias cenas da Paixão de Cristo e a Adoração dos Magos.Do magnífico conjunto, destacam-se os dois portais manuelinos, as abóbadas das naves, os túmulos reais, o retábulo maneirista da capela-mor e o seu sacrário barroco em prata, o coro alto com cadeiral renascentista, a sacristia com pinturas sobre os arcazes, e ainda os demais espaços do antigo mosteiro, nomeadamente o seu claustro. Está classificada como património mundial pela UNESCO.', '4', 42,'church', 42, 'Igreja de Santa Maria de Belém');
