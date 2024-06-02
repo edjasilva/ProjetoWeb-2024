@@ -491,7 +491,7 @@ font-family: 'BioRhyme';
 }
 
 #navhammenu{
-  width:350px; 
+  width: 400px;
   height: 50px;
 }
 
@@ -962,3 +962,45 @@ footer ul li a:hover {
   .nav-link.active {
     color: #000; 
   }
+
+  .floating-button {
+    position: fixed;
+    bottom: 80px; 
+    right: 20px; 
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.floating-button i {
+    font-size: 30px;
+    color: #000; 
+}
+
+.swal2-file-label{
+  display: block; 
+  cursor: pointer; 
+  background-color: #fcfbfb; 
+  padding: 5px; 
+  font-size: small;
+  border-radius: 5px; 
+  border: 1px solid #ccc;
+}
+
+.swal2-input{
+  background-color: #ffffff;
+  height: 60px; 
+  font-size: medium;
+  box-sizing: border-box;
+}
+
+.swal2-file{
+  display: none;
+}
