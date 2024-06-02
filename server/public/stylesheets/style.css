@@ -739,13 +739,60 @@ color: black;
 
   #crossButton {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    z-index: 9999; /* Ensure button appears on top */
+    top: 10px; 
+    right: 10px; 
+    z-index: 9999; 
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: black; /* Adjust color as needed */
+    color: black;
   }
   
+
+
+  /*------NEW BlOG----*/
+  .floating-button {
+    position: fixed;
+    bottom: 80px; 
+    right: 20px; 
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.floating-button i {
+    font-size: 30px;
+    color: #000; 
+}
+
+.swal2-file-label{
+  display: block; 
+  cursor: pointer; 
+  background-color: #fcfbfb; 
+  padding: 5px; 
+  font-size: small;
+  border-radius: 5px; 
+  border: 1px solid #ccc;
+}
+
+.swal2-input{
+  background-color: #ffffff;
+  height: 60px; 
+  font-size: medium;
+  box-sizing: border-box;
+}
+
+.swal2-file{
+  display: none;
+}
+
+
+
