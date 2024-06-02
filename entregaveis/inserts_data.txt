@@ -1,14 +1,14 @@
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES 
-('R. Câmara Pestana 45', '1150-082', 'Portugal', 1);
+('R. Câmara Pestana 45', '1150-082', 'Portugal', 0);
 
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES 
-('R. Anchieta 15', '1200-224', 'Portugal', 1);
+('R. Anchieta 15', '1200-224', 'Portugal', 0);
 
 INSERT INTO tb_address (street, zipcode, building, country, floor)
 VALUES 
-('R. Serpa Pinto', '1200-026', '10A', 'Portugal', 1);
+('R. Serpa Pinto', '1200-026', '10A', 'Portugal', 0);
 
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES
@@ -448,11 +448,6 @@ VALUES
 
 
 INSERT INTO tb_address (street, zipcode, country)
-VALUES 
-('R. Belver', '6040-032', 'Portugal');
-
-
-INSERT INTO tb_address (street, zipcode, country)
 VALUES
 ('R. Tejo ', '2600-401', 'Portugal');
 
@@ -461,14 +456,10 @@ INSERT INTO tb_location (geom, created_at, updated_at)
 VALUES 
 (ST_GeomFromText('POINT(-9.250178065154357 38.70238955584393)', 4326), NOW(), NOW());
 
-INSERT INTO tb_location (geom, created_at, updated_at)
-VALUES 
-(ST_GeomFromText('POINT(-7.951433260078207 39.491814884958565)', 4326), NOW(), NOW());
 
 INSERT INTO tb_location (geom, created_at, updated_at)
 VALUES 
-(ST_GeomFromText('POINT(-7.959673006195496 39.49684870457209)', 4326), NOW(), NOW());
-
+(ST_GeomFromText('POINT(-9.215790977001596 38.69219200512484)', 4326), NOW(), NOW());
 
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
@@ -476,12 +467,9 @@ VALUES
 ('O rio Jamor é um rio que nasce na serra da Carregueira, no concelho de Sintra, e vai desaguar no rio Tejo, na Cruz Quebrada. Toma o nome de Ribeira de Belas no troço inicial a montante da interseção com a ribeira de Venda Seca.O rio atravessa os jardins do Palácio de Queluz. O seu curso é aí canalizado, havendo um troço com cerca de 130 metros de comprimento delimitado por comportas e com paredes azulejadas – o Canal dos Azulejos. Quando as comportas do canal eram fechadas, criava-se um plano de água onde era possível passear de barco entre representações de portos, palácios e outros temas.', '3', 27, 'river', 27, 'Rio Jamor');
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
-VALUES 
-('Situada perto do Cabo da Roca, a Praia da Ursa tem como acesso uma estrada de terra batida, seguida de um caminho sinuoso e íngreme que, por fim, termina neste areal tranquilo e pouco frequentado.Apesar do percurso perigoso, o esforço é recompensado pela soberba paisagem que se pode apreciar, dominada pelas enormes formações rochosas existentes na praia. Deve o seu nome precisamente a um destes rochedos, cujo formato faz lembrar um urso.A Praia da Ursa é um paraíso bruto, emoldurado por magníficas formações rochosas. Foi considerada pelo Guia Michelin como uma das praias mais bonitas do mundo e, frequentemente, entre na lista das melhores praias desertas da Europa.', '4', 28,'river', 28, 'Rio Belver');
+VALUES  
+('O maior rio da Península Ibérica, estendendo-se ao longo de 1009 quilómetros. Nasce na serra de Albarracim, a 1593 metros de altitude, em Espanha, e desagua no oceano Atlântico, por um largo estuário com cerca de 260 km2, alguns quilómetros adiante de Lisboa, em S. Julião da Barra. Depois de atravessar o planalto de Castela-a-Nova e a Extremadura espanhola, entre desfiladeiros e vales apertados, entra em Portugal. Antes disso, faz fronteira entre Espanha e Portugal através do troço internacional do Tejo, com uma extensão de cerca de 50 km. As margens são rochosas e abruptas e o vale estreito (por exemplo, Portas do Ródão).O leito está cheio de penedias, cascalho e algumas ilhas como a do Castelo de Almourol. De Abrantes até à foz, o Tejo corre nas planícies ribatejanas, onde deposita nateiros de grande fertilidade e provoca inundações catastróficas. O Tejo termina por um amplo e fundo estuário, que forma o mar da Palha e se aperta a 10 km da foz. Na margem direita do estuário situa-se a cidade de Lisboa.', '4', 28, 'river', 28, 'Rio Tejo');
 
-INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
-VALUES 
-('O rio Tejo nasce em Espanha, na Serra de Albarracin, e termina o seu percurso, de 1100 Km, em Lisboa. Na sua passagem por Vila Velha de Ródão, veneram a sua magnitude as Portas de Ródão, imponente formação rochosa do período ordovícico. A ele deve o concelho de Vila Velha de Ródão grande parte da sua riqueza patrimonial e natural. No seu leito repousa o Complexo de Arte Rupestre do Vale do Tejo; nas suas margens foram descobertos vestígios pré-históricos de interesse nacional.A paisagem das margens destes rios é constituída por relevos rochosos, com terraços de olival, cobertos com flora da região. Nestes rios navegam ainda botes, barcos típicos de madeira utilizados pelos pescadores para a faina piscatória e para deslocações e passeios.O leito está cheio de penedias, cascalho e algumas ilhas como a do Castelo de Almourol. De Abrantes até à foz, o Tejo corre nas planícies ribatejanas, onde deposita nateiros de grande fertilidade e provoca inundações catastróficas. O Tejo termina por um amplo e fundo estuário, que forma o mar da Palha e se aperta a 10 km da foz. Na margem direita do estuário situa-se a cidade de Lisboa. A área da sua bacia hidrográfica é de 79 800 km2, dos quais 24 900 são em Portugal. O escoamento anual na foz do rio Tejo é, em média, de 17 080 hm3, sendo 6200 hm3 em Portugal e o restante em Espanha. Estima-se que a bacia hidrográfica do rio Tejo, em território nacional, apresente uma capacidade total de armazenamento de recursos hídricos na ordem dos 2750 hm3, em regime regularizado. Na bacia hidrográfica do rio Tejo é nítido o contraste entre os afluentes da margem norte, com elevadas disponibilidades de recursos hídricos em regime natural, e os afluentes da margem sul, bastante pobres em recursos hídricos.', '5', 29,'river', 29, 'Rio Tejo');
 
 
 INSERT INTO tb_address (street, zipcode, country)
@@ -523,103 +511,35 @@ VALUES
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES   
-('Este espaço já existia no séc. XVI, altura em que era conhecido como Campo de Alvalade. O início da plantação do Campo de Alvalade, inspirado no estilo de Passeio Romântico, remonta ao séc. XIX, tendo-se realizado aqui as primeiras corridas de cavalos em 1816 e, existindo ainda hoje nas proximidades, um hipódromo para concursos hípicos. Em 1945, o Arq.º Keil do Amaral elaborou um projeto de remodelação com ampliação do jardim e introdução de novos equipamentos, tornando-se um espaço de características lúdicas e recreativas.Atualmente a CML e a Universidade de Lisboa (UL) são parceiras na reabilitação urbana do jardim do Campo Grande. Esta ação envolve duas fases: a Norte, terminada em 2013, e a Sul em execução. Na primeira fase, o jardim foi alvo de uma forte transformação concetual, dado que foi abandonada a estrutura de caminhos e canteiros para ser convertido num único plano verde, amplo, de grande visibilidade e profundidade, onde predominam os relvados e os prados.', '4', 30, 'park', 30, 'Jardim do Campo Grande');
+('Este espaço já existia no séc. XVI, altura em que era conhecido como Campo de Alvalade. O início da plantação do Campo de Alvalade, inspirado no estilo de Passeio Romântico, remonta ao séc. XIX, tendo-se realizado aqui as primeiras corridas de cavalos em 1816 e, existindo ainda hoje nas proximidades, um hipódromo para concursos hípicos. Em 1945, o Arq.º Keil do Amaral elaborou um projeto de remodelação com ampliação do jardim e introdução de novos equipamentos, tornando-se um espaço de características lúdicas e recreativas.Atualmente a CML e a Universidade de Lisboa (UL) são parceiras na reabilitação urbana do jardim do Campo Grande. Esta ação envolve duas fases: a Norte, terminada em 2013, e a Sul em execução. Na primeira fase, o jardim foi alvo de uma forte transformação concetual, dado que foi abandonada a estrutura de caminhos e canteiros para ser convertido num único plano verde, amplo, de grande visibilidade e profundidade, onde predominam os relvados e os prados.', '4', 29, 'park', 29, 'Jardim do Campo Grande');
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
-('Instalado em 1998, no âmbito da exposição mundial "Expo’98" na área de um antigo aterro sanitário (selado) e junto à estação de tratamento de águas de Beirolas – Fábrica da Água de Beirolas.Com 90ha, o parque localiza-se junto ao rio Tejo e integra o Corredor Verde Ribeirinho.É constituído por um sistema de elevações artificiais e colinas, onde dominam os pinheiros mansos, que sombreiam os prados verdes muito utilizados pelos utentes do parque. A estas formas ondulantes junta-se um sistema de circulações e vistas, com especial interesse a sul, para o Estuário e para a Ponte Vasco da Gama e ainda vários elementos de utilização lúdico-desportiva: skate parque, ténis, golfe, centro hípico, parque de diversões, zona comercial.O parque possui uma elevada riqueza arbórea e arbustiva, decorrente da exposição mundial, tendo sido plantadas inúmeras espécies exóticas, representativas dos 4 continentes.', '5', 31, 'park', 31, 'Parque Urbano do Tejo e do Trancão');
+('Instalado em 1998, no âmbito da exposição mundial "Expo’98" na área de um antigo aterro sanitário (selado) e junto à estação de tratamento de águas de Beirolas – Fábrica da Água de Beirolas.Com 90ha, o parque localiza-se junto ao rio Tejo e integra o Corredor Verde Ribeirinho.É constituído por um sistema de elevações artificiais e colinas, onde dominam os pinheiros mansos, que sombreiam os prados verdes muito utilizados pelos utentes do parque. A estas formas ondulantes junta-se um sistema de circulações e vistas, com especial interesse a sul, para o Estuário e para a Ponte Vasco da Gama e ainda vários elementos de utilização lúdico-desportiva: skate parque, ténis, golfe, centro hípico, parque de diversões, zona comercial.O parque possui uma elevada riqueza arbórea e arbustiva, decorrente da exposição mundial, tendo sido plantadas inúmeras espécies exóticas, representativas dos 4 continentes.', '5', 30, 'park', 30, 'Parque Urbano do Tejo e do Trancão');
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
-('Situado no topo da Avenida da Liberdade, constitui um local de excelente vista panorâmica sobre a cidade. Inicialmente denominado Parque da Liberdade, foi rebatizado com o nome do rei de Inglaterra aquando da sua visita a Lisboa em 1903. Desde a sua origem este parque foi palco de feiras, exposições e divertimentos.A sua estrutura, com uma faixa central coberta de relva, ladeada por um passeio de calçada portuguesa, é da autoria do arquiteto Keil do Amaral constituindo um marco importante na evolução urbana da cidade.Aqui encontramos o Pavilhão dos Desportos, construído em 1932 em estilo D. João V, hoje designado Pavilhão Carlos Lopes em homenagem ao grande atleta português, a Estufa Fria, com uma variedade enorme de plantas de todo o mundo, lagos, um conjunto de estatuária entre a qual se destaca o busto de Eduardo VII de Inglaterra e a escultura de evocação ao 25 de Abril da autoria de João Cutileiro.', '5', 32, 'park', 32, 'Parque Eduardo VII');
+('Situado no topo da Avenida da Liberdade, constitui um local de excelente vista panorâmica sobre a cidade. Inicialmente denominado Parque da Liberdade, foi rebatizado com o nome do rei de Inglaterra aquando da sua visita a Lisboa em 1903. Desde a sua origem este parque foi palco de feiras, exposições e divertimentos.A sua estrutura, com uma faixa central coberta de relva, ladeada por um passeio de calçada portuguesa, é da autoria do arquiteto Keil do Amaral constituindo um marco importante na evolução urbana da cidade.Aqui encontramos o Pavilhão dos Desportos, construído em 1932 em estilo D. João V, hoje designado Pavilhão Carlos Lopes em homenagem ao grande atleta português, a Estufa Fria, com uma variedade enorme de plantas de todo o mundo, lagos, um conjunto de estatuária entre a qual se destaca o busto de Eduardo VII de Inglaterra e a escultura de evocação ao 25 de Abril da autoria de João Cutileiro.', '5', 31, 'park', 31, 'Parque Eduardo VII');
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
-('O miradouro de São Pedro de Alcântara é um dos mais amplos e icónicos pontos de observação de Lisboa. Fica mesmo ao lado do topo do elevador da Glória e oferece um panorama especial da cidade. Aqui pode observar toda a Avenida da Liberdade, os Restauradores e a Baixa, além da colina do Castelo de São Jorge, com as suas imponentes muralhas e a sua fotogénica coroa verde dos pinheiros mansos. Pode também ver com todos os pormenores o miradouro da Igreja da Graça, com a sua imponente igreja. Este miradouro tem a particularidade de fazer parte de um jardim belíssimo e bem cuidado, onde pode beber um refresco na esplanada do quiosque. Encontra também um original mapa em azulejos para identificar alguns dos locais icónicos que pode observar. Este é, sem dúvida, um dos pontos imperdíveis da cidade.', '4', 33, 'park', 33, 'Miradouro de São Pedro de Alcântara');
+('O miradouro de São Pedro de Alcântara é um dos mais amplos e icónicos pontos de observação de Lisboa. Fica mesmo ao lado do topo do elevador da Glória e oferece um panorama especial da cidade. Aqui pode observar toda a Avenida da Liberdade, os Restauradores e a Baixa, além da colina do Castelo de São Jorge, com as suas imponentes muralhas e a sua fotogénica coroa verde dos pinheiros mansos. Pode também ver com todos os pormenores o miradouro da Igreja da Graça, com a sua imponente igreja. Este miradouro tem a particularidade de fazer parte de um jardim belíssimo e bem cuidado, onde pode beber um refresco na esplanada do quiosque. Encontra também um original mapa em azulejos para identificar alguns dos locais icónicos que pode observar. Este é, sem dúvida, um dos pontos imperdíveis da cidade.', '4', 32, 'park', 32, 'Miradouro de São Pedro de Alcântara');
 
-
-INSERT INTO tb_address (street, zipcode, country)
-VALUES 
-('R. do Alviela n51', '2025-398', 'Portugal');
-
-INSERT INTO tb_address (street, country)
-VALUES 
-('Cascata da Cabreia Silva Escura', 'Portugal');
-
-INSERT INTO tb_address (street, zipcode, country)
-VALUES 
-('PV3R+F5X', '1600-483', 'Portugal');
-
-
-INSERT INTO tb_location (geom, created_at, updated_at)
-VALUES 
-(ST_GeomFromText('POINT(-9.300507548846133 39.146053556595135)', 4326), NOW(), NOW());
-
-INSERT INTO tb_location (geom, created_at, updated_at)
-VALUES
-(ST_GeomFromText('POINT(-8.39106613199386 40.75472726668444)', 4326), NOW(), NOW());
-
-INSERT INTO tb_location (geom, created_at, updated_at)
-VALUES
-(ST_GeomFromText('POINT(-8.109361236275692 41.70424617506286)', 4326), NOW(), NOW());
-
-
-
-INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
-VALUES  
-('A Cascata da Laja toma o nome do pequeno ribeiro que a alimenta, precipitando-se atrás de uma pitoresca ponte de madeira e rodeada por um luxuriante bosque de folhosas, maioritariamente carvalhos que se transformam numa floresta encantada.
-O percurso mais curto até à cascata, é fazer o trajeto inverso do PR10 – Trilho da Preguiça, numa distância de aproximadamente 1 Km.O Parque de Lazer da Cabreia, no concelho de Sever do Vouga, é um autêntico Jardim do Éden no Centro de Portugal. E é nele que se esconde a magnifica Cascata da Cabreia, uma das mais belas cascatas de Portugal. E olhe que nós, no que a cascatas diz respeito, somos exigentes! A Cascata da Cabreia, formada pelas águas do Rio Mau, tem uns admiráveis 25 metros de altura e a sua piscina natural é um verdadeiro deleite. Em dias de calor não há quem resista a um mergulho na deliciosa lagoa que se forma na sua base.', '4', 34, 'waterfall', 34, 'Cascata da Ribeira dos Amiais');
-
-
-INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
-VALUES 
-('Esta Cascata oferece a frescura provocada pela queda de água (proveniente do rio Mau), de 25m de altura, envolta numa vegetação densa. A envolvente da cascata proporciona uma atmosfera romântica e convidativa, complementada com estruturas de apoio, como o parque de merendas.A Cascata da Cabreia, formada pelas águas do Rio Mau, tem uns admiráveis 25 metros de altura e a sua piscina natural é um verdadeiro deleite. Em dias de calor não há quem resista a um mergulho na deliciosa lagoa que se forma na sua base.E para compor na perfeição este quadro, pintado a preceito pela mãe natureza, há todo um exuberante bosque, rasgado pelas cristalinas águas do rio Mau, que convida a plácidos passeios e momentos ímpares de contemplação. O paraíso não pode andar muito longe disto!', '5', 35,'waterfall', 35, 'Cascata da Cabreia');
-
-
-INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
-VALUES 
-('A Cascata Fecha de Barjas, conhecida por muitos turistas como Cascata do Tahiti, localiza-se perto da aldeia da Ermida, na estrada que liga esta aldeia à localidade de Fafião (Montalegre).Com as suas águas provenientes do rio Arado é uma das quedas d’água mais deslumbrante do Gerês e cada vez mais procurada por turistas e visitantes da região, o que também obriga a grandes cuidados no acesso e usufruição das suas águas pelos perigos de queda.O seu acesso é feito a pé pela margem esquerda do rio Arado, mesmo junto à ponte sobre o rio. Depois de alguns minutos a descer por um caminho em terra batida é necessário transpor um segundo rio, o Fafião, para chegar à parte inferior onde é possível visualizar toda a queda de água (local mais seguro para banhos). A transposição do rio Fafião está dependente do nível do seu caudal.', '4', 36,'waterfall', 36,'Cascata do Arado');
 
 
 INSERT INTO tb_address (street, zipcode, country)
 VALUES 
 ('Serra de Sintra', '2710-405','Portugal'); 
 
-INSERT INTO tb_address (street, zipcode, country)
-VALUES 
-('Cabanas de Torres', '2785-815', 'Portugal'); 
-
-INSERT INTO tb_address (street, zipcode, country)
-VALUES 
-('Serra de Monsanto', '6060-088', 'Portugal');
 
 INSERT INTO tb_location (geom, created_at, updated_at)
 VALUES 
 (ST_GeomFromText('POINT(-9.416139155493294 38.79443860822116)', 4326), NOW(), NOW()); 
-
-INSERT INTO tb_location (geom, created_at, updated_at)
-VALUES
-(ST_GeomFromText('POINT(-9.052954866487477 39.16957441228434)', 4326), NOW(), NOW()); 
-
-INSERT INTO tb_location (geom, created_at, updated_at)
-VALUES
-(ST_GeomFromText('POINT(-9.05052630871232 39.174438175703656)', 4326), NOW(), NOW());
-
-
+ 
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES   
-('Cadeia montanhosa granítica de 11 quilómetros de extensão, atingindo os 519 metros na Cruz Alta, e uma orientação este-oeste. Está integrada no Parque Natural de Sintra-Cascais, apresentando, no seu sopé, a vila de Sintra.Da sua riqueza arquitetónica, salientam-se, por exemplo, o Palácio Nacional da Pena, mandado edificar por D. Fernando II, o Castelo dos Mouros, o Palácio Monserrate, o Convento dos Capuchos, o Palácio de Seteais, e muitas casas senhoriais.A Peninha é um pico de 490 metros de altitude que oferece um panorama espantoso. Tem uma capela do século XVII, construída sobre a rocha e decorada com ricos painéis de azulejos.', '5', 37,'mountain', 37, 'Serra de Sintra'); 
-
-
-INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
-VALUES   
-('Erguendo-se abruptamente entre o litoral e o vale do Tejo, a Serra de Montejunto demarca-se da paisagem envolvente pela altitude e suas características naturais, sendo Refúgio natural para muitas plantas e animais.Localizada a Norte do concelho de Alenquer e no extremo Sul do concelho do Cadaval, constituída por um maciço calcário de formação jurássica, onde predominam altas escarpas e gargantas apertadas, é o mirante natural mais alto da Estremadura, elevando-se a cerca de 666 metros acima do nível médio do mar.Apresenta-se rica em lagoas residuais, algares, grutas de grande valor biológico, geológico e mesmo arqueológico, é santuário natural de nidificação de uma avifauna invulgar e preciosa, refúgio de pequenos mamíferos e, do ponto de vista paleontológico, com importantes jazidas de amonites, turritelas e outros fósseis de interesse científico. Ilha biológica que emerge em meio de terras lavradias e flora rica, essencialmente constituída por manchas de castanheiros, sobreiros, carvalhos, pinheiros e mais recentemente de eucaliptos, intercaladas com áreas de cultivo e pastoreio; rica também pela variedade das espécies que apresenta, algumas delas bastante raras como é o caso da orquídea silvestre.', '5', 38,'mountain', 38, 'Serra de Montejunto'); 
-
-
-INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
-VALUES   
-('Espaço de vastas áreas de mata diversificada, o Parque Florestal de Monsanto oferece grandes potencialidades para o recreio passivo. A mata fechada nem sempre é um local acolhedor para o homem, no entanto, o seu contraste com a clareira e a abertura pontual de amplas vistas sobre a cidade e o rio, fazem do Parque Florestal de Monsanto um local muito atrativo do ponto de vista paisagístico.O Parque Florestal de Monsanto recebeu, em 30 de junho de 2021, a Recertificação da Gestão Florestal no âmbito do (Forest Stewardship Council®) (FSC-C114377), a mais importante certificação mundial em matéria de conformidade ambiental das explorações florestais, assumindo o Município, o seu empenho na manutenção dos níveis de qualidade e exigência na Gestão Florestal.A certificação de gestão florestal tem por base os princípios e critérios do FSC® e resultou da vontade da câmara de seguir padrões de gestão responsável, internacionalmente reconhecidos e aceites, permitindo evidenciar que o Parque Florestal de Monsanto é gerido de forma ecologicamente adequada. Conheça a Politica de Gestão Florestal do Parque Florestal de Monsanto.', '4', 39,'mountain', 39, 'Serra de Monsanto');
+('Cadeia montanhosa granítica de 11 quilómetros de extensão, atingindo os 519 metros na Cruz Alta, e uma orientação este-oeste. Está integrada no Parque Natural de Sintra-Cascais, apresentando, no seu sopé, a vila de Sintra.Da sua riqueza arquitetónica, salientam-se, por exemplo, o Palácio Nacional da Pena, mandado edificar por D. Fernando II, o Castelo dos Mouros, o Palácio Monserrate, o Convento dos Capuchos, o Palácio de Seteais, e muitas casas senhoriais.A Peninha é um pico de 490 metros de altitude que oferece um panorama espantoso. Tem uma capela do século XVII, construída sobre a rocha e decorada com ricos painéis de azulejos.', '5', 33,'mountain', 33, 'Serra de Sintra'); 
 
 
 INSERT INTO tb_address (street, zipcode, country)
@@ -663,12 +583,43 @@ VALUES
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
-('A famosa Igreja de Santo António, ao lado da Sé de Lisboa, está localizada no local da casa onde Santo António nasceu e passou a sua infância. A fachada mistura o estilo manuelino com colunas jónicas neoclássicas em ambos os lados da entrada principal. Doutor da Igreja, Santo António é o santo mais popular do mundo, sendo o padroeiro secundário de Portugal e do patriarcado de Lisboa, assim como o principal padroeiro da cidade de Lisboa, onde nasceu. Esta continua a ser a casa do santo e dos seus muitos devotos, por excelência, porque foi construída no local do seu nascimento.Acredita-se que foi por volta de 1337 que o Senado da cidade começou a reunir-se aqui, no que era então chamada a Casa Consistorial da Cidade de Lisboa.Provavelmente, uma capela ou um simples nicho foi construído primeiro, logo após a rápida canonização do Frei António. Embora as primeiras notícias sobre a capela datem apenas do início do século XV, a Câmara Municipal de Lisboa já funcionava na Casa de Santo António desde 1326, situação que se manteve até 1753.', '5', 40,'church', 40, 'Igreja de Santo António'); 
+('A famosa Igreja de Santo António, ao lado da Sé de Lisboa, está localizada no local da casa onde Santo António nasceu e passou a sua infância. A fachada mistura o estilo manuelino com colunas jónicas neoclássicas em ambos os lados da entrada principal. Doutor da Igreja, Santo António é o santo mais popular do mundo, sendo o padroeiro secundário de Portugal e do patriarcado de Lisboa, assim como o principal padroeiro da cidade de Lisboa, onde nasceu. Esta continua a ser a casa do santo e dos seus muitos devotos, por excelência, porque foi construída no local do seu nascimento.Acredita-se que foi por volta de 1337 que o Senado da cidade começou a reunir-se aqui, no que era então chamada a Casa Consistorial da Cidade de Lisboa.Provavelmente, uma capela ou um simples nicho foi construído primeiro, logo após a rápida canonização do Frei António. Embora as primeiras notícias sobre a capela datem apenas do início do século XV, a Câmara Municipal de Lisboa já funcionava na Casa de Santo António desde 1326, situação que se manteve até 1753.', '5', 34,'church', 34, 'Igreja de Santo António'); 
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
-('Mandada erguer por D. Maria I, como cumprimento de um voto que fizera pelo nascimento de D. José, a obra foi iniciada em 1779 e concluída em 1789.Com projeto da autoria dos arquitetos Mateus Vicente e Reinaldo dos Santos, foi concebida numa linguagem tardo-barroca, numa época em que vigorava o estilo neoclássico. A estatuária é atribuída à oficina de Machado de Castro.O interior, em mármore, apresenta nave única dividida em 3 tramos rematados por capelas laterais e capela-mor, onde se encontra o túmulo da fundadora.No exterior destaca-se a fachada imponente composta por um corpo central, de 2 pisos, ladeado por 2 torres sineiras, e o zimbório que permite desfrutar uma magnífica vista sobre Lisboa.Um dos mais relevantes monumentos do séc. XVIII, em Lisboa, está ligado à devoção de D. Maria I. Partimos à descoberta da história de um templo religioso, que é também um espetacular miradouro.', '5', 41,'church', 41, 'Basílica da estrela'); 
+('Mandada erguer por D. Maria I, como cumprimento de um voto que fizera pelo nascimento de D. José, a obra foi iniciada em 1779 e concluída em 1789.Com projeto da autoria dos arquitetos Mateus Vicente e Reinaldo dos Santos, foi concebida numa linguagem tardo-barroca, numa época em que vigorava o estilo neoclássico. A estatuária é atribuída à oficina de Machado de Castro.O interior, em mármore, apresenta nave única dividida em 3 tramos rematados por capelas laterais e capela-mor, onde se encontra o túmulo da fundadora.No exterior destaca-se a fachada imponente composta por um corpo central, de 2 pisos, ladeado por 2 torres sineiras, e o zimbório que permite desfrutar uma magnífica vista sobre Lisboa.Um dos mais relevantes monumentos do séc. XVIII, em Lisboa, está ligado à devoção de D. Maria I. Partimos à descoberta da história de um templo religioso, que é também um espetacular miradouro.', '5', 35,'church', 35, 'Basílica da estrela'); 
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
-('A Igreja de Santa Maria de Belém, localizada no Mosteiro dos Jerónimos, é uma bonita igreja de cruz latina, composta por três naves. Aqui é possível encontrar os túmulos de grandes personalidades portuguesas, tais como Vasco da Gama, Luís de Camões, de Carlos Mota (escultor), o Cardeal-Rei D. Henrique, o Rei D. Sebastião, entre outros.A capela-mor inicial terá sido destruída e substituída, em pleno séc. XVI, a mando de D. Catarina, esposa do Rei D. João III. Feita por Jerónimo de Ruão, o estilo maneirista desta capela acaba contrastando com belo corpo manuelino da restante igreja. No Altar-mor é possível encontrar o retábulo do pintor Lourenço de Salzedo, contendo várias cenas da Paixão de Cristo e a Adoração dos Magos.Do magnífico conjunto, destacam-se os dois portais manuelinos, as abóbadas das naves, os túmulos reais, o retábulo maneirista da capela-mor e o seu sacrário barroco em prata, o coro alto com cadeiral renascentista, a sacristia com pinturas sobre os arcazes, e ainda os demais espaços do antigo mosteiro, nomeadamente o seu claustro. Está classificada como património mundial pela UNESCO.', '4', 42,'church', 42, 'Igreja de Santa Maria de Belém');
+('A Igreja de Santa Maria de Belém, localizada no Mosteiro dos Jerónimos, é uma bonita igreja de cruz latina, composta por três naves. Aqui é possível encontrar os túmulos de grandes personalidades portuguesas, tais como Vasco da Gama, Luís de Camões, de Carlos Mota (escultor), o Cardeal-Rei D. Henrique, o Rei D. Sebastião, entre outros.A capela-mor inicial terá sido destruída e substituída, em pleno séc. XVI, a mando de D. Catarina, esposa do Rei D. João III. Feita por Jerónimo de Ruão, o estilo maneirista desta capela acaba contrastando com belo corpo manuelino da restante igreja. No Altar-mor é possível encontrar o retábulo do pintor Lourenço de Salzedo, contendo várias cenas da Paixão de Cristo e a Adoração dos Magos.Do magnífico conjunto, destacam-se os dois portais manuelinos, as abóbadas das naves, os túmulos reais, o retábulo maneirista da capela-mor e o seu sacrário barroco em prata, o coro alto com cadeiral renascentista, a sacristia com pinturas sobre os arcazes, e ainda os demais espaços do antigo mosteiro, nomeadamente o seu claustro. Está classificada como património mundial pela UNESCO.', '4', 36,'church', 36, 'Igreja de Santa Maria de Belém');
+
+
+
+INSERT INTO tb_address (street, zipcode, country)
+VALUES 
+('R. do Alviela n51', '2025-398', 'Portugal');
+
+INSERT INTO tb_address (street, country)
+VALUES 
+('Cascata da Cabreia Silva Escura', 'Portugal');
+
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES 
+(ST_GeomFromText('POINT(-9.300507548846133 39.146053556595135)', 4326), NOW(), NOW());
+
+INSERT INTO tb_location (geom, created_at, updated_at)
+VALUES
+(ST_GeomFromText('POINT(-8.39106613199386 40.75472726668444)', 4326), NOW(), NOW());
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES  
+('A Cascata da Laja toma o nome do pequeno ribeiro que a alimenta, precipitando-se atrás de uma pitoresca ponte de madeira e rodeada por um luxuriante bosque de folhosas, maioritariamente carvalhos que se transformam numa floresta encantada.O percurso mais curto até à cascata, é fazer o trajeto inverso do PR10 – Trilho da Preguiça, numa distância de aproximadamente 1 Km.O Parque de Lazer da Cabreia, no concelho de Sever do Vouga, é um autêntico Jardim do Éden no Centro de Portugal. E é nele que se esconde a magnifica Cascata da Cabreia, uma das mais belas cascatas de Portugal. E olhe que nós, no que a cascatas diz respeito, somos exigentes! A Cascata da Cabreia, formada pelas águas do Rio Mau, tem uns admiráveis 25 metros de altura e a sua piscina natural é um verdadeiro deleite. Em dias de calor não há quem resista a um mergulho na deliciosa lagoa que se forma na sua base.', '4', 37, 'waterfall', 37, 'Cascata da Ribeira dos Amiais');
+
+
+INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
+VALUES 
+('Esta Cascata oferece a frescura provocada pela queda de água (proveniente do rio Mau), de 25m de altura, envolta numa vegetação densa. A envolvente da cascata proporciona uma atmosfera romântica e convidativa, complementada com estruturas de apoio, como o parque de merendas.', '5', 38,'waterfall', 38, 'Cascata da Cabreia');
+
+
