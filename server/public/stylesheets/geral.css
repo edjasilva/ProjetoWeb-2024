@@ -42,39 +42,12 @@ body{
   width: 90%;
 }
 
-/* Navbar */
-@font-face {
-  font-family: 'BioRhyme';
-  src: url(BioRhyme-Light.ttf) format('truetype');
-}
-
-.nav-link {
-  color: black;
-  font-size: 1.25rem;
-  font-family: 'BioRhyme';
-}
 
 .imagem {
   background-color: white;
   width: 55%;
   border: 1.2px solid black;
   border-radius: 15px;
-}
-
-.navbar-nav {
-  display: flex;
-  margin: 100%;
-  top: auto;
-}
-
-.nav-item {
-  flex: 1;
-  font-family: 'BioRhyme';
-}
-
-.nav-item::after {
-  background-image: url('Vector3.svg');
-  margin: 0 10px;
 }
 
 .botao-imagem {
@@ -215,12 +188,6 @@ body {
   background-color: #fcfcfc;
   max-width: 100%;
 }
-/*nav*/
-#navhammenu {
-  font-size: 50px !important;
-  width: 520px;
-  height: 50px;
-}
 
 #vlogText {
   font-size: 2.3rem;
@@ -256,12 +223,6 @@ body {
 
 .text-reset {
   padding: 10px;
-}
-
-.nav-link {
-  text-align: center;
-  color: black;
-  font-size: 1.25rem;
 }
 
 .card {
@@ -452,6 +413,30 @@ header .black-container {
   }
   
 /*----------------------footer end -------------------*/
+/* Navbar */
+@font-face {
+  font-family: 'BioRhyme';
+  src: url(BioRhyme-Light.ttf) format('truetype');
+}
+
+
+.nav-link {
+  color: black;
+  font-size: 1.25rem;
+  font-family: 'BioRhyme';
+}
+
+#navhammenu {
+  font-size: 50px !important;
+  width: 520px;
+  height: 50px;
+}
+
+.nav-link {
+  text-align: center;
+  color: black;
+  font-size: 1.25rem;
+}
 
 
 .nav-item {

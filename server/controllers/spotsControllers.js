@@ -19,22 +19,10 @@ const getByIdNon = async function(req, res){
     });
 }
 
-
-
-
-/*const getByCategoryNon = async function (req, res){
-    const result  = await spot.getByCategoryNon(req.query.category);
-
-    console.log(result);
-
-    res.end();
-}*/
-
-
 const getByCategoryNon = async function (req, res) {
     
         const result = await spot.getByCategoryNon(req.query.category);
-        const pictures = await picture.getBySpotId(req.params.id);
+        const pictures = await picture.getByNonCategorySpot(req.params.category);
         const mainPics = [pictures.pop(), pictures.pop()];
 
         res.render('nonComSpots', {

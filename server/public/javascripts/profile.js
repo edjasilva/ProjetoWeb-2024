@@ -3,7 +3,7 @@ document.getElementById("profile_alert").addEventListener("click", function (eve
     Swal.fire({
        html: `
     
- <img src="../img/100x100.png" alt="logo" width="100" />
+ <img src="/images/logoAlternativo.svg" alt="logo" width="100" />
    <h1
          class="fs-4 card-title fw-bold mb-4"
          style="font-size: 60px; text-align: center"

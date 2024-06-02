@@ -478,22 +478,64 @@ font-size: 55px;
 }
       
 /*----------------------------navbar----------------------*/
+
 body {
 font-family: 'BioRhyme', Arial, Helvetica, sans-serif;
 color: #2D2D2D;
 
 }
-.nav-link.active.justify-content-center,
+
 .nav-link {
-color: black;
-font-size: 1.25rem;
-font-family: 'BioRhyme';
+  color: black;
+  font-size: 1.25rem;
+  font-family: 'BioRhyme';
 }
 
-#navhammenu{
-width:520px; 
-height: 50px;
+#navhammenu {
+  font-size: 50px !important;
+  width: 520px;
+  height: 50px;
 }
+
+.nav-link {
+  text-align: center;
+  color: black;
+  font-size: 1.25rem;
+}
+
+
+.nav-item {
+  font-family: 'BioRhyme';
+  flex: 1;
+  font-size: 17px;
+  margin-right: 20px;
+  }
+  
+  .nav-link {
+  position: relative;
+  padding-bottom: 5px; 
+  font-size: 19px;
+  text-decoration: none; 
+  border-bottom: 2px solid transparent; 
+  transition: color 0.3s, border-bottom 0.3s;
+  color: #000; 
+  }
+  
+  .nav-link.active:hover,
+  .nav-link:hover {
+  color: #eae8dc; 
+  border-bottom: 2px solid #f4f2ec; 
+  }
+  
+  .nav-link.active {  
+    font-size: 23px;
+    color: #000; 
+  }
+
+
+  /*Navbar*/
+
+
 
 
 .imagem{
@@ -503,17 +545,7 @@ border: 1.2px solid black;
 border-radius: 15px;
 }
 
-.navbar-nav{
-display:flex;
-margin: 100%;
-top:auto;
-}
-.nav-item{
-  font-family: 'BioRhyme';
-  flex: 1;
-  font-size: 17px;
-  margin-right: 20px; 
-}
+
 
 
 
@@ -651,7 +683,8 @@ font-size: 15px;
 
 /*-------leaflet-----------*/
 #map { 
-height: 900px; 
+height: 95vh; 
+
 }
 
 #crossButton {
@@ -934,27 +967,55 @@ display: block;
 }
 
 
-.nav-item {
-font-family: 'BioRhyme';
-flex: 1;
-margin-right: 20px;
+/*popUp*/
+.popup img{
+  width: 100%;
+  height: 70px;
+  border: 1px solid #000000;
 }
 
-.nav-link {
-position: relative;
-padding-bottom: 5px; 
-text-decoration: none; 
-border-bottom: 2px solid transparent; 
-transition: color 0.3s, border-bottom 0.3s;
-color: #000; 
+.name{
+font-weight: bold;
+font-size: 8px !important;
+text-align: center;
+
+
+} .popup p{
+  font-size: 8px;
+  margin-bottom: 5px;
+  margin-top: 4px;
+  
 }
 
-.nav-link.active:hover,
-.nav-link:hover {
-color: #eae8dc; 
-border-bottom: 2px solid #f4f2ec; 
+.btn-details {
+  display: block;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1px 2px;
+  margin-top: 4px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  color: #007bff00;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-.nav-link.active {
-  color: #000; 
+.btn-details:hover {
+  background-color: #000000;
+  color: #fff;
 }
+
+
+.leaflet-popup-content {
+
+
+}
+
+.leaflet-popup-content-wrapper
+{
+  box-shadow: 5px 10px #888888;
+
+}
+
+

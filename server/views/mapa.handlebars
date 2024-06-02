@@ -7,13 +7,16 @@
                   <li><a href="#">{{name}}</a>
                       <span class="badge rounded-pill text-bg-dark">{{rating}} ({{num_reviews}})</span>
                       <i class="bi-pin-map-fill map-pin" lon="{{location.coordinates.[0]}}"
-                          lat="{{location.coordinates.[1]}}"></i>
+                          lat="{{location.coordinates.[1]}}"   name="{{name}}"  rating="{{rating}}" 
+                          street="{{street}}" zipcode="{{zipcode}}"     ></i>
                   </li>
               {{/each}}
           </ul>
       </div>
+
+
       
-      <div class="col">
+      <div class="col my-3 ">
         <div id="map" class="custom-map"></div>
       </div>
     </div>
