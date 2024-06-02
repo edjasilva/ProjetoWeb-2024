@@ -1,4 +1,5 @@
 import db from "../config/db_connector.js";
+import { getByCategoryCom } from "../controllers/spotsControllers.js";
 
 const picture = {
     getBySpotId: async (spotId) => {
@@ -11,6 +12,8 @@ const picture = {
 
         return (await db.query(text, values)).rows;
     }
+
+
 }
 
 export default picture;
