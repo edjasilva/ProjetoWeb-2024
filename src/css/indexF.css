@@ -941,12 +941,14 @@ footer ul li a:hover {
 .nav-item {
   font-family: 'BioRhyme';
   flex: 1;
+  font-size: 23px;
   margin-right: 20px;
   }
   
   .nav-link {
   position: relative;
   padding-bottom: 5px; 
+  font-size: 23px;
   text-decoration: none; 
   border-bottom: 2px solid transparent; 
   transition: color 0.3s, border-bottom 0.3s;
@@ -959,7 +961,8 @@ footer ul li a:hover {
   border-bottom: 2px solid #f4f2ec; 
   }
   
-  .nav-link.active {
+  .nav-link.active {  
+    font-size: 23px;
     color: #000; 
   }
 
