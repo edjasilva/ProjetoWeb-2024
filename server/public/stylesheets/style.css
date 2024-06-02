@@ -491,7 +491,7 @@ font-family: 'BioRhyme';
 }
 
 #navhammenu{
-width:400px; 
+width:520px; 
 height: 50px;
 }
 
@@ -509,18 +509,13 @@ margin: 100%;
 top:auto;
 }
 .nav-item{
-flex:1; 
-font-family: 'BioRhyme'; 
+  font-family: 'BioRhyme';
+  flex: 1;
+  font-size: 17px;
+  margin-right: 20px; 
 }
 
-.nav-item::after{
-background-image: url('Vector3.svg');
-margin: 0 10px;
-}
 
-li:last-child{
-background-image: none;
-}
 
 .botao-imagem{
 width: 43px;
@@ -537,22 +532,6 @@ z-index: 100;
 margin-top: -300px;
 margin-left: 10%;
 }
-
-.navbar{
-background-color: #fdfdfd;
-background-size: cover;
-background-position: center center;
-}
-
-
-.btn-default {
-color: #2D2D2D;
-background-image: url(../img/buttonAzulejo\ 1.png);
-background-size: cover;
-background-position: center center;
-font-weight: 500;
-}
-
 
 .spot-img {
 width: 70%;
@@ -766,45 +745,62 @@ display: block;
 
 /*----------footer------------*/
 
-footer {
-background-color: white;
-max-width: 100%;
-}
 
-footer hr {
-border: 0.5px solid #d1d1d1;
-}
+  /*----------------------footer------------------------*/
 
-footer ul {
-padding-left: 0;
-}
+  footer {
+    background-color: white;
+    max-width: 100%;
+  }
+  
+  footer hr {
+    border: 0.5px solid #d1d1d1;
+  }
+  
+  footer ul {
+    padding-left: 0;
+  }
+  
+  footer ul li {
+    list-style: none;
+  }
+  
+  #footercontainer {
+    max-width: 100%;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+  }
+  
+  footer ul li a:hover {
+    color: #007bff;
+  }
+  
+  .media-icons a {
+    font-size: 20px;
+    margin: 20px;
+  }
+  
+  .media-icons a:hover {
+    color: #007bff;
+  }
+  
+  .row.bg-light {
+    padding: 10px 0;
+  }
+  
+  .row.bg-light .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+/*----------------------footer end -------------------*/
 
-footer ul li {
-list-style: none;
-}
 
-#footercontainer{
-max-width: 100%;
-}
-
-footer ul li a {
-text-decoration: none;
-color: #000;
-font-size: 17px; 
-transition: color 0.3s;
-}
-
-footer ul li a:hover {
-color: #007bff;
-}
-
-.media-icons a {
-font-size: 20px;
-}
-
-.media-icons a:hover {
-color: #007bff;
-}
 
 /*--about us---*/
 #email{
