@@ -74,13 +74,13 @@ INSERT INTO tb_picture (url, spo_id) VALUES
 
 INSERT INTO tb_picture (url, spo_id) VALUES
 ('/images/comm/Hotel/PortoBay Liberdade/PortoBay_1.png', 8),
-('/images/comm/Hotel/PortoBay Liberdade/PortoBay_1.png', 8),
-('/images/comm/Hotel/PortoBay Liberdade/PortoBay_1.png', 8),
-('/images/comm/Hotel/PortoBay Liberdade/PortoBay_1.png', 8),
-('/images/comm/Hotel/PortoBay Liberdade/PortoBay_1.png', 8),
-('/images/comm/Hotel/PortoBay Liberdade/PortoBay_1.png', 8),
-('/images/comm/Hotel/PortoBay Liberdade/PortoBay_1.png', 8),
-('/images/comm/Hotel/PortoBay Liberdade/PortoBay_1.png', 8);
+('/images/comm/Hotel/PortoBay Liberdade/PortoBay_2.png', 8),
+('/images/comm/Hotel/PortoBay Liberdade/PortoBay_3.png', 8),
+('/images/comm/Hotel/PortoBay Liberdade/PortoBay_4.png', 8),
+('/images/comm/Hotel/PortoBay Liberdade/PortoBay_5.png', 8),
+('/images/comm/Hotel/PortoBay Liberdade/PortoBay_6.png', 8),
+('/images/comm/Hotel/PortoBay Liberdade/PortoBay_7.png', 8),
+('/images/comm/Hotel/PortoBay Liberdade/PortoBay_8.png', 8);
 
 
 INSERT INTO tb_picture (url, spo_id) VALUES
@@ -165,7 +165,6 @@ INSERT INTO tb_picture (url, spo_id) VALUES
 
 
 INSERT INTO tb_picture (url, spo_id) VALUES
-('/images/comm/Museu/MuseuArqueológicodoCarmo/MuseuArqueológicodoCarmo_1.png', 17),
 ('/images/comm/Museu/MuseuArqueológicodoCarmo/MuseuArqueológicodoCarmo_1.png', 17),
 ('/images/comm/Museu/MuseuArqueológicodoCarmo/MuseuArqueológicodoCarmo_2.png', 17),
 ('/images/comm/Museu/MuseuArqueológicodoCarmo/MuseuArqueológicodoCarmo_3.png', 17),
