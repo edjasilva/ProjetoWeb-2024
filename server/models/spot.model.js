@@ -32,7 +32,7 @@ const Spot = {
         return (await db.query(text, values)).rows;
     },
 
-    getNonSpot: async() =>{
+    getAllNonSpot: async() =>{
         const result= await db.query(`
         select tb_noncommercialspot.name as name,  tb_noncommercialspot.description as description, tb_address.street as address, tb_picture.url as url
             from tb_noncommercialspot
@@ -66,7 +66,7 @@ const Spot = {
         return (await db.query(text, values)).rows;
     },
 
-    getComSpot: async() =>{
+    getAllComSpot: async() =>{
         const result= await db.query(`
         select tb_commercialspot.name as name,  tb_commercialspot.description as description, tb_address.street as address, tb_picture.url as url
             from tb_commercialspot

@@ -13,7 +13,7 @@
 
 
 
-{{#if info}}
+{{#each info}}
 
     <div class="container">
         <div class="row justify-content-center align-items-center">
@@ -31,9 +31,9 @@
                                     <i class="bi bi-info-circle"></i> Saber mais</a>
                             </div>
                         </div>
-    {{/if}}                    
+    {{/each}}                    
     
-    {{#if fotos}}
+    {{#if pics}}
                         <div class="col-md-6">
                             <div class="lightbox img-responsive" data-mdb-lightbox-init>
                                 <div class="row">
