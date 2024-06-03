@@ -13,7 +13,7 @@
 
 
 
-{{#each info}}
+{{#each spots}}
 
     <div class="container">
         <div class="row justify-content-center align-items-center">
@@ -22,30 +22,30 @@
                     <div class="row justify-content-around my-5">
                         <div class="col-md-6 d-flex align-items-center">
                             <div class="card-body my-1 ms-5" id="garden">
-                                <h1 class="card-title fs-3">{{info.name}}</h1>
+                                <h1 class="card-title fs-3">{{this.name}}</h1>
                                 <hr>
-                                <p class="card-muted">{{info.street}} , ({{info.zipcode}}) </p>
-                                <p class=" bi bi-star"> {{info.rating}} </p>
-                                <a href="#" id="btnSeeAll"
+                                <p class="card-muted">{{this.street}} , ({{this.zipcode}}) </p>
+                                <p class=" bi bi-star"> {{this.rating}} </p>
+                                <a href="https://lisbonspots.onrender.com/spots/non-commercial/{{this.id}}" id="btnSeeAll"
                                     class="btn btn-default py-2 px-2 fs-6 border border-dark border-1  bg-secondary text-white">
                                     <i class="bi bi-info-circle"></i> Saber mais</a>
                             </div>
                         </div>
     {{/each}}                    
     
-    {{#if pics}}
+    {{#each spots.pics}}
                         <div class="col-md-6">
                             <div class="lightbox img-responsive" data-mdb-lightbox-init>
                                 <div class="row">
                                     <div class="col-lg-6 col-sm-6 col-md-6 img-fluid">
-                                        <img src="{{fotos.url}}"
+                                        <img src="{{this.[0].url}}"
                                             class="w-100 mb-2 mb-md-4 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
-                                        <img src=""
+                                        <img src="{{this.[1].url}}"
                                             class="w-100 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
                                     </div>
                                     <div
                                         class="col-lg-6 img-fluid d-flex justify-content-center align-items-center col-sm-6 col-md-6">
-                                        <img id="photoL" src=""
+                                        <img id="photoL" src="{{this.[2].url}}"
                                             class="w-100 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
                                     </div>
                                 </div>

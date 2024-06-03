@@ -43,7 +43,7 @@ const getByCategoryNon = async function (req, res) {
         res.render('spots-by-category', {
             layout: 'mainLay',
             title: 'Spots Não Comerciais',
-            info: spots
+            spots: spots
         });
     };
 
