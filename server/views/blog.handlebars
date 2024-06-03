@@ -5,35 +5,95 @@
                     <div class="intro-text py-5 mt-5 text-center bg-body-tertiary border border-1 ">
                         <div class="heading mb-3 display-5 ">Bem-Vindo(a) ao Blog</div>
                         <div class="fs-5 fw-light ">Compartilhe e descubra lugares incríveis</div>
-
                     </div>
                 </div>
             </div>
         </div>
-
     </header>
 
-   
-    <div class="container-fluid my-5 ">
-
-        <div class="row justify-content-center align-items-center">
-            <div  class=" card col-md-4 mx-5 ">
-                <img class="img-fluid card-img mt-2" src="../public/images/comm/Museu/MAAT/MAAT_2.png" alt="">
-                <div class="card-body">
-                    <div class=" card-title bolder">Lorem ipsum dolor.</div>
-                    <div class=" card-text ">Oiooosduihwied hfewjdiu hgdwehud </div>
-                </div>
-
-            </div>
-            <div class="card col-md-4 mx-5">
-                <img class="img-fluid card-img mt-2" src="../public/images/noncomm/Beach/Praia da Costa da Caparica/PraiaCaparica_2.png" alt="">
-                <div class="card-body">
-                    <div class=" card-title bolder">Lorem ipsum dolor.</div>
-                    <div class=" card-text ">Oiooosduihwied hfewjdiu hgdwehud </div>
-                </div>
-
-            </div>
-
+    <div class="container-fluid my-5">
+        <div class="row justify-content-center align-items-center" id="postsContainer">
+            <!-- Posts will be be here -->
         </div>
-
     </div>
+
+    <div class="floating-button" id="addButton">
+        <i class="bi bi-plus"></i>
+    </div>
+
+    <script> // idk why this doesn't work in another file ----------- change this and put it in it's place
+        document.getElementById('addButton').addEventListener('click', function() {
+            console.log('Pop-up opened in the same page.');
+            Swal.fire({
+                title: 'Adicionar novo post',
+                html: `
+                    <input type="file" id="fileInput" class="swal2-file" />
+                    <label for="fileInput" class="swal2-file-label">Carregue uma imagem</label>
+                    <input type="text" id="textInput" class="swal2-input" placeholder="Insira o texto">
+                `,
+                showCancelButton: true,
+                confirmButtonText: 'Enviar',
+                preConfirm: () => {
+                    const file = document.getElementById('fileInput').files[0];
+                    const text = document.getElementById('textInput').value;
+                    if (!file || !text) {
+                        Swal.showValidationMessage('Por favor carregue uma imagem e insira o texto');
+                        return false;
+                    }
+                    return { file, text };
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    const { file, text } = result.value;
+                    const formData = new FormData();
+                    formData.append('file', file);
+                    formData.append('text', text);
+
+                    fetch('/upload', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            Swal.fire('Sucesso!', 'Post adicionado com sucesso.', 'success');
+                            // Reload the posts
+                            loadPosts();
+                        } else {
+                            Swal.fire('Erro!', 'Houve um problema ao adicionar o post.', 'error');
+                        }
+                    })
+                    .catch(error => {
+                        Swal.fire('Erro!', 'Houve um problema ao adicionar o post.', 'error');
+                    });
+                }
+            });
+        });
+
+        function loadPosts() {
+            fetch('/posts')
+                .then(response => response.json())
+                .then(posts => {
+                    console.log(posts); // to verify data
+                    const postsContainer = document.getElementById('postsContainer');
+                    //postsContainer.innerHTML = ''; // Clear existing posts --------- idk why this still works 
+                    posts.forEach(post => {
+                        const postElement = document.createElement('div');
+                        postElement.className = 'card col-md-4 mx-5 my-3';
+                        postElement.innerHTML = `
+                            <img src="${post.image_path}" class="card-img-top" alt="${post.subtitle}">
+                            <div class="card-body">
+                                <div class="card-title bolder">${post.subtitle}</div>
+                            </div>
+                        `;
+                        postsContainer.appendChild(postElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading posts:', error);
+                });
+        }
+
+        // Load posts when the page loads -------- doesn't work properly. 
+        window.onload = loadPosts;
+    </script>

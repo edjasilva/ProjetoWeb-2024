@@ -79,12 +79,14 @@ async function start() {
 
 start();*/
 
-
 import express from 'express';
 import dotenv from 'dotenv';
 import database from './config/db_connector.js';
 import { engine } from 'express-handlebars';
+import multer from 'multer'; //middlewear used for the images.
+import path from 'path';
 import aboutUsRoutes from './routes/aboutUsRoutes.js';
+import blogRoutes from './routes/blogRoute.js';  
 import contactUsRoutes from './routes/contactUsRoutes.js';
 import faqRoutes from './routes/faqRoutes.js';
 import supportRoutes from './routes/supportRoutes.js';
@@ -100,6 +102,19 @@ dotenv.config();
 const server = express();
 const port = process.env.PORT || 3000;
 server.use(express.json());
+server.use(express.urlencoded({ extended: true }));
+
+//multer for file uploads (photos)
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/');
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + path.extname(file.originalname));
+  }
+});
+
+const upload = multer({ storage: storage });
 
 server.engine('handlebars', engine({
   defaultLayout: 'dashboardLay',
@@ -115,7 +130,7 @@ server.set('views', './views');
 
 server.use(express.static('public'));
 
-// Função para ler dados de múltiplos arquivos CSV
+// Function to read multiple CSV files
 function readCSVData(files, callback) {
   const results = {};
   let filesProcessed = 0;
@@ -135,9 +150,10 @@ function readCSVData(files, callback) {
   });
 }
 
-// Rotas
+// Routes
 server.use("/about", aboutUsRoutes);
 server.use("/contact", contactUsRoutes);
+server.use("/blog", blogRoutes); 
 server.use("/faq", faqRoutes);
 server.use("/support", supportRoutes);
 server.use("/termos", termosRoutes);
@@ -146,9 +162,7 @@ server.use("/home", homeRoutes);
 server.use("/spots", spotsRoutes);
 
 server.get('/dashboard', (req, res) => {
-   
   const files = [
-    
     { name: 'barChartData', path: 'data.csv' },
     { name: 'pieChartData', path: 'dataPie.csv' },
     { name: 'histogramData', path: 'dataHistogram.csv' }
@@ -161,18 +175,56 @@ server.get('/dashboard', (req, res) => {
       barChartData: data.barChartData,
       pieChartData: data.pieChartData,
       histogramData: JSON.stringify(histogramData)
-      //histogramData: data.histogramData
     });
   });
 });
 
-// Iniciar o servidor
+server.post('/upload', upload.single('file'), async (req, res) => {
+  try {
+    const { text } = req.body;
+    const filePath = '/uploads/' + req.file.filename; // Updated this file path --- now working. 
+
+    if (!text || !filePath) {
+      return res.status(400).json({ success: false, message: 'Missing text or file' });
+    }
+
+    server.use('/uploads', express.static('uploads'));
+
+
+    const query = 'INSERT INTO tb_post (subtitle, cli_id, spo_id, image_path) VALUES ($1, $2, $3, $4)';
+    const values = [text, 1, 101, filePath]; // <------------------------- change this (client ID - once the register ha been done!!) 
+
+    await database.query(query, values);
+
+    res.json({ success: true });
+  } catch (error) {
+    console.error('Error uploading the post:', error);
+    res.status(500).json({ success: false, message: 'Error uploading the post.' });
+  }
+});
+
+
+server.get('/posts', async (req, res) => {
+  try {
+    const query = 'SELECT * FROM tb_post';
+    const result = await database.query(query);
+    console.log(result.rows); 
+    res.json(result.rows);
+  } catch (error) {
+    console.error('Error retrieving posts:', error);
+    res.status(500).json({ success: false, message: 'Error retrieving posts.' });
+  }
+});
+
+
+
+// Start the server
 async function start() {
   try {
     console.log("Base de dados iniciada");
-    database.connect();
+    await database.connect();
     console.log("A conexão foi feita");
-    server.listen(port, async function () {
+    server.listen(port, function () {
       console.log(`servidor iniciado: http://localhost:${port}`);
     });
   } catch (error) {
