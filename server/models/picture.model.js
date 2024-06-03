@@ -12,6 +12,17 @@ const picture = {
 
         return (await db.query(text, values)).rows;
     },
+    getBySpotId: async (spotId, limit) => {
+        const text = `
+        select url
+        from tb_picture
+        where spo_id =$1
+        limit $2;
+        `;
+        const values = [spotId, limit]
+
+        return (await db.query(text, values)).rows;
+    },
 
     getByNonCategorySpot: async(category)=>{
         const text =`

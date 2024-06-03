@@ -32,16 +32,18 @@ const getByIdNon = async function(req, res){
 
 const getByCategoryNon = async function (req, res) {
     
-        const result = await spot.getByCategoryNon(req.query.category);
-        const pictures = await picture.getByNonCategorySpot(req.params.category);
-        const mainPics = [pictures.pop(), pictures.pop()];
+        const spots = await spot.getByCategoryNon(req.query.category);
 
+        for (let si of spots){
+            const pics = await picture.getBySpotId(si.id, 3);
+            si.pics = pics;
+        }
+
+        console.log(spots)
         res.render('nonComSpots', {
             layout: 'mainLay',
             title: 'Spots Não Comerciais',
-            info: result[0],
-            mainPics,
-            pics: pictures
+            info: spots
         });
     };
 
