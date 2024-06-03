@@ -684,10 +684,10 @@ font-size: 15px;
 /*-------leaflet-----------*/
 #map { 
 height: 85vh; 
-m
+
 
 }
-/*
+
 #crossButton {
   position: absolute;
   top: 10px; 
@@ -698,7 +698,7 @@ m
   font-size: 24px;
   cursor: pointer;
   color: black; 
-}*/
+}
 
 #aboutustext{
 padding-bottom: 50px;
