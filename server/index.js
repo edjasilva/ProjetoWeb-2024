@@ -12,6 +12,7 @@ import homeRoutes from './routes/homeRoutes.js';
 import spotsRoutes from './routes/spotsRoutes.js';
 import dashboardRoutes from './routes/dashboardRoutes.js';
 import nonComSpots from './routes/nonComSpotsRoutes.js';
+import ping from './routes/pingRoutes.js';
 
 
 
@@ -53,7 +54,8 @@ server.use("/mapa", mapaRoutes);
 server.use("/", homeRoutes);
 server.use("/spots", spotsRoutes);
 server.use("/dashboard", dashboardRoutes);
-server.use("/nonCom", nonComSpots)
+server.use("/nonCom", nonComSpots);
+server.use("/ping", ping);
 
 
 
