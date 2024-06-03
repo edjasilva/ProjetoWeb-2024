@@ -1,5 +1,5 @@
 
-const base_url = 'http://localhost:5555';
+const base_url = 'https://lisbonspots.onrender.com/';
 
 document.addEventListener('DOMContentLoaded', async function() {
 

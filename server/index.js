@@ -67,7 +67,7 @@ async function start() {
     database.connect();
     console.log("A conexão foi feita");
     server.listen(port, async function () {
-      console.log(`servidor iniciado: http://localhost:${port}`);
+      console.log(`servidor iniciado: https://lisbonspots.onrender.com/`);
     });
   } catch (error) {
     throw new Error(error);
