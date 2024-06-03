@@ -22,9 +22,9 @@ const Spot = {
 
     getByCategoryNon: async (category) => {
         const text = `
-        select tb_noncommercialspot.name as name, tb_noncommercialspot.rating as rating, tb_noncommercialspot.category as category, tb_address.street as street, tb_address.zipcode as zipcode
-        from tb_noncommercialspot
-        inner join tb_address on tb_noncommercialspot.add_id = tb_address.id
+        select tb.id as id, tb.name as name, tb.rating as rating, tb.category as category, tb_address.street as street, tb_address.zipcode as zipcode
+        from tb_noncommercialspot as tb
+        inner join tb_address on tb.add_id = tb_address.id
         where category = $1
         `;
         const values = [category];
