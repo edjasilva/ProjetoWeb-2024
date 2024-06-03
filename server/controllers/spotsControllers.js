@@ -38,6 +38,8 @@ const getByCategoryNon = async function (req, res) {
             si.pics = pics;
         }
 
+        console.log(JSON.stringify(spots, null, 2));
+
         res.render('spots-by-category', {
             layout: 'mainLay',
             title: 'Spots Não Comerciais',
