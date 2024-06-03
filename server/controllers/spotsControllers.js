@@ -11,7 +11,6 @@ const getAll = async function(req, res){
 const getAllNonSpot = async (req, res) => {
 
     const result = await spot.getAllNonSpot();
-    console.log(result); 
     res.send(result);
 
 }
@@ -39,7 +38,6 @@ const getByCategoryNon = async function (req, res) {
             si.pics = pics;
         }
 
-        console.log(spots)
         res.render('spots-by-category', {
             layout: 'mainLay',
             title: 'Spots Não Comerciais',
@@ -52,7 +50,6 @@ const getByCategoryNon = async function (req, res) {
 const getAllComSpot = async (req, res) => {
 
     const result = await spot.getAllComSpot();
-    console.log(result); 
     res.send(result);
 
 }
@@ -73,8 +70,6 @@ const getByIdCom = async function(req, res){
 
 const getByCategoryCom = async function (req, res){
     const result  = await spot.getByCategoryCom(req.query.category);
-
-    console.log(result);
 
     res.end();
 }
