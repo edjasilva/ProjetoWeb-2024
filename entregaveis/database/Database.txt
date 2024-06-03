@@ -1,0 +1,116 @@
+CREATE EXTENSION postgis;
+
+
+CREATE DATABASE lspot WITH TEMPLATE template_postgis;
+
+CREATE TYPE gender AS ENUM ('female', 'male', 'other');
+
+CREATE TYPE rating AS ENUM ('1', '2', '3', '4', '5');
+
+CREATE TYPE comSpotCategory AS ENUM ('restaurant', 'hotel', 'stadium', 'shopping', 'museum');
+
+CREATE TYPE nonComSpotCategory AS ENUM('beach', 'park', 'river', 'waterfall', 'mountain', 'church' );
+
+CREATE TABLE tb_user (
+	id SERIAL primary key not null,
+	admin boolean,
+	phone int,
+	name TEXT not null ,
+	mail TEXT not null,
+	hash TEXT not null
+);
+
+CREATE TABLE tb_address (
+	id SERIAL primary key not null,
+	street TEXT,
+	zipcode TEXT ,
+	door TEXT ,
+	building TEXT,
+	country TEXT,
+	floor int
+);
+
+CREATE TABLE tb_timeTable (
+	id SERIAL primary key not null,
+	startTime time,
+	endtime time
+);
+
+
+CREATE TABLE tb_client (
+	id SERIAL primary key not null,
+	nationality TEXT , 
+	birthdate DATE ,
+	add_id int REFERENCES tb_address(id) on delete set null,
+	gender gender
+) INHERITS (tb_user);
+
+
+CREATE TABLE tb_admin (
+	id SERIAL primary key not null,
+	adminHash TEXT
+) INHERITS (tb_user);
+
+
+CREATE TABLE tb_location(
+	id serial PRIMARY KEY not null,
+	geom geometry(Point, 4326),
+	created_at timestamp without time zone,
+	updated_at timestamp without time zone
+ );
+
+
+
+CREATE TABLE tb_spot (
+	id SERIAL primary key not null,
+	description TEXT,
+        name TEXT,
+	rating rating, 
+	loc_id int REFERENCES tb_location(id) on delete set null
+);
+
+
+CREATE TABLE tb_post (
+	id SERIAL primary key NOT NULL,
+	subtitle TEXT,
+	cli_id int REFERENCES tb_client(id) on delete set null,
+	spo_id int REFERENCES tb_spot(id) on delete set null
+);
+
+
+CREATE TABLE tb_comment (
+	id SERIAL primary key NOT NULL,
+	text TEXT , 
+	cli_id int REFERENCES tb_client(id) on delete set null
+	
+);
+
+CREATE TABLE tb_picture (
+	id SERIAL primary key NOT NULL,
+	url TEXT,
+	spo_id int ,
+	pos_id int
+);
+
+
+CREATE TABLE tb_commercialSpot (
+	category comSpotCategory, 
+	add_id int REFERENCES tb_address(id) on delete set null,
+	tt_id int REFERENCES tb_timeTable on delete set null
+)INHERITS (tb_spot);
+
+CREATE TABLE  tb_nonCommercialSpot(
+	category nonComSpotCategory,
+        add_id int REFERENCES tb_address(id) on delete set null
+)  INHERITS (tb_spot);
+
+CREATE TABLE tb_limitedAcessSpot (
+	price DOUBLE PRECISION
+)INHERITS (tb_nonCommercialSpot);
+
+
+
+
+
+
+docker run --rm --name database -e POSTGRES_USER=lspot -e POSTGRES_PASSWORD=server --mount type=bind,source="$(pwd)"/src/postgres/data,target=/var/lib/postgresql/data -p 5432:5432 -d postgis/postgis
