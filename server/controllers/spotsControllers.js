@@ -40,7 +40,7 @@ const getByCategoryNon = async function (req, res) {
         }
 
         console.log(spots)
-        res.render('nonComSpots', {
+        res.render('spots-by-category', {
             layout: 'mainLay',
             title: 'Spots Não Comerciais',
             info: spots
