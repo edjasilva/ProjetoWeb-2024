@@ -1,4 +1,5 @@
 import map from "../models/map.model.js"
+import picture from "../models/picture.model.js";
 
 const getAll= async function(req, res){
 
