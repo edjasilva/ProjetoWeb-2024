@@ -8,7 +8,7 @@ const getAll = async function(req, res){
 )};
 */ 
 
-// Spos não comerciais
+// Spots não comerciais
 const getAllNonSpot = async (req, res) => {
 
     const result = await spot.getAllNonSpot();
@@ -73,11 +73,26 @@ const getByIdCom = async function(req, res){
     });
 }
 
-const getByCategoryCom = async function (req, res){
-    const result  = await spot.getByCategoryCom(req.query.category);
 
-    res.end();
-}
+const getByCategoryCom = async function (req, res) {
+    
+    const spots = await spot.getByCategoryCom(req.query.category);
+
+    for (let si of spots){
+        si.category = translateCategory(si.category);
+
+        const pics = await picture.getBySpotId(si.id, 3);
+        si.pics = pics;
+    }
+
+    console.log(JSON.stringify(spots, null, 2));
+
+    res.render('spots-by-categoryCom', {
+        layout: 'mainLay',
+        title: 'Spots Comerciais',
+        spots: spots
+    });
+};
 
 
 export { getAllNonSpot, getByIdNon, getByCategoryNon, getByCategoryCom, getAllComSpot, getByIdCom}
