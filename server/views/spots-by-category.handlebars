@@ -1,16 +1,17 @@
+{{#if spots}}
 <header>
     <div class="container pt-1">
          <div class="row">
              <div class="col-12">
                 <div class="intro-text py-5 mt-5 text-center bg-body-tertiary border border-1 ">
-                    <div class="heading mb-3 display-5 ">Locais Comerciais</div>
+                    <div class="heading mb-3 display-5 ">{{spots.[0].category}}</div>
                     <div class="fs-5 fw-light ">Descubra os melhores lugares para fazer uma foto.</div>
                 </div>
             </div>
          </div>
     </div>
 </header>
-
+{{/if}}
 
 
 {{#each spots}}

@@ -1,5 +1,6 @@
 import spot from "../models/spot.model.js"
 import picture from "../models/picture.model.js";
+import {translateCategory} from '../utils/norm.js'
 
  /*
 const getAll = async function(req, res){
@@ -34,6 +35,8 @@ const getByCategoryNon = async function (req, res) {
         const spots = await spot.getByCategoryNon(req.query.category);
 
         for (let si of spots){
+            si.category = translateCategory(si.category);
+
             const pics = await picture.getBySpotId(si.id, 3);
             si.pics = pics;
         }
