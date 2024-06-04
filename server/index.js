@@ -83,10 +83,11 @@ import express from 'express';
 import dotenv from 'dotenv';
 import database from './config/db_connector.js';
 import { engine } from 'express-handlebars';
-import multer from 'multer'; //middlewear used for the images.
+import multer from 'multer'; //middleware to upload the files/photos&texts.
 import path from 'path';
+import { fileURLToPath } from 'url';
 import aboutUsRoutes from './routes/aboutUsRoutes.js';
-import blogRoutes from './routes/blogRoute.js';  
+import blogRoutes from './routes/blogRoute.js';
 import contactUsRoutes from './routes/contactUsRoutes.js';
 import faqRoutes from './routes/faqRoutes.js';
 import supportRoutes from './routes/supportRoutes.js';
@@ -99,21 +100,23 @@ import fs from 'fs';
 
 dotenv.config();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const server = express();
 const port = process.env.PORT || 3000;
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
-//multer for file uploads (photos)
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'uploads/');
+    cb(null, path.join(__dirname, 'uploads'));
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + path.extname(file.originalname));
   }
 });
-
 const upload = multer({ storage: storage });
 
 server.engine('handlebars', engine({
@@ -126,9 +129,10 @@ server.engine('handlebars', engine({
 }));
 
 server.set('view engine', 'handlebars');
-server.set('views', './views');
+server.set('views', path.join(__dirname, 'views'));
 
-server.use(express.static('public'));
+server.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+server.use(express.static(path.join(__dirname, 'public')));
 
 // Function to read multiple CSV files
 function readCSVData(files, callback) {
@@ -182,17 +186,15 @@ server.get('/dashboard', (req, res) => {
 server.post('/upload', upload.single('file'), async (req, res) => {
   try {
     const { text } = req.body;
-    const filePath = '/uploads/' + req.file.filename; // Updated this file path --- now working. 
+    const filePath = `/uploads/${req.file.filename}`;
+    console.log('File uploaded to:', filePath);
 
     if (!text || !filePath) {
       return res.status(400).json({ success: false, message: 'Missing text or file' });
     }
 
-    server.use('/uploads', express.static('uploads'));
-
-
     const query = 'INSERT INTO tb_post (subtitle, cli_id, spo_id, image_path) VALUES ($1, $2, $3, $4)';
-    const values = [text, 1, 101, filePath]; // <------------------------- change this (client ID - once the register ha been done!!) 
+    const values = [text, 1, 1, filePath];
 
     await database.query(query, values);
 
@@ -203,12 +205,11 @@ server.post('/upload', upload.single('file'), async (req, res) => {
   }
 });
 
-
 server.get('/posts', async (req, res) => {
   try {
     const query = 'SELECT * FROM tb_post';
     const result = await database.query(query);
-    console.log(result.rows); 
+    console.log(result.rows);
     res.json(result.rows);
   } catch (error) {
     console.error('Error retrieving posts:', error);
@@ -216,7 +217,10 @@ server.get('/posts', async (req, res) => {
   }
 });
 
-
+// to test route (works)
+server.get('/test-image', (req, res) => {
+  res.sendFile(path.join(__dirname, 'uploads', 'test.jpg'));
+});
 
 // Start the server
 async function start() {
