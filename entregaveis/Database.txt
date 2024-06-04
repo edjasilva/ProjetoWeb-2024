@@ -70,8 +70,9 @@ CREATE TABLE tb_spot (
 CREATE TABLE tb_post (
 	id SERIAL primary key NOT NULL,
 	subtitle TEXT,
-	cli_id int REFERENCES tb_client(id) on delete set null,
-	spo_id int REFERENCES tb_spot(id) on delete set null
+        image_path TEXT;
+	cli_id int,
+	spo_id int
 );
 
 
