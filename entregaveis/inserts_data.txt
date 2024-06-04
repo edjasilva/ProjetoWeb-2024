@@ -52,20 +52,18 @@ VALUES
 
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
 VALUES 
-('O restaurante 2Monkeys é o primeiro projeto em Lisboa do Chef Vitor Matos. Aqui, a amizade e a criatividade fundem-se para oferecer uma experiência de jantar excecional num ambiente intimiste .
-O nosso conceito único de “fun fine-dining” convida-o a jantar na cozinha com os nossos dois chefes, Vítor Matos  e Francisco Quintas. Estes irão guiá-lo através de um menu surpresa assim como irão partilhar a inspiração por detrás de cada prato.', '5', 1, 'hotel', 1, 1, '2Monkeys');
+('O restaurante 2Monkeys é o primeiro projeto em Lisboa do Chef Vitor Matos. Aqui, a amizade e a criatividade fundem-se para oferecer uma experiência de jantar excecional num ambiente intimiste .O nosso conceito único de “fun fine-dining” convida-o a jantar na cozinha com os nossos dois chefes, Vítor Matos  e Francisco Quintas. Estes irão guiá-lo através de um menu surpresa assim como irão partilhar a inspiração por detrás de cada prato.', '5', 1, 'restaurant', 1, 1, '2Monkeys');
 
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
 VALUES 
-('A cozinha de Henrique Sá pessoa é definida como uma cozinha de sabor.
-A base da sua filosofia gastronómica está nas suas influências e referências: a cozinha tradicional portuguesa, as viagens pelo mundo, a paixão pela Ásia e a vida em Lisboa. Entre connosco nesta viagem.No ALMA procuramos servir mais do que uma refeição: servimos emoções, identidade, conhecimento. No fundo, procuramos desenvolver uma cozinha com profundidade, que é também uma consequência das nossas experiências.', '5', 2, 'hotel', 2, 2, 'Alma');
+('A cozinha de Henrique Sá pessoa é definida como uma cozinha de sabor.A base da sua filosofia gastronómica está nas suas influências e referências: a cozinha tradicional portuguesa, as viagens pelo mundo, a paixão pela Ásia e a vida em Lisboa. Entre connosco nesta viagem.No ALMA procuramos servir mais do que uma refeição: servimos emoções, identidade, conhecimento. No fundo, procuramos desenvolver uma cozinha com profundidade, que é também uma consequência das nossas experiências.', '5', 2, 'restaurant', 2, 2, 'Alma');
 
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
 VALUES
-('Desfruta de uma magnífica localização no turístico Bairro Alto (Chiado), na esquina de um antigo convento danificado pelo grande terramoto que devastou a cidade em 1755.O chef José Avillez, que defende uma carta moderna e dois menus de degustação completos (Evolução e Belcanto), apresenta a casa-mãe do seu império culinário como um espaço de descoberta gastronómica, com a sala dividida em vários recantos e uma "mesa do chefe" na cozinha. José Avillez explica sempre que os seus pratos são influenciados pela luz, o mar e os bairros de Lisboa, ao ponto de afirmar que "A cozinha é o nosso fado, a nossa forma de expressão". Curiosidade? O guardanapo utilizado para a sobremesa imita a manga de uma camisa... era o que o chef usava para limpar a si próprio quando era criança!', '5', 3, 'hotel', 3, 3, 'Belcanto');
+('Desfruta de uma magnífica localização no turístico Bairro Alto (Chiado), na esquina de um antigo convento danificado pelo grande terramoto que devastou a cidade em 1755.O chef José Avillez, que defende uma carta moderna e dois menus de degustação completos (Evolução e Belcanto), apresenta a casa-mãe do seu império culinário como um espaço de descoberta gastronómica, com a sala dividida em vários recantos e uma "mesa do chefe" na cozinha. José Avillez explica sempre que os seus pratos são influenciados pela luz, o mar e os bairros de Lisboa, ao ponto de afirmar que "A cozinha é o nosso fado, a nossa forma de expressão". Curiosidade? O guardanapo utilizado para a sobremesa imita a manga de uma camisa... era o que o chef usava para limpar a si próprio quando era criança!', '5', 3, 'restaurant', 3, 3, 'Belcanto');
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
 VALUES
-('Localizado no Altis Belém Hotel & Spa, o restaurante Feitoria premiado com uma estrela Michelin, pretende proporcionar experiências que vão muito além de um jantar. Com uma cozinha de autor e uma visão centrada na origem do produto, toda a experiência no Feitoria gira em torno de um enorme respeito pelos produtores e pelo produto.Apaixonado pela natureza, criativo e aventureiro o chefe André Cruz pretende trazer as suas paixões para o menu do Feitoria. Fique a saber mais sobre o chefe que tem como hobby a apicultura, apesar de ser alérgico a abelhas.', '5', 4, 'hotel', 4, 4, 'Restaurante Feitoria');
+('Localizado no Altis Belém Hotel & Spa, o restaurante Feitoria premiado com uma estrela Michelin, pretende proporcionar experiências que vão muito além de um jantar. Com uma cozinha de autor e uma visão centrada na origem do produto, toda a experiência no Feitoria gira em torno de um enorme respeito pelos produtores e pelo produto.Apaixonado pela natureza, criativo e aventureiro o chefe André Cruz pretende trazer as suas paixões para o menu do Feitoria. Fique a saber mais sobre o chefe que tem como hobby a apicultura, apesar de ser alérgico a abelhas.', '5', 4, 'restaurant', 4, 4, 'Restaurante Feitoria');
 
 
 INSERT INTO tb_address (street, zipcode, country, floor)
@@ -126,20 +124,20 @@ VALUES
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
 VALUES
 ('O Santiago é um boutique hotel familiar situado num palácio do século XV totalmente restaurado. O hotel está aninhado a igual distância entre o Castelo de São Jorge e o belo Miradouro de Santa Luzia, com vistas que descem pela colina salpicada de igrejas caiadas de branco, telhados de terracota e até ao rio Tejo, onde o azul da água se encontra com o azul do céu, tudo enquadrado por uma explosão de buganvílias cor-de-rosa e roxas.
-No Santiago, recorremos a fornecedores locais e incorporamos os maravilhosos produtos locais no nosso restaurante Audreys, nomeado em homenagem à nossa filha. Uma defensora fervorosa do bem-estar animal, da sustentabilidade e de todas as coisas deliciosas – um ser humano maravilhoso que deseja mimar e satisfazer.', '5',  5, 'restaurant', 5, 5, 'Santiago de Alfama');
+No Santiago, recorremos a fornecedores locais e incorporamos os maravilhosos produtos locais no nosso restaurante Audreys, nomeado em homenagem à nossa filha. Uma defensora fervorosa do bem-estar animal, da sustentabilidade e de todas as coisas deliciosas – um ser humano maravilhoso que deseja mimar e satisfazer.', '5',  5, 'hotel', 5, 5, 'Santiago de Alfama');
 
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
 VALUES
-('NASCIDOS COM O DOM DA CURIOSIDADE, OS EXPLORADORES SÃO FEITOS DE MAIS. ELES VIAJAM PELO MUNDO DESLUMBRADOS E À PROCURA DE EXPERIÊNCIAS ÚNICAS.O descanso do explorador. Mesmo para um explorador incansável, o descanso é  sagrado. É a pensar neles que o The Ivens tem 87 quartos,  incluindo 10 suites e 7 quartos premium,  magnificamente decorados.Uma experiência única e autêntica. Um novo restaurante, o bar mais interessante, um jardim escondido, uma exposição imperdível, onde ir às compras. Tudo isso à distância de uma pergunta: O que vamos fazer hoje?', '5', 6, 'restaurant', 6, 6, 'The Ivens');
+('NASCIDOS COM O DOM DA CURIOSIDADE, OS EXPLORADORES SÃO FEITOS DE MAIS. ELES VIAJAM PELO MUNDO DESLUMBRADOS E À PROCURA DE EXPERIÊNCIAS ÚNICAS.O descanso do explorador. Mesmo para um explorador incansável, o descanso é  sagrado. É a pensar neles que o The Ivens tem 87 quartos,  incluindo 10 suites e 7 quartos premium,  magnificamente decorados.Uma experiência única e autêntica. Um novo restaurante, o bar mais interessante, um jardim escondido, uma exposição imperdível, onde ir às compras. Tudo isso à distância de uma pergunta: O que vamos fazer hoje?', '5', 6, 'hotel', 6, 6, 'The Ivens');
 
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
 VALUES
-('The One Palácio da Anunciada, o novo hotel 5* da cidade, está situado no coração da Lisboa histórica, a escassos metros da prestigiada Avenida da Liberdade e da Praça dos Restauradores. O edifício representa a herança histórica desde o ano de 1533, conservando toda a imponência do século XVI. Na zona mais exclusiva da Cidade da Luz poderá viver uma experiência única: a melhor oferta gastronómica tradicional, uma ampla oferta das melhores boutiques de luxo e todo um centro histórico por descobrir.Restaurante Condes de Ericeira. Situado num dos salões nobres do palácio e com acesso direto aos jardins, o Restaurante Condes de Ericeira é um novo espaço gastronómico de referência em Lisboa.', '5', 7,'restaurant', 7, 7, 'One Palácio da Anunciada');
+('The One Palácio da Anunciada, o novo hotel 5* da cidade, está situado no coração da Lisboa histórica, a escassos metros da prestigiada Avenida da Liberdade e da Praça dos Restauradores. O edifício representa a herança histórica desde o ano de 1533, conservando toda a imponência do século XVI. Na zona mais exclusiva da Cidade da Luz poderá viver uma experiência única: a melhor oferta gastronómica tradicional, uma ampla oferta das melhores boutiques de luxo e todo um centro histórico por descobrir.Restaurante Condes de Ericeira. Situado num dos salões nobres do palácio e com acesso direto aos jardins, o Restaurante Condes de Ericeira é um novo espaço gastronómico de referência em Lisboa.', '5', 7,'hotel', 7, 7, 'One Palácio da Anunciada');
 
 INSERT INTO tb_commercialSpot (description, rating, loc_id, category, add_id, tt_id,name)
 VALUES
 ('Portobay Liberdade é um hotel de cinco estrelas em Lisboa pertencente ao Grupo PortoBay. Situado na Rua Rosa Araújo, junto à Avenida da Liberdade, a avenida mais elegante bem no centro da cidade. Este boutique hotel possui todas as características de um resort urbano: uma piscina interior e um ginásio com iluminação natural, SPA com salas de tratamento para dois, sauna, banho turco, esplanada, pátio, terraço e varandas na maioria dos quartos. 
-O restaurante Bistrô4 apresenta um menu inspirado nos produtos de cada estação. Suba ao terraço para desfrutar de uma atmosfera especial! Reconhecido nos World Luxury Spa Awards. Com horário alargado, oferece experiências de spa personalizadas.', '5', 8, 'restaurant', 8, 8, 'Portobay Liberdade');
+O restaurante Bistrô4 apresenta um menu inspirado nos produtos de cada estação. Suba ao terraço para desfrutar de uma atmosfera especial! Reconhecido nos World Luxury Spa Awards. Com horário alargado, oferece experiências de spa personalizadas.', '5', 8, 'hotel', 8, 8, 'Portobay Liberdade');
 
 
 
@@ -213,7 +211,7 @@ VALUES
 
 INSERT INTO tb_address (street, zipcode, country, floor)
 VALUES
-('Av. António Augusto de Aguiar 31', '1500-392', 'Portugal', 1);
+('Av. Cruzeiro Seixas 5 e 7', '2650-505', 'Portugal', 1);
 
 
 INSERT INTO tb_timeTable (startTime, endtime)
@@ -489,7 +487,6 @@ VALUES
 ('R. de São Pedro de Alcântara', '1200-470', 'Portugal');
 
 
-
 INSERT INTO tb_location (geom, created_at, updated_at)
 VALUES 
 (ST_GeomFromText('POINT(-9.153330629552794 38.75707528729563)', 4326), NOW(), NOW());
@@ -505,8 +502,6 @@ VALUES
 INSERT INTO tb_location (geom, created_at, updated_at)
 VALUES
 (ST_GeomFromText('POINT(-9.144095702670263 38.71538922679336)', 4326), NOW(), NOW());
-
-
 
 
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
@@ -557,7 +552,7 @@ VALUES
 
 INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
-('10:00:00', '22:00:00'); 
+('10:00:00', '19:00:00'); 
 
 INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
@@ -565,7 +560,7 @@ VALUES
 
 INSERT INTO tb_timeTable (startTime, endtime)
 VALUES
-('10:00:00', '22:30:00'); 
+('10:00:00', '17:00:00'); 
 
 
 INSERT INTO tb_location (geom, created_at, updated_at)
@@ -599,9 +594,9 @@ INSERT INTO tb_address (street, zipcode, country)
 VALUES 
 ('R. do Alviela n51', '2025-398', 'Portugal');
 
-INSERT INTO tb_address (street, country)
+INSERT INTO tb_address (street, zipcode,  country)
 VALUES 
-('Cascata da Cabreia Silva Escura', 'Portugal');
+('Cascata da Cabreia Silva Escura', '3740-338', 'Portugal');
 
 
 INSERT INTO tb_location (geom, created_at, updated_at)
@@ -621,5 +616,3 @@ VALUES
 INSERT INTO tb_noncommercialSpot (description, rating, loc_id, category, add_id, name)
 VALUES 
 ('Esta Cascata oferece a frescura provocada pela queda de água (proveniente do rio Mau), de 25m de altura, envolta numa vegetação densa. A envolvente da cascata proporciona uma atmosfera romântica e convidativa, complementada com estruturas de apoio, como o parque de merendas.', '5', 38,'waterfall', 38, 'Cascata da Cabreia');
-
-
