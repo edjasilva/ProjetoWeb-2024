@@ -9,7 +9,7 @@ const getAll= async function(req, res){
 
         for (let si of spots){
             const pic = await picture.getBySpotId(si.id, 1);
-            si.pic = pic;
+            si.pic = pic[0];
         }
     
         res.render('mapa', {
