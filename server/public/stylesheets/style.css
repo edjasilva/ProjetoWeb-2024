@@ -976,13 +976,13 @@ display: block;
 }
 
 .name{
-
-font-size: 13px !important;
+font-weight: bold;
+font-size: 14px !important;
 text-align: center;
 
 
 } .popup p{
-  font-size: 10px !important;
+  font-size: 11px !important;
   margin-bottom: 5px;
   margin-top: 4px;
   
@@ -1008,10 +1008,6 @@ text-align: center;
 }
 
 
-.leaflet-popup-content {
-
-
-}
 
 .leaflet-popup-content-wrapper
 {
