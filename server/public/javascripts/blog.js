@@ -52,7 +52,7 @@ function loadPosts() {
         .then(posts => {
             console.log(posts); // to verify data
             const postsContainer = document.getElementById('postsContainer');
-            //postsContainer.innerHTML = ''; // Clear existing posts --------- idk why this still works 
+            postsContainer.innerHTML = ''; // Clear existing posts
             posts.forEach(post => {
                 const postElement = document.createElement('div');
                 postElement.className = 'card col-md-4 mx-5 my-3';
@@ -70,5 +70,5 @@ function loadPosts() {
         });
 }
 
-// Load posts when the page loads -------- doesn't work properly. 
+// Load posts when the page loads
 window.onload = loadPosts;
