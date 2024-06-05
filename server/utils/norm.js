@@ -1,6 +1,6 @@
 
 const translateCategory = function(category) {
-    const result = '';
+    let result = '';
 
     switch(category) {
         case 'restaurant':

@@ -1,5 +1,6 @@
 import spot from "../models/spot.model.js"
 import picture from "../models/picture.model.js";
+import {translateCategory} from '../utils/norm.js'
 
  /*
 const getAll = async function(req, res){
@@ -7,11 +8,10 @@ const getAll = async function(req, res){
 )};
 */ 
 
-// Spos não comerciais
+// Spots não comerciais
 const getAllNonSpot = async (req, res) => {
 
     const result = await spot.getAllNonSpot();
-    console.log(result); 
     res.send(result);
 
 }
@@ -35,15 +35,18 @@ const getByCategoryNon = async function (req, res) {
         const spots = await spot.getByCategoryNon(req.query.category);
 
         for (let si of spots){
+            si.category = translateCategory(si.category);
+
             const pics = await picture.getBySpotId(si.id, 3);
             si.pics = pics;
         }
 
-        console.log(spots)
-        res.render('nonComSpots', {
+        console.log(JSON.stringify(spots, null, 2));
+
+        res.render('spots-by-category', {
             layout: 'mainLay',
             title: 'Spots Não Comerciais',
-            info: spots
+            spots: spots
         });
     };
 
@@ -52,7 +55,6 @@ const getByCategoryNon = async function (req, res) {
 const getAllComSpot = async (req, res) => {
 
     const result = await spot.getAllComSpot();
-    console.log(result); 
     res.send(result);
 
 }
@@ -71,13 +73,26 @@ const getByIdCom = async function(req, res){
     });
 }
 
-const getByCategoryCom = async function (req, res){
-    const result  = await spot.getByCategoryCom(req.query.category);
 
-    console.log(result);
+const getByCategoryCom = async function (req, res) {
+    
+    const spots = await spot.getByCategoryCom(req.query.category);
 
-    res.end();
-}
+    for (let si of spots){
+        si.category = translateCategory(si.category);
+
+        const pics = await picture.getBySpotId(si.id, 3);
+        si.pics = pics;
+    }
+
+    console.log(JSON.stringify(spots, null, 2));
+
+    res.render('spots-by-categoryCom', {
+        layout: 'mainLay',
+        title: 'Spots Comerciais',
+        spots: spots
+    });
+};
 
 
 export { getAllNonSpot, getByIdNon, getByCategoryNon, getByCategoryCom, getAllComSpot, getByIdCom}

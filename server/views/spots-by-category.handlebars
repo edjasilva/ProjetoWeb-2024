@@ -1,122 +1,62 @@
+{{#if spots}}
 <header>
     <div class="container pt-1">
          <div class="row">
              <div class="col-12">
                 <div class="intro-text py-5 mt-5 text-center bg-body-tertiary border border-1 ">
-                    <div class="heading mb-3 display-5 ">Locais Comerciais</div>
+                    <div class="heading mb-3 display-5 ">{{spots.[0].category}}</div>
                     <div class="fs-5 fw-light ">Descubra os melhores lugares para fazer uma foto.</div>
                 </div>
             </div>
          </div>
     </div>
 </header>
+{{/if}}
 
 
+{{#each spots}}
 
-{{#each info}}
-
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div id="restaurant" class="container d-bblock mt-5">
-                <div class="card mb-3 border-0 border">
-                    <div class="row justify-content-around my-5">
-                        <div class="col-md-6 d-flex align-items-center">
-                            <div class="card-body my-1 ms-5" id="garden">
-                                <h1 class="card-title fs-3">{{info.name}}</h1>
-                                <hr>
-                                <p class="card-muted">{{info.street}} , ({{info.zipcode}}) </p>
-                                <p class=" bi bi-star"> {{info.rating}} </p>
-                                <a href="#" id="btnSeeAll"
-                                    class="btn btn-default py-2 px-2 fs-6 border border-dark border-1  bg-secondary text-white">
-                                    <i class="bi bi-info-circle"></i> Saber mais</a>
-                            </div>
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div id="restaurant" class="container d-bblock mt-5">
+            <div class="card mb-3 border-0 border">
+                <div class="row justify-content-around my-5">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="card-body my-1 ms-5" id="garden">
+                            <h1 class="card-title fs-3">{{this.name}}</h1>
+                            <hr>
+                            <p class="card-muted">{{this.street}} , ({{this.zipcode}}) </p>
+                            <p class=" bi bi-star"> {{this.rating}} </p>
+                            <a href="https://lisbonspots.onrender.com/spots/non-commercial/{{this.id}}" id="btnSeeAll"
+                                class="btn btn-default py-2 px-2 fs-6 border border-dark border-1  bg-secondary text-white">
+                                <i class="bi bi-info-circle"></i> Saber mais</a>
                         </div>
-    {{/each}}                    
-    
-    {{#if pics}}
-                        <div class="col-md-6">
-                            <div class="lightbox img-responsive" data-mdb-lightbox-init>
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-6 col-md-6 img-fluid">
-                                        <img src="{{fotos.url}}"
-                                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
-                                        <img src=""
-                                            class="w-100 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
-                                    </div>
-                                    <div
-                                        class="col-lg-6 img-fluid d-flex justify-content-center align-items-center col-sm-6 col-md-6">
-                                        <img id="photoL" src=""
-                                            class="w-100 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
-                                    </div>
+                    </div>
+                     
+                    {{#if this.pics}}
+                    <div class="col-md-6">
+                        <div class="lightbox img-responsive">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-md-6 img-fluid">
+                                    <img src="{{this.pics.[0].url}}"
+                                        class="w-100 mb-2 mb-md-4 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
+                                    <img src="{{this.pics.[1].url}}"
+                                        class="w-100 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
+                                </div>
+                                <div
+                                    class="col-lg-6 img-fluid d-flex justify-content-center align-items-center col-sm-6 col-md-6">
+                                    <img id="photoL" src="{{this.pics.[2].url}}"
+                                        class="w-100 shadow-1-strong rounded img-fluid img-responsive col-sm-3" />
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {{/if}}
                 </div>
             </div>
         </div>
     </div>
-{{/if}}
+</div>
 
-
-
-
-
-
-
-
-
-
-
- <!---
-
-<div class="teste p-4 ">
-    <div class="row">
-        <div class="col-12  ">
-            <div class="intro-text mt-0 mb-0  text-center text-g">
-                <div class="heading display-5  ">LOCATIONS</div>
-                <div id="slideshowCommercial" class="wrapper">
-                 
-                    <div id="splide" class="splide">
-                        <div class="splide__track">
-                            <div class="splide__list">
-                                <div class="splide__slide">
-                                    <img src="https://www.touropia.com/gfx/b/2015/08/rossio_square.jpg" loading="lazy"
-                                        sizes="(max-width: 479px) 250px, (max-width: 991px) 320px, 32vw"
-                                        srcset="../img/popular1.png 500w, ../img/popular1.png 800w, ../img/popular1.png 1200w"
-                                        alt="" class="img" />
-                                </div>
-                                <div class="splide__slide">
-                                    <img src="https://www.planetware.com/wpimages/2023/04/portugal-lisbon-top-attractions-intro-paragraph-belem-tower.jpg"
-                                        loading="lazy" sizes="(max-width: 479px) 250px, (max-width: 991px) 320px, 32vw"
-                                        srcset="../img/popular4.png 500w, ../img/popular4.png 800w, ../img/popular4.png 1080w, ../img/popular4.png 1200w"
-                                        alt="" class="img" />
-                                </div>
-                                <div class="splide__slide">
-                                    <img src="https://nowinportugal.com/wp-content/uploads/2022/05/Best-Day-Trips-from-Lisbon.jpg"
-                                        loading="lazy" sizes="(max-width: 479px) 250px, (max-width: 991px) 320px, 32vw"
-                                        srcset="../img/popular3.png 500w, ../img/popular3.png 800w, ../img/popular3.png 1080w, ../img/popular3.png 1200w"
-                                        alt="" class="img" />
-                                </div>
-                                <div class="splide__slide">
-                                    <img src="https://www.planetware.com/photos-large/P/st-georges-castle.jpg"
-                                        loading="lazy" sizes="(max-width: 479px) 250px, (max-width: 991px) 320px, 32vw"
-                                        srcset="../img/popular9.png 500w, ../img/popular9.png 800w, ../img/popular9.png 1080w, ../img/popular9.png 1200w"
-                                        alt="" class="img" />
-                                </div>
-                                <div class="splide__slide">
-                                    <img src="https://static.toiimg.com/photo/56752191.cms" loading="lazy"
-                                        sizes="(max-width: 479px) 250px, (max-width: 991px) 320px, 32vw"
-                                        srcset="../img/popular6.png 500w, ../img/popular6.png 800w, ../img/popular6.png 1080w, ../img/popular6.png 1200w"
-                                        alt="" class="img" />
-                                </div>
-                                <div class="splide__slide">
-                                    <img src="https://lisbonlisboaportugal.com/images/og-images/lisbon-og-2.jpg"
-                                        loading="lazy" sizes="(max-width: 479px) 250px, (max-width: 991px) 320px, 32vw"
-                                        srcset=" ../img/popular8.png 500w, ../img/popular8.png 800w, ../img/popular8.png 1080w, ../img/popular8.png 1200w"
-                                        alt="" class="img" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{/each}}                    
+   

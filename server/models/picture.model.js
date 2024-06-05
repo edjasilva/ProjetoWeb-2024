@@ -34,6 +34,18 @@ const picture = {
         `;
         const values = [category]
         return (await db.query(text, values)).rows;
+    },
+
+    getByComCategorySpot: async(category)=>{
+        const text =`
+        select url
+        from tb_picture as pic
+        inner join tb_spot on tb_spot.id=pic.spo_id
+        inner join tb_commercialspot on tb_commercialspot.id=tb_spot.id
+        where category=$1
+        `;
+        const values = [category]
+        return (await db.query(text, values)).rows;
     }
 
 
