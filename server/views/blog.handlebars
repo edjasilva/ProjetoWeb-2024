@@ -11,11 +11,14 @@
         </div>
     </header>
 
-    <div class="container-fluid my-5">
-        <div class="row justify-content-center align-items-center" id="postsContainer">
-            <!-- Posts will be here -->
-        </div>
-    </div>
+    
+<h1>{{title}}</h1>
+<ul>
+    {{#each posts}}
+        <li>{{this.subtitle}} - <img src="{{this.image_path}}" alt="Image" /></li>
+    {{/each}}
+</ul>
+
 
     <div class="floating-button" id="addButton">
         <i class="bi bi-plus"></i>

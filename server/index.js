@@ -36,7 +36,7 @@ server.use(logger('dev'));
 
 // Configuração do Handlebars
 server.engine('handlebars', engine({
-  defaultLayout: 'dashboardLay',
+  defaultLayout: 'mainLay',
   helpers: {
     json: function (context) {
       return JSON.stringify(context);
@@ -78,11 +78,17 @@ server.use("/blog", blogRoutes);
 server.post('/upload', upload.single('file'), async (req, res) => {
   try {
     const { text } = req.body;
+    if (!req.file) {
+      console.error('File not uploaded');
+      return res.status(400).json({ success: false, message: 'File not uploaded' });
+    }
+
     const filePath = `/uploads/${req.file.filename}`;
     console.log('File uploaded to:', filePath);
 
-    if (!text || !filePath) {
-      return res.status(400).json({ success: false, message: 'Missing text or file' });
+    if (!text) {
+      console.error('Text is missing');
+      return res.status(400).json({ success: false, message: 'Text is missing' });
     }
 
     const query = 'INSERT INTO tb_post (subtitle, cli_id, spo_id, image_path) VALUES ($1, $2, $3, $4)';
@@ -97,31 +103,13 @@ server.post('/upload', upload.single('file'), async (req, res) => {
   }
 });
 
-// Rota para obter posts
-server.get('/posts', async (req, res) => {
-  try {
-    const query = 'SELECT * FROM tb_post';
-    const result = await database.query(query);
-    console.log(result.rows);
-    res.json(result.rows);
-  } catch (error) {
-    console.error('Error retrieving posts:', error);
-    res.status(500).json({ success: false, message: 'Error retrieving posts.' });
-  }
-});
-
-// Rota de teste para imagem
-server.get('/test-image', (req, res) => {
-  res.sendFile(path.join(__dirname, 'uploads', 'test.jpg'));
-});
-
 // Iniciar o servidor
 async function start() {
   try {
     console.log("Base de dados iniciada");
-    database.connect();
+    await database.connect();
     console.log("A conexão foi feita");
-    server.listen(port, async function () {
+    server.listen(port, () => {
       console.log(`Servidor iniciado: http://localhost:${port}/`);
     });
   } catch (error) {
