@@ -1,39 +1,37 @@
-// filename: mapScript.js
 
-const map = L.map('map').setView([51.505, -0.09], 13);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map);
+document.addEventListener('DOMContentLoaded', function () {
+    let map = L.map('map', {
+        attributionControl: false,
+    }).setView([38.72, -9.14], 13);
 
-let marker, circle, zoomed;
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
 
-navigator.geolocation.watchPosition(success, error);
+    map.locate({setView: true, maxZoom: 16});
+    
 
-function success(pos) {
-    const lat = pos.coords.latitude;
-    const lng = pos.coords.longitude;
-    const accuracy = pos.coords.accuracy;
+    document.querySelectorAll('.map-pin').forEach(function (pin) {
+        let lat = pin.getAttribute('lat');
+        let lon = pin.getAttribute('lon');
+        let name = pin.getAttribute('name');
+        let rating = pin.getAttribute('rating');
+        let street =pin.getAttribute('street')
+        let zipcode =pin.getAttribute('zipcode')
+        let image = pin.getAttribute('image');
+   
+        
+        let popup = `
+        <div class="popup">
+            <p class= "name">${name}</p>
+            <img class=" rounded-3 mx-auto spot-img " src="/images/comm/Hotel/TheIvens/Ivens1.png" alt=""> 
+            <p  >Avaliação: <b>${rating}</b>  <br>Código Postal: <b>${zipcode}</b> </p>
+            <a href="/spots-Com?lat=${lat}&lon=${lon}" class="btn-details">Detalhes</a>
+        </div>
+        `;
 
-    if (marker) {
-        map.removeLayer(marker);
-        map.removeLayer(circle);
-    }
+       L.marker([lat, lon]).addTo(map)
+            .bindPopup(popup);
 
-    marker = L.marker([lat, lng]).addTo(map);
-    circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
-
-    if (!zoomed) {
-        zoomed = map.fitBounds(circle.getBounds());
-    }
-
-    map.setView([lat, lng]);
-}
-
-function error(err) {
-    if (err.code === 1) {
-        alert("Por favor, permita o acesso à geolocalização.");
-    } else {
-        alert("Não é possível obter a localização atual.");
-    }
-}
+    });
+});

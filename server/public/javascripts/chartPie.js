@@ -2,19 +2,7 @@
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
-// Pie Chart Example
-/*
-var ctx = document.getElementById("myPieChart");
-var myPieChart = new Chart(ctx, {
-  type: 'pie',
-  data: {
-    labels: ["Centro Comercial", "Hotel", "Restaurante", "Estádio"],
-    datasets: [{
-      data: [12.21, 15.58, 11.25, 8.32],
-      backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],
-    }],
-  },
-});*/
+
 
 
 document.addEventListener('DOMContentLoaded', async function() {
@@ -39,11 +27,12 @@ document.addEventListener('DOMContentLoaded', async function() {
   const myPieChart = new Chart(pieCtx, {
       type: 'pie',
       data: {
-          labels:  data.map(row => row.count),
+          labels:  data.map(row => row.category),
           datasets: [{
-              data: data.map(row => row.category),
+              data: data.map(row => row.percentage ),
               backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745', '#17a2b8', '#6c757d'],
           }],
+          
       },
   });
 });

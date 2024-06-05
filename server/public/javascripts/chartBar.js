@@ -1,9 +1,5 @@
-Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#292b2c';
 
-
-
-const base_url = 'http://localhost:5555';
+const base_url = 'https://lisbonspots.onrender.com/';
 
 document.addEventListener('DOMContentLoaded', async function() {
 
@@ -24,8 +20,7 @@ document.addEventListener('DOMContentLoaded', async function() {
    
   // Gráfico de Barras
   const barCtx = document.getElementById('myBarChart').getContext('2d');
-//  const barLabels = data.category;
-//  const barValues = data.count;
+
 
   const myBarChart = new Chart(barCtx, {
       type: 'bar',
@@ -49,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                       maxTicksLimit: 6
                   }
               },
-              yAxes: [{
+              y: {
                   ticks: {
                       minTicksLimit: 6,
                       beginAtZero: true,
@@ -58,7 +53,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                   grid: {
                       display: true
                   }
-              }],
+              }
           },
           plugins: {
               legend: {

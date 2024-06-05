@@ -7,4 +7,7 @@ router.get("/data/spots-by-category", getCountByCategory);
 router.get("/data/spots-by-rating", getRatingByCategory);
 router.get("/data/spots-by-comCategory", getCountComCategory);
 
+
+
+
 export default router;
