@@ -7,7 +7,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import blogRoutes from './routes/blogRoute.js';
 import logger from 'morgan';
-import ping from './routes/pingRoutes.js';
+
 
 dotenv.config();
 
