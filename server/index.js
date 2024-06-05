@@ -7,6 +7,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import blogRoutes from './routes/blogRoute.js';
 import logger from 'morgan';
+import ping from './routes/pingRoutes.js';
 
 dotenv.config();
 
@@ -40,7 +41,7 @@ server.engine('handlebars', engine({
 
 server.set('view engine', 'handlebars');
 server.set('views', path.join(__dirname, 'views'));
-
+server.use("/ping", ping);
 server.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 server.use(express.static(path.join(__dirname, 'public')));
 
