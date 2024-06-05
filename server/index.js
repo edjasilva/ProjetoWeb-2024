@@ -53,6 +53,7 @@ server.use("/mapa", mapaRoutes);
 server.use("/", homeRoutes);
 server.use("/spots", spotsRoutes);
 server.use("/dashboard", dashboardRoutes);
+server.use("/ping", ping)
 
 
 
